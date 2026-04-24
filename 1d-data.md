@@ -1,17 +1,17 @@
 # Drupal AI Activity Data — 24h
 
 _Period: 2026-04-23 to 2026-04-24_
-_Generated: 2026-04-24T20:49 GMT_
+_Generated: 2026-04-24T21:56 GMT_
 
 ## Modules
 
-- [Context Control Center (CCC)](#context-control-center-ccc-) — 4 issues, 0 MRs, 0 commits
+- [Context Control Center (CCC)](#context-control-center-ccc-) — 5 issues, 0 MRs, 0 commits
 - [AI Dashboard](#ai-dashboard) — 1 issues, 1 MRs, 1 commits
-- [Drupal AI Initiative](#drupal-ai-initiative) — 83 issues, 3 MRs, 4 commits
+- [Drupal AI Initiative](#drupal-ai-initiative) — 72 issues, 3 MRs, 4 commits
 - [AI (Artificial Intelligence)](#ai-artificial-intelligence-) — 10 issues, 12 MRs, 2 commits
-- [Drupal Canvas](#drupal-canvas) — 0 issues, 27 MRs, 8 commits
+- [Drupal Canvas](#drupal-canvas) — 0 issues, 25 MRs, 7 commits
 - [AWS Bedrock Provider](#aws-bedrock-provider) — 0 issues, 1 MRs, 0 commits
-- [Tool API](#tool-api) — 4 issues, 3 MRs, 0 commits
+- [Tool API](#tool-api) — 4 issues, 1 MRs, 0 commits
 - [Postgres VDB Provider](#postgres-vdb-provider) — 0 issues, 1 MRs, 0 commits
 
 ---
@@ -20,99 +20,29 @@ _Generated: 2026-04-24T20:49 GMT_
 
 ### Issues
 
-- **[Add regular CCC contributors as GitLab reporter members](https://git.drupalcode.org/project/ai_context/-/work_items/3586139)** · opened · kepol · 2 comments · AI Context Management, AI Initiative Sprint, AI Innovation, category::bug
-  > **drupalbot** (2026-04-23): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_context/-/work_items/3586139">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai_context/-/work_items/3586139">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
-  > **kepol** (2026-04-23): I added a ton of people (see spreadsheet). Tim L is creating a list of all contributors.
-- **[Local tasks for scopes should be dynamically generated](https://git.drupalcode.org/project/ai_context/-/work_items/3585041)** · [d.o #3585041](https://www.drupal.org/node/3585041) · opened · kepol · 8 comments · AI Context Management, AI Initiative Sprint, AI Innovation, category::feature
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_context/-/work_items/3585041">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_context/-/work_items/3585041">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16557555. -->
-  > > _Migrated from comment #2 posted 20 Apr 2026 at 18:29 UTC_
+- **[Design for the Context Item single entity view](https://git.drupalcode.org/project/ai_context/-/work_items/3586141)** · opened · aidanfoster · 4 comments · AI Context Management, AI Innovation, AI UX, Needs UX review
+  > **aidanfoster** (2026-04-24): ## Mockup of the "MD/Manual" Context Item 
+  > 
+  > <img src="https://git.drupalcode.org/-/project/191993/uploads/aa72e59dbfd9d3e1880cd993c549a359/Screenshot_2026-04-24_at_17-23-07_Context_item_Single_View___Abbreviations_Spelling_Dates___Formatting.png" alt="Screenshot_2026-04-24_at_17-23-07_Context_item_Single_View___Abbreviations_Spelling_Dates___Formatting" width="293" height="600">
   > 
   > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: kristen pol
+  > ## Mockup of the "Google Analytics Connector" (Remote or external context) Context Item 
   > 
-  > ```
+  > <img src="https://git.drupalcode.org/-/project/191993/uploads/6855ac44dbda02df0ef6568a7a43a697/Screenshot_2026-04-24_at_17-23-55_Context_item_Google_Analytics_Connector___Single_View.png" alt="Screenshot_2026-04-24_at_17-23-55_Context_item_Google_Analytics_Connector___Single_View" width="292" height="600">
+  > **aidanfoster** (2026-04-24): Here's a video overview. Files is too big had to share zoom recording link.
   > 
-  > <p>I recall running into some issue with this early on and went with this to move forward.</p>
-  > <p>I'll get this one into the sprint.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559436. -->
-  > > _Migrated from comment #3 posted 21 Apr 2026 at 19:24 UTC_
+  > https://us02web.zoom.us/clips/share/yGZWDFAyQ4yuu9GNlq-5-w
+  > **kepol** (2026-04-24): This is great stuff 🙏🙏🙏
   > 
+  > Let’s have this one be the design issue and we have a follow up for implementation.
   > 
-  > ```
-  >  Issue tags:
-  >  + AI Innovation + AI Initiative Sprint + AI Context Management
-  > ```
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559437. -->
-  > > _Migrated from comment #4 posted 21 Apr 2026 at 19:25 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: kristen pol
-  > + Assigned: Unassigned
-  > 
-  > ```
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559719. -->
-  > > _Migrated from comment #5 posted 21 Apr 2026 at 23:04 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: kristen pol
-  > 
-  > ```
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559745. -->
-  > > _Migrated from comment #7 posted 21 Apr 2026 at 23:39 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > ```
-  > - Assigned:      kristen pol
-  > + Assigned:      Unassigned
-  > - Status:        Active
-  > + Status:        Needs review
-  > 
-  > ```
-  > **mglaman** (2026-04-22): <!-- Migrated from comment CID #16559769. -->
-  > > _Migrated from comment #8 posted 22 Apr 2026 at 00:25 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Needs review
-  > + Status: Reviewed & tested by the community
-  > 
-  > ```
-  > 
-  > <p>Looks good to me! There's some nuance around if the local tasks will properly rebuild if only the this plugin is being discovered, but local tasks are always finicky anyway.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16560995. -->
-  > > _Migrated from comment #9 posted 22 Apr 2026 at 17:13 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: kristen pol
-  > 
-  > ```
-  > 
-  > <p>Sweet, thanks. I'll try to get this merged in today.</p>
-- **[Improve Context Items List View](https://git.drupalcode.org/project/ai_context/-/work_items/3586140)** · opened · aidanfoster · 5 comments · AI Context Management, AI UX, state::needsReview
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_context/-/work_items/3586140">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai_context/-/work_items/3586140">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
+  > I’d argue we should split this into two and discuss the connected context separately
+- **[Improve Context Items List View](https://git.drupalcode.org/project/ai_context/-/work_items/3586140)** · opened · aidanfoster · 5 comments · AI Context Management, AI UX, Needs UX review, state::needsReview
   > **aidanfoster** (2026-04-24): Here's a mockup
-  > ![Screenshot_2026-04-24_at_9.22.15_AM](/uploads/5ea3d9547de199c082d39f793ef12fe5/Screenshot_2026-04-24_at_9.22.15_AM.png){width=792 height=600}
+  > <img src="https://git.drupalcode.org/-/project/191993/uploads/5ea3d9547de199c082d39f793ef12fe5/Screenshot_2026-04-24_at_9.22.15_AM.png" alt="Screenshot_2026-04-24_at_9.22.15_AM" width="792" height="600">
   > **aidanfoster** (2026-04-24): Video with comments + Interaction States
   > 
-  > ![GMT20260424-132404_Clip_CCC_-_Context_Items_v2_-_walkthough](/uploads/a040dfaf5c30bfd2dc64a8b52ea53a30/GMT20260424-132404_Clip_CCC_-_Context_Items_v2_-_walkthough.mp4){width=900 height=507}
+  > <img src="https://git.drupalcode.org/-/project/191993/uploads/a040dfaf5c30bfd2dc64a8b52ea53a30/GMT20260424-132404_Clip_CCC_-_Context_Items_v2_-_walkthough.mp4" alt="GMT20260424-132404_Clip_CCC_-_Context_Items_v2_-_walkthough" width="900" height="507">
   > **aidanfoster** (2026-04-24): @kepol @emma-horrell - feedback requested
   > 
   > Changes:
@@ -133,10 +63,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > 2. We still need to know what the moderation state is which was a separate issue but should just be solved here.
   > 3. it would be interesting to see what scope looks like when there are several
 - **[Full lightweight UX review of CCC in prep for rc1](https://git.drupalcode.org/project/ai_context/-/work_items/3573715)** · [d.o #3573715](https://www.drupal.org/node/3573715) · opened · aidanfoster · 21 comments · AI Context Management, AI Innovation, Needs UX review, category::task
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_context/-/work_items/3573715">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_context/-/work_items/3573715">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **kepol** (2026-04-22): <!-- Migrated from comment CID #16479866. -->
   > > _Migrated from comment #2 posted 21 Feb 2026 at 00:29 UTC_
   > 
@@ -434,6 +360,81 @@ _Generated: 2026-04-24T20:49 GMT_
   > I haven’t fully reviewed this but can this weekend.
   > **aidanfoster** (2026-04-23): Some are smaller, simple things. Some are larger. @kepol should I make child issues for those things that don't really need discussion?
   > **kepol** (2026-04-23): That would be great, yes 🙌
+- **[Add regular CCC contributors as GitLab reporter members](https://git.drupalcode.org/project/ai_context/-/work_items/3586139)** · opened · kepol · 2 comments · AI Context Management, AI Initiative Sprint, AI Innovation, category::bug
+  > **kepol** (2026-04-23): I added a ton of people (see spreadsheet). Tim L is creating a list of all contributors.
+- **[Local tasks for scopes should be dynamically generated](https://git.drupalcode.org/project/ai_context/-/work_items/3585041)** · [d.o #3585041](https://www.drupal.org/node/3585041) · opened · kepol · 8 comments · AI Context Management, AI Initiative Sprint, AI Innovation, category::feature
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16557555. -->
+  > > _Migrated from comment #2 posted 20 Apr 2026 at 18:29 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: kristen pol
+  > 
+  > ```
+  > 
+  > <p>I recall running into some issue with this early on and went with this to move forward.</p>
+  > <p>I'll get this one into the sprint.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559436. -->
+  > > _Migrated from comment #3 posted 21 Apr 2026 at 19:24 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  + AI Innovation + AI Initiative Sprint + AI Context Management
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559437. -->
+  > > _Migrated from comment #4 posted 21 Apr 2026 at 19:25 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: kristen pol
+  > + Assigned: Unassigned
+  > 
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559719. -->
+  > > _Migrated from comment #5 posted 21 Apr 2026 at 23:04 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: kristen pol
+  > 
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559745. -->
+  > > _Migrated from comment #7 posted 21 Apr 2026 at 23:39 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > ```
+  > - Assigned:      kristen pol
+  > + Assigned:      Unassigned
+  > - Status:        Active
+  > + Status:        Needs review
+  > 
+  > ```
+  > **mglaman** (2026-04-22): <!-- Migrated from comment CID #16559769. -->
+  > > _Migrated from comment #8 posted 22 Apr 2026 at 00:25 UTC_
+  > 
+  > 
+  > ```
+  > - Status: Needs review
+  > + Status: Reviewed & tested by the community
+  > 
+  > ```
+  > 
+  > <p>Looks good to me! There's some nuance around if the local tasks will properly rebuild if only the this plugin is being discovered, but local tasks are always finicky anyway.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16560995. -->
+  > > _Migrated from comment #9 posted 22 Apr 2026 at 17:13 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: kristen pol
+  > 
+  > ```
+  > 
+  > <p>Sweet, thanks. I'll try to get this merged in today.</p>
 
 ---
 
@@ -442,10 +443,6 @@ _Generated: 2026-04-24T20:49 GMT_
 ### Issues
 
 - **[Show AI Dashboard on admin/config overview](https://git.drupalcode.org/project/ai_dashboard/-/work_items/3580675)** · [d.o #3580675](https://www.drupal.org/node/3580675) · closed · unassigned · 10 comments · AI Initiative, AI Initiative Sprint, AI Product Development, category::task
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_dashboard/-/work_items/3580675">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_dashboard/-/work_items/3580675">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **a.dmitriiev** (2026-04-22): <!-- Migrated from comment CID #16553273. -->
   > > _Migrated from comment #2 posted 16 Apr 2026 at 14:11 UTC_
   > 
@@ -517,9 +514,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > <p>Seems to be working without the `/admin/config/ai/dashboard` redirect that Artem proposed. Here's a screenshot with the AI Dashboad entry appearing in the admin/config screen.</p>
   > <p><img src="https://www.drupal.org/files/issues/2026-04-22/Screenshot%20from%202026-04-22%2014-14-24.png"></p>
   > **a.dmitriiev** (2026-04-24): Thank you for fixing and reviewing. This is getting merged.
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_dashboard/-/work_items/3580675">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.
 
 ### Merge Requests
 
@@ -536,15 +530,7 @@ _Generated: 2026-04-24T20:49 GMT_
 ### Issues
 
 - **[[META] Launch Drupal AI in Practice Podcast](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586383)** · opened · jmsaunders · 1 comments · AI Initiative, AI Marketing
-  > **drupalbot** (2026-04-23): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586383">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586383">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
 - **[Marketing Sprint #2: April 27 - May 11 [Meta]](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585830)** · [d.o #3585830](https://www.drupal.org/node/3585830) · opened · jjchinquist · 3 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3585830">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3585830">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16559820. -->
   > > _Migrated from comment #2 posted 22 Apr 2026 at 03:10 UTC_
   > 
@@ -556,10 +542,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > > Updated issue summary
 - **[[META] Webinar for DB Schenker](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586411)** · opened · jmsaunders · 1 comments · AI Initiative, AI Initiative Sprint, AI Marketing
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586411">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586411">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
 - **[POST EVENT DB SCHENKER - Upload Recording with Meta Data](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586426)** · opened · unassigned · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
 - **[POST EVENT DB SCHENKER - Publish Post Event Social Recap](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586425)** · opened · unassigned · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
 - **[POST EVENT DB SCHENKER - Attendee follow-up](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586424)** · opened · unassigned · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
@@ -575,20 +557,8 @@ _Generated: 2026-04-24T20:49 GMT_
 - **[PLANNING DB SCHENKER - Develop agenda and outline](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586415)** · opened · jmsaunders · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
 - **[CONTENT DB SCHENKER - Create slide deck](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586416)** · opened · jmsaunders · 0 comments · AI Initiative, AI Initiative Sprint, category::task, marketing
 - **[AI Initiative Marketing Meeting May 4 2026](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586412)** · opened · jmsaunders · 1 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586412">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586412">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
 - **[AI Initiative Marketing Meeting April 27](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584282)** · [d.o #3584282](https://www.drupal.org/node/3584282) · opened · jmsaunders · 1 comments · AI Marketing, category::task, marketing, priority::normal
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584282">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584282">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
 - **[The AI Summit London Event META](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585985)** · [d.o #3585985](https://www.drupal.org/node/3585985) · opened · unassigned · 14 comments · category::task, marketing, priority::normal, state::accepted
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3585985">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3585985">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558587. -->
   > > _Migrated from comment #2 posted 21 Apr 2026 at 11:12 UTC_
   > 
@@ -655,10 +625,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > > Updated issue summary
 - **[Promotional imagery for The AI Summit London](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585956)** · [d.o #3585956](https://www.drupal.org/node/3585956) · opened · slawrence10 · 7 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3585956">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3585956">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558380. -->
   > > _Migrated from comment #2 posted 21 Apr 2026 at 09:05 UTC_
   > 
@@ -706,15 +672,7 @@ _Generated: 2026-04-24T20:49 GMT_
   > <p>I'll come back to you on Thursday with some initial movement.</p>
   > **pdjohnson** (2026-04-24): @slawrence10 please prioritise this early in the sprint so I can create the landing page.
 - **[AI Summit London: Create a landing page](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586408)** · opened · pdjohnson · 1 comments · AI Marketing, state::accepted
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586408">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586408">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
 - **[Banner for NYC Summit](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584076)** · [d.o #3584076](https://www.drupal.org/node/3584076) · opened · jmsaunders · 10 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584076">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584076">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16546210. -->
   > > _Migrated from comment #2 posted 10 Apr 2026 at 16:13 UTC_
   > 
@@ -785,26 +743,14 @@ _Generated: 2026-04-24T20:49 GMT_
   > @angela_saldana and @pdjohnson 
   > <p>Great. Would Angela be able to update the files for the new format by any chance?</p>
 - **[[META] Webinar for Southwark Council's work with AI](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584600)** · [d.o #3584600](https://www.drupal.org/node/3584600) · opened · pdjohnson · 2 comments · AI Initiative Sprint, AI Marketing, category::plan, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584600">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584600">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16557319. -->
   > > _Migrated from comment #2 posted 20 Apr 2026 at 15:20 UTC_
   > 
   > 
   > > Updated issue summary
 - **[Webinar: Southwark Council Imagery](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586405)** · opened · slawrence10 · 2 comments · AI Initiative Sprint, AI Marketing, state::accepted
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586405">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586405">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **pdjohnson** (2026-04-24): @slawrence10 please let me know when this is complete. Thanks!
 - **[Give d.o editors the ability to embed YouTube videos](https://git.drupalcode.org/project/ai_initiative/-/work_items/3567516)** · [d.o #3567516](https://www.drupal.org/node/3567516) · opened · unassigned · 4 comments · category::feature, daRequest, priority::normal, state::accepted
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3567516">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3567516">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **hestenet** (2026-04-22): <!-- Migrated from comment CID #16553447. -->
   > > _Migrated from comment #2 posted 16 Apr 2026 at 16:02 UTC_
   > 
@@ -817,10 +763,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > <p>Agreed. I hadn't noticed when I raised this that you can't even include images within CKEditor text. It's extremely limiting for content creation. I understand the need to be careful of the media we include, but without any content workflows in place we're heavily reliant on higher level editors to finalise big chunks of content.</p>
   > **B_man** (2026-04-24): This is actively being worked on. I can't promise a deploy date with all of the other ddos background noise, but it's in the review stage.
 - **[Marketing Content for Drupal AI 1.4.0](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585168)** · [d.o #3585168](https://www.drupal.org/node/3585168) · opened · ZoochaWill · 4 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3585168">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3585168">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **ZoochaWill** (2026-04-22): <!-- Migrated from comment CID #16552793. -->
   > > _Migrated from comment #2 posted 16 Apr 2026 at 09:45 UTC_
   > 
@@ -836,10 +778,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > ```
   > **pdjohnson** (2026-04-24): @ZoochaWill are you working on getting this done? Best approach is to ask Marcus to pen something and then fine tune.
 - **[Promote Drupal AI Learners Club](https://git.drupalcode.org/project/ai_initiative/-/work_items/3583894)** · [d.o #3583894](https://www.drupal.org/node/3583894) · opened · unassigned · 4 comments · AI Marketing, category::task, marketing, priority::normal
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3583894">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3583894">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550613. -->
   > > _Migrated from comment #2 posted 15 Apr 2026 at 00:54 UTC_
   > 
@@ -854,10 +792,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > **pdjohnson** (2026-04-24): @jjchinquist this ticket should be assigned to María Fernanda Silva but I cannot find her as an assignee, any ideas?
   > **pdjohnson** (2026-04-24): @jjchinquist should be assigned to Maria
 - **[[META] Improve security of AI and VDB provider credential storage](https://git.drupalcode.org/project/ai_initiative/-/work_items/3559052)** · [d.o #3559052](https://www.drupal.org/node/3559052) · opened · unassigned · 18 comments · Drupal CMS, Recipes initiative, Security, Security improvements
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3559052">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3559052">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **mxr576** (2026-04-22): <!-- Migrated from comment CID #16353977. -->
   > > _Migrated from comment #2 posted 20 Nov 2025 at 14:42 UTC_
   > 
@@ -1078,10 +1012,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > Drupal CMS 2.1.0 introduce Easy Encryption module as default protection for plain text credentials. Other recipes and contrib modules could also rely on that module as a default solution for avoiding user-provided credentials to be stored as plain text.
 - **[Create sales deck](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585426)** · [d.o #3585426](https://www.drupal.org/node/3585426) · opened · james_tillotson · 3 comments · AI Marketing, category::task, marketing, priority::normal
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3585426">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3585426">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **james_tillotson** (2026-04-22): <!-- Migrated from comment CID #16554431. -->
   > > _Migrated from comment #2 posted 17 Apr 2026 at 12:30 UTC_
   > 
@@ -1105,20 +1035,8 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > Why Drupal is the perfect foundation for your AI: poor design but great content: https://docs.google.com/presentation/d/1_PtvvILhWngngqQKbQORgkiIG0dlYBowI-VFKeD8pQM/edit?slide=id.g3ae48628f72_0_5#slide=id.g3ae48628f72_0_5
 - **[rtest](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586410)** · opened · unassigned · 1 comments · AI Marketing
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586410">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586410">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
 - **[Contribution workflow for the AI Marketing Initiative](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586382)** · opened · jjchinquist · 1 comments · AI Marketing
-  > **drupalbot** (2026-04-23): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586382">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586382">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
 - **[Marketing Sprint April 13 - 27 META](https://git.drupalcode.org/project/ai_initiative/-/work_items/3583465)** · [d.o #3583465](https://www.drupal.org/node/3583465) · opened · jjchinquist · 62 comments · AI Initiative Sprint, AI Marketing, category::plan, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3583465">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3583465">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16541100. -->
   > > _Migrated from comment #2 posted 07 Apr 2026 at 13:20 UTC_
   > 
@@ -1435,10 +1353,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > > Updated issue summary
 - **[AI skill for AI Marketing Initiative: guide for setting up AI tooling to interact with GitLab via the CLI](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586406)** · opened · unassigned · 2 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586406">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586406">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **jjchinquist** (2026-04-24): ## Gotcha for the `glab api` section: `@file` syntax is **not** supported
   > 
   > When the skill eventually documents `glab api` as the primary CLI for drupalcode.org write operations, call out this trap explicitly — it silently destroys data.
@@ -1476,10 +1390,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > *Drafted with the assistance of AI (Claude Code / Opus 4.7).*
 - **[Gitlab workflows & board specific to the AI's Marketing Initiative](https://git.drupalcode.org/project/ai_initiative/-/work_items/3582480)** · [d.o #3582480](https://www.drupal.org/node/3582480) · closed · jjchinquist · 13 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3582480">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3582480">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **kepol** (2026-04-22): <!-- Migrated from comment CID #16535307. -->
   > > _Migrated from comment #2 posted 01 Apr 2026 at 18:23 UTC_
   > 
@@ -1592,9 +1502,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > **jjchinquist** (2026-04-23): Hi Kristen,
   > I realized that the original plan created by Claude was wise enough here. A label starting with "state::" is not the same as an actual State field value. So we are good there.
   > Please check out the board and give feedback.
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3582480">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.
   > **jjchinquist** (2026-04-24): ## Done
   > 
   > ACs delivered on this ticket:
@@ -1614,10 +1521,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > *Drafted with the assistance of AI (Claude Code / Opus 4.7).*
 - **[Create templates for management of AI Initiative Marketing Issues on Gitlab](https://git.drupalcode.org/project/ai_initiative/-/work_items/3581782)** · [d.o #3581782](https://www.drupal.org/node/3581782) · closed · jjchinquist · 18 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3581782">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3581782">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16527719. -->
   > > _Migrated from comment #2 posted 26 Mar 2026 at 20:14 UTC_
   > 
@@ -1722,9 +1625,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > 
   > <p>A 'blocked' status might be useful as part of an implied workflow.</p>
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3581782">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.
   > **jjchinquist** (2026-04-24): ## Done
   > 
   > All five templates are live on `main`:
@@ -1753,15 +1653,7 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > *Drafted with the assistance of AI (Claude Code / Opus 4.7).*
 - **[Finalize state-label workflow for Marketing templates (AC-1 + AC-4 from #3582480)](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586409)** · opened · unassigned · 1 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586409">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586409">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
 - **[Set up Southwark Webinar on Zoom](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586060)** · [d.o #3586060](https://www.drupal.org/node/3586060) · closed · hestenet, pdjohnson · 6 comments · AI Initiative Sprint, AI Marketing, category::task, daRequest
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3586060">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3586060">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **hestenet** (2026-04-22): <!-- Migrated from comment CID #16559243. -->
   > > _Migrated from comment #2 posted 21 Apr 2026 at 16:57 UTC_
   > 
@@ -1790,19 +1682,8 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > ```
   > **pdjohnson** (2026-04-23): @hestenet I will get the blog post written by tomorrow first thing your time at the latest.
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586060">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.
 - **[Roadmap Marketing - Governance & Coordination](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584120)** · [d.o #3584120](https://www.drupal.org/node/3584120) · opened · ZoochaWill · 1 comments · AI Marketing, category::task, marketing, priority::normal
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584120">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584120">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
 - **[Create flagship content for CCC](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584119)** · [d.o #3584119](https://www.drupal.org/node/3584119) · opened · ZoochaWill · 3 comments · AI Marketing, category::task, marketing, priority::normal
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584119">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584119">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **ZoochaWill** (2026-04-22): <!-- Migrated from comment CID #16545765. -->
   > > _Migrated from comment #2 posted 10 Apr 2026 at 11:29 UTC_
   > 
@@ -1814,35 +1695,15 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > <p>Thanks for this! Looking forward to it :)</p>
 - **[AI Roadmap - Core Narrative & Messaging](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584118)** · [d.o #3584118](https://www.drupal.org/node/3584118) · opened · ZoochaWill · 2 comments · AI Marketing, category::task, marketing, priority::normal
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584118">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584118">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **ZoochaWill** (2026-04-22): <!-- Migrated from comment CID #16558914. -->
   > > _Migrated from comment #2 posted 21 Apr 2026 at 14:24 UTC_
   > 
   > 
   > <p>Draft doc under review <a href="https://docs.google.com/document/d/1mARPsVtoN17Ed8mgiQRMEVpaeDBw7RCmv9d1rc--lA8/edit?tab=t.0#heading=h.fjppnfh2nt39">https://docs.google.com/document/d/1mARPsVtoN17Ed8mgiQRMEVpaeDBw7RCmv9d1rc--lA8/edit?tab=t.0#heading=h.fjppnfh2nt39</a></p>
 - **[The AI Summit London Booth Design](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586251)** · [d.o #3586251](https://www.drupal.org/node/3586251) · opened · pdjohnson · 1 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3586251">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3586251">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
 - **[Talking Drupal Cafe recording NYC Summit Marketing](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584408)** · [d.o #3584408](https://www.drupal.org/node/3584408) · opened · unassigned · 1 comments · category::task, marketing, priority::normal, state::accepted
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584408">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584408">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
 - **[Create META issue for sprint 2](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586407)** · opened · jjchinquist · 1 comments · AI Marketing, state::accepted
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586407">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586407">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
 - **[Add DA YouTube channel managers from AI Initiative marketing team](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584835)** · [d.o #3584835](https://www.drupal.org/node/3584835) · opened · pdjohnson · 7 comments · category::task, marketing, priority::normal, state::needsReview
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584835">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584835">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550902. -->
   > > _Migrated from comment #2 posted 15 Apr 2026 at 03:17 UTC_
   > 
@@ -1900,19 +1761,8 @@ _Generated: 2026-04-24T20:49 GMT_
   > <p>Thanks! I pinged Paul and Will in Slack</p>
   > **pdjohnson** (2026-04-24): @hestenet are we OK with proceeding on this?
 - **[Update the Drupal AI events page](https://git.drupalcode.org/project/ai_initiative/-/work_items/3577982)** · [d.o #3577982](https://www.drupal.org/node/3577982) · closed · pdjohnson · 3 comments · category::task, marketing, priority::normal, state::accepted
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3577982">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3577982">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **pdjohnson** (2026-04-24): Updated
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3577982">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.
 - **[Appointment of Leads for AI Marketing Workstreams](https://git.drupalcode.org/project/ai_initiative/-/work_items/3578593)** · [d.o #3578593](https://www.drupal.org/node/3578593) · closed · pdjohnson · 18 comments · category::task, marketing, priority::normal, state::accepted
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3578593">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3578593">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16506367. -->
   > > _Migrated from comment #2 posted 11 Mar 2026 at 16:52 UTC_
   > 
@@ -1995,22 +1845,8 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > > Updated issue summary
   > **pdjohnson** (2026-04-24): All leads have been appointed now.
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3578593">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.
 - **[Webinar: Southwark Council - process document](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586051)** · [d.o #3586051](https://www.drupal.org/node/3586051) · closed · pdjohnson · 2 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3586051">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3586051">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3586051">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.
 - **[Promote Drupal AI Learners Club on LinkedIn](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586155)** · [d.o #3586155](https://www.drupal.org/node/3586155) · opened · slawrence10 · 3 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3586155">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3586155">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16559790. -->
   > > _Migrated from comment #2 posted 22 Apr 2026 at 01:20 UTC_
   > 
@@ -2028,10 +1864,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > <p>I'm working on this ticket.</p>
 - **[DrupalCon Chicago Social Media](https://git.drupalcode.org/project/ai_initiative/-/work_items/3578732)** · [d.o #3578732](https://www.drupal.org/node/3578732) · closed · amber.henry · 5 comments · category::task, marketing, priority::normal, state::accepted
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3578732">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3578732">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16507656. -->
   > > _Migrated from comment #2 posted 12 Mar 2026 at 12:48 UTC_
   > 
@@ -2051,14 +1883,7 @@ _Generated: 2026-04-24T20:49 GMT_
   > + Assigned: amberhenry
   > 
   > ```
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3578732">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.
 - **[LinkedIn posts promoting Industry Guides](https://git.drupalcode.org/project/ai_initiative/-/work_items/3578729)** · [d.o #3578729](https://www.drupal.org/node/3578729) · closed · amber.henry · 8 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3578729">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3578729">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16507272. -->
   > > _Migrated from comment #2 posted 12 Mar 2026 at 09:15 UTC_
   > 
@@ -2100,14 +1925,7 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > 
   > > Updated issue summary
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3578729">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.
 - **[Social Media Sprint April 13- 24 META](https://git.drupalcode.org/project/ai_initiative/-/work_items/3583834)** · [d.o #3583834](https://www.drupal.org/node/3583834) · opened · amber.henry · 2 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3583834">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3583834">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16548970. -->
   > > _Migrated from comment #2 posted 14 Apr 2026 at 00:15 UTC_
   > 
@@ -2117,10 +1935,6 @@ _Generated: 2026-04-24T20:49 GMT_
   >  + AI Marketing + AI Initiative Sprint + social media
   > ```
 - **[General Social Media April 13 - 24](https://git.drupalcode.org/project/ai_initiative/-/work_items/3583896)** · [d.o #3583896](https://www.drupal.org/node/3583896) · opened · amber.henry · 8 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3583896">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3583896">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16545183. -->
   > > _Migrated from comment #2 posted 10 Apr 2026 at 03:40 UTC_
   > 
@@ -2170,10 +1984,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > > Updated issue summary
 - **[NYC AI Summit Featured sessions LinkedIn Posts](https://git.drupalcode.org/project/ai_initiative/-/work_items/3582787)** · [d.o #3582787](https://www.drupal.org/node/3582787) · closed · amber.henry · 9 comments · AI Marketing, category::task, marketing, priority::normal
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3582787">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3582787">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16535994. -->
   > > _Migrated from comment #2 posted 02 Apr 2026 at 09:55 UTC_
   > 
@@ -2229,10 +2039,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > <p>All posts scheduled for this sprint. </p>
 - **[LinkedIn Images for promoting NYC speakers](https://git.drupalcode.org/project/ai_initiative/-/work_items/3582843)** · [d.o #3582843](https://www.drupal.org/node/3582843) · opened · slawrence10 · 11 comments · AI Marketing, category::task, marketing, priority::normal
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3582843">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3582843">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16536395. -->
   > > _Migrated from comment #2 posted 02 Apr 2026 at 13:26 UTC_
   > 
@@ -2324,15 +2130,7 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > I saw you did one for Christoph Breidert - thank you :smile:
 - **[AI Marketing Sprint #2: AI Summit NYC featured sessions](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585908)** · [d.o #3585908](https://www.drupal.org/node/3585908) · opened · amber.henry · 1 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3585908">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3585908">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
 - **[Marketing Sprint #1: LinkedIn posts promoting Industry Guides](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585924)** · [d.o #3585924](https://www.drupal.org/node/3585924) · closed · amber.henry · 4 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3585924">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3585924">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16558179. -->
   > > _Migrated from comment #2 posted 21 Apr 2026 at 06:41 UTC_
   > 
@@ -2346,14 +2144,7 @@ _Generated: 2026-04-24T20:49 GMT_
   >  Issue tags:
   >  + social media
   > ```
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3585924">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.
 - **[Marketing Sprint #1: AI Summit NYC featured sessions](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585907)** · [d.o #3585907](https://www.drupal.org/node/3585907) · closed · amber.henry · 4 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3585907">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3585907">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16558038. -->
   > > _Migrated from comment #2 posted 21 Apr 2026 at 04:18 UTC_
   > 
@@ -2364,14 +2155,7 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > 
   > > Updated issue summary
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai_initiative/-/work_items/3585907">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.
 - **[NYC summit promotion by speakers](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584074)** · [d.o #3584074](https://www.drupal.org/node/3584074) · opened · pdjohnson · 10 comments · AI Marketing, category::task, marketing, priority::normal
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584074">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584074">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16545685. -->
   > > _Migrated from comment #2 posted 10 Apr 2026 at 10:34 UTC_
   > 
@@ -2435,10 +2219,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > Digital Polygon: https://www.linkedin.com/posts/digital-polygon_drupal-generativeai-enterpriseit-activity-7448429623228641281-6WCM?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFBtHYBIr_W4CyHoUWAEBeZwSSL6dH-yfE
 - **[Blog article promoting Drupal AI Learners Club](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584083)** · [d.o #3584083](https://www.drupal.org/node/3584083) · opened · mfernanda.silva · 5 comments · AI Initiative, AI Marketing, category::task, marketing
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584083">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584083">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **mfernanda.silva** (2026-04-22): <!-- Migrated from comment CID #16546460. -->
   > > _Migrated from comment #2 posted 10 Apr 2026 at 21:26 UTC_
   > 
@@ -2466,10 +2246,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > Only other feedback is perhaps explaining who Angie is. Old timers like me will know but not newer people as she’s been “away” for a few years.
 - **[[Meta] Create AI Review Functionality / Create Technical Concept](https://git.drupalcode.org/project/ai_initiative/-/work_items/3575158)** · [d.o #3575158](https://www.drupal.org/node/3575158) · opened · breidert · 11 comments · AI Initiative, AI Initiative Sprint, AI Product Development, category::task
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3575158">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3575158">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **breidert** (2026-04-22): <!-- Migrated from comment CID #16511106. -->
   > > _Migrated from comment #2 posted 15 Mar 2026 at 12:36 UTC_
   > 
@@ -2808,9 +2584,9 @@ _Generated: 2026-04-24T20:49 GMT_
   > - How does the agent reliably map findings back to the specific fields that produced them?
   > **aidanfoster** (2026-04-23): ## Recommendation: advisory-only MVP, defer actioning to a later phase
   > 
-  > ![Screenshot_2026-04-23_at_5.45.43_PM](/uploads/9e030ee4fd00ad20873b32a518bf8bbc/Screenshot_2026-04-23_at_5.45.43_PM.png){width=818 height=600}
+  > <img src="https://git.drupalcode.org/-/project/183864/uploads/9e030ee4fd00ad20873b32a518bf8bbc/Screenshot_2026-04-23_at_5.45.43_PM.png" alt="Screenshot_2026-04-23_at_5.45.43_PM" width="818" height="600">
   > 
-  > ![Screenshot_2026-04-23_at_5.50.52_PM](/uploads/dfdcb1974146e0e40bdf67278e87206f/Screenshot_2026-04-23_at_5.50.52_PM.png){width=842 height=600}
+  > <img src="https://git.drupalcode.org/-/project/183864/uploads/dfdcb1974146e0e40bdf67278e87206f/Screenshot_2026-04-23_at_5.50.52_PM.png" alt="Screenshot_2026-04-23_at_5.50.52_PM" width="842" height="600">
   > 
   > Christoph proposes a copy-and-paste workflow in which editors manually apply suggestions. 
   > 
@@ -2826,7 +2602,7 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > Think [Editoria11y module](https://www.drupal.org/project/editoria11y). Lots of different Accessibility violations are possible; the feedback is "fix 3 things on this section." (Which could come from different evaluations)
   > 
-  > ![Screenshot_2026-04-23_at_6.14.10_PM](/uploads/0264232578d26f98a61e403cda585462/Screenshot_2026-04-23_at_6.14.10_PM.png){width=839 height=459}
+  > <img src="https://git.drupalcode.org/-/project/183864/uploads/0264232578d26f98a61e403cda585462/Screenshot_2026-04-23_at_6.14.10_PM.png" alt="Screenshot_2026-04-23_at_6.14.10_PM" width="839" height="459">
   > 
   > ### Why actioning needs more design work before it ships
   > 
@@ -2851,78 +2627,6 @@ _Generated: 2026-04-24T20:49 GMT_
 - **[CONTENT FRAMEWORK - Create clip identification framework](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586396)** · opened · domidc, jmsaunders · 0 comments · AI Initiative, AI Marketing
 - **[INFRASTRUCTURE - Submit podcast to Apple Podcasts, Spotify and other directories](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586395)** · opened · jmsaunders · 0 comments · AI Initiative, AI Marketing
 - **[INFRASTRUCTURE - Source and onboard a video editor for podcast production](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586394)** · opened · domidc · 0 comments · AI Initiative, AI Marketing
-- **[INFRASTRUCTURE - Set up podcast audio hosting and RSS feed](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586393)** · opened · jmsaunders · 0 comments · AI Initiative, AI Marketing
-- **[INFRASTRUCTURE - Brief Will and Dan on podcast intros and outros](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586392)** · opened · jmsaunders · 0 comments · AI Initiative, AI Marketing
-- **[GUEST PIPELINE - Identify and confirm episode 1 guest](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586391)** · opened · domidc, jmsaunders · 0 comments · AI Initiative, AI Marketing
-- **[FOUNDATION - Define sponsorship model](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586387)** · opened · jmsaunders · 0 comments · AI Initiative, AI Marketing
-- **[GUEST PIPELINE - Define guest outreach and management process](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586390)** · opened · jmsaunders · 0 comments · AI Initiative, AI Marketing
-- **[GUEST PIPELINE - Align with Rosie on case study workstream](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586389)** · opened · jmsaunders · 0 comments · AI Initiative, AI Marketing
-- **[FOUNDATION - Finalise podcast name](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586388)** · opened · domidc, jmsaunders · 0 comments · AI Initiative, AI Marketing
-- **[FOUNDATION - Confirm DA YouTube as primary video host and set up channel access](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586386)** · opened · jmsaunders · 0 comments · AI Initiative, AI Marketing
-- **[FOUNDATION - Brief Amber and Ryan on distribution strategy](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586385)** · opened · jmsaunders · 0 comments · AI Initiative, AI Marketing
-- **[FOUNDATION - Saunders and De Cooman Align on co-Host Responsibilities](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586384)** · opened · domidc, jmsaunders · 0 comments · AI Initiative, AI Marketing
-- **[DrupalCon Chicago 2026 AI contribution during contribution day](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584752)** · [d.o #3584752](https://www.drupal.org/node/3584752) · opened · kepol · 11 comments · category::task, events, priority::normal, state::accepted
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584752">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_initiative/-/work_items/3584752">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550075. -->
-  > > _Migrated from comment #2 posted 14 Apr 2026 at 18:04 UTC_
-  > 
-  > 
-  > <p>I contributed on contribution day on issues and discussions around:</p>
-  > <ul>
-  > <li>Context Control Center</li>
-  > <li>AI Best Practices</li>
-  > <li>UX and Accessibility</li>
-  > <li>Marketing</li>
-  > </ul>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550079. -->
-  > > _Migrated from comment #3 posted 14 Apr 2026 at 18:07 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550081. -->
-  > > _Migrated from comment #4 posted 14 Apr 2026 at 18:11 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **hestenet** (2026-04-22): <!-- Migrated from comment CID #16550114. -->
-  > > _Migrated from comment #5 posted 14 Apr 2026 at 18:47 UTC_
-  > 
-  > 
-  > <p>I definitely did :) </p>
-  > **webchick** (2026-04-22): <!-- Migrated from comment CID #16550192. -->
-  > > _Migrated from comment #6 posted 14 Apr 2026 at 19:55 UTC_
-  > 
-  > 
-  > <p>I had numerous discussions with key contributors and bootstrapped the <a href="https://www.drupal.org/project/ai_best_practices">https://www.drupal.org/project/ai_best_practices</a> project!</p>
-  > **emma-horrell** (2026-04-22): <!-- Migrated from comment CID #16550246. -->
-  > > _Migrated from comment #7 posted 14 Apr 2026 at 20:36 UTC_
-  > 
-  > 
-  > <p>Contributed to discussions about: </p>
-  > <ul>
-  > <li>UX of AI</li>
-  > <li>Context Control Center</li>
-  > <li>Ideas for helping people learn AI</li>
-  > </ul>
-  > **DrupalMattS** (2026-04-22): <!-- Migrated from comment CID #16550596. -->
-  > > _Migrated from comment #8 posted 15 Apr 2026 at 00:41 UTC_
-  > 
-  > 
-  > <p>I was there on contribution day. DrupalMattS company Trone</p>
-  > **jurgenhaas** (2026-04-22): <!-- Migrated from comment CID #16551836. -->
-  > > _Migrated from comment #9 posted 15 Apr 2026 at 15:23 UTC_
-  > 
-  > 
-  > <p>I had several discussions there about it.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16553501. -->
-  > > _Migrated from comment #10 posted 16 Apr 2026 at 16:39 UTC_
-  > 
-  > 
-  > <p>We are missing a lot of people &#128517; I know some of them so will just credit them manually if they don&rsquo;t comment here</p>
-  > **aidanfoster** (2026-04-23): I worked on AI Review, CCC, Canvas AI
 
 ### Merge Requests
 
@@ -2944,10 +2648,6 @@ _Generated: 2026-04-24T20:49 GMT_
 ### Issues
 
 - **[Rethrow exceptions from queue processor](https://git.drupalcode.org/project/ai/-/work_items/3571498)** · [d.o #3571498](https://www.drupal.org/node/3571498) · opened · unassigned · 4 comments · AI Initiative Sprint, AI Innovation, category::task, priority::normal
-  > **drupalbot** (2026-04-23): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai/-/work_items/3571498">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai/-/work_items/3571498">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **rakhimandhania** (2026-04-23): <!-- Migrated from comment CID #16556532. -->
   > > _Migrated from comment #2 posted 20 Apr 2026 at 01:33 UTC_
   > 
@@ -2956,19 +2656,12 @@ _Generated: 2026-04-24T20:49 GMT_
   >  Issue tags:
   >  + AI Innovation + AI Initiative Sprint
   > ```
-  > **drupalbot** (2026-04-24): >>> [!note] Fork created:
-  > <br><!-- Drupal.org comment -->
-  > A [fork](https://git.drupalcode.org/issue/ai-3571498) was created for this issue. Go to the <a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai/-/work_items/3571498">fork management</a> page for this issue to find the git commands to checkout a branch on this fork. React to this message with :heavy_plus_sign: to gain access.
   > **scottfalconer** (2026-04-24): I don't think I can edit the issue with the move to gitlab, but here's what I'd recommend
   > 
   > **Problem**: queue worker catches exceptions and marks the entity failed, butdoes not rethrow, so queue runners/custom processors cannot observe orchandle the failure.
   > **Expected behavior**: preserve the failed automator status and rethrow the original exception.
   > **Proposed resolution**: keep existing failure persistence, restore the save toggle in finally, then rethrow the caught exception.
 - **[Add Extractive Question Answering operation type](https://git.drupalcode.org/project/ai/-/work_items/3584371)** · [d.o #3584371](https://www.drupal.org/node/3584371) · opened · joshua1234511 · 8 comments · AI Initiative Sprint, AI Product Development, aiCoreModule, category::feature
-  > **drupalbot** (2026-04-23): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai/-/work_items/3584371">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai/-/work_items/3584371">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **Ahmad-Khader** (2026-04-23): <!-- Migrated from comment CID #16547345. -->
   > > _Migrated from comment #3 posted 13 Apr 2026 at 02:58 UTC_
   > 
@@ -3029,10 +2722,6 @@ _Generated: 2026-04-24T20:49 GMT_
   > <p>Done, please check.<br>
   > The remaining aren't related</p>
 - **[Create AI assistant API session only after the first message](https://git.drupalcode.org/project/ai/-/work_items/3554797)** · [d.o #3554797](https://www.drupal.org/node/3554797) · opened · unassigned · 8 comments · AI Initiative Sprint, AI Innovation, aiAssistantsApi, category::bug
-  > **drupalbot** (2026-04-23): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai/-/work_items/3554797">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai/-/work_items/3554797">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **omarlopesino** (2026-04-23): <!-- Migrated from comment CID #16323535. -->
   > > _Migrated from comment #3 posted 28 Oct 2025 at 14:21 UTC_
   > 
@@ -3106,19 +2795,8 @@ _Generated: 2026-04-24T20:49 GMT_
   > (ai was used to test and validate the above)
   > **scottfalconer** (2026-04-24): I don't seem to have the permission to change this from state:rtbc to state::needsReview, but !978 has been updated to address the session_one_thread persistence regression
 - **[Fix ai.provider_config config schema to actually follow the structure that form element returns](https://git.drupalcode.org/project/ai/-/work_items/3586384)** · opened · unassigned · 3 comments · AI Initiative Sprint, AI Product Development, state::rtbc, v1.3.x-dev
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai/-/work_items/3586384">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai/-/work_items/3586384">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
-  > **drupalbot** (2026-04-24): >>> [!note] Fork created:
-  > <br><!-- Drupal.org comment -->
-  > A [fork](https://git.drupalcode.org/issue/ai-3586384) was created for this issue. Go to the <a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai/-/work_items/3586384">fork management</a> page for this issue to find the git commands to checkout a branch on this fork. React to this message with :heavy_plus_sign: to gain access.
   > **Marcus_Johansson** (2026-04-24): Just added one comment, but you could merge it as it is as well
 - **[Add Guardrails support to AI Automators](https://git.drupalcode.org/project/ai/-/work_items/3585690)** · [d.o #3585690](https://www.drupal.org/node/3585690) · opened · unassigned · 6 comments · AI Initiative Sprint, AI Product Development, category::task, priority::normal
-  > **drupalbot** (2026-04-23): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai/-/work_items/3585690">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai/-/work_items/3585690">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **arianraeesi** (2026-04-23): <!-- Migrated from comment CID #16556629. -->
   > > _Migrated from comment #2 posted 20 Apr 2026 at 07:03 UTC_
   > 
@@ -3153,15 +2831,7 @@ _Generated: 2026-04-24T20:49 GMT_
   > **AkhilBabu** (2026-04-24): Assigning to myself for review
   > **AkhilBabu** (2026-04-24): I reviewed the code and added 2 suggestions to the MR. Please review
 - **[AgentRunner.php needs to set configuration](https://git.drupalcode.org/project/ai/-/work_items/3586385)** · opened · valthebald · 1 comments
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai/-/work_items/3586385">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai/-/work_items/3586385">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
 - **[Special characters or trailing spaces are HTML-encoded in AI CKEditor selected text preview](https://git.drupalcode.org/project/ai/-/work_items/3540608)** · [d.o #3540608](https://www.drupal.org/node/3540608) · closed · unassigned · 15 comments · aiCkeditor, category::feature, priority::normal, v1.4.x-dev
-  > **drupalbot** (2026-04-23): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai/-/work_items/3540608">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai/-/work_items/3540608">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **sijumpk** (2026-04-23): <!-- Migrated from comment CID #16222702. -->
   > > _Migrated from comment #2 posted 10 Aug 2025 at 05:59 UTC_
   > 
@@ -3274,14 +2944,7 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > 
   > <p>Thanks</p>
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai/-/work_items/3540608">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.
 - **[Add global guardrails setting applied to every AI request](https://git.drupalcode.org/project/ai/-/work_items/3584851)** · [d.o #3584851](https://www.drupal.org/node/3584851) · closed · unassigned · 16 comments · AI Initiative Sprint, AI Product Development, aiCoreModule, category::feature
-  > **drupalbot** (2026-04-23): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai/-/work_items/3584851">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai/-/work_items/3584851">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16551779. -->
   > > _Migrated from comment #2 posted 15 Apr 2026 at 14:59 UTC_
   > 
@@ -3434,15 +3097,8 @@ _Generated: 2026-04-24T20:49 GMT_
   > 
   > <p>Back in review - added the update hook and test from #1.</p>
   > **Ahmad-Khader** (2026-04-23): Looks great, Reordering and delete hook works great
-  > **drupalbot** (2026-04-24): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https%3A//git.drupalcode.org/project/ai/-/work_items/3584851">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.
   > **Marcus_Johansson** (2026-04-24): Thank you, getting merged.
 - **[RestrictToTopic guardrail: add semantic topic matching mode](https://git.drupalcode.org/project/ai/-/work_items/3584977)** · [d.o #3584977](https://www.drupal.org/node/3584977) · opened · unassigned · 4 comments · AI Initiative Sprint, AI Product Development, Needs manual testing, aiCoreModule
-  > **drupalbot** (2026-04-23): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai/-/work_items/3584977">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai/-/work_items/3584977">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **arianraeesi** (2026-04-23): <!-- Migrated from comment CID #16556628. -->
   > > _Migrated from comment #2 posted 20 Apr 2026 at 07:03 UTC_
   > 
@@ -3473,16 +3129,10 @@ _Generated: 2026-04-24T20:49 GMT_
   > Matching mode: Semantic
   > Similarity threshold: 0.75
 - **[MDXEditor Error: Unrecognized extension value in extension set ([object Object])](https://git.drupalcode.org/project/ai/-/work_items/3584676)** · [d.o #3584676](https://www.drupal.org/node/3584676) · opened · unassigned · 2 comments · category::bug, priority::normal, state::accepted, toBeTriaged
-  > **drupalbot** (2026-04-23): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/ai/-/work_items/3584676">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai/-/work_items/3584676">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
-  > **drupalbot** (2026-04-24): >>> [!note] Fork created:
-  > <br><!-- Drupal.org comment -->
-  > A [fork](https://git.drupalcode.org/issue/ai-3584676) was created for this issue. Go to the <a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/ai/-/work_items/3584676">fork management</a> page for this issue to find the git commands to checkout a branch on this fork. React to this message with :heavy_plus_sign: to gain access.
 
 ### Merge Requests
 
+- **[feat(ai_automators): hide field_connections until a workflow is selected](https://git.drupalcode.org/project/ai/-/merge_requests/1531)** · cadence96 · opened · `3586382-improve-ux-automators-tool-add` · 178 diff lines
 - **[Adjust config schema of ai.provider_config form element](https://git.drupalcode.org/project/ai/-/merge_requests/1532)** · a.dmitriiev · opened · `3586384-fix-aiprovider-confi` · 363 diff lines
 - **[Issue #3571498: Rethrow queue worker exceptions](https://git.drupalcode.org/project/ai/-/merge_requests/1535)** · scottfalconer · opened · `3571498-rethrow-queue-exceptions` · 182 diff lines
 - **[Draft: Resolve #3577050 "Generalize behaviour of"](https://git.drupalcode.org/project/ai/-/merge_requests/1283)** · a.dmitriiev · opened · `3577050-generalize-behaviour-of` · 3189 diff lines
@@ -3494,7 +3144,6 @@ _Generated: 2026-04-24T20:49 GMT_
 - **[correct HTML encoding in selected text preview](https://git.drupalcode.org/project/ai/-/merge_requests/1264)** · neerajkumar007 · closed · `ai-3540608-decode-fixes` · 45 diff lines
 - **[decoding html while showing the selected text preview](https://git.drupalcode.org/project/ai/-/merge_requests/821)** · sijumpk · closed · `3540608-special-characters-or` · 62210 diff lines
 - **[Resolve #3584851 "Add global guardrails"](https://git.drupalcode.org/project/ai/-/merge_requests/1495)** · Marcus_Johansson · merged 2026-04-24 · `3584851-add-global-guardrails` · 1005 diff lines
-- **[feat(ai_automators): hide field_connections until a workflow is selected](https://git.drupalcode.org/project/ai/-/merge_requests/1531)** · cadence96 · opened · `3586382-improve-ux-automators-tool-add` · 178 diff lines
 
 ### Commits
 
@@ -3507,8 +3156,9 @@ _Generated: 2026-04-24T20:49 GMT_
 
 ### Merge Requests
 
+- **[Draft: Resolve #3586589 "No popover staging (ci)"](https://git.drupalcode.org/project/canvas/-/merge_requests/981)** · bnjmnm · opened · `3586589-no-popover-staging-ci` · 2367 diff lines
+- **[feat: #3552818 Contrib compatibility: ComponentPluginManager decorator should...](https://git.drupalcode.org/project/canvas/-/merge_requests/961)** · florenttorregrosa · opened · `3552818-contrib-compatibility-componentpluginmanager` · 330 diff lines
 - **[Fix error when making required formatted text field empty](https://git.drupalcode.org/project/canvas/-/merge_requests/982)** · lauriii · opened · `3551867-error-when-making` · 275 diff lines
-- **[Draft: Resolve #3586589 "No popover staging (ci)"](https://git.drupalcode.org/project/canvas/-/merge_requests/981)** · bnjmnm · opened · `3586589-no-popover-staging-ci` · 2357 diff lines
 - **[Draft: #3586589 changes propagate immediately](https://git.drupalcode.org/project/canvas/-/merge_requests/973)** · bnjmnm · opened · `3586589-no-popover-staging` · 2315 diff lines
 - **[Draft: Resolve #3586613 "Add content entity reference well known"](https://git.drupalcode.org/project/canvas/-/merge_requests/980)** · longwave · opened · `3586613-add-content-entity-reference-well-known` · 378 diff lines
 - **[Keep contextual panel width static when left sidebar is toggled](https://git.drupalcode.org/project/canvas/-/merge_requests/638)** · lauriii · merged 2026-04-24 · `3574994-static-width` · 575 diff lines
@@ -3519,7 +3169,6 @@ _Generated: 2026-04-24T20:49 GMT_
 - **[Draft: PoC Playwright snapshot-based](https://git.drupalcode.org/project/canvas/-/merge_requests/974)** · isholgueras · opened · `3586631-poc-playwright-snapshots` · 3569 diff lines
 - **[Issue #3586660: Add additional caching to GitLab CI pipelines](https://git.drupalcode.org/project/canvas/-/merge_requests/976)** · justafish · opened · `3586660-add-additional-caching` · 310 diff lines
 - **[Fix iframe height not updating on dynamic content changes](https://git.drupalcode.org/project/canvas/-/merge_requests/971)** · lauriii · opened · `3586577-fix-iframe-height` · 486 diff lines
-- **[feat: #3552818 Contrib compatibility: ComponentPluginManager decorator should...](https://git.drupalcode.org/project/canvas/-/merge_requests/961)** · florenttorregrosa · opened · `3552818-contrib-compatibility-componentpluginmanager` · 330 diff lines
 - **[chore(CLI Tool): #3586726 Allow omitted props in Workbench page specs and component mocks](https://git.drupalcode.org/project/canvas/-/merge_requests/979)** · balintbrews · merged 2026-04-24 · `3586726-allow-omitted-props` · 525 diff lines
 - **[Draft: #3516754 document current behavior for empty required array props](https://git.drupalcode.org/project/canvas/-/merge_requests/923)** · tedbow · opened · `3516754-test-coverage` · 854 diff lines
 - **[Draft: Resolve #3583684 "Symmetric content inputs"](https://git.drupalcode.org/project/canvas/-/merge_requests/882)** · tedbow · opened · `3583684-symmetric-content-inputs` · 953 diff lines
@@ -3532,8 +3181,6 @@ _Generated: 2026-04-24T20:49 GMT_
 - **[Remove grey border appearing around Canvas AI chat panel](https://git.drupalcode.org/project/canvas/-/merge_requests/963)** · lauriii · opened · `3586351-grey-border-appearing` · 27 diff lines
 - **[Resolves #3584392: Unexpected Auto Row Creation and Weight Display in Multi-Cardinality Fields (UI)](https://git.drupalcode.org/project/canvas/-/merge_requests/902)** · shubham.prakash · opened · `3584392-unexpected-auto-row` · 1003 diff lines
 - **[Fix #3586137 pattern test stability](https://git.drupalcode.org/project/canvas/-/merge_requests/967)** · bnjmnm · merged 2026-04-23 · `3586137-fix-pattern.cy.js-flakiness` · 31 diff lines
-- **[Resolve #3578635 "Simplify args"](https://git.drupalcode.org/project/canvas/-/merge_requests/774)** · bnjmnm · merged 2026-04-23 · `3578635-simplify-args` · 687 diff lines
-- **[Draft:  #3583906 "Refreshed entity forms + multivalue  flaky"](https://git.drupalcode.org/project/canvas/-/merge_requests/897)** · bnjmnm · opened · `3583906-refreshed-multivalue-entity-flaky` · 454 diff lines
 
 ### Commits
 
@@ -3544,7 +3191,6 @@ _Generated: 2026-04-24T20:49 GMT_
 - [`36e0150d`](https://git.drupalcode.org/project/canvas/-/commit/36e0150d6510552a5645000b9b3dc26a08015485) feat: #3586693 Consolidate module installs in Playwright tests — Sally Young (2026-04-24)
 - [`6ec9c65a`](https://git.drupalcode.org/project/canvas/-/commit/6ec9c65a3bad9e8c2bf9ce6e91e10307528580fc) chore(Project management): #3586535 Update PHPCS config to match Drupal 11 — selectively comply with `Drupal.Arrays.Array.LongLineDeclaration` — Christian López Espínola (2026-04-24)
 - [`b15d389f`](https://git.drupalcode.org/project/canvas/-/commit/b15d389f981d51b5663875adaf329af738da25ef) fix: #3586137 Fix pattern.cy.js flakiness — Ben Mullins (2026-04-23)
-- [`379a99b0`](https://git.drupalcode.org/project/canvas/-/commit/379a99b09a3337271022d75c1dd1fd604a25b27c) refactor(Redux-integrated field widgets): #3578635 Shift some linker and component patch responsibilities — Ben Mullins (2026-04-23)
 
 ---
 
@@ -3561,10 +3207,6 @@ _Generated: 2026-04-24T20:49 GMT_
 ### Issues
 
 - **[Allow controlling Tool return format](https://git.drupalcode.org/project/tool/-/work_items/3582933)** · [d.o #3582933](https://www.drupal.org/node/3582933) · opened · unassigned · 4 comments · AI Initiative Sprint, AI Innovation, category::feature, code
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/tool/-/work_items/3582933">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/tool/-/work_items/3582933">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **b_sharpe** (2026-04-22): <!-- Migrated from comment CID #16537203. -->
   > > _Migrated from comment #2 posted 02 Apr 2026 at 23:12 UTC_
   > 
@@ -3578,23 +3220,9 @@ _Generated: 2026-04-24T20:49 GMT_
   >  Issue tags:
   >  + AI Innovation + AI Initiative Sprint
   > ```
-  > **drupalbot** (2026-04-24): >>> [!note] Fork created:
-  > <br><!-- Drupal.org comment -->
-  > A [fork](https://git.drupalcode.org/issue/tool-3582933) was created for this issue. Go to the <a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/tool/-/work_items/3582933">fork management</a> page for this issue to find the git commands to checkout a branch on this fork. React to this message with :heavy_plus_sign: to gain access.
 - **[Fix LogMessage tool](https://git.drupalcode.org/project/tool/-/work_items/3554285)** · [d.o #3554285](https://www.drupal.org/node/3554285) · opened · unassigned · 2 comments · category::bug, code, priority::normal, state::accepted
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/tool/-/work_items/3554285">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/tool/-/work_items/3554285">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
-  > **drupalbot** (2026-04-24): >>> [!note] Fork created:
-  > <br><!-- Drupal.org comment -->
-  > A [fork](https://git.drupalcode.org/issue/tool-3554285) was created for this issue. Go to the <a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https%3A//git.drupalcode.org/project/tool/-/work_items/3554285">fork management</a> page for this issue to find the git commands to checkout a branch on this fork. React to this message with :heavy_plus_sign: to gain access.
 - **[[PoC] Allow Tool API tools to be called directly from Symfony's tool caller.](https://git.drupalcode.org/project/tool/-/work_items/3582934)** · opened · michaellander · 0 comments
 - **[[AI Connector] - Context Data missing after execute](https://git.drupalcode.org/project/tool/-/work_items/3576586)** · [d.o #3576586](https://www.drupal.org/node/3576586) · opened · unassigned · 4 comments · category::bug, code, priority::normal, state::needsReview
-  > **drupalbot** (2026-04-22): >>> [!note] Issue tools:
-  > <br><!-- Drupal.org comment -->
-  > <b><a href="https://new.drupal.org/contribution-record?source_link=https://git.drupalcode.org/project/tool/-/work_items/3576586">Attribute your contribution</a></b> to help maintainers grant credit. You can edit your attribution at any time.<br><br>
-  > <b><a href="https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/tool/-/work_items/3576586">Manage forks, branches, merge requests, and access</a></b> from the issue management page. You will also find the git commands for contributing to this issue.
   > **b_sharpe** (2026-04-22): <!-- Migrated from comment CID #16492289. -->
   > > _Migrated from comment #3 posted 02 Mar 2026 at 16:29 UTC_
   > 
@@ -3629,9 +3257,7 @@ _Generated: 2026-04-24T20:49 GMT_
 
 ### Merge Requests
 
-- **[Resolve "Allow controlling Tool return format"](https://git.drupalcode.org/project/tool/-/merge_requests/85)** · scottfalconer · opened · `3582933-allow-controlling-tool-return-format` · 330 diff lines
 - **[Issue #3554285: Fix LogMessage tool](https://git.drupalcode.org/project/tool/-/merge_requests/84)** · scottfalconer · opened · `3554285-fix-logmessage-tool` · 350 diff lines
-- **[Issue #3576586 by b_sharpe: Set parent context data as well as input.](https://git.drupalcode.org/project/tool/-/merge_requests/76)** · b_sharpe · opened · `3576586-ai-connector--` · 13 diff lines
 
 ---
 
