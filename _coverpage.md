@@ -1,0 +1,1 @@
+# Drupal AI Activity Newsletter
