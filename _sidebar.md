@@ -1,2 +1,2 @@
-* [CEO version](ceo.md)
-* [Developer version](dev.md)
+* [CEO version](1d-summary-ceo.md)
+* [Developer version](1d-summary-dev.md)
