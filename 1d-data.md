@@ -1,18 +1,14 @@
 # Drupal AI Activity Data — 24h
 
-_Period: 2026-04-23 to 2026-04-24_
-_Generated: 2026-04-24T21:56 GMT_
+_Period: 2026-04-25 to 2026-04-26_
+_Generated: 2026-04-26 19:45 GMT_
 
 ## Modules
 
-- [Context Control Center (CCC)](#context-control-center-ccc-) — 5 issues, 0 MRs, 0 commits
-- [AI Dashboard](#ai-dashboard) — 1 issues, 1 MRs, 1 commits
-- [Drupal AI Initiative](#drupal-ai-initiative) — 72 issues, 3 MRs, 4 commits
-- [AI (Artificial Intelligence)](#ai-artificial-intelligence-) — 10 issues, 12 MRs, 2 commits
-- [Drupal Canvas](#drupal-canvas) — 0 issues, 25 MRs, 7 commits
-- [AWS Bedrock Provider](#aws-bedrock-provider) — 0 issues, 1 MRs, 0 commits
-- [Tool API](#tool-api) — 4 issues, 1 MRs, 0 commits
-- [Postgres VDB Provider](#postgres-vdb-provider) — 0 issues, 1 MRs, 0 commits
+- [Context Control Center (CCC)](#context-control-center-ccc-) — 9 issues, 4 MRs, 1 commits
+- [Drupal AI Initiative](#drupal-ai-initiative) — 24 issues, 5 MRs, 4 commits
+- [AI (Artificial Intelligence)](#ai-artificial-intelligence-) — 1 issues, 1 MRs, 0 commits
+- [Drupal Canvas](#drupal-canvas) — 0 issues, 7 MRs, 2 commits
 
 ---
 
@@ -20,49 +16,7 @@ _Generated: 2026-04-24T21:56 GMT_
 
 ### Issues
 
-- **[Design for the Context Item single entity view](https://git.drupalcode.org/project/ai_context/-/work_items/3586141)** · opened · aidanfoster · 4 comments · AI Context Management, AI Innovation, AI UX, Needs UX review
-  > **aidanfoster** (2026-04-24): ## Mockup of the "MD/Manual" Context Item 
-  > 
-  > <img src="https://git.drupalcode.org/-/project/191993/uploads/aa72e59dbfd9d3e1880cd993c549a359/Screenshot_2026-04-24_at_17-23-07_Context_item_Single_View___Abbreviations_Spelling_Dates___Formatting.png" alt="Screenshot_2026-04-24_at_17-23-07_Context_item_Single_View___Abbreviations_Spelling_Dates___Formatting" width="293" height="600">
-  > 
-  > 
-  > ## Mockup of the "Google Analytics Connector" (Remote or external context) Context Item 
-  > 
-  > <img src="https://git.drupalcode.org/-/project/191993/uploads/6855ac44dbda02df0ef6568a7a43a697/Screenshot_2026-04-24_at_17-23-55_Context_item_Google_Analytics_Connector___Single_View.png" alt="Screenshot_2026-04-24_at_17-23-55_Context_item_Google_Analytics_Connector___Single_View" width="292" height="600">
-  > **aidanfoster** (2026-04-24): Here's a video overview. Files is too big had to share zoom recording link.
-  > 
-  > https://us02web.zoom.us/clips/share/yGZWDFAyQ4yuu9GNlq-5-w
-  > **kepol** (2026-04-24): This is great stuff 🙏🙏🙏
-  > 
-  > Let’s have this one be the design issue and we have a follow up for implementation.
-  > 
-  > I’d argue we should split this into two and discuss the connected context separately
-- **[Improve Context Items List View](https://git.drupalcode.org/project/ai_context/-/work_items/3586140)** · opened · aidanfoster · 5 comments · AI Context Management, AI UX, Needs UX review, state::needsReview
-  > **aidanfoster** (2026-04-24): Here's a mockup
-  > <img src="https://git.drupalcode.org/-/project/191993/uploads/5ea3d9547de199c082d39f793ef12fe5/Screenshot_2026-04-24_at_9.22.15_AM.png" alt="Screenshot_2026-04-24_at_9.22.15_AM" width="792" height="600">
-  > **aidanfoster** (2026-04-24): Video with comments + Interaction States
-  > 
-  > <img src="https://git.drupalcode.org/-/project/191993/uploads/a040dfaf5c30bfd2dc64a8b52ea53a30/GMT20260424-132404_Clip_CCC_-_Context_Items_v2_-_walkthough.mp4" alt="GMT20260424-132404_Clip_CCC_-_Context_Items_v2_-_walkthough" width="900" height="507">
-  > **aidanfoster** (2026-04-24): @kepol @emma-horrell - feedback requested
-  > 
-  > Changes:
-  > * Add Button Label
-  > * Added search filters
-  > * Table columns: Labels + Sort
-  > * Type Icons + Tooltip
-  > * Label added icon + Tooltip
-  > * Use cases gets "short" label w/ Tooltip and "long label"
-  > * Target renamed to Scope
-  > **kepol** (2026-04-24): Very cool.
-  > 
-  > Can you review it at Mondays UX call?
-  > 
-  > My main feedback 
-  > 
-  > 1. Normal content editors wont know what a token is
-  > 2. We still need to know what the moderation state is which was a separate issue but should just be solved here.
-  > 3. it would be interesting to see what scope looks like when there are several
-- **[Full lightweight UX review of CCC in prep for rc1](https://git.drupalcode.org/project/ai_context/-/work_items/3573715)** · [d.o #3573715](https://www.drupal.org/node/3573715) · opened · aidanfoster · 21 comments · AI Context Management, AI Innovation, Needs UX review, category::task
+- **[Full lightweight UX review of CCC in prep for rc1](https://git.drupalcode.org/project/ai_context/-/work_items/3573715)** · [d.o #3573715](https://www.drupal.org/node/3573715) · opened · aidanfoster · 23 comments · AI Context Management, AI Initiative Sprint, AI Innovation, blocker::stable
   > **kepol** (2026-04-22): <!-- Migrated from comment CID #16479866. -->
   > > _Migrated from comment #2 posted 21 Feb 2026 at 00:29 UTC_
   > 
@@ -360,49 +314,21 @@ _Generated: 2026-04-24T21:56 GMT_
   > I haven’t fully reviewed this but can this weekend.
   > **aidanfoster** (2026-04-23): Some are smaller, simple things. Some are larger. @kepol should I make child issues for those things that don't really need discussion?
   > **kepol** (2026-04-23): That would be great, yes 🙌
-- **[Add regular CCC contributors as GitLab reporter members](https://git.drupalcode.org/project/ai_context/-/work_items/3586139)** · opened · kepol · 2 comments · AI Context Management, AI Initiative Sprint, AI Innovation, category::bug
-  > **kepol** (2026-04-23): I added a ton of people (see spreadsheet). Tim L is creating a list of all contributors.
-- **[Local tasks for scopes should be dynamically generated](https://git.drupalcode.org/project/ai_context/-/work_items/3585041)** · [d.o #3585041](https://www.drupal.org/node/3585041) · opened · kepol · 8 comments · AI Context Management, AI Initiative Sprint, AI Innovation, category::feature
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16557555. -->
-  > > _Migrated from comment #2 posted 20 Apr 2026 at 18:29 UTC_
+  > **emma-horrell** (2026-04-26): On naming, I spent some time testing out context item and context source – it feels like there is cross over. 
+  > Would we call a set of brand guidelines an item or a source? And are we thinking that a content source is where context items come from (so, for example the source is the guidelines document and an item is a single guideline?) 
+  > I like Context Connector – trying this out it works to say things like ‘To adapt my context based on interaction patterns I connect my GA4 context’ 
+  > I also think Conditional Context works – you use sub-context item A only in certain conditions – so for example ”Use the seasonal campaign text for the holiday promos”
+  > **kepol** (2026-04-26): I was thinking source = PDF, MD file, etc.
+- **[Add Site Architecture context source for Drupal site behavior contracts](https://git.drupalcode.org/project/ai_context/-/work_items/3586150)** · opened · unassigned · 1 comments
+- **[Make subcontext feature optional](https://git.drupalcode.org/project/ai_context/-/work_items/3586120)** · [d.o #3586120](https://www.drupal.org/node/3586120) · closed · unassigned · 18 comments · AI Context Management, AI Initiative Sprint, AI Innovation, category::feature
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559618. -->
+  > > _Migrated from comment #2 posted 21 Apr 2026 at 21:05 UTC_
   > 
   > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: kristen pol
-  > 
-  > ```
-  > 
-  > <p>I recall running into some issue with this early on and went with this to move forward.</p>
-  > <p>I'll get this one into the sprint.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559436. -->
-  > > _Migrated from comment #3 posted 21 Apr 2026 at 19:24 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + AI Innovation + AI Initiative Sprint + AI Context Management
-  > ```
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559437. -->
-  > > _Migrated from comment #4 posted 21 Apr 2026 at 19:25 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: kristen pol
-  > + Assigned: Unassigned
-  > 
-  > ```
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559719. -->
-  > > _Migrated from comment #5 posted 21 Apr 2026 at 23:04 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: kristen pol
-  > 
-  > ```
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559745. -->
-  > > _Migrated from comment #7 posted 21 Apr 2026 at 23:39 UTC_
+  > > Updated issue summary
+  > > **File** [optional_subcontext_feature_851f2eb2.plan_.md](https://www.drupal.org/files/issues/2026-04-21/optional_subcontext_feature_851f2eb2.plan_.md)
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559636. -->
+  > > _Migrated from comment #4 posted 21 Apr 2026 at 21:32 UTC_
   > 
   > 
   > > Updated issue summary
@@ -413,19 +339,594 @@ _Generated: 2026-04-24T21:56 GMT_
   > + Status:        Needs review
   > 
   > ```
-  > **mglaman** (2026-04-22): <!-- Migrated from comment CID #16559769. -->
-  > > _Migrated from comment #8 posted 22 Apr 2026 at 00:25 UTC_
+  > 
+  > <p>Not that many code changes but they are sprinkled all over. I've reviewed the generated code and made some tweaks.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559751. -->
+  > > _Migrated from comment #5 posted 21 Apr 2026 at 23:49 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  + AI Innovation + AI Context Management + AI Initiative Sprint
+  > ```
+  > **scottfalconer** (2026-04-25): A few issues discovered in my testing:
+  > 
+  > - 3 kernel errors in AiContextSubcontextDisabledTest: test setup installs ai_context config, then manually creates ai_context_tags, causing taxonomy_vocabulary ... already exists at tests/src/Kernel/AiContextSubcontextDisabledTest.php:85.
+  > - 2 functional failures in AiContextSubcontextDisabledUiTest: tests request /admin/ai/context/items/add/default, but the actual route is /admin/ai/context/items/add, so those assertions hit 404.
+  > - AiContextSelector::resolveSubcontextItems() treats missing subcontext_enabled as disabled, while other code defaults missing config to TRUE. That is inconsistent and could matter for existing installs or update-hook edge cases.
+  > **kepol** (2026-04-25): Thanks, Scott. Are you going to work on it? If not, please unassign.
+  > **kepol** (2026-04-25): Ah, you made changes so maybe these are covered.
+  > **kepol** (2026-04-25): Review from opus 4.6:
+  > 
+  > Yes, Scott's patch addresses all three of his feedback items. Here's the mapping:
+  > 
+  > ---
+  > 
+  > **Feedback 1 -- "3 kernel errors: `taxonomy_vocabulary ... already exists`"**
+  > 
+  > The patch removes the manual `Vocabulary::create()` call and its `use` import from `AiContextSubcontextDisabledTest`. The `setUp()` already calls `$this->installConfig(['ai_context'])`, which installs `taxonomy.vocabulary.ai_context_tags.yml` -- so the manual creation was a duplicate. Fixed.
+  > 
+  > ```7:9:/Users/kristenpol/Desktop/scott.patch
+  > index cab2a74..cdd5a0d 100644
+  > --- a/src/Service/AiContextSelector.php
+  > +++ b/src/Service/AiContextSelector.php
+  > ```
+  > 
+  > Specifically these removals in the kernel test:
+  > 
+  > ```49:65:/Users/kristenpol/Desktop/scott.patch
+  > -use Drupal\taxonomy\Entity\Vocabulary;
+  > // ...
+  > -    Vocabulary::create([
+  > -      'vid' => 'ai_context_tags',
+  > -      'name' => 'AI Context Tags',
+  > -    ])->save();
+  > ```
+  > 
+  > ---
+  > 
+  > **Feedback 2 -- "2 functional failures: wrong route `/admin/ai/context/items/add/default` should be `/admin/ai/context/items/add`"**
+  > 
+  > The patch fixes both URLs in `AiContextSubcontextDisabledUiTest`:
+  > 
+  > ```31:32:/Users/kristenpol/Desktop/scott.patch
+  > -    $this->drupalGet('/admin/ai/context/items/add/default');
+  > +    $this->drupalGet('/admin/ai/context/items/add');
+  > ```
+  > 
+  > ```40:41:/Users/kristenpol/Desktop/scott.patch
+  > -    $this->drupalGet('/admin/ai/context/items/add/default', [
+  > +    $this->drupalGet('/admin/ai/context/items/add', [
+  > ```
+  > 
+  > ---
+  > 
+  > **Feedback 3 -- "Inconsistency: `resolveSubcontextItems()` treats missing `subcontext_enabled` as disabled while other code defaults to TRUE"**
+  > 
+  > The patch changes `resolveSubcontextItems()` to default to `TRUE` when the config key is absent:
+  > 
+  > ```15:19:/Users/kristenpol/Desktop/scott.patch
+  > -    if (!$this->configFactory->get('ai_context.settings')->get('subcontext_enabled')) {
+  > +    $subcontext_enabled = (bool) ($this->configFactory
+  > +      ->get('ai_context.settings')
+  > +      ->get('subcontext_enabled') ?? TRUE);
+  > +    if (!$subcontext_enabled) {
+  > ```
+  > 
+  > And adds a dedicated test (`testSelectorDefaultsToSubcontextEnabledWhenConfigMissing`) that clears the config key and asserts the child is still included -- proving the default-to-enabled behavior.
+  > 
+  > ---
+  > 
+  > **One bonus change**: the patch also removes `selectionMode: AiContextRequest::SELECTION_MODE_MATCH_ALL` from the first kernel test's `AiContextRequest` constructor call. This wasn't called out in the feedback text, but is likely needed because that parameter was removed or is no longer relevant in the current API. It's a minor cleanup that keeps the tests consistent with the current `AiContextRequest` constructor signature.
+  > 
+  > **Bottom line**: all three feedback items are fully addressed by the patch.
+  > **kepol** (2026-04-25): Having opus 4.6 review itself :laughing: 
+  > 
+  > [subcontext-toggle-mr-review.md](https://git.drupalcode.org/-/project/191993/uploads/98f5eb72cd7e6d850467f5122c11221e/subcontext-toggle-mr-review.md)
+  > 
+  > ## Summary Table
+  > 
+  > | # | Issue | Severity |
+  > |---|-------|----------|
+  > | 1 | Static `\Drupal::config()` in entity preSave | Low (pre-existing pattern) |
+  > | 2 | `buildSelectedItemsData` leaks stale parent metadata | Minor |
+  > | 3 | No bulk cleanup or admin warning when toggling off | UX gap |
+  > | 4 | Repeated config read pattern across 10+ sites | DX/maintainability |
+  > | 5 | Silent `?? TRUE` fallback masks config corruption | Design trade-off |
+  > | 6 | Parent/subcontext_type fields may still render when disabled | Potential bug — needs verification |
+  > | 7 | Inconsistent `$this->config()` vs `$this->configFactory->get()` | Nitpick |
+  > 
+  > --
+  > 
+  > I asked which are actually related to this MR:
+  > 
+  > --
+  > 
+  > All seven are related to the MR, but in different ways. Here's the breakdown:
+  > 
+  > **Directly about new code the MR added:**
+  > 
+  > - **#1** — The `\Drupal::config()` line in `preSave()` is a new line added by the MR (though it follows a pre-existing pattern in the entity).
+  > - **#4** — The repeated `(bool) ($this->configFactory->get('ai_context.settings')->get('subcontext_enabled') ?? TRUE)` pattern was introduced across 10+ sites by the MR.
+  > - **#5** — The `?? TRUE` fallback convention was established by the MR in every call site.
+  > - **#6** — The gating logic in `AiContextItemForm` is new MR code that may not fully hide the base field widgets.
+  > - **#7** — The inconsistency between `$this->config()` and `$this->configFactory->get()` was introduced by the MR writing two different patterns.
+  > 
+  > **About gaps/omissions in the MR (code the MR should have touched but didn't):**
+  > 
+  > - **#2** — `buildSelectedItemsData()` is pre-existing code that was **not changed** by the MR. The issue is that the MR should have gated the `has_parent`/`parent_id`/`subcontext_type` fields there to match the toggle, but didn't.
+  > - **#3** — This is a missing UX feature — the MR adds the toggle but doesn't provide any bulk cleanup mechanism or admin warning about stale data.
+  > 
+  > So all seven stem from this MR. The distinction is whether they're about code the MR *wrote* (#1, #4, #5, #6, #7) versus code the MR *should have updated but missed* (#2, #3).
+  > **kepol** (2026-04-25): Prioritizing:
+  > 
+  > Here's how I'd triage them:
+  > 
+  > **Fix now — these will never get a follow-up:**
+  > 
+  > - **#7 (Inconsistent config access)** — One-line fix, trivial. Change `$this->config(...)` to `$this->configFactory->get(...)` in `AiContextAgentForm`. Nobody will ever file an issue for this.
+  > 
+  > - **#4 + #5 (Repeated pattern / silent fallback)** — These go together. Once 10+ copy-pasted `(bool) ($this->configFactory->get('ai_context.settings')->get('subcontext_enabled') ?? TRUE)` call sites merge, that's just how it is forever. A small trait or shared helper method defined once would make both problems disappear — the `?? TRUE` default lives in one place, and if you ever want to add a watchdog log for the fallback, you change one method.
+  > 
+  > - **#2 (Stale parent metadata in result DTO)** — This is subtle enough that no user will ever report it, and no developer will think to file a follow-up. It's a quick guard in `buildSelectedItemsData()` — just mask `has_parent`, `parent_id`, and `subcontext_type` when the toggle is off. Small diff, avoids leaking confusing data to consumers.
+  > 
+  > **Fine to defer — these naturally become follow-up issues:**
+  > 
+  > - **#1 (Static `\Drupal::` in entity)** — Pre-existing pattern across the whole entity class. If it ever gets cleaned up, it'll be as a broader entity refactor. Not worth blocking this MR.
+  > 
+  > - **#3 (No bulk cleanup or admin warning)** — This is a proper feature (batch command, drush cleanup, or settings form warning). It's visible enough that a site builder will notice stale hierarchy data and request it. Appropriate scope for its own issue.
+  > 
+  > - **#6 (Fields may still render)** — This needs *verification* first. If the functional test passes as-is, the fields are already hidden some other way (e.g., form display config) and there's no bug. If the test fails, then yes, fix it now. But I'd confirm before writing code for it.
+  > **kepol** (2026-04-25): Updated the code to handle the "fix now" items. I also had opus check if there were any places that we still needed to check if subcontext is enabled. Here's it's analysis:
+  > 
+  > Here's my analysis of every unguarded spot:
+  > 
+  > **Already guarded -- no action needed:**
+  > 
+  > - `AiContextItemListBuilder::load()` -- early returns at line 94 when disabled, so `hasParent()` at line 98 and `childrenService` at line 133 only run when enabled. Correct.
+  > - `AiContextItemListBuilder::buildRow()` -- reads `$subcontext_enabled` at line 159, all `hasParent()`/`getParentId()` calls are gated. Correct.
+  > - `AiContextItemListBuilder::getDefaultOperations()` -- checks `isSubcontextEnabled()` at line 274. Correct.
+  > - `AiContextSelector::resolveSubcontextItems()` -- early returns when disabled at line 332, so `hasParent()`/`subcontextResolver` at lines 336-337 only run when enabled. Correct.
+  > - `AiContextSelector::buildSelectedItemsData()` -- guarded at line 683. Correct.
+  > - `AiContextItemValidator::validate()` -- guarded at line 70. Correct.
+  > - `AiContextAgentForm` -- guarded at lines 159, 423. Correct.
+  > - `AiContextItemForm` -- guarded at line 528. Correct.
+  > - `ListAiContextItems` -- guarded at line 248. Correct.
+  > - `LoadAiContextItemById` -- guarded at line 138. Correct.
+  > - `AiContextItem::preSave()` -- guarded at line 94. Correct.
+  > 
+  > **Don't need a guard (correct without one):**
+  > 
+  > - `AiContextItem::preSave()` line 101: `if (!$this->hasParent() && !$this->get('subcontext_type')->isEmpty())` -- This clears a stale `subcontext_type` when no parent is set. This is a data-hygiene cleanup that's correct regardless of the toggle. No guard needed.
+  > 
+  > - `AiContextItemValidator::validate()` lines 67-68: reads `$item->getParentId()` and `$item->getSubcontextType()` before the guard. But these are just reads into local variables -- the guard at line 70 prevents them from being acted on. Fine.
+  > 
+  > - `AiContextChildrenService::clearParentReferences()` -- called from `ai_context_ai_context_item_delete()` in the module file. When a parent is deleted, orphaned children need their `parent` field cleared regardless of the toggle. This is referential integrity, not hierarchy behavior. **No guard needed.**
+  > 
+  > - `AiContextChildrenService::loadChildrenForParents()` -- only called from `AiContextItemListBuilder::load()` which already has the early return. **Already indirectly guarded.**
+  > 
+  > - `AiContextSubcontextResolver::resolve()` -- only called from `AiContextSelector::resolveSubcontextItems()` and `LoadAiContextItemById::resolveSubcontext()`, both already guarded. **Already indirectly guarded.**
+  > 
+  > - `AiContextItem::getParent()`, `hasParent()`, `getChildren()`, `hasChildren()` -- these are entity accessor methods. They should always work; the toggle is checked by callers. **No guard needed on accessors.**
+  > 
+  > **Conclusion: everything is covered.** There are no missing checks. Every code path that *acts on* subcontext behavior (display, resolution, validation, agent forms, function call output) is gated either directly or by an already-guarded caller. The low-level services (`AiContextChildrenService`, `AiContextSubcontextResolver`) don't need their own guards because they're only invoked from guarded call sites, and the one exception (`clearParentReferences` on delete) is intentionally unguarded for referential integrity.
+  > **kepol** (2026-04-25): It would be good if this had one final once over by someone other than me :smile:
+  > **kepol** (2026-04-25): Did a bit more cleanup and testing.
+  > 
+  > How to test:
+  > 
+  > - install ai_context per project page instructions drupal.org/project/ai_context
+  > - get this mr per https://new.drupal.org/drupalorg/issue-fork/management?source_link=https://git.drupalcode.org/project/ai_context/-/work_items/3586120
+  > - go to the general settings page /admin/ai/context/settings/general
+  > - it should be enabled by default
+  > - go to context listing page /admin/ai/context/items
+  > - add a context item
+  > - add a subcontext item under it (dropdown in operations)
+  > - note the hierarchy
+  > - go to the settings page and disable the feature
+  > - go back to the listing page and there should be no hierarchy
+  > - reenable the feature
+  > - note the hierarchy
+  > - disable feature again
+  > - edit the child context and save it
+  > - reenable the feature
+  > - note hierarchy will be gone because the parent data was removed when you saved the child item
+  > 
+  > Here's what it looks like:
+  > 
+  > <img src="https://git.drupalcode.org/-/project/191993/uploads/4b69929c446e8ee02590e42a6dd22952/Screenshot_2026-04-25_at_2.34.47_PM.png" alt="Screenshot_2026-04-25_at_2.34.47_PM" width="720" height="599">
+  > **scottfalconer** (2026-04-26): Looks good, moving to RTBC. One note. #3586120 and #3574907 both currently add ai_context_update_10002(). Whichever one lands second will need a quick update-hook renumber reroll.
+  > **kepol** (2026-04-26): Thanks, yes. I'll update whichever one is second.
+  > **kepol** (2026-04-26): I've merged in 1.0.x and set to auto-merge.
+  > **kepol** (2026-04-26): Merged! Thanks :smile:
+- **[CCC: Refactor to denormalize scope values and replace SQL LIKE on serialized scope](https://git.drupalcode.org/project/ai_context/-/work_items/3574905)** · [d.o #3574905](https://www.drupal.org/node/3574905) · opened · unassigned · 23 comments · AI Context Management, AI Initiative Sprint, AI Innovation, blocker::stable
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16479788. -->
+  > > _Migrated from comment #2 posted 20 Feb 2026 at 23:04 UTC_
+  > 
+  > 
+  > <p>The issue was based on AI suggestions and needs human review before proceeding.</p>
+  > <p>Note that the scope feature isn't merged yet, so this can be done before merging here:</p>
+  > <p><span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-7"><a href="https://www.drupal.org/project/ai_context/issues/3568673" title="Status: Closed (fixed)">#3568673: Add context scope base code and use case context scope plugin</a></span></p>
+  > <p>or afterwards as that issue is holding up a UI issue for Bruno.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16479794. -->
+  > > _Migrated from comment #3 posted 20 Feb 2026 at 23:17 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  + mvp + AI Innovation + sprint candidate
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16488564. -->
+  > > _Migrated from comment #4 posted 27 Feb 2026 at 01:04 UTC_
+  > 
+  > 
+  > <p>See feedback in the parent issue before reviewing this:</p>
+  > <p><span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-7"><a href="https://www.drupal.org/project/ai_context/issues/3573713" title="Status: Closed (fixed)">#3573713: Full architecture review of CCC in prep for 1.0</a></span></p>
+  > <p>It says:</p>
+  > <p><strong>STALE: TargetFilter SQL LIKE on serialized scope</strong></p>
+  > <ul>
+  > <li>Code: TargetFilter.php:103-141 , Current implementation uses is_global equality checks and JOINs to ai_context_item__target_entities with an equality filter. There is no SQL LIKE anywhere.</li>
+  > <li>Issue #3574905: CCC: Refactor to denormalize scope values and replace SQL LIKE on serialized scope was correctly postponed, but the parent issue summary still lists this as a top-7 risk. That's misleading.</li>
+  > <li>Recommendation: Close #3574905: CCC: Refactor to denormalize scope values and replace SQL LIKE on serialized scope as "works as designed" or re-scope it entirely to the future scope plugin system from #3568673: Add context scope base code and use case context scope plugin (which isn't merged yet). The current code doesn't have this problem.</li>
+  > </ul>
+  > <p><strong>But the scope work was merged in and the original review was based on having scope included.</strong></p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16488611. -->
+  > > _Migrated from comment #5 posted 27 Feb 2026 at 02:37 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: kristen pol
+  > + Assigned: Unassigned
+  > - Status:   Postponed
+  > + Status:   Active
+  >  Issue tags:
+  >  + stable blocker
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16500065. -->
+  > > _Migrated from comment #6 posted 07 Mar 2026 at 00:47 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: kristen pol
+  > - Status:   Active
+  > + Status:   Needs review
+  > 
+  > ```
+  > 
+  > <p>At least part of this has been removed in the views removal</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16500753. -->
+  > > _Migrated from comment #7 posted 08 Mar 2026 at 01:26 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: kristen pol
+  > + Assigned: Unassigned
+  >  Issue tags:
+  >  - sprint candidate + AI Initiative Sprint
+  > ```
+  > 
+  > <p>Tagging for the sprint in case someone can take it on early this week. If not, it'll need to wait until after Chicago.</p>
+  > <p><strong>NOTE: Some of the feedback in the issue summary is no longer relevant (e.g., the view was removed). So, go through the list first and see what is still relevant. Update the issue summary to only include what's still relevant.</strong></p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16500754. -->
+  > > _Migrated from comment #8 posted 08 Mar 2026 at 01:27 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  + Needs issue summary update
+  > ```
+  > **rakhimandhania** (2026-04-22): <!-- Migrated from comment CID #16501238. -->
+  > > _Migrated from comment #9 posted 08 Mar 2026 at 20:49 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  + AI Context Management
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16510108. -->
+  > > _Migrated from comment #10 posted 13 Mar 2026 at 20:13 UTC_
+  > 
+  > 
+  > <p>This won't likely be done for beta1 unless someone takes a stab at it today. I'm doing a mega review/merge tomorrow in prep for beta1 and not sure I'll have time to get this to this.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16511613. -->
+  > > _Migrated from comment #11 posted 16 Mar 2026 at 02:08 UTC_
+  > 
+  > 
+  > <p>Even if someone did this one at this point, I don't think it'll make it into beta1 but we should get it into the release after that.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16511616. -->
+  > > _Migrated from comment #12 posted 16 Mar 2026 at 02:09 UTC_
   > 
   > 
   > ```
   > - Status: Needs review
-  > + Status: Reviewed & tested by the community
+  > + Status: Postponed
   > 
   > ```
   > 
-  > <p>Looks good to me! There's some nuance around if the local tasks will properly rebuild if only the this plugin is being discovered, but local tasks are always finicky anyway.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16560995. -->
-  > > _Migrated from comment #9 posted 22 Apr 2026 at 17:13 UTC_
+  > <p>I'll postpone for now to reduce distractions</p>
+  > **rakhimandhania** (2026-04-22): <!-- Migrated from comment CID #16512466. -->
+  > > _Migrated from comment #13 posted 16 Mar 2026 at 15:57 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  - AI Initiative Sprint + sprint candidate
+  > ```
+  > **rakhimandhania** (2026-04-22): <!-- Migrated from comment CID #16521117. -->
+  > > _Migrated from comment #14 posted 22 Mar 2026 at 19:48 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  - sprint candidate + AI Initiative Sprint
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16533699. -->
+  > > _Migrated from comment #15 posted 31 Mar 2026 at 22:26 UTC_
+  > 
+  > 
+  > ```
+  > - Status: Postponed
+  > + Status: Active
+  > 
+  > ```
+  > **abhisekmazumdar** (2026-04-22): <!-- Migrated from comment CID #16543913. -->
+  > > _Migrated from comment #16 posted 09 Apr 2026 at 10:31 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: abhisekmazumdar
+  > 
+  > ```
+  > 
+  > <p>Trying to draft a MR.</p>
+  > **abhisekmazumdar** (2026-04-22): <!-- Migrated from comment CID #16545606. -->
+  > > _Migrated from comment #17 posted 10 Apr 2026 at 10:21 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: abhisekmazumdar
+  > + Assigned: Unassigned
+  > 
+  > ```
+  > 
+  > <p>Working on this. Here is the approach I'm hoping to take:</p>
+  > <h2>Approach: Option A: dedicated index table</h2>
+  > <p>After reviewing the current codebase, <code>AiContextScopeResolver</code> loads all published context items into PHP and filters them there. There is no SQL-level scope filtering today. At scale this is a full table scan plus large memory load.</p>
+  > <p>I feel I will go with the implementation suggestion in <strong>Option A</strong>.</p>
+  > <h2>New table: <code>ai_context_item_scope_index</code></h2>
+  > <p>One row per <code>(item_id, scope_id, value)</code> triple, mirroring the scope map field, with indexes on <code>(scope_id, value)</code> for subscription lookups and <code>(item_id)</code> for fast deletes.</p>
+  > <p><strong>Note:</strong> The <code>target_entity</code> scope already uses a separate DER field with its own indexes and is excluded from this index.</p>
+  > <h2>Index maintenance</h2>
+  > <p>Entity insert/update/delete hooks keep the index in sync automatically. A batched update hook backfills existing items for existing installs.</p>
+  > <h2>Query path</h2>
+  > <p>A new <code>prefilterItemIdsByScope()</code> method on <code>AiContextScopeResolver</code> lets callers narrow the entity load to SQL-matched candidate IDs before PHP scoring runs. Unscoped items (no rows in the index) are always included as broad-match candidates.</p>
+  > <h2>What is not in this MR</h2>
+  > <ul>
+  > <li>Wiring the pre-filter into <code>AiContextSelector</code>'s chunk-loading loop: available as a follow-up once this foundation is in place.</li>
+  > <li>A Views filter plugin: the view was removed, so this is not needed.</li>
+  > </ul>
+  > <p>Any path correction input is welcome.</p>
+  > <p><em>AI disclosure: Plan drafted and code implemented with assistance from Claude Code, reviewed and directed by me.</em></p>
+  > **abhisekmazumdar** (2026-04-22): <!-- Migrated from comment CID #16545663. -->
+  > > _Migrated from comment #18 posted 10 Apr 2026 at 10:28 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: abhisekmazumdar
+  > 
+  > ```
+  > 
+  > <p>oops I'm still working</p>
+  > **abhisekmazumdar** (2026-04-22): <!-- Migrated from comment CID #16554126. -->
+  > > _Migrated from comment #20 posted 17 Apr 2026 at 08:01 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: abhisekmazumdar
+  > + Assigned: Unassigned
+  > - Status:   Active
+  > + Status:   Needs review
+  > 
+  > ```
+  > 
+  > <p>After some struggle with the test, I managed to make it all green now. I believe this is now ready for review.<br>
+  > The serialized <code>map</code> field makes scope-based filtering impossible at the SQL level, so we've been loading all published items into PHP on every request, a full table scan that won't scale.</p>
+  > <h2>What the MR does</h2>
+  > <p><strong>New table: <code>ai_context_item_scope_index</code></strong></p>
+  > <p>A denormalized index with one row per <code>(item_id, scope_id, value)</code> triple. This makes scope values directly queryable with standard SQL indexes.</p>
+  > <p><strong>Index maintenance</strong></p>
+  > <p>A new <code>AiContextScopeIndexService</code> handles writing to the table. Entity hooks keep it in sync automatically, items are indexed on insert/update and deindexed on delete. A batched <code>hook_update_10001()</code> backfills existing items on upgrade.</p>
+  > <p><strong>Query API</strong></p>
+  > <p><code>AiContextScopeResolver::prefilterItemIdsByScope()</code> is a new method that queries the index and returns a narrowed set of candidate IDs before any entities are loaded. It returns <code>NULL</code> when no subscriptions are provided (meaning: no pre-filter, load everything as before).</p>
+  > <p><strong>Tests</strong></p>
+  > <p>Added the required tests</p>
+  > <h2>What is not wired up yet</h2>
+  > <p><code>AiContextSelector::loadPublishedItemsChunk()</code> still loads all published items: it does not yet use <code>prefilterItemIdsByScope()</code> to restrict the entity query. The infrastructure and API are ready; this integration step is what delivers the actual performance gain at scale.</p>
+  > <p>Should we include that wiring in this MR, or would you prefer a focused follow-up issue for the selector integration once the foundation is reviewed?</p>
+  > <p><em>Note: This MR was developed with assistance from Claude Code.</em></p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16557828. -->
+  > > _Migrated from comment #21 posted 20 Apr 2026 at 21:58 UTC_
+  > 
+  > 
+  > > **File** [scope-index-mr-3574905-review.md](https://www.drupal.org/files/issues/2026-04-20/scope-index-mr-3574905-review.md) 
+  > 
+  > > **File** [scope-index-mr-3574905-review.pdf](https://www.drupal.org/files/issues/2026-04-20/scope-index-mr-3574905-review.pdf) 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: kristen pol
+  > - Status:   Needs review
+  > + Status:   Needs work
+  > 
+  > ```
+  > 
+  > <p>I've been reviewing with cursor/opus 4.6. Including feedback below, but I'm going double check all of this feedback before unassigning.</p>
+  > <p><strong>Most critical issue is that <code>prefilterItemIdsByScope</code> is not used. I've confirmed this one.</strong></p>
+  > <p>But here's the full assessment (and part of the attached review):</p>
+  > <p><strong>Must-fix before merge</strong></p>
+  > <p>(confirmed) 1. <strong>Wire the index into AiContextSelector::loadCandidateItems():</strong> When $request-&gt;getScopeSubscriptions() is non-empty, call prefilterItemIdsByScope() to get candidate IDs, then load only those IDs instead of scanning all published items. This is the entire point of the MR.</p>
+  > <p>2. <strong>Optimize unscoped-item detection: </strong>The current getItemIdsByScope() does a full SELECT DISTINCT item_id from the index table on every call. Options:</p>
+  > <ul>
+  > <li>Only run this sub-query when $candidateIds is provided (the method already partially does this but still runs the full query).</li>
+  > <li>Add an is_scoped boolean base field to AiContextItem so unscoped items can be found via entity query.</li>
+  > </ul>
+  > <p>3. <strong>Resolve the @todo on line 172 of the selector</strong> &mdash; the index now exists, so the todo is outdated.</p>
+  > <p><strong>Should-fix</strong></p>
+  > <p>4. <strong>Transaction wrapping:</strong> Wrap the DELETE + INSERT in indexItem() in a database transaction to prevent partial index loss on INSERT failure.</p>
+  > <p>5. <strong>Revision awareness:</strong> The index currently indexes the default (current) revision's scope. If revision support matters for scope filtering, this should be documented as a known limitation.</p>
+  > <p>6, <strong>Consider hook_ENTITY_TYPE_insert/update vs entity events:</strong> The .module hook approach works but<br>
+  > Drupal 11 encourages Hook attributes or event subscribers. Not blocking but worth noting for style<br>
+  > consistency with the rest of the module.</p>
+  > <p><strong>Nice-to-have</strong></p>
+  > <p>7. <strong>Index-only selection path: </strong>For the subscription-scoring case, the index could potentially return (item_id, matched_scope_count) to do a rough pre-score in SQL, further reducing the number of entities loaded. This is an optimization for later.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16557920. -->
+  > > _Migrated from comment #22 posted 21 Apr 2026 at 00:02 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: kristen pol
+  > + Assigned: Unassigned
+  > 
+  > ```
+  > 
+  > <p>I got pulled away so opening this up for now</p>
+  > **kepol** (2026-04-25): For kicks, I had gpt 5.5 review the findings from opus and it made some wording changes but otherwise seemed to be fine with the general assessment from above.
+  > 
+  > [scope-index-mr-3574905-review-revised.md](https://git.drupalcode.org/-/project/191993/uploads/48f3fbab546ad00be6ee95003414005f/scope-index-mr-3574905-review-revised.md)
+  > **scottfalconer** (2026-04-26): Pushed an update to MR !117. This is ready for review. 
+  > 
+  > Changes:
+  >   - Wired `AiContextSelector` to actually use `prefilterItemIdsByScope()` when scope subscriptions are present.
+  > - Preserved expected selection behavior: (matching scoped items are still selected, unscoped/broad-match items are still selected, global items are still selected, non-matching scoped items are excluded)
+  > - Avoided the full-table `DISTINCT item_id` lookup for unscoped detection by restricting it to candidate IDs.
+  > - Made scope index replacement atomic so a failed re-index cannot leave an item partially de-indexed
+  > - Added kernel coverage that asserts selector requests with subscriptions query `ai_context_item_scope_index`.
+  > 
+  >  AI assistance was used to help inspect, patch, and validate this update; I reviewed and tested the changes before posting.
+- **[CCC: Refactor to normalize and index ai_context_usage; make cron pruning batched](https://git.drupalcode.org/project/ai_context/-/work_items/3574907)** · [d.o #3574907](https://www.drupal.org/node/3574907) · opened · unassigned · 20 comments · AI Context Management, AI Initiative Sprint, AI Innovation, blocker::stable
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16479793. -->
+  > > _Migrated from comment #2 posted 20 Feb 2026 at 23:17 UTC_
+  > 
+  > 
+  > ```
+  > - Status: Active
+  > + Status: Needs review
+  > 
+  > ```
+  > 
+  > <p>The issue was based on AI suggestions and needs human review before proceeding.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16479795. -->
+  > > _Migrated from comment #3 posted 20 Feb 2026 at 23:18 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  + mvp + AI Innovation + sprint candidate
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16479812. -->
+  > > _Migrated from comment #4 posted 20 Feb 2026 at 23:30 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16486939. -->
+  > > _Migrated from comment #5 posted 26 Feb 2026 at 01:53 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: kristen pol
+  > + Assigned: Unassigned
+  > 
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16488561. -->
+  > > _Migrated from comment #6 posted 27 Feb 2026 at 01:04 UTC_
+  > 
+  > 
+  > <p>See feedback in the parent issue before reviewing this:</p>
+  > <p><span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-7"><a href="https://www.drupal.org/project/ai_context/issues/3573713" title="Status: Closed (fixed)">#3573713: Full architecture review of CCC in prep for 1.0</a></span></p>
+  > <p>Specifically:</p>
+  > <p><strong>CONFIRMED: Usage tracking N+1 growth concerns</strong></p>
+  > <ul>
+  > <li>Code: AiContextUsageTracker.php</li>
+  > <li>Issue #3574907: CCC: Refactor to normalize and index ai_context_usage; make cron pruning batched under-scopes this: It focuses on indexes and cron pruning but entirely misses the O(N * M) complexity in the write-path. Specifically, attachEntity() loads all usages for a runner, then runs another entity query per usage inside a loop (lines 139-209). A single entity save could trigger dozens of queries and writes. This should be explicitly added to the issue scope.</li>
+  > </ul>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16488610. -->
+  > > _Migrated from comment #7 posted 27 Feb 2026 at 02:36 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  + stable blocker
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16500756. -->
+  > > _Migrated from comment #8 posted 08 Mar 2026 at 01:28 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  - sprint candidate + AI Initiative Sprint
+  > ```
+  > 
+  > <p>Tagging for the sprint in case someone can take it on early this week. If not, it'll need to wait until after Chicago.</p>
+  > <p><strong>Review the AI feedback first and see if anything needs to change. If anything does, update the issue summary.</strong></p>
+  > **rakhimandhania** (2026-04-22): <!-- Migrated from comment CID #16501247. -->
+  > > _Migrated from comment #9 posted 08 Mar 2026 at 20:50 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  + AI Context Management
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16510109. -->
+  > > _Migrated from comment #10 posted 13 Mar 2026 at 20:13 UTC_
+  > 
+  > 
+  > <p>This won't likely be done for beta1 unless someone takes a stab at it today. I'm doing a mega review/merge tomorrow in prep for beta1 and not sure I'll have time to get this to this.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16511614. -->
+  > > _Migrated from comment #11 posted 16 Mar 2026 at 02:08 UTC_
+  > 
+  > 
+  > <p>Even if someone did this one at this point, I don't think it'll make it into beta1 but we should get it into the release after that.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16511615. -->
+  > > _Migrated from comment #12 posted 16 Mar 2026 at 02:09 UTC_
+  > 
+  > 
+  > ```
+  > - Status: Needs review
+  > + Status: Postponed
+  > 
+  > ```
+  > 
+  > <p>I'll postpone for now to reduce distractions</p>
+  > **rakhimandhania** (2026-04-22): <!-- Migrated from comment CID #16512425. -->
+  > > _Migrated from comment #13 posted 16 Mar 2026 at 15:39 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  - AI Initiative Sprint + sprint candidate
+  > ```
+  > **rakhimandhania** (2026-04-22): <!-- Migrated from comment CID #16521118. -->
+  > > _Migrated from comment #14 posted 22 Mar 2026 at 19:48 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  - sprint candidate + AI Initiative Sprint
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16533698. -->
+  > > _Migrated from comment #15 posted 31 Mar 2026 at 22:26 UTC_
+  > 
+  > 
+  > ```
+  > - Status: Postponed
+  > + Status: Active
+  > 
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559306. -->
+  > > _Migrated from comment #16 posted 21 Apr 2026 at 17:55 UTC_
   > 
   > 
   > ```
@@ -434,40 +935,126 @@ _Generated: 2026-04-24T21:56 GMT_
   > 
   > ```
   > 
-  > <p>Sweet, thanks. I'll try to get this merged in today.</p>
-
----
-
-## AI Dashboard
-
-### Issues
-
-- **[Show AI Dashboard on admin/config overview](https://git.drupalcode.org/project/ai_dashboard/-/work_items/3580675)** · [d.o #3580675](https://www.drupal.org/node/3580675) · closed · unassigned · 10 comments · AI Initiative, AI Initiative Sprint, AI Product Development, category::task
-  > **a.dmitriiev** (2026-04-22): <!-- Migrated from comment CID #16553273. -->
-  > > _Migrated from comment #2 posted 16 Apr 2026 at 14:11 UTC_
+  > <p>I've been working on this</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559315. -->
+  > > _Migrated from comment #17 posted 21 Apr 2026 at 18:00 UTC_
   > 
   > 
-  > <p>The issue is that on `/admin/config` page in "AI" section there is no link to dashboard.</p>
-  > <p>For this the new menu entry should be created with path `/admin/config/ai/dashboard` that will be under parent `/admin/config/ai`. When user goes to `/admin/config/ai/dashboard` they should be redirected to `/admin/config/ai`</p>
-  > **arianraeesi** (2026-04-22): <!-- Migrated from comment CID #16556189. -->
-  > > _Migrated from comment #3 posted 19 Apr 2026 at 14:18 UTC_
+  > > **File** [usage_index_and_cron_237fe34a.plan_.md](https://www.drupal.org/files/issues/2026-04-21/usage_index_and_cron_237fe34a.plan_.md) 
+  > 
+  > <p>Given we'll be integrating with ai_observability after 1.0, not all of the recommendations will be implemented</p>
+  > <p>See attached plan from cursor/opus 4.6</p>
+  > <p>See also:</p>
+  > <p><span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-4"><a href="https://www.drupal.org/project/ai_context/issues/3567803" title="Status: Postponed">#3567803: [Discuss] Observability support for CCC</a></span></p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559343. -->
+  > > _Migrated from comment #19 posted 21 Apr 2026 at 18:22 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > ```
+  > - Assigned:      kristen pol
+  > + Assigned:      Unassigned
+  > - Status:        Active
+  > + Status:        Needs review
+  > 
+  > ```
+  > 
+  > <p>Ready for review. I've reviewed the code and it seems reasonable after some tweaks.</p>
+  > **scottfalconer** (2026-04-26): I pushed a follow-up to !119 that fills the remaining gap where pruning/clear deletion was batched, but the usage lookup/pruning indexes were not actually added yet.
+  > 
+  > Changes:
+  > 
+  >   - ai_context_update_10002() for missing ai_context_usage indexes
+  >   - install-time helper for fresh installs
+  >   - indexes for runner_id, changed, and target_entity_type +
+  >     target_entity_id
+  >   - kernel coverage that asserts those indexes exist
+  >   - left context_item_id on Drupal’s generated entity-reference index
+  > 
+  > AI assistance was used for the follow-up patch and validation notes, I reviewed the changes and test output.
+  > **kepol** (2026-04-26): The index was intentionally left out per:
+  > 
+  > https://git.drupalcode.org/project/ai_context/-/work_items/3574907#note_766594
+  > 
+  > Because we will be moving to observability in a few months, but no harm adding them now.
+- **[Question about "Subcontext type = Conditional - included based on relevance"](https://git.drupalcode.org/project/ai_context/-/work_items/3586149)** · opened · unassigned · 1 comments
+- **[Usage of "Context scope" and "Target bundles"](https://git.drupalcode.org/project/ai_context/-/work_items/3586148)** · opened · unassigned · 1 comments
+- **[Move scheduler feature to submodule or progressive enhancement](https://git.drupalcode.org/project/ai_context/-/work_items/3577429)** · [d.o #3577429](https://www.drupal.org/node/3577429) · opened · mglaman · 26 comments · AI Context Management, AI Initiative Sprint, AI Innovation, blocker::stable
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16498245. -->
+  > > _Migrated from comment #2 posted 06 Mar 2026 at 02:08 UTC_
+  > 
+  > 
+  > ```
+  >  Parent issue:
+  >  - #3577428: Update context item target entities for progressive enhancement
+  >  Related issues:
+  >  + #3569967: [Discuss] Figure out which CCC features can be optional for MVP
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16499982. -->
+  > > _Migrated from comment #3 posted 06 Mar 2026 at 23:04 UTC_
   > 
   > 
   > ```
   >  Issue tags:
-  >  - sprint candidate + AI Initiative Sprint + AI Product Development
+  >  + stable blocker
   > ```
-  > **brtamas** (2026-04-22): <!-- Migrated from comment CID #16556755. -->
-  > > _Migrated from comment #4 posted 20 Apr 2026 at 08:56 UTC_
+  > 
+  > <p>Marking as a stable blocker for now, as it would be better to do this before 1.0</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16500750. -->
+  > > _Migrated from comment #4 posted 08 Mar 2026 at 01:23 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  - sprint candidate + AI Initiative Sprint
+  > ```
+  > 
+  > <p>Tagging for sprint in case someone can take it on early this week. If not, it'll need to wait until after Chicago.</p>
+  > **rakhimandhania** (2026-04-22): <!-- Migrated from comment CID #16501246. -->
+  > > _Migrated from comment #5 posted 08 Mar 2026 at 20:50 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  + AI Context Management
+  > ```
+  > **axioteo** (2026-04-22): <!-- Migrated from comment CID #16503908. -->
+  > > _Migrated from comment #6 posted 10 Mar 2026 at 11:02 UTC_
   > 
   > 
   > ```
   > - Assigned: Unassigned
-  > + Assigned: brtamas
+  > + Assigned: axioteo
   > 
   > ```
-  > **brtamas** (2026-04-22): <!-- Migrated from comment CID #16556800. -->
-  > > _Migrated from comment #6 posted 20 Apr 2026 at 09:25 UTC_
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16504771. -->
+  > > _Migrated from comment #7 posted 10 Mar 2026 at 18:00 UTC_
+  > 
+  > 
+  > <p>For reference, these similar issues have been done or are in progress:</p>
+  > <p><span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-7"><a href="https://www.drupal.org/project/ai_context/issues/3577426" title="Status: Closed (fixed)">#3577426: Redo context item duplicate feature without ECA</a></span><br>
+  > <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-7"><a href="https://www.drupal.org/project/ai_context/issues/3577427" title="Status: Closed (fixed)">#3577427: Update context item revision diff feature for progressive enhancement</a></span><br>
+  > <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-2"><a href="https://www.drupal.org/project/ai_context/issues/3577428" title="Status: Fixed">#3577428: Update context item target entities for progressive enhancement</a></span></p>
+  > **axioteo** (2026-04-22): <!-- Migrated from comment CID #16505474. -->
+  > > _Migrated from comment #9 posted 11 Mar 2026 at 09:30 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: axioteo
+  > + Assigned: Unassigned
+  > 
+  > ```
+  > 
+  > <p>I have added an MR with a draft implementation of moving the scheduler functionality into a submodule. The MR includes:</p>
+  > <p>- Moving scheduler into a submodule within the base module<br>
+  > - Setting publishing options to false by default when the submodule is enabled<br>
+  > - Removing any existing hard dependencies to the scheduler module from the codebase, including tests</p>
+  > <p>Testing performed:</p>
+  > <p>- If only the base module is installed, scheduler publishing options are not present on the context items page or in the context item edit form.<br>
+  > - When the submodule is enabled, scheduling options appear as expected (disabled by default), and are only shown in the context item edit form if previously enabled from the settings form.</p>
+  > <p>This is a draft implementation to move the work forward. I&rsquo;m leaving the issue unassigned so someone more familiar with this part of the module can review the approach and either continue the implementation or take a different approach if that would fit the module better.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16505879. -->
+  > > _Migrated from comment #10 posted 11 Mar 2026 at 13:34 UTC_
   > 
   > 
   > ```
@@ -476,52 +1063,267 @@ _Generated: 2026-04-24T21:56 GMT_
   > 
   > ```
   > 
-  > <p>MR: <a href="https://git.drupalcode.org/project/ai_dashboard/-/merge_requests/17">https://git.drupalcode.org/project/ai_dashboard/-/merge_requests/17</a></p>
-  > **brtamas** (2026-04-22): <!-- Migrated from comment CID #16556811. -->
-  > > _Migrated from comment #7 posted 20 Apr 2026 at 09:30 UTC_
+  > <p>Thanks! &#128591; </p>
+  > <p>Curious if you looked at if it could be done without a sub module like the other issues above ^ ?</p>
+  > **axioteo** (2026-04-22): <!-- Migrated from comment CID #16507414. -->
+  > > _Migrated from comment #11 posted 12 Mar 2026 at 10:34 UTC_
   > 
   > 
   > ```
-  > - Assigned: brtamas
-  > + Assigned: Unassigned
+  > - Status: Needs review
+  > + Status: Active
   > 
   > ```
-  > **robloach** (2026-04-22): <!-- Migrated from comment CID #16557420. -->
-  > > _Migrated from comment #8 posted 20 Apr 2026 at 16:14 UTC_
+  > 
+  > <p>No, I only worked on making it a submodule as it felt like a cleaner approach at the time. The main reason I thought it would be better for someone else to evaluate this is that I wasn&rsquo;t sure how best to handle the scheduler dependency within the submodule itself.</p>
+  > <p>Maybe abstracting the functionality like that isn&rsquo;t the way to go, and implementing some other mechanism to just detect whether scheduler is enabled might be a more viable approach.</p>
+  > <p>That said, I&rsquo;d be more than happy to look into this further if you think that&rsquo;s the direction we should take.</p>
+  > **axioteo** (2026-04-22): <!-- Migrated from comment CID #16507415. -->
+  > > _Migrated from comment #12 posted 12 Mar 2026 at 10:35 UTC_
+  > 
+  > 
+  > ```
+  > - Status: Active
+  > + Status: Needs review
+  > 
+  > ```
+  > **annmarysruthy** (2026-04-22): <!-- Migrated from comment CID #16507514. -->
+  > > _Migrated from comment #13 posted 12 Mar 2026 at 11:35 UTC_
+  > 
+  > 
+  > <p>reviewed the code.The submodule split looks right.</p>
+  > <p> AI Context setting to show/hide scheduler in context item form is not added(as per proposed resolution). It would be great to have a toggle in AI Context settings.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16508125. -->
+  > > _Migrated from comment #14 posted 12 Mar 2026 at 15:42 UTC_
+  > 
+  > 
+  > ```
+  > - Status: Needs review
+  > + Status: Needs work
+  > 
+  > ```
+  > 
+  > <p>Moving back to needs work for the setting. Thanks, all!</p>
+  > **axioteo** (2026-04-22): <!-- Migrated from comment CID #16508151. -->
+  > > _Migrated from comment #15 posted 12 Mar 2026 at 16:00 UTC_
+  > 
+  > 
+  > <p>Hey @annmarysruthy, thank you for the review! Just a quick follow-up on the toggling functionality, the scheduling options (in context items settings page that come up by default when scheduler is enabled), actually do control whether the publishing options are shown in the context item edit form.</p>
+  > <p>For example if you only enable "Publishing" as the only scheduling option, then when editing the context item, only "Publishing" is allowed. Similarly, if no scheduling options are selected, none will appear in the edit form. </p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16508401. -->
+  > > _Migrated from comment #16 posted 12 Mar 2026 at 17:50 UTC_
+  > 
+  > 
+  > <p>I think there is some confusion on the proposed setting.</p>
+  > <p>It could be that the site manager/builder doesn't actually want their editors to do use the scheduler, so it shouldn't show up in the right sidebar when editing context items.</p>
+  > <p>So, there would be an admin setting that is defaulted to enabled, where it could be disabled.</p>
+  > <p>This is just for the scheduler feature.</p>
+  > <p>If this was using progressive enhancement rather than a submodule, I'd default this to disabled by default. This is because Drupal CMS comes with scheduler and scheduling context is not likely going to be a common requirement.</p>
+  > <p>But, if we do this with a submodule, then it should default to enabled, because they are explicitly choosing to use it by enabling the module. This still lets them easily turn if off in the UI though if they can't easily uninstall the submodule.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16511621. -->
+  > > _Migrated from comment #17 posted 16 Mar 2026 at 02:13 UTC_
+  > 
+  > 
+  > <p>This will likely not make it into beta1 but it can make it into the following release</p>
+  > **FLUX423** (2026-04-22): <!-- Migrated from comment CID #16525583. -->
+  > > _Migrated from comment #18 posted 25 Mar 2026 at 19:03 UTC_
+  > 
+  > 
+  > <p>We just shipped <code>duadp_ai_context</code> as a real-world example of this exact pattern &mdash; it may be a useful reference for the submodule approach.</p>
+  > <p>The core <code>drupal/duadp</code> module declares <code>ai_context</code> only as a suggestion in <code>composer.json</code>:</p>
+  > <div class="codeblock">
+  > <pre><span style="color: #000000"><span style="color: #0000BB">&lt;?php<br></span><span style="color: #DD0000">"suggest"</span><span style="color: #007700">: {<br>&nbsp; </span><span style="color: #DD0000">"drupal/ai_context"</span><span style="color: #007700">: </span><span style="color: #DD0000">"Enables DUADP trust-tier scope via the duadp_ai_context bridge module."<br></span><span style="color: #007700">}<br></span><span style="color: #0000BB">?&gt;</span></span></pre></div>
+  > <p>The bridge lives in <code>modules/duadp_ai_context/</code> as a submodule with its own <code>info.yml</code> that carries the hard dependency:</p>
+  > <div class="codeblock">
+  > <pre><span style="color: #000000"><span style="color: #0000BB">&lt;?php<br>name</span><span style="color: #007700">: </span><span style="color: #DD0000">'DUADP AI Context Bridge'<br></span><span style="color: #0000BB">type</span><span style="color: #007700">: </span><span style="color: #0000BB">module<br>dependencies</span><span style="color: #007700">:<br>&nbsp; - </span><span style="color: #0000BB">drupal</span><span style="color: #007700">:</span><span style="color: #0000BB">duadp_discovery<br>&nbsp; </span><span style="color: #007700">- </span><span style="color: #0000BB">drupal</span><span style="color: #007700">:</span><span style="color: #0000BB">ai_context<br>?&gt;</span></span></pre></div>
+  > <p>Default config in <code>config/install/ai_context.scope_settings.duadp_trust_tier.yml</code> sets <code>enabled: true</code> &mdash; since users explicitly opt in by installing the submodule, defaulting to enabled is the right call (aligns with what Kristen described above).</p>
+  > <p>One thing worth noting: the submodule's <code>core_version_requirement</code> in <code>info.yml</code> needs to match or exceed the parent module's minimum, otherwise Drupal's extension discovery complains during install. Worth keeping in mind for the scheduler submodule implementation.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16530499. -->
+  > > _Migrated from comment #19 posted 29 Mar 2026 at 15:46 UTC_
+  > 
+  > 
+  > ```
+  > - Status: Needs work
+  > + Status: Postponed
+  > 
+  > ```
+  > 
+  > <p>There has been some additional discussions at DrupalCon that perhaps it&rsquo;s overkill to have the scheduler feature at all.</p>
+  > <p>I&rsquo;m moving this to postponed for now and will create an issue to discuss further </p>
+  > **rakhimandhania** (2026-04-22): <!-- Migrated from comment CID #16539224. -->
+  > > _Migrated from comment #20 posted 05 Apr 2026 at 20:54 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  - AI Initiative Sprint
+  > ```
+  > **mglaman** (2026-04-22): <!-- Migrated from comment CID #16550292. -->
+  > > _Migrated from comment #21 posted 14 Apr 2026 at 21:08 UTC_
   > 
   > 
   > ```
   > - Assigned: Unassigned
-  > + Assigned: robloach
+  > + Assigned: mglaman
+  > - Status:   Postponed
+  > + Status:   Needs work
   > 
   > ```
   > 
-  > <p>I can check this out, thanks.</p>
-  > **robloach** (2026-04-22): <!-- Migrated from comment CID #16561105. -->
-  > > _Migrated from comment #9 posted 22 Apr 2026 at 18:17 UTC_
+  > <p>I'm going to work on this. I'll make it a progressive enhancement first and then try to accomplish <span class="drupalorg-gitlab-issue-link drupalorg-gitlab-link-wrapper"><a href="https://git.drupalcode.org/project/ai_context/-/work_items/3584775" class="drupalorg-gitlab-link">https://git.drupalcode.org/project/ai_context/-/work_items/3584775</a></span> as well.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550307. -->
+  > > _Migrated from comment #22 posted 14 Apr 2026 at 21:16 UTC_
   > 
   > 
-  > > **File** [Screenshot from 2026-04-22 14-14-24.png](https://www.drupal.org/files/issues/2026-04-22/Screenshot%20from%202026-04-22%2014-14-24.png) 
+  > <p>Thanks &#128591; </p>
+  > **mglaman** (2026-04-22): <!-- Migrated from comment CID #16557413. -->
+  > > _Migrated from comment #23 posted 20 Apr 2026 at 16:05 UTC_
+  > 
   > 
   > ```
-  > - Assigned: robloach
+  >  Related issues:
+  >  + #3585333: Provide a config type for third_party_settings so that other modules can opt-in more easily
+  > ```
+  > 
+  > <p>Opened <a href="https://www.drupal.org/project/scheduler/issues/3585333">https://www.drupal.org/project/scheduler/issues/3585333</a> which could have simplified all of this</p>
+  > **mglaman** (2026-04-22): <!-- Migrated from comment CID #16557490. -->
+  > > _Migrated from comment #24 posted 20 Apr 2026 at 17:08 UTC_
+  > 
+  > 
+  > ```
+  >  Related issues:
+  >  + #3355087: Support for non-bundle entity types
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16557682. -->
+  > > _Migrated from comment #25 posted 20 Apr 2026 at 20:22 UTC_
+  > 
+  > 
+  > <p>Let&rsquo;s do this one here at the same time:</p>
+  > <p><span class="drupalorg-gitlab-issue-link drupalorg-gitlab-link-wrapper"><a href="https://git.drupalcode.org/project/ai_context/-/work_items/3584775" class="drupalorg-gitlab-link">https://git.drupalcode.org/project/ai_context/-/work_items/3584775</a></span></p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559452. -->
+  > > _Migrated from comment #26 posted 21 Apr 2026 at 19:34 UTC_
+  > 
+  > 
+  > <p>We can postpone this one on:</p>
+  > <p><span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-8"><a href="https://www.drupal.org/project/scheduler/issues/3355087" title="Status: Needs review">#3355087: Support for non-bundle entity types</a></span></p>
+  > <p>and ask the maintainers to merge that one once it's ready.</p>
+  > <p>I see the patch is in the MR. I'd prefer not to have any patches before 1.0 but we do have this one:</p>
+  > <pre>&nbsp;&nbsp;&nbsp; "patches": {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "drupal/scheduler_content_moderation_integration": {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Issue #3579842: Publish/Unpublish State Safety Check": "https://www.drupal.org/files/issues/2026-03-17/scheduler_content_moderation_integration-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</pre><p>which should we should be able to remove soon (just waiting on a scheduler_content_moderation_integration release).</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559750. -->
+  > > _Migrated from comment #27 posted 21 Apr 2026 at 23:48 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  + AI Initiative Sprint
+  > ```
+- **[Add convenience API for non-agent programmatic context retrieval](https://git.drupalcode.org/project/ai_context/-/work_items/3584838)** · [d.o #3584838](https://www.drupal.org/node/3584838) · closed · kepol · 13 comments · AI Context Management, AI Initiative Sprint, AI Innovation, category::feature
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16557982. -->
+  > > _Migrated from comment #2 posted 21 Apr 2026 at 01:44 UTC_
+  > 
+  > 
+  > ```
+  > - Component: Ideas
+  > + Component: Code
+  > - Category:  Plan
+  > + Category:  Feature request
+  > 
+  > ```
+  > 
+  > <p>I like this idea. It's simple and helpful. I'll see if we can get into this sprint.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16557983. -->
+  > > _Migrated from comment #3 posted 21 Apr 2026 at 01:44 UTC_
+  > 
+  > 
+  > ```
+  > - Priority: Minor
+  > + Priority: Normal
+  > 
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559432. -->
+  > > _Migrated from comment #4 posted 21 Apr 2026 at 19:23 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  + AI Innovation + AI Initiative Sprint + AI Context Management
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559674. -->
+  > > _Migrated from comment #5 posted 21 Apr 2026 at 22:07 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: kristen pol
+  > 
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559716. -->
+  > > _Migrated from comment #7 posted 21 Apr 2026 at 22:58 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: kristen pol
   > + Assigned: Unassigned
-  > - Status:   Needs review
-  > + Status:   Reviewed & tested by the community
+  > - Status:   Active
+  > + Status:   Needs review
   > 
   > ```
   > 
-  > <p>Seems to be working without the `/admin/config/ai/dashboard` redirect that Artem proposed. Here's a screenshot with the AI Dashboad entry appearing in the admin/config screen.</p>
-  > <p><img src="https://www.drupal.org/files/issues/2026-04-22/Screenshot%20from%202026-04-22%2014-14-24.png"></p>
-  > **a.dmitriiev** (2026-04-24): Thank you for fixing and reviewing. This is getting merged.
+  > <p>Rather than add yet another service (there are 21!), this was added to <code>AiContextRequestFactory</code>.</p>
+  > <p>See if you think it makes sense there.</p>
+  > <p>Note, I also fixed some unrelated minor docs and linting issues here rather than opening more issues.</p>
+  > <p>--<br>
+  > More context:</p>
+  > <p>Cursor/opus original wrote it with a service because that's what was suggested. I challenged that. Here's the response:</p>
+  > <p>That's a fair challenge. The retriever is ~10 lines of actual logic &mdash; it builds a AiContextRequestParamsData, passes it through the factory, and calls the selector. A whole new service class + registration + docs section is a lot of ceremony for that.</p>
+  > <p>The most natural home is AiContextRequestFactory. It already has fromAgent() and fromParameters() as entry points for different callers. A third convenience method that goes one step further &mdash; builds the request and runs it &mdash; fits the factory's role as "the place callers go to get context started." It would need the selector injected, but that's a clean dependency (factory delegates to selector, no circularity).</p>
+  > <p>The tradeoff:</p>
+  > <ul>
+  > <li>Separate service: cleaner single-responsibility boundary, stable facade if internals change. But adds surface area for what's trivially thin.</li>
+  > <li>Method on factory: fewer moving parts, one less service to discover/document/test, and the factory is already where non-agent callers land. Slightly blurs "build request" vs "execute request" responsibility, but pragmatically it's a convenience method, not a new domain.</li>
+  > </ul>
+  > <p>I'd lean toward collapsing it into the factory.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559717. -->
+  > > _Migrated from comment #8 posted 21 Apr 2026 at 22:58 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **scottfalconer** (2026-04-25): Tested and no issues found. Moving to RTBC
+  > 
+  >   - getRenderedContext() exists and returns rendered text.
+  >   - retrieve() exists and returns AiContextResult.
+  >   - empty result returns '' in an isolated context-item set.
+  >   - scoped retrieval includes use_case: writing_words.
+  >   - scoped retrieval excludes use_case: working_in_canvas.
+  >   - cache tags include the selected context item.
+  >   - tokenLimit is forwarded.
+  >   - targetEntity is accepted and reaches selector entity context.
+  > 
+  > Disclosure: ai was used to execute these tests and results were reviewed manually.
+  > **kepol** (2026-04-25): Thanks, Scott.
+  > **kepol** (2026-04-25): Scott, did you review the code or just test it?
+  > **kepol** (2026-04-25): From Scott in Slack:
+  > 
+  > Yup, the only minor thing is retrieve(tokenLimit: X) with no selected items would currently expose the selector’s default token budget rather than the passed tokenLimit. Not blocking for this MR, but worth a small follow-up if we care about exact metadata consistency on empty results. (edited)
+  > **kepol** (2026-04-25): I updated the code with:
+  > 
+  > - fix for Scott's feedback
+  > - cleaned up some inconsistencies with the use of max tokens vs token limits vs token budgets and similar
+  > - changed retrieve() to getResult()
+  > - fixed a failing test
+  > 
+  > Pipeline was green, so I've set to auto-merge.
 
 ### Merge Requests
 
-- **[Issue #3580675: Add menu item to AI dashboard](https://git.drupalcode.org/project/ai_dashboard/-/merge_requests/17)** · brtamas · merged 2026-04-24 · `1.0.x` · 33 diff lines
+- **[Make subcontext feature optional.](https://git.drupalcode.org/project/ai_context/-/merge_requests/120)** · kepol · merged 2026-04-26 · `3586120-make-subcontext-feature` · 967 diff lines
+- **[feat: #3574905 Add denormalized scope index table for SQL-based scope pre-filtering](https://git.drupalcode.org/project/ai_context/-/merge_requests/117)** · abhisekmazumdar · opened · `3574905-ccc-refactor-to` · 982 diff lines
+- **[Performance improvements for usage feature.](https://git.drupalcode.org/project/ai_context/-/merge_requests/119)** · kepol · opened · `3574907-ccc-refactor-to` · 589 diff lines
+- **[Resolve #3584838 "Add convenience api"](https://git.drupalcode.org/project/ai_context/-/merge_requests/122)** · kepol · merged 2026-04-25 · `3584838-add-convenience-api` · 1055 diff lines
 
 ### Commits
 
-- [`1c9a7978`](https://git.drupalcode.org/project/ai_dashboard/-/commit/1c9a79782c4ebaee35e2df1d4efa5db551ee3053) Issue #3580675: Add menu item to AI dashboard — Tamás Brückner (2026-04-24)
+- [`24713d22`](https://git.drupalcode.org/project/ai_context/-/commit/24713d22f77dbb6935c64dbe0a2ec23f051ec46a) Make subcontext feature optional. — Kristen Pol (2026-04-26)
 
 ---
 
@@ -529,1151 +1331,61 @@ _Generated: 2026-04-24T21:56 GMT_
 
 ### Issues
 
-- **[[META] Launch Drupal AI in Practice Podcast](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586383)** · opened · jmsaunders · 1 comments · AI Initiative, AI Marketing
-- **[Marketing Sprint #2: April 27 - May 11 [Meta]](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585830)** · [d.o #3585830](https://www.drupal.org/node/3585830) · opened · jjchinquist · 3 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16559820. -->
-  > > _Migrated from comment #2 posted 22 Apr 2026 at 03:10 UTC_
+- **[Onboard Silver AI partner: Drupal Forge](https://git.drupalcode.org/project/ai_initiative/-/work_items/3583297)** · [d.o #3583297](https://www.drupal.org/node/3583297) · opened · kepol · 5 comments · category::task, management, priority, priority::normal
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16539940. -->
+  > > _Migrated from comment #2 posted 06 Apr 2026 at 15:57 UTC_
   > 
   > 
   > > Updated issue summary
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16559821. -->
-  > > _Migrated from comment #3 posted 22 Apr 2026 at 03:12 UTC_
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550859. -->
+  > > _Migrated from comment #3 posted 15 Apr 2026 at 02:39 UTC_
   > 
   > 
-  > > Updated issue summary
-- **[[META] Webinar for DB Schenker](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586411)** · opened · jmsaunders · 1 comments · AI Initiative, AI Initiative Sprint, AI Marketing
-- **[POST EVENT DB SCHENKER - Upload Recording with Meta Data](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586426)** · opened · unassigned · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-- **[POST EVENT DB SCHENKER - Publish Post Event Social Recap](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586425)** · opened · unassigned · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-- **[POST EVENT DB SCHENKER - Attendee follow-up](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586424)** · opened · unassigned · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-- **[PROMOTION DB SCHENKER - Write and execute pre-event promotion plan](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586423)** · opened · jmsaunders · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-- **[PROMOTION DB SCHENKER - Partner Amplification](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586422)** · opened · jmsaunders · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-- **[PRODUCTION DB SCHENKER - Write Run of Show](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586421)** · opened · jmsaunders · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-- **[PRODUCTION DB SCHENKER - Set Up Registration Page](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586420)** · opened · jmsaunders · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-- **[PRODUCTION DB SCHENKER - Dry Run and Tech Check](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586419)** · opened · jmsaunders · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-- **[CONTENT DB SCHENKER - Prepare capability demo](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586418)** · opened · jmsaunders · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-- **[CONTENT DB SCHENKER - Develop interview questions and Q&A script](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586417)** · opened · jmsaunders · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-- **[PLANNING DB Schenker - Confirm date, time, and platform](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586413)** · opened · jmsaunders · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-- **[PLANNING DB SCHENKER - Confirm speaker commitment](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586414)** · opened · jmsaunders · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-- **[PLANNING DB SCHENKER - Develop agenda and outline](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586415)** · opened · jmsaunders · 0 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-- **[CONTENT DB SCHENKER - Create slide deck](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586416)** · opened · jmsaunders · 0 comments · AI Initiative, AI Initiative Sprint, category::task, marketing
-- **[AI Initiative Marketing Meeting May 4 2026](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586412)** · opened · jmsaunders · 1 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-- **[AI Initiative Marketing Meeting April 27](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584282)** · [d.o #3584282](https://www.drupal.org/node/3584282) · opened · jmsaunders · 1 comments · AI Marketing, category::task, marketing, priority::normal
-- **[The AI Summit London Event META](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585985)** · [d.o #3585985](https://www.drupal.org/node/3585985) · opened · unassigned · 14 comments · category::task, marketing, priority::normal, state::accepted
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558587. -->
-  > > _Migrated from comment #2 posted 21 Apr 2026 at 11:12 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558590. -->
-  > > _Migrated from comment #3 posted 21 Apr 2026 at 11:15 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558681. -->
-  > > _Migrated from comment #4 posted 21 Apr 2026 at 12:24 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558771. -->
-  > > _Migrated from comment #5 posted 21 Apr 2026 at 13:15 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558772. -->
-  > > _Migrated from comment #6 posted 21 Apr 2026 at 13:17 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558775. -->
-  > > _Migrated from comment #7 posted 21 Apr 2026 at 13:17 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16559048. -->
-  > > _Migrated from comment #8 posted 21 Apr 2026 at 15:27 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16559052. -->
-  > > _Migrated from comment #9 posted 21 Apr 2026 at 15:28 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16559055. -->
-  > > _Migrated from comment #10 posted 21 Apr 2026 at 15:29 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16559058. -->
-  > > _Migrated from comment #11 posted 21 Apr 2026 at 15:30 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16560367. -->
-  > > _Migrated from comment #12 posted 22 Apr 2026 at 11:02 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16560370. -->
-  > > _Migrated from comment #13 posted 22 Apr 2026 at 11:05 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16560372. -->
-  > > _Migrated from comment #14 posted 22 Apr 2026 at 11:06 UTC_
-  > 
-  > 
-  > > Updated issue summary
-- **[Promotional imagery for The AI Summit London](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585956)** · [d.o #3585956](https://www.drupal.org/node/3585956) · opened · slawrence10 · 7 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558380. -->
-  > > _Migrated from comment #2 posted 21 Apr 2026 at 09:05 UTC_
-  > 
-  > 
-  > ```
-  > - Component: ... to be triaged
-  > + Component: Marketing
-  > 
-  > ```
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558419. -->
-  > > _Migrated from comment #3 posted 21 Apr 2026 at 09:29 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > > **File** [example-header.png](https://www.drupal.org/files/issues/2026-04-21/example-header.png) 
-  > 
-  > > **File** [promo-block.png](https://www.drupal.org/files/issues/2026-04-21/promo-block.png) 
-  > 
-  > ```
-  > - Title:         LinkedIn cards for The AI Summit London
-  > + Title:         Promotional imagery for The AI Summit London
-  > 
-  > ```
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558427. -->
-  > > _Migrated from comment #4 posted 21 Apr 2026 at 09:33 UTC_
-  > 
-  > 
-  > <p>Scott: whilst I get up to speed with the positioning of what we are presenting at AI Summit London you can start to work on the look and feel.</p>
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558429. -->
-  > > _Migrated from comment #5 posted 21 Apr 2026 at 09:36 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **slawrence10** (2026-04-22): <!-- Migrated from comment CID #16558433. -->
-  > > _Migrated from comment #6 posted 21 Apr 2026 at 09:39 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: slawrence10
-  > 
-  > ```
-  > 
-  > <p>Hey Paul, absolutely. I'll work on a concept through exploring landing page graphics - that will also give you assets ready to go for when you have copy.</p>
-  > <p>I'll come back to you on Thursday with some initial movement.</p>
-  > **pdjohnson** (2026-04-24): @slawrence10 please prioritise this early in the sprint so I can create the landing page.
-- **[AI Summit London: Create a landing page](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586408)** · opened · pdjohnson · 1 comments · AI Marketing, state::accepted
-- **[Banner for NYC Summit](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584076)** · [d.o #3584076](https://www.drupal.org/node/3584076) · opened · jmsaunders · 10 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16546210. -->
-  > > _Migrated from comment #2 posted 10 Apr 2026 at 16:13 UTC_
-  > 
-  > 
-  > ```
-  >  Parent issue:
-  >  + #3573949: Drupal AI Summit NYC META
-  > 
-  > ```
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16553356. -->
-  > > _Migrated from comment #3 posted 16 Apr 2026 at 14:59 UTC_
-  > 
-  > 
-  > <p>The banners will likely need to be resized. They are a a 35.25 x 89.37 inch rollup right now. I believe that Fedex|Kinkos needs 32&rdquo; x 80&rdquo;. This is probably due to the difference between European and US standards.</p>
-  > <p><a href="https://www.office.fedex.com/default/retractable-banners.html?CMP=KNC-8000047-68-9-950-1110000-US-US-EN-123650:123812:2201352&amp;ds_k=fedex+stand+up+banner&amp;gclsrc=aw.ds&amp;&amp;s_kwcid=AL!20832!3!650951848935!e!!g!!fedex%20stand%20up%20banner&amp;gad_source=1&amp;gad_campaignid=19808452484&amp;gbraid=0AAAAADNz-onLUQtujSK6L-hHzzpPDxEnu&amp;gclid=Cj0KCQjwkYLPBhC3ARIsAIyHi3TfySV4lAMy0CyfMdfVCmQ3xUZF1vuDliM5HItoPdedHFFX5jndM88aAv0LEALw_wcB">File Format Instructions</a></p>
-  > <p>Also it would be lovely if amazee.ai could be added as one of the providers on the provider's banner. </p>
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16553805. -->
-  > > _Migrated from comment #4 posted 16 Apr 2026 at 21:17 UTC_
-  > 
-  > 
-  > <p>Met with Matthew today. He needs the banners re-designing for US dimensions.</p>
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16556775. -->
-  > > _Migrated from comment #5 posted 20 Apr 2026 at 09:05 UTC_
-  > 
-  > 
-  > <p>Angela our design is assigned to do this work.</p>
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16557042. -->
-  > > _Migrated from comment #6 posted 20 Apr 2026 at 13:03 UTC_
-  > 
-  > 
-  > > **File** [Roll-Up_AISummit_NewYork.zip](https://www.drupal.org/files/issues/2026-04-20/Roll-Up_AISummit_NewYork.zip) 
-  > 
-  > <p>Hi Matthew,</p>
-  > <p>here are the resized pull ups with the amazee.ai logo in place. Please review and let me know of any issues <a href="https://www.drupal.org/files/issues/2026-04-20/Roll-Up_AISummit_NewYork.zip">https://www.drupal.org/files/issues/2026-04-20/Roll-Up_AISummit_NewYork.zip</a></p>
-  > <p>Paul</p>
-  > **angela_saldana** (2026-04-22): <!-- Migrated from comment CID #16557287. -->
-  > > _Migrated from comment #7 posted 20 Apr 2026 at 15:04 UTC_
-  > 
-  > 
-  > <p>Hello,</p>
-  > <p>I'm Angela from 1xINTERNET, I did the design for the Roll-up banners. Paul already shared files in the comments above.</p>
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16557644. -->
-  > > _Migrated from comment #8 posted 20 Apr 2026 at 19:43 UTC_
-  > 
-  > 
-  > <p>Perfect files Angela. Thank you. </p>
-  > <p>I've located a kinkos across the street from the venue and called them.</p>
-  > <ul>
-  > <li>24 hours to print the 2 banners.</li>
-  > <li>Banners will be $250 each. </li>
-  > <li>I can email the files a couple of days before we want to pick up them up. </li>
-  > </ul>
-  > <p>360 Madison Ave<br>
-  > New York, New York<br>
-  > 10017</p>
-  > <p><a href="mailto:usa0980@fedex.com">usa0980@fedex.com</a><br>
-  > tel:+1-212-949-2534</p>
-  > <p>Paul, how does one access budget for the Initiative? Is there someone we need to clear this through before proceeding?</p>
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16560888. -->
-  > > _Migrated from comment #9 posted 22 Apr 2026 at 15:51 UTC_
-  > 
-  > 
-  > <p>Following our conversations about finding a more cost effective route to banners the AI Initiative Leadership have approved proceeding with Bannerbuzz or a supplier with the same cost.</p>
-  > <p>Bannerbuzz, 2.75 ft x 6.75 foot banner would be $130 + tax - need 2x</p>
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16561234. -->
-  > > _Migrated from comment #10 posted 22 Apr 2026 at 19:50 UTC_
-  > 
-  > @angela_saldana and @pdjohnson 
-  > <p>Great. Would Angela be able to update the files for the new format by any chance?</p>
-- **[[META] Webinar for Southwark Council's work with AI](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584600)** · [d.o #3584600](https://www.drupal.org/node/3584600) · opened · pdjohnson · 2 comments · AI Initiative Sprint, AI Marketing, category::plan, marketing
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16557319. -->
-  > > _Migrated from comment #2 posted 20 Apr 2026 at 15:20 UTC_
-  > 
-  > 
-  > > Updated issue summary
-- **[Webinar: Southwark Council Imagery](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586405)** · opened · slawrence10 · 2 comments · AI Initiative Sprint, AI Marketing, state::accepted
-  > **pdjohnson** (2026-04-24): @slawrence10 please let me know when this is complete. Thanks!
-- **[Give d.o editors the ability to embed YouTube videos](https://git.drupalcode.org/project/ai_initiative/-/work_items/3567516)** · [d.o #3567516](https://www.drupal.org/node/3567516) · opened · unassigned · 4 comments · category::feature, daRequest, priority::normal, state::accepted
-  > **hestenet** (2026-04-22): <!-- Migrated from comment CID #16553447. -->
-  > > _Migrated from comment #2 posted 16 Apr 2026 at 16:02 UTC_
-  > 
-  > 
-  > <p>What we really need is a proper media embed option that doesn't require full HTML access to embed iframes... </p>
-  > **dunx** (2026-04-22): <!-- Migrated from comment CID #16556734. -->
-  > > _Migrated from comment #3 posted 20 Apr 2026 at 08:33 UTC_
-  > 
-  > 
-  > <p>Agreed. I hadn't noticed when I raised this that you can't even include images within CKEditor text. It's extremely limiting for content creation. I understand the need to be careful of the media we include, but without any content workflows in place we're heavily reliant on higher level editors to finalise big chunks of content.</p>
-  > **B_man** (2026-04-24): This is actively being worked on. I can't promise a deploy date with all of the other ddos background noise, but it's in the review stage.
-- **[Marketing Content for Drupal AI 1.4.0](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585168)** · [d.o #3585168](https://www.drupal.org/node/3585168) · opened · ZoochaWill · 4 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **ZoochaWill** (2026-04-22): <!-- Migrated from comment CID #16552793. -->
-  > > _Migrated from comment #2 posted 16 Apr 2026 at 09:45 UTC_
-  > 
-  > 
-  > <p>Doc for collaboration: <a href="https://docs.google.com/document/d/1l5Wm3zqVyx8I8pTGGQdcgltn4--iQ3iR5elE-MYz3H0/edit?tab=t.0">https://docs.google.com/document/d/1l5Wm3zqVyx8I8pTGGQdcgltn4--iQ3iR5elE-MYz3H0/edit?tab=t.0</a></p>
-  > **ZoochaWill** (2026-04-22): <!-- Migrated from comment CID #16557415. -->
-  > > _Migrated from comment #3 posted 20 Apr 2026 at 16:07 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + AI Marketing + AI Initiative Sprint
-  > ```
-  > **pdjohnson** (2026-04-24): @ZoochaWill are you working on getting this done? Best approach is to ask Marcus to pen something and then fine tune.
-- **[Promote Drupal AI Learners Club](https://git.drupalcode.org/project/ai_initiative/-/work_items/3583894)** · [d.o #3583894](https://www.drupal.org/node/3583894) · opened · unassigned · 4 comments · AI Marketing, category::task, marketing, priority::normal
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550613. -->
-  > > _Migrated from comment #2 posted 15 Apr 2026 at 00:54 UTC_
-  > 
-  > 
-  > ```
-  >  Related issues:
-  >  + #3584083: Blog article promoting Drupal AI Learners Club
-  > ```
-  > 
-  > <p>Related:</p>
-  > <p><span class="drupalorg-gitlab-issue-link drupalorg-gitlab-link-wrapper"><a href="https://git.drupalcode.org/project/ai_initiative/-/work_items/3584083" class="drupalorg-gitlab-link">https://git.drupalcode.org/project/ai_initiative/-/work_items/3584083</a></span></p>
-  > **pdjohnson** (2026-04-24): @jjchinquist this ticket should be assigned to María Fernanda Silva but I cannot find her as an assignee, any ideas?
-  > **pdjohnson** (2026-04-24): @jjchinquist should be assigned to Maria
-- **[[META] Improve security of AI and VDB provider credential storage](https://git.drupalcode.org/project/ai_initiative/-/work_items/3559052)** · [d.o #3559052](https://www.drupal.org/node/3559052) · opened · unassigned · 18 comments · Drupal CMS, Recipes initiative, Security, Security improvements
-  > **mxr576** (2026-04-22): <!-- Migrated from comment CID #16353977. -->
-  > > _Migrated from comment #2 posted 20 Nov 2025 at 14:42 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + Security improvements + Security
-  > ```
-  > **mxr576** (2026-04-22): <!-- Migrated from comment CID #16354131. -->
-  > > _Migrated from comment #3 posted 20 Nov 2025 at 16:00 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > ```
-  > - Project:       AI (Artificial Intelligence)
-  > + Project:       Drupal AI Initiative
-  > - Version:       2.0.x-dev
-  > - Component:     ...to be triaged
-  > + Component:     ... to be triaged
-  > 
-  > ```
-  > **mxr576** (2026-04-22): <!-- Migrated from comment CID #16354480. -->
-  > > _Migrated from comment #4 posted 20 Nov 2025 at 19:57 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **mxr576** (2026-04-22): <!-- Migrated from comment CID #16354497. -->
-  > > _Migrated from comment #5 posted 20 Nov 2025 at 20:09 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + Recipes initiative
-  > ```
-  > 
-  > <p>Opened a Slack thread to learn more about if relying on Configuration key provider in recipes/site templates in general has ever raised security concerns before.</p>
-  > <p><a href="https://drupal.slack.com/archives/C2AAKNL13/p1763649971321869">https://drupal.slack.com/archives/C2AAKNL13/p1763649971321869</a></p>
-  > **mxr576** (2026-04-22): <!-- Migrated from comment CID #16364848. -->
-  > > _Migrated from comment #6 posted 28 Nov 2025 at 16:34 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > <p>I have been thinking a lot about how to keep the current ease of use while meaningfully improving security, and I am running out of ideas that do not rely on fairly strong assumptions, such as: the private file system is configured and not part of any backup system, or the directory above the web root (or some other specific server location) is writable and also excluded from automated backups. </p>
-  > <p>Compared to storing credentials in configuration, even storing them in plain text in a dedicated file would be an improvement, but that raises the question of where to put that file so that it is reliably available on all environments. <strong>Could we instead aim for a pattern where major hosting providers document or expose a recommended location for these credentials?</strong></p>
-  > <p>If there is no safe file location for credentials, then there is also no safe place on the server to store encryption keys for encrypting credentials that live in configuration, which makes that approach questionable as well. I have also been considering whether using the site&rsquo;s hash salt as an encryption key could serve as a &ldquo;poor man&rsquo;s&rdquo; option for slightly better security: in the ideal case the hash salt is a long random string, but in practice it might also be a short and weak value. Even so, encrypting with it would at least obfuscate credentials stored in the database.</p>
-  > <p>I am curious what others think about these options and whether there are patterns or hosting-level conventions that could help resolve these constraints.</p>
-  > **mxr576** (2026-04-22): <!-- Migrated from comment CID #16364854. -->
-  > > _Migrated from comment #7 posted 28 Nov 2025 at 16:38 UTC_
-  > 
-  > 
-  > <p>I have also noticed that there has been a long&#8209;standing plan to harden the security of the Configuration key provider by encrypting stored values <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-4"><a href="https://www.drupal.org/project/key/issues/2980072" title="Status: Postponed">#2980072: Encrypt key value</a></span>. As a result of that discussion, the Key Encrypt module was created, but it has not seen any real development: <a href="https://www.drupal.org/project/key_encrypt">https://www.drupal.org/project/key_encrypt</a>.</p>
-  > <p>In parallel, the maintainer has also raised the idea of removing the Configuration provider entirely in Key 2.0, similar to how State as a key provider is no longer supported. (Provocative question: is State actually a worse alternative than the Configuration provider?)</p>
-  > <p>See also <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-4"><a href="https://www.drupal.org/project/key/issues/2980072" title="Status: Postponed">#2980072: Encrypt key value</a></span></p>
-  > **phenaproxima** (2026-04-22): <!-- Migrated from comment CID #16373054. -->
-  > > _Migrated from comment #8 posted 06 Dec 2025 at 00:10 UTC_
-  > 
-  > 
-  > <p>I just merged <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-7"><a href="https://www.drupal.org/project/drupal_cms/issues/3560518" title="Status: Closed (fixed)">#3560518: Insecure credential storage used by drupal_cms_ai recipe as default</a></span>, which makes it relatively safe (in Drupal CMS) to store credentials in config, because they will be encrypted at rest using AES-256. The encryption key is generated and stored in a file outside the web root, falling back to state if the file cannot be written (that piece of it is pending release in Key 1.21).</p>
-  > <p>I intend to land these improvements in Key, and I have maintainer buy-in to do that, so hopefully everyone can benefit from the path Drupal CMS has blazed. If there is desire, I can move the encryption bootstrapping stuff into drupal_cms_authentication so that more recipes than just AI may benefit from it.</p>
-  > **mxr576** (2026-04-22): <!-- Migrated from comment CID #16375279. -->
-  > > _Migrated from comment #9 posted 08 Dec 2025 at 10:53 UTC_
-  > 
-  > 
-  > <p>I am planning to create a proper summary about all the awesome things that have happened related to this issue outside of this issue and everything that was considered meanwhile, however, I have to start with the bad news first:</p>
-  > <blockquote><p>
-  > I just merged #3560518: Insecure credential storage used by drupal_cms_ai recipe as default, which makes it relatively safe (in Drupal CMS) to store credentials in config, because they will be encrypted at rest using AES-256.
-  > </p></blockquote>
-  > <p>This had to be rolled back and the rationale for that is described here: <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-7"><a href="https://www.drupal.org/project/drupal_cms/issues/3560518" title="Status: Closed (fixed)">#3560518: Insecure credential storage used by drupal_cms_ai recipe as default</a></span>.</p>
-  > **mxr576** (2026-04-22): <!-- Migrated from comment CID #16375487. -->
-  > > _Migrated from comment #10 posted 08 Dec 2025 at 13:30 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > ```
-  >  Issue tags:
-  >  + Drupal CMS
-  > ```
-  > 
-  > <p>Here is a status update for the period between November 20 and December 8, focusing on recent progress and remaining questions around secure credential storage in the AI Initiative, related provider integrations, and Drupal CMS.</p>
-  > <h3>Project-specific focused improvements</h3>
-  > <h4>Amazee AI provider</h4>
-  > <p>The Amazee AI provider implementation remains somewhat unique among current AI provider integrations, because it explicitly optimizes for low-friction, non-technical &ldquo;trial&rdquo; experiences for end users inside Drupal. For that use case, it continues to use configuration as the default credential storage, so that trial credentials and other environment-specific data can be set through the Amazee admin UI or through automated trial setup flows.</p>
-  > <p>Over the past weeks, Amazee and Pronovix worked together to put in place a more secure out-of-the-box configuration path that targets non-trial and production-like use cases. This improved path is based on configuration overrides for setting credentials and other sensitive values, so that real-world deployments can move away from storing secrets in regular configuration while keeping the trial path simple.</p>
-  > <p>Follow-up work is now tracked under the child issues of <span class="drupalorg-gitlab-issue-link drupalorg-gitlab-link-wrapper"><a href="https://git.drupalcode.org/project/ai_provider_amazeeio/-/work_items/3559849" class="drupalorg-gitlab-link">https://git.drupalcode.org/project/ai_provider_amazeeio/-/work_items/3559849</a></span>. The main remaining task there is to document a secure configuration approach for production usage that is practical for site builders and hosting providers, while being clearly distinct from the trial experience.</p>
-  > <p>Some of the problematic patterns that were corrected in the Amazee AI provider had originally been inherited from the Postgres VDB provider. Because of this, a separate issue was opened for that project as well at <a href="https://www.drupal.org/project/ai_vdb_provider_postgres/issues/3560447">https://www.drupal.org/project/ai_vdb_provider_postgres/issues/3560447</a> to make sure similar improvements and security expectations are applied consistently across providers.</p>
-  > <h3>Drupal CMS sprint and findings</h3>
-  > <p>In parallel, there has been focused exploration with the Drupal CMS team to answer a broader question: is there a &ldquo;zero configuration&rdquo;, out-of-the-box, secure, and cross-hosting-provider way to store third-party credentials created by AI modules and recipes? After roughly two weeks of iteration, the current conclusion is that there is no single, simple solution that fully meets all of these constraints without trade-offs.</p>
-  > <p>An initial Slack discussion with @phenaproxima and @longwave explored the idea that always configuring the private file system and using it for credentials or encryption keys could be a relatively straightforward solution. The first implementation experimented with subscribing to early kernel events to ensure a private file system path above the web root was always created with a random directory name, effectively providing a default secure place for secrets in Drupal CMS.</p>
-  > <p>As work progressed (see the commits listed on <a href="https://git.drupalcode.org/project/drupal_cms/-/merge_requests/704/commits">https://git.drupalcode.org/project/drupal_cms/-/merge_requests/704/commits</a>), maintainability concerns emerged around putting this logic into drupal_cms_helper and performing &ldquo;is private file system configured?&rdquo; checks on every request. This gradually shifted the approach to one where the private file system became the primary storage for encryption keys when available, but silently fell back to configuration storage when not available, which in practice made the security characteristics only marginally better than the current situation.</p>
-  > <h4>Key takeaways from the CMS work</h4>
-  > <ul>
-  > <li>As long as configuring a private file system is not a hard requirement for installing Drupal core, it is not reliable enough to serve as the universal, primary storage for credentials or encryption keys. Realistically, such a requirement could only be introduced in a future major version (for example Drupal 12.0.0), and even then it would need careful planning.</li>
-  > <li>Even when a private file system is configured, there is no guarantee that the underlying hosting environment treats that location as properly secured or excluded from automated backups. In particular, credentials and encryption keys ideally should not be included in standard backups, which means &ldquo;configured&rdquo; does not automatically imply &ldquo;safe and compliant&rdquo; for secrets.</li>
-  > </ul>
-  > <p>It also seems unlikely that a third-party provider will step in with a universally available, free trial &ldquo;offsite key storage&rdquo; service specifically for Drupal, because that service would itself require credentials that also need to be stored securely. This quickly becomes an endless loop where a key management solution first needs its own keys.</p>
-  > <h4>Proposed short-term direction</h4>
-  > <p>As a more realistic short-term step (one that does not require making the private file system a core installation requirement) a dedicated programming API could be introduced that allows hosting providers to declare a preferred default location for sensitive credential storage within their infrastructure. When this location is set, AI modules, recipes, or any Drupal subsystem that needs to store secrets could use that path as a first-class, hosting-aware credential store.</p>
-  > <p>If the hosting-specific location is not defined, the system would fall back to current storage options (for example configuration), but it could actively warn site owners and developers in multiple places that the existing storage is not suitable for production secrets. This would allow more secure defaults where possible, while keeping existing sites functional and clearly signalling risk where it cannot be fully mitigated out of the box.</p>
-  > <h4>Rationale and hosting examples</h4>
-  > <ul>
-  > <li>Pronovix already uses a non-standard, dedicated path on Amazee-hosted sites for environment-specific secrets, but there is no official recommendation from Amazee for such a location today. An explicit API would make this more discoverable and consistent.</li>
-  > <li>Acquia documents a <code>nobackup</code> directory as a recommended place for private information that should not be included in regular backups, which is a strong candidate to expose through such an API: <a href="https://docs.acquia.com/acquia-cloud-platform/storing-private-information-file-system">https://docs.acquia.com/acquia-cloud-platform/storing-private-information-file-system</a></li>
-  > <li>Pantheon&rsquo;s situation is &ldquo;to be determined&rdquo;; they may rely on pantheon-secrets for similar use cases, but this would need to be mapped to a Drupal-facing API surface if appropriate.</li>
-  > <li>Platform.sh and other hosting providers would likewise need to define their own conventions and map them into this API, which could include marking the private file base path itself as a valid credential store where this is safe and well managed.</li>
-  > </ul>
-  > <p>One advantage of this approach is that it does not require deep changes in the Key module, nor does it force waiting on a major Key 2.x release. Existing, read-only <code>FileKeyProvider</code> could already benefit from a well-defined hosting-aware base path when reading keys from the file system.</p>
-  > <p>An alternative or complementary direction would allow hosting providers to expose environment-specific encryption keys from their own secure key management systems. In that model, Drupal would not need to generate or persist encryption keys at all; instead, it would use externally managed keys to encrypt and decrypt sensitive data. This raises new questions about automated key rotation and how that would be coordinated with Drupal&rsquo;s encryption mechanisms, but it could help avoid file-based key storage in some environments.</p>
-  > <p>In practice, a combination of both ideas - a hosting-defined secure storage path plus the option to use externally managed encryption keys - might offer the most flexible and future-proof baseline for AI-related and other sensitive credential storage in Drupal.</p>
-  > **mxr576** (2026-04-22): <!-- Migrated from comment CID #16375968. -->
-  > > _Migrated from comment #11 posted 08 Dec 2025 at 21:30 UTC_
-  > 
-  > 
-  > ```
-  >  Related issues:
-  >  + #3193591: Add a secrets store to Drupal core
-  > ```
-  > **mxr576** (2026-04-22): <!-- Migrated from comment CID #16377367. -->
-  > > _Migrated from comment #12 posted 09 Dec 2025 at 11:14 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + Drupal CMS
-  > ```
-  > **mxr576** (2026-04-22): <!-- Migrated from comment CID #16383761. -->
-  > > _Migrated from comment #13 posted 15 Dec 2025 at 13:51 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **mxr576** (2026-04-22): <!-- Migrated from comment CID #16383779. -->
-  > > _Migrated from comment #14 posted 15 Dec 2025 at 13:56 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > <h2>Backup of the original conversation starter ideas</h2>
-  > <p>Evaluate and implement one or more of the following approaches to improve credential storage security.</p>
-  > <h3 id="proposed-resolution-option-1">Option 1: Add warnings for insecure credential storage</h3>
-  > <p><strong>Complexity:</strong> Easy<br><br>
-  > <strong>Direct security improvement:</strong> No (provides visibility only)</p>
-  > <p>Implement warnings when AI-related credentials are stored in configuration. Warnings should appear in:</p>
-  > <ul>
-  > <li>AI configuration pages</li>
-  > <li><code>/admin/reports/status</code> page</li>
-  > </ul>
-  > <p><strong>Notes:</strong> The generic warning displayed on <code>/admin/reports/status</code> could also be contributed back to the Key module. The Key module could introduce a new API allowing key providers to be flagged as secure or insecure, displaying warnings when insecure key providers are in use.</p>
-  > <h3 id="proposed-resolution-option-2">Option 2: Use a more secure default key provider</h3>
-  > <p><strong>Complexity:</strong> Medium<br><br>
-  > <strong>Direct security improvement:</strong> Yes (prevents accidental VCS commits and environment synchronization)</p>
-  > <p><strong>Context:</strong> Similar challenges have been solved by other Drupal modules. The Apigee Edge module developed a private file key provider that stores credentials in the private filesystem. This approach has been successfully used for 5 years and provides:</p>
-  > <ul>
-  > <li>Credentials stored outside the database and configuration</li>
-  > <li>Protection when database dumps are leaked (though not when the complete system is compromised)</li>
-  > <li>Reasonable security requirements for sites experimenting with third-party APIs in 2025</li>
-  > </ul>
-  > <p><strong>Pros:</strong></p>
-  > <ul>
-  > <li>Credentials stored outside the database and configuration</li>
-  > <li>Protection when database dumps are leaked (though not when the complete system is compromised)</li>
-  > <li>Reasonable security requirements for sites experimenting with third-party APIs in 2025</li>
-  > </ul>
-  > <p><strong>Cons and Challenges:</strong></p>
-  > <ul>
-  > <li>Private filesystem is not always configured on sites so it may not be available.</li>
-  > <li>When it is configured, it might be part of an automated backup system&mdash;and credentials in plain text format stored in files also should not be backed up.</li>
-  > <li>A file location outside of the web root is an ideal location but they may not be writeable in every infrastructure (e.g., Lagoon).</li>
-  > </ul>
-  > <p><strong>Implementation approaches:</strong></p>
-  > <ol>
-  > <li>Create a writable File key provider either in AI module or contribute to Key module that stores credentials in files outside the webroot</li>
-  > <li>Implement validation to verify file locations are not inside the webroot</li>
-  > <li>Provide clear documentation instructing users to exclude credential file locations from backup systems and synchronization solutions</li>
-  > <li>Require configuring private filesystem for AI experiments</li>
-  > </ol>
-  > <p>The built-in File provider can only read file content but cannot write, which limits its usefulness.</p>
-  > <p><strong>References:</strong> <a href="https://www.drupal.org/docs/extending-drupal/contributed-modules/contributed-module-documentation/apigee/configure-the-connection-to-apigees-key-provider-security">Apigee Edge key provider documentation</a>. <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-14"><a href="https://www.drupal.org/project/key/issues/3300224" title="Status: Reviewed &amp; tested by the community">#3300224: Key file not loaded when Stream Wrapper is used for file location before Drupal bootstrap completes</a></span> has to be merged to provide file stream wrapper support.</p>
-  > <h3 id="proposed-resolution-option-3">Option 3: Depend on Config Ignore and enforce export ignore</h3>
-  > <p><strong>Complexity:</strong> Medium<br><br>
-  > <strong>Direct security improvement:</strong> Partial (prevents VCS commits and config import overwrites, but credentials remain in database)</p>
-  > <p>If maintaining Configuration key provider as default:</p>
-  > <ol>
-  > <li>Add Config Ignore module as a dependency</li>
-  > <li>Leverage Config Ignore's export on ignore feature</li>
-  > <li>Automatically flag configurations and Key entities using the configuration provider and containing sensitive data and credentials</li>
-  > <li>Implement <code>hook_config_ignore_ignored_alter()</code> directly, or provide an abstraction layer in AI module</li>
-  > <li>Consider adding a new method to <code>AIProviderInterface</code> that every AI/VDB provider must implement to specify their export ignore list</li>
-  > </ol>
-  > <p><strong>Pros:</strong></p>
-  > <ul>
-  > <li>Do not get stored in code or exported to VCS by accident</li>
-  > <li>Do not override credentials in an environment on config import</li>
-  > </ul>
-  > <p><strong>Cons:</strong> However, credentials still remain in the database.</p>
-  > **Marcus_Johansson** (2026-04-22): <!-- Migrated from comment CID #16383991. -->
-  > > _Migrated from comment #15 posted 15 Dec 2025 at 15:41 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + priority
-  > ```
-  > **mxr576** (2026-04-22): <!-- Migrated from comment CID #16451283. -->
-  > > _Migrated from comment #16 posted 02 Feb 2026 at 10:45 UTC_
-  > 
-  > 
-  > <p>I haven&rsquo;t provided an update on this issue for a long time. Sorry about that. I&rsquo;m only going to share a quick update.</p>
-  > <p><a href="https://www.drupal.org/project/easy_encryption">https://www.drupal.org/project/easy_encryption</a> is shaping up to be a clear solution for improved security.</p>
-  > <p>Drupal CMS 2.0.0 almost introduced this dependency, but due to a last-minute request for an export encryption UI (<span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-7"><a href="https://www.drupal.org/project/drupal_cms/issues/3560518" title="Status: Closed (fixed)">#3560518: Insecure credential storage used by drupal_cms_ai recipe as default</a></span>), it missed the (merge) train. However, there is a gentleman&rsquo;s agreement that it will be introduced in an upcoming patch release of Drupal CMS 2.x.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550390. -->
-  > > _Migrated from comment #17 posted 14 Apr 2026 at 22:04 UTC_
-  > 
-  > 
-  > ```
-  > - Component: ... to be triaged
-  > + Component: Code
-  > 
-  > ```
-  > **mxr576** (2026-04-24): I am very much late in providing update on this issue and closing it (How can I close it? :thinking: ).
-  > 
-  > Drupal CMS 2.1.0 introduce Easy Encryption module as default protection for plain text credentials. Other recipes and contrib modules could also rely on that module as a default solution for avoiding user-provided credentials to be stored as plain text.
-- **[Create sales deck](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585426)** · [d.o #3585426](https://www.drupal.org/node/3585426) · opened · james_tillotson · 3 comments · AI Marketing, category::task, marketing, priority::normal
-  > **james_tillotson** (2026-04-22): <!-- Migrated from comment CID #16554431. -->
-  > > _Migrated from comment #2 posted 17 Apr 2026 at 12:30 UTC_
-  > 
-  > 
-  > ```
-  > - Component: Documentation
-  > + Component: Marketing
-  > 
-  > ```
-  > **pdjohnson** (2026-04-24): @james_tillotson 
-  > 
-  > Unpolluted slide deck: https://docs.google.com/presentation/d/1mTbqT3A_Q-5T0UBno1xO_Zcs0fCfqiuerayuUKQtbBw/edit?slide=id.g38c0e8c623a_1_176#slide=id.g38c0e8c623a_1_176 (content not good but the templates are the base ones)
-  > 
-  > Bear in mind that nobody ever really created a proper implementation of the Drupal Brand into a slide deck and whoever created this Google template didn't really do a great job. It is a pig to work with. What you will find with the slide decks below is how we have separated out some of the layers to make it more editable.
-  > 
-  > Paris slides for main stage: https://docs.google.com/presentation/d/1LzjHDrXhTeG28Dfek0e9_ei2wH5zpWQP7p6oS232-Ok/edit
-  > 
-  > Drupal Chicago Partner Summit 2026: Drupal AI Initiative https://docs.google.com/presentation/d/1bS9_edJ2TFNzXXNwE9qADM83FoTr7rZpzTbqCynOkPc/edit?slide=id.g36b00de0898_5_0#slide=id.g36b00de0898_5_0
-  > 
-  > Drupal AI Initiative: A Year in Review with Panel Q&A https://docs.google.com/presentation/d/1qqGNgPs6sGibrDxibcHSSRau7kAlE_DCuuBeJW56DCE/edit
-  > 
-  > Why Drupal is the perfect foundation for your AI: poor design but great content: https://docs.google.com/presentation/d/1_PtvvILhWngngqQKbQORgkiIG0dlYBowI-VFKeD8pQM/edit?slide=id.g3ae48628f72_0_5#slide=id.g3ae48628f72_0_5
-- **[rtest](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586410)** · opened · unassigned · 1 comments · AI Marketing
-- **[Contribution workflow for the AI Marketing Initiative](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586382)** · opened · jjchinquist · 1 comments · AI Marketing
-- **[Marketing Sprint April 13 - 27 META](https://git.drupalcode.org/project/ai_initiative/-/work_items/3583465)** · [d.o #3583465](https://www.drupal.org/node/3583465) · opened · jjchinquist · 62 comments · AI Initiative Sprint, AI Marketing, category::plan, marketing
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16541100. -->
-  > > _Migrated from comment #2 posted 07 Apr 2026 at 13:20 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16541549. -->
-  > > _Migrated from comment #3 posted 07 Apr 2026 at 16:30 UTC_
-  > 
-  > 
-  > ```
-  > - Title: Sprint April 13 - 24 META
-  > + Title: Marketing Sprint April 13 - 24 META
-  > 
-  > ```
-  > 
-  > <p>Please include "marketing" in the titles as the ai_initiative project is used by other groups too (e.g. ux, funding, etc)</p>
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16543592. -->
-  > > _Migrated from comment #4 posted 09 Apr 2026 at 07:13 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16543908. -->
-  > > _Migrated from comment #5 posted 09 Apr 2026 at 10:29 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16543940. -->
-  > > _Migrated from comment #6 posted 09 Apr 2026 at 10:43 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16543957. -->
-  > > _Migrated from comment #7 posted 09 Apr 2026 at 10:50 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16543961. -->
-  > > _Migrated from comment #8 posted 09 Apr 2026 at 10:50 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16543994. -->
-  > > _Migrated from comment #9 posted 09 Apr 2026 at 11:01 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16544256. -->
-  > > _Migrated from comment #10 posted 09 Apr 2026 at 13:42 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16544342. -->
-  > > _Migrated from comment #11 posted 09 Apr 2026 at 14:16 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **rgladden** (2026-04-22): <!-- Migrated from comment CID #16545121. -->
-  > > _Migrated from comment #12 posted 10 Apr 2026 at 00:29 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **rgladden** (2026-04-22): <!-- Migrated from comment CID #16545129. -->
-  > > _Migrated from comment #13 posted 10 Apr 2026 at 00:37 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **rgladden** (2026-04-22): <!-- Migrated from comment CID #16545130. -->
-  > > _Migrated from comment #14 posted 10 Apr 2026 at 00:37 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16545286. -->
-  > > _Migrated from comment #15 posted 10 Apr 2026 at 07:42 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16545320. -->
-  > > _Migrated from comment #16 posted 10 Apr 2026 at 07:58 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16545328. -->
-  > > _Migrated from comment #17 posted 10 Apr 2026 at 08:02 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16545332. -->
-  > > _Migrated from comment #18 posted 10 Apr 2026 at 08:03 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16545362. -->
-  > > _Migrated from comment #19 posted 10 Apr 2026 at 08:35 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **ZoochaWill** (2026-04-22): <!-- Migrated from comment CID #16545773. -->
-  > > _Migrated from comment #20 posted 10 Apr 2026 at 11:36 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16545775. -->
-  > > _Migrated from comment #21 posted 10 Apr 2026 at 11:40 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **ZoochaWill** (2026-04-22): <!-- Migrated from comment CID #16545776. -->
-  > > _Migrated from comment #22 posted 10 Apr 2026 at 11:41 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **ZoochaWill** (2026-04-22): <!-- Migrated from comment CID #16545996. -->
-  > > _Migrated from comment #23 posted 10 Apr 2026 at 14:06 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **dan2k3k4** (2026-04-22): <!-- Migrated from comment CID #16546700. -->
-  > > _Migrated from comment #24 posted 11 Apr 2026 at 07:46 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **dan2k3k4** (2026-04-22): <!-- Migrated from comment CID #16546701. -->
-  > > _Migrated from comment #25 posted 11 Apr 2026 at 07:47 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **dan2k3k4** (2026-04-22): <!-- Migrated from comment CID #16546785. -->
-  > > _Migrated from comment #26 posted 11 Apr 2026 at 10:34 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pritamprasun** (2026-04-22): <!-- Migrated from comment CID #16548055. -->
-  > > _Migrated from comment #27 posted 13 Apr 2026 at 12:54 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pritamprasun** (2026-04-22): <!-- Migrated from comment CID #16548057. -->
-  > > _Migrated from comment #28 posted 13 Apr 2026 at 12:56 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pritamprasun** (2026-04-22): <!-- Migrated from comment CID #16548069. -->
-  > > _Migrated from comment #29 posted 13 Apr 2026 at 13:04 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16548290. -->
-  > > _Migrated from comment #30 posted 13 Apr 2026 at 15:07 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16548314. -->
-  > > _Migrated from comment #31 posted 13 Apr 2026 at 15:14 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16548327. -->
-  > > _Migrated from comment #32 posted 13 Apr 2026 at 15:18 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16548418. -->
-  > > _Migrated from comment #33 posted 13 Apr 2026 at 15:52 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > <p>Sprint Planning meeting just concluded. Sprint has started.</p>
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16548956. -->
-  > > _Migrated from comment #34 posted 14 Apr 2026 at 00:01 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16548965. -->
-  > > _Migrated from comment #35 posted 14 Apr 2026 at 00:10 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16548967. -->
-  > > _Migrated from comment #36 posted 14 Apr 2026 at 00:12 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16551791. -->
-  > > _Migrated from comment #37 posted 15 Apr 2026 at 15:05 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **dunx** (2026-04-22): <!-- Migrated from comment CID #16551909. -->
-  > > _Migrated from comment #38 posted 15 Apr 2026 at 16:00 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16553559. -->
-  > > _Migrated from comment #39 posted 16 Apr 2026 at 17:27 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > > **File** [burndown.jpg](https://www.drupal.org/files/issues/2026-04-16/burndown.jpg) 
-  > 
-  > <p>Added burndown info for monitoring Sprint progress. </p>
-  > **james_tillotson** (2026-04-22): <!-- Migrated from comment CID #16554437. -->
-  > > _Migrated from comment #40 posted 17 Apr 2026 at 12:32 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **james_tillotson** (2026-04-22): <!-- Migrated from comment CID #16554440. -->
-  > > _Migrated from comment #41 posted 17 Apr 2026 at 12:34 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **james_tillotson** (2026-04-22): <!-- Migrated from comment CID #16554447. -->
-  > > _Migrated from comment #42 posted 17 Apr 2026 at 12:35 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **james_tillotson** (2026-04-22): <!-- Migrated from comment CID #16554467. -->
-  > > _Migrated from comment #43 posted 17 Apr 2026 at 12:41 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16556965. -->
-  > > _Migrated from comment #44 posted 20 Apr 2026 at 11:49 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16557232. -->
-  > > _Migrated from comment #45 posted 20 Apr 2026 at 14:43 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16557237. -->
-  > > _Migrated from comment #46 posted 20 Apr 2026 at 14:45 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16557300. -->
-  > > _Migrated from comment #47 posted 20 Apr 2026 at 15:10 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16557301. -->
-  > > _Migrated from comment #48 posted 20 Apr 2026 at 15:11 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16557318. -->
-  > > _Migrated from comment #49 posted 20 Apr 2026 at 15:20 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **dunx** (2026-04-22): <!-- Migrated from comment CID #16557399. -->
-  > > _Migrated from comment #50 posted 20 Apr 2026 at 16:00 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **dunx** (2026-04-22): <!-- Migrated from comment CID #16557407. -->
-  > > _Migrated from comment #51 posted 20 Apr 2026 at 16:03 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **ZoochaWill** (2026-04-22): <!-- Migrated from comment CID #16557416. -->
-  > > _Migrated from comment #52 posted 20 Apr 2026 at 16:09 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16558116. -->
-  > > _Migrated from comment #53 posted 21 Apr 2026 at 06:01 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16558184. -->
-  > > _Migrated from comment #54 posted 21 Apr 2026 at 06:46 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558383. -->
-  > > _Migrated from comment #55 posted 21 Apr 2026 at 09:07 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16559063. -->
-  > > _Migrated from comment #56 posted 21 Apr 2026 at 15:31 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16559091. -->
-  > > _Migrated from comment #57 posted 21 Apr 2026 at 15:41 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16559126. -->
-  > > _Migrated from comment #58 posted 21 Apr 2026 at 15:55 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16561243. -->
-  > > _Migrated from comment #59 posted 22 Apr 2026 at 20:02 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16561244. -->
-  > > _Migrated from comment #60 posted 22 Apr 2026 at 20:03 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16561250. -->
-  > > _Migrated from comment #61 posted 22 Apr 2026 at 20:06 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16561289. -->
-  > > _Migrated from comment #62 posted 22 Apr 2026 at 20:30 UTC_
-  > 
-  > 
-  > > Updated issue summary
-- **[AI skill for AI Marketing Initiative: guide for setting up AI tooling to interact with GitLab via the CLI](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586406)** · opened · unassigned · 2 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **jjchinquist** (2026-04-24): ## Gotcha for the `glab api` section: `@file` syntax is **not** supported
-  > 
-  > When the skill eventually documents `glab api` as the primary CLI for drupalcode.org write operations, call out this trap explicitly — it silently destroys data.
-  > 
-  > ### What happens
-  > 
-  > `glab api -f description=@/path/to/file.txt` does **not** read the file. `glab` passes the literal string `@/path/to/file.txt` as the field value. On a PUT to an issue description, that means the entire description gets **replaced** with the single-line path string. No error, no warning — destructive.
-  > 
-  > This is a point of divergence from the `gh` CLI, where `gh api -f body=@/path/to/file.txt` does read the file. Muscle memory from `gh` will burn anyone migrating to `glab`.
-  > 
-  > ### Workarounds that work
-  > 
-  > 1. **Shell variable** (cleanest for scripted/Claude use):
-  >     ```bash
-  >     DESC=$(cat file.txt)
-  >     glab api --hostname git.drupalcode.org -X PUT "projects/<id>/issues/<iid>" \
-  >       -f "description=$DESC"
-  >     ```
-  > 2. **curl** with `--data-urlencode`:
-  >     ```bash
-  >     curl -H "PRIVATE-TOKEN: $DRUPALCODE_GITLAB_TOKEN" \
-  >       -X PUT "https://git.drupalcode.org/api/v4/projects/<id>/issues/<iid>" \
-  >       --data-urlencode "description@file.txt"
-  >     ```
-  > 
-  > ### Real incident
-  > 
-  > Burned during the template-cleanup work on [#3581782](https://git.drupalcode.org/project/ai_initiative/-/work_items/3581782) / [#3582480](https://git.drupalcode.org/project/ai_initiative/-/work_items/3582480) (2026-04-24): two issue descriptions got wiped to the literal string `@/tmp/inf-<iid>-description-new.txt`. Recovered because the intended content was still on disk in `/tmp`. Lesson worth baking into the skill so the next person doesn't rediscover it destructively.
-  > 
-  > ### Suggestion for the skill text
-  > 
-  > In the "CLI tools" / "Command mappings" subsection the ticket already proposes (AC-2.3), add a short **"Differences from `gh`"** callout that flags this specific `@file` divergence, and recommends the `DESC=$(cat file)` pattern as the default for any write operation with multi-line body content.
-  > 
-  > ---
-  > 
-  > *Drafted with the assistance of AI (Claude Code / Opus 4.7).*
-- **[Gitlab workflows & board specific to the AI's Marketing Initiative](https://git.drupalcode.org/project/ai_initiative/-/work_items/3582480)** · [d.o #3582480](https://www.drupal.org/node/3582480) · closed · jjchinquist · 13 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16535307. -->
-  > > _Migrated from comment #2 posted 01 Apr 2026 at 18:23 UTC_
-  > 
-  > 
-  > <p>Talking with Tim Lehnen and he thinks this should all be doable. Note that we need to add Jeremy as a maintainer to set this up.</p>
-  > <p>We are still on track for April 8th for the cutover.</p>
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16541144. -->
-  > > _Migrated from comment #3 posted 07 Apr 2026 at 13:40 UTC_
-  > 
-  > 
-  > <p>@kristen_pol, please let me know who I need to get approval from to be added as maintainer for the ai_initiative. Thanks.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16541246. -->
-  > > _Migrated from comment #4 posted 07 Apr 2026 at 14:23 UTC_
-  > 
-  > 
-  > <p>I can add you but not sure if we should wait until the move to GitLab?</p>
-  > <p>What tasks are you doing within d.o right now?</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16541249. -->
-  > > _Migrated from comment #5 posted 07 Apr 2026 at 14:24 UTC_
-  > 
-  > 
-  > <p>Also, in case you missed it, the GitLab move has been pushed out. The DA has been dealing with DDOS attacks.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16541521. -->
-  > > _Migrated from comment #6 posted 07 Apr 2026 at 16:10 UTC_
-  > 
-  > 
-  > <p>I've added you as an issue maintainer which should be sufficient. Note the GitLab move has been rescheduled to April 21st ish, but we'll know better as we get closer.</p>
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16542362. -->
-  > > _Migrated from comment #7 posted 08 Apr 2026 at 09:21 UTC_
-  > 
-  > 
-  > <p>Perfect, thank you. </p>
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16548182. -->
-  > > _Migrated from comment #8 posted 13 Apr 2026 at 14:20 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + AI Marketing + AI Initiative Sprint
-  > ```
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16557025. -->
-  > > _Migrated from comment #9 posted 20 Apr 2026 at 12:47 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > <h2>Task 2: Label scope prefix &mdash; <code>workflow::*</code> vs <code>state::*</code></h2>
-  > <p><strong>Recommendation:</strong> use <code>state::*</code>.</p>
-  > <h3>Why</h3>
-  > <ol>
-  > <li><strong>Alignment with drupal.org conventions.</strong> <code>state::*</code> is already the emerging pattern on drupal.org's GitLab &mdash; e.g. <code>state::rtbc</code> &mdash; and maps<br>
-  >   directly to Drupal's long-standing issue-status vocabulary. Using the same prefix keeps our Marketing board legible to contributors across drupal.org.</li>
-  > <li><strong>Reads naturally and is shorter.</strong> <code>state::in-review</code> is terser than <code>workflow::in-review</code>, and "state" is the noun contributors already use<br>
-  >   ("what state is this issue in?"). <code>workflow::*</code> is more common in stock GitLab docs, but we are in the drupal.org ecosystem.</li>
-  > <li><strong>Scoped-label semantics match.</strong> A GitLab scoped label enforces one value per scope at a time, which is precisely what a <em>state</em> is. A "workflow" is the<br>
-  >   collection of states and transitions &mdash; not a single value &mdash; so <code>state::*</code> describes the label's meaning more accurately.</li>
-  > </ol>
-  > <h3>One caveat to flag in the contributor docs (Task 7)</h3>
-  > <p>GitLab issues also have a built-in <em>state</em> (open/closed). This hasn't caused confusion with <code>state::rtbc</code> elsewhere on drupal.org, but the contributor docs should<br>
-  >   be explicit that <code>state::*</code> refers to the content-lifecycle label, not the built-in GitLab issue state.</p>
-  > <h3>Proposed concrete labels</h3>
-  > <table>
-  > <thead>
-  > <tr>
-  > <th>Label</th>
-  > <th>Suggested color</th>
-  > </tr>
-  > </thead>
-  > <tbody>
-  > <tr>
-  > <td><code>state::backlog</code></td>
-  > <td>grey</td>
-  > </tr>
-  > <tr>
-  > <td><code>state::planning</code></td>
-  > <td>light blue</td>
-  > </tr>
-  > <tr>
-  > <td><code>state::in-progress</code></td>
-  > <td>blue</td>
-  > </tr>
-  > <tr>
-  > <td><code>state::in-review</code></td>
-  > <td>yellow</td>
-  > </tr>
-  > <tr>
-  > <td><code>state::approval</code></td>
-  > <td>orange</td>
-  > </tr>
-  > <tr>
-  > <td><code>state::ready-to-publish</code></td>
-  > <td>teal</td>
-  > </tr>
-  > <tr>
-  > <td><code>state::published</code></td>
-  > <td>green</td>
-  > </tr>
-  > <tr>
-  > <td><code>state::promotion</code></td>
-  > <td>light green</td>
-  > </tr>
-  > <tr>
-  > <td><code>state::done</code></td>
-  > <td>dark green</td>
-  > </tr>
-  > </tbody>
-  > </table>
-  > **kepol** (2026-04-23): I'm realizing now that if you change the states, it will affect the entire project, yes? We do a lot of non-marketing work in the issue queue.
-  > 
-  > We had talked about the marketing team having their own project separate from ai_initiative. If we can't configure GitLab in a way that works for marketing and non-marketing, then we'll need to do that IMO.
-  > **jjchinquist** (2026-04-23): Hi Kristen,
-  > I realized that the original plan created by Claude was wise enough here. A label starting with "state::" is not the same as an actual State field value. So we are good there.
-  > Please check out the board and give feedback.
-  > **jjchinquist** (2026-04-24): ## Done
-  > 
-  > ACs delivered on this ticket:
-  > 
-  > - AC-2 — 3 scoped labels created (earlier).
-  > - AC-3 — board updated (earlier).
-  > - AC-5 — Reporter role granted to 11 new members (via #3586381).
-  > - AC-6 — contribution-workflow documentation split into #3586382.
-  > 
-  > ACs not finished here, split into a follow-up ticket so this one can close cleanly:
-  > 
-  > - AC-1 (state mapping approval) and AC-4 (templates auto-apply `state::accepted`) → **#3586409**.
-  > 
-  > Closing as `state::fixed`.
-  > 
-  > ---
-  > 
-  > *Drafted with the assistance of AI (Claude Code / Opus 4.7).*
-- **[Create templates for management of AI Initiative Marketing Issues on Gitlab](https://git.drupalcode.org/project/ai_initiative/-/work_items/3581782)** · [d.o #3581782](https://www.drupal.org/node/3581782) · closed · jjchinquist · 18 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16527719. -->
-  > > _Migrated from comment #2 posted 26 Mar 2026 at 20:14 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16527722. -->
-  > > _Migrated from comment #3 posted 26 Mar 2026 at 20:14 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: jjchinquist
-  > 
-  > ```
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16527724. -->
-  > > _Migrated from comment #4 posted 26 Mar 2026 at 20:15 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16527841. -->
-  > > _Migrated from comment #5 posted 26 Mar 2026 at 21:21 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16527854. -->
-  > > _Migrated from comment #6 posted 26 Mar 2026 at 21:24 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16530489. -->
-  > > _Migrated from comment #7 posted 29 Mar 2026 at 15:27 UTC_
-  > 
-  > 
-  > <p>Great idea! Thanks for this </p>
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16532496. -->
-  > > _Migrated from comment #8 posted 31 Mar 2026 at 09:31 UTC_
-  > 
-  > 
-  > > **File** [Marketing - Video.md](https://www.drupal.org/files/issues/2026-03-31/Marketing%20-%20Video.md) 
-  > 
-  > > **File** [Marketing - Blog Entry.md](https://www.drupal.org/files/issues/2026-03-31/Marketing%20-%20Blog%20Entry.md) 
-  > 
-  > <p>First drafts, will need feedback and refinement.</p>
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16533148. -->
-  > > _Migrated from comment #9 posted 31 Mar 2026 at 15:16 UTC_
-  > 
-  > 
-  > <p>Add case study &amp; webinar.</p>
-  > **pritamprasun** (2026-04-22): <!-- Migrated from comment CID #16541599. -->
-  > > _Migrated from comment #10 posted 07 Apr 2026 at 17:03 UTC_
-  > 
-  > 
-  > <p>@jjchinquist, Along with SEO, we should also consider AEO (Answer Engine Optimisation), This is also important to have in the mind even while drafting the content.<br>
-  > Also, Do you need any help with case study &amp; Webinar template?</p>
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16548184. -->
-  > > _Migrated from comment #11 posted 13 Apr 2026 at 14:20 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + AI Marketing + AI Initiative Sprint
-  > ```
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16548187. -->
-  > > _Migrated from comment #12 posted 13 Apr 2026 at 14:21 UTC_
-  > 
-  > 
-  > <p>Hi @pritam-osl<br>
-  > Feel free to create the 2 templates that are missing. I simply have not gotten to it yet and am happy to have you do them if you get to them first. </p>
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16553676. -->
-  > > _Migrated from comment #13 posted 16 Apr 2026 at 19:34 UTC_
-  > 
-  > 
-  > > **File** [Marketing - Case Study.md](https://www.drupal.org/files/issues/2026-04-16/Marketing%20-%20Case%20Study.md) 
-  > 
-  > > **File** [Marketing - Webinar.md](https://www.drupal.org/files/issues/2026-04-16/Marketing%20-%20Webinar.md) 
-  > 
-  > > **File** [Marketing - Blog Entry.md](https://www.drupal.org/files/issues/2026-04-16/Marketing%20-%20Blog%20Entry.md) 
-  > 
-  > > **File** [Marketing - Video.md](https://www.drupal.org/files/issues/2026-04-16/Marketing%20-%20Video.md) 
-  > 
-  > <p>New template files</p>
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16554118. -->
-  > > _Migrated from comment #14 posted 17 Apr 2026 at 07:50 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > ```
-  > - Status:        Active
-  > + Status:        Needs review
-  >  Related issues:
-  >  + #3409678: Opt-in GitLab issues
-  > ```
-  > 
-  > <p>The 4 files could use review from anyone. </p>
-  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16554137. -->
-  > > _Migrated from comment #15 posted 17 Apr 2026 at 08:10 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **dunx** (2026-04-22): <!-- Migrated from comment CID #16557411. -->
-  > > _Migrated from comment #16 posted 20 Apr 2026 at 16:04 UTC_
-  > 
-  > 
-  > <p>A 'blocked' status might be useful as part of an implied workflow.</p>
-  > **jjchinquist** (2026-04-24): ## Done
-  > 
-  > All five templates are live on `main`:
-  > 
-  > - `AI Marketing Initiative - Generic` (merged via !1)
-  > - `AI Marketing Initiative - Blog Entry`
-  > - `AI Marketing Initiative - Video`
-  > - `AI Marketing Initiative - Case Study`
-  > - `AI Marketing Initiative - Webinar` (four sub-topic templates merged via !3)
-  > 
-  > They appear in the **Description template** dropdown on the [new-issue form](https://git.drupalcode.org/project/ai_initiative/-/issues/new). Each auto-applies the `AI Marketing` label via a `/label` quick action on submit (Blog Entry also applies `blog`).
-  > 
-  > ### Deviations from the original plan in this issue
-  > 
-  > - **No YAML frontmatter.** GitLab's built-in issue-template handling does not parse the YAML block — it would render verbatim as noise in every new issue. Removed.
-  > - **Body sections re-aligned to drupal.org's standard issue-summary shape**: `Problem/Motivation`, `Proposed resolution`, `Target date or deadline`, `Remaining tasks`. Sub-topic-specific sections (Script/Storyboard, Customer Story subsections, Agenda, Pre/Day-of/Post-event tasks, etc.) kept.
-  > 
-  > ### Related tickets
-  > 
-  > - #3582480 — workflows / board / labels. Its **AC-4** asks templates to auto-apply `state::accepted` on creation, which the templates as-landed do not yet do. Tracked over there.
-  > - #3586382 — contribution workflow doc (split off from #3582480).
-  > 
-  > Closing as `state::fixed`.
-  > 
-  > ---
-  > 
-  > *Drafted with the assistance of AI (Claude Code / Opus 4.7).*
-- **[Finalize state-label workflow for Marketing templates (AC-1 + AC-4 from #3582480)](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586409)** · opened · unassigned · 1 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-- **[Set up Southwark Webinar on Zoom](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586060)** · [d.o #3586060](https://www.drupal.org/node/3586060) · closed · hestenet, pdjohnson · 6 comments · AI Initiative Sprint, AI Marketing, category::task, daRequest
-  > **hestenet** (2026-04-22): <!-- Migrated from comment CID #16559243. -->
-  > > _Migrated from comment #2 posted 21 Apr 2026 at 16:57 UTC_
+  > <p>Still waiting on contract</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550865. -->
+  > > _Migrated from comment #4 posted 15 Apr 2026 at 02:46 UTC_
   > 
   > 
   > ```
   > - Status: Active
-  > + Status: Needs review
+  > + Status: Postponed
   > 
   > ```
   > 
-  > <p>Thank you for sending through the form.</p>
-  > <p>Invitation link is: <a href="https://drupalassoc.zoom.us/webinar/register/WN_FIpV1Y3tTbyzHcDx-mhj6g">https://drupalassoc.zoom.us/webinar/register/WN_FIpV1Y3tTbyzHcDx-mhj6g</a></p>
-  > <p>Please review, before I send out to the AI General list and webinar past attendee lists</p>
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16561258. -->
-  > > _Migrated from comment #3 posted 22 Apr 2026 at 20:09 UTC_
+  > <p>I'll reopen once the contract is signed</p>
+  > **kepol** (2026-04-26): Contract has been signed so this can move forward
+- **[Drupal AI Partners block on d.o/ai page](https://git.drupalcode.org/project/ai_initiative/-/work_items/3572736)** · [d.o #3572736](https://www.drupal.org/node/3572736) · closed · unassigned · 8 comments · category::task, marketing, priority::normal, state::fixed
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16465566. -->
+  > > _Migrated from comment #2 posted 11 Feb 2026 at 06:15 UTC_
   > 
   > 
-  > <p>Tim, this looks correct to me.</p>
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16561259. -->
-  > > _Migrated from comment #4 posted 22 Apr 2026 at 20:10 UTC_
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: pdjohnson
+  > 
+  > ```
+  > 
+  > <p>Assigning to Paul for his thoughts</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550922. -->
+  > > _Migrated from comment #3 posted 15 Apr 2026 at 03:41 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: pdjohnson
+  > + Assigned: Unassigned
+  > - Status:   Active
+  > + Status:   Needs review
+  > 
+  > ```
+  > 
+  > <p>I've updated this to change:</p>
+  > <ul>
+  > <li>"AI Maker" =&gt; "AI Partner"</li>
+  > <li>"Find a Certified Partner" =&gt; "Find a Certified AI Partner"</li>
+  > <li>"Inquire about joining the initiative" =&gt; "Become a Certified AI Partner"</li>
+  > </ul>
+  > **dan2k3k4** (2026-04-22): <!-- Migrated from comment CID #16550970. -->
+  > > _Migrated from comment #4 posted 15 Apr 2026 at 05:33 UTC_
   > 
   > 
   > ```
@@ -1681,61 +1393,94 @@ _Generated: 2026-04-24T21:56 GMT_
   > + Status: Reviewed & tested by the community
   > 
   > ```
-  > **pdjohnson** (2026-04-23): @hestenet I will get the blog post written by tomorrow first thing your time at the latest.
-- **[Roadmap Marketing - Governance & Coordination](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584120)** · [d.o #3584120](https://www.drupal.org/node/3584120) · opened · ZoochaWill · 1 comments · AI Marketing, category::task, marketing, priority::normal
-- **[Create flagship content for CCC](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584119)** · [d.o #3584119](https://www.drupal.org/node/3584119) · opened · ZoochaWill · 3 comments · AI Marketing, category::task, marketing, priority::normal
-  > **ZoochaWill** (2026-04-22): <!-- Migrated from comment CID #16545765. -->
-  > > _Migrated from comment #2 posted 10 Apr 2026 at 11:29 UTC_
+  > 
+  > <p>The suggestions above from Kristen seem more appropriate / valid for what we're trying to achieve with marketing copy.</p>
+  > <p>+1 / RTBC</p>
+  > **jjchinquist** (2026-04-22): <!-- Migrated from comment CID #16551025. -->
+  > > _Migrated from comment #5 posted 15 Apr 2026 at 06:56 UTC_
   > 
   > 
-  > > Updated issue summary
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550620. -->
-  > > _Migrated from comment #3 posted 15 Apr 2026 at 01:00 UTC_
-  > 
-  > 
-  > <p>Thanks for this! Looking forward to it :)</p>
-- **[AI Roadmap - Core Narrative & Messaging](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584118)** · [d.o #3584118](https://www.drupal.org/node/3584118) · opened · ZoochaWill · 2 comments · AI Marketing, category::task, marketing, priority::normal
-  > **ZoochaWill** (2026-04-22): <!-- Migrated from comment CID #16558914. -->
-  > > _Migrated from comment #2 posted 21 Apr 2026 at 14:24 UTC_
-  > 
-  > 
-  > <p>Draft doc under review <a href="https://docs.google.com/document/d/1mARPsVtoN17Ed8mgiQRMEVpaeDBw7RCmv9d1rc--lA8/edit?tab=t.0#heading=h.fjppnfh2nt39">https://docs.google.com/document/d/1mARPsVtoN17Ed8mgiQRMEVpaeDBw7RCmv9d1rc--lA8/edit?tab=t.0#heading=h.fjppnfh2nt39</a></p>
-- **[The AI Summit London Booth Design](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586251)** · [d.o #3586251](https://www.drupal.org/node/3586251) · opened · pdjohnson · 1 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-- **[Talking Drupal Cafe recording NYC Summit Marketing](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584408)** · [d.o #3584408](https://www.drupal.org/node/3584408) · opened · unassigned · 1 comments · category::task, marketing, priority::normal, state::accepted
-- **[Create META issue for sprint 2](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586407)** · opened · jjchinquist · 1 comments · AI Marketing, state::accepted
-- **[Add DA YouTube channel managers from AI Initiative marketing team](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584835)** · [d.o #3584835](https://www.drupal.org/node/3584835) · opened · pdjohnson · 7 comments · category::task, marketing, priority::normal, state::needsReview
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550902. -->
-  > > _Migrated from comment #2 posted 15 Apr 2026 at 03:17 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > ```
-  > - Component:     DA Request
-  > + Component:     Marketing
-  > 
-  > ```
-  > 
-  > <p>Moving to marketing for now so maybe this will be seen more easily</p>
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16554139. -->
-  > > _Migrated from comment #3 posted 17 Apr 2026 at 08:11 UTC_
-  > 
-  > 
-  > <p>Would make sense for maybe me and Will to have access. Logic being Zoocha have created a majority of videos and I am involved in the webinar management which is the other primary source of videos plus I am involved in most of other video work.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16554885. -->
-  > > _Migrated from comment #4 posted 17 Apr 2026 at 15:54 UTC_
+  > <p>Agree with Dan. The suggestions by Kristen give it a more professional and precise wording. </p>
+  > <p>One additional change suggestion. I would get rid of "select number" here:<br>
+  > "AI Makers are a select number of ..." --&gt; "AI Makers are several of the community's Drupal Certified Partners who have chosen to fund and who actively shape AI in Drupal."</p>
+  > <p>Regardless of what you change, the text is an improvement. Thanks Tim, and Kristen!</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16551135. -->
+  > > _Migrated from comment #6 posted 15 Apr 2026 at 08:04 UTC_
   > 
   > 
   > ```
-  > - Component: Marketing
-  > + Component: DA Request
-  > - Assigned:  Unassigned
-  > + Assigned:  hestenet
+  > - Assigned: Unassigned
+  > + Assigned: kristen pol
+  > - Status:   Reviewed & tested by the community
+  > + Status:   Needs work
   > 
   > ```
   > 
-  > <p>Makes sense to me</p>
-  > **hestenet** (2026-04-22): <!-- Migrated from comment CID #16560948. -->
-  > > _Migrated from comment #5 posted 22 Apr 2026 at 16:39 UTC_
+  > <p>Thanks to you both. I can change that tomorrow.</p>
+  > **kepol** (2026-04-26): I took a slightly different approach:
+  > 
+  > **Old:** AI Partners are a select number of Drupal Certified Partners who are funding and actively working on Drupal AI to ensure it delivers a significant and strategic impact.
+  > 
+  > **New:** AI Partners are Drupal Certified Partners who are funding and actively shaping Drupal AI to ensure it delivers a significant and strategic impact.
+- **[Create AI partner/contributor offboarding checklist](https://git.drupalcode.org/project/ai_initiative/-/work_items/3570461)** · [d.o #3570461](https://www.drupal.org/node/3570461) · opened · kepol · 7 comments · category::task, management, priority, priority::normal
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16465491. -->
+  > > _Migrated from comment #2 posted 11 Feb 2026 at 04:03 UTC_
+  > 
+  > 
+  > ```
+  > - Status: Active
+  > + Status: Postponed
+  > 
+  > ```
+  > 
+  > <p>Let's do the onboarding one first because it'll mainly be the opposite of that one</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16508533. -->
+  > > _Migrated from comment #3 posted 12 Mar 2026 at 19:35 UTC_
+  > 
+  > 
+  > ```
+  > - Title: Create maker offboarding checklist
+  > + Title: Create AI partner offboarding checklist
+  > 
+  > ```
+  > 
+  > <p>See the new onboarding checklist <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-7"><a href="https://www.drupal.org/project/ai_initiative/issues/3570460" title="Status: Closed (fixed)">#3570460: Create AI partner onboarding checklist</a></span></p>
+  > <p>Note that additional people from the partner may be added after additional onboarding so any offboarding needs to take this into account and review all people for partner affiliation.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550580. -->
+  > > _Migrated from comment #4 posted 15 Apr 2026 at 00:24 UTC_
+  > 
+  > 
+  > ```
+  > - Status: Postponed
+  > + Status: Active
+  > 
+  > ```
+  > 
+  > <p>I need this for:</p>
+  > <p><span class="drupalorg-gitlab-issue-link drupalorg-gitlab-link-wrapper"><a href="https://git.drupalcode.org/project/ai_initiative/-/work_items/3584817" class="drupalorg-gitlab-link">https://git.drupalcode.org/project/ai_initiative/-/work_items/3584817</a></span></p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550581. -->
+  > > _Migrated from comment #5 posted 15 Apr 2026 at 00:25 UTC_
+  > 
+  > 
+  > ```
+  > - Title: Create AI partner offboarding checklist
+  > + Title: Create AI partner/contributor offboarding checklist
+  > 
+  > ```
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16561061. -->
+  > > _Migrated from comment #6 posted 22 Apr 2026 at 17:56 UTC_
+  > 
+  > 
+  > <p>Working on this today</p>
+  > **kepol** (2026-04-26): Using this now and sent to the team for review.
+- **[Review and update the Drupal AI Partner agreement](https://git.drupalcode.org/project/ai_initiative/-/work_items/3583337)** · [d.o #3583337](https://www.drupal.org/node/3583337) · closed · unassigned · 6 comments · category::task, management, priority::normal, state::fixed
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16540309. -->
+  > > _Migrated from comment #2 posted 06 Apr 2026 at 21:50 UTC_
+  > 
+  > 
+  > <p>I'm working through this will Molly today.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16540382. -->
+  > > _Migrated from comment #3 posted 06 Apr 2026 at 23:23 UTC_
   > 
   > 
   > ```
@@ -1744,902 +1489,175 @@ _Generated: 2026-04-24T21:56 GMT_
   > 
   > ```
   > 
-  > <p>Channel manager invites sent to: Paul, Will, Kristen(as backup)</p>
-  > <p>Please make sure to use a dedicated AI playlist (or lists) and/or check with Ryan first if you want to do anything unusual with the channel, hehe. </p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16560951. -->
-  > > _Migrated from comment #6 posted 22 Apr 2026 at 16:41 UTC_
+  > <p>I've finished my suggestions and comments and pinged Molly to review.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550568. -->
+  > > _Migrated from comment #4 posted 15 Apr 2026 at 00:06 UTC_
   > 
   > 
-  > ```
-  > - Component: DA Request
-  > + Component: Marketing
-  > - Assigned:  hestenet
-  > + Assigned:  pdjohnson
+  > <p>Checking with Molly on status</p>
+  > **kepol** (2026-04-26): My feedback was incorporated into the contract templates and is being used now.
+- **[DrupalCon Chicago 2026 AI contribution during contribution day](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584752)** · [d.o #3584752](https://www.drupal.org/node/3584752) · closed · unassigned · 13 comments · category::task, events, priority::normal, state::fixed
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550075. -->
+  > > _Migrated from comment #2 posted 14 Apr 2026 at 18:04 UTC_
   > 
-  > ```
   > 
-  > <p>Thanks! I pinged Paul and Will in Slack</p>
-  > **pdjohnson** (2026-04-24): @hestenet are we OK with proceeding on this?
-- **[Update the Drupal AI events page](https://git.drupalcode.org/project/ai_initiative/-/work_items/3577982)** · [d.o #3577982](https://www.drupal.org/node/3577982) · closed · pdjohnson · 3 comments · category::task, marketing, priority::normal, state::accepted
-  > **pdjohnson** (2026-04-24): Updated
-- **[Appointment of Leads for AI Marketing Workstreams](https://git.drupalcode.org/project/ai_initiative/-/work_items/3578593)** · [d.o #3578593](https://www.drupal.org/node/3578593) · closed · pdjohnson · 18 comments · category::task, marketing, priority::normal, state::accepted
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16506367. -->
-  > > _Migrated from comment #2 posted 11 Mar 2026 at 16:52 UTC_
-  > 
-  > 
-  > > **File** [GAAD-Matthew-Headshot.png](https://www.drupal.org/files/issues/2026-03-11/GAAD-Matthew-Headshot.png)
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16506370. -->
-  > > _Migrated from comment #3 posted 11 Mar 2026 at 16:53 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16506373. -->
-  > > _Migrated from comment #4 posted 11 Mar 2026 at 16:54 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **dan2k3k4** (2026-04-22): <!-- Migrated from comment CID #16506382. -->
-  > > _Migrated from comment #5 posted 11 Mar 2026 at 16:56 UTC_
-  > 
-  > 
-  > <p>Posted in Slack thread</p>
-  > **dan2k3k4** (2026-04-22): <!-- Migrated from comment CID #16506539. -->
-  > > _Migrated from comment #6 posted 11 Mar 2026 at 18:48 UTC_
-  > 
-  > 
-  > > **File** [dan-lemon.jpeg](https://www.drupal.org/files/issues/2026-03-11/dan-lemon.jpeg)
-  > **dan2k3k4** (2026-04-22): <!-- Migrated from comment CID #16506542. -->
-  > > _Migrated from comment #7 posted 11 Mar 2026 at 18:48 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16507037. -->
-  > > _Migrated from comment #8 posted 12 Mar 2026 at 04:00 UTC_
-  > 
-  > 
-  > > **File** [Amber Henry-Morpht.png](https://www.drupal.org/files/issues/2026-03-12/Amber%20Henry-Morpht.png)
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16507038. -->
-  > > _Migrated from comment #9 posted 12 Mar 2026 at 04:01 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pritamprasun** (2026-04-22): <!-- Migrated from comment CID #16507111. -->
-  > > _Migrated from comment #10 posted 12 Mar 2026 at 06:48 UTC_
-  > 
-  > 
-  > > **File** [pritam_osl.jpg](https://www.drupal.org/files/issues/2026-03-12/pritam_osl.jpg)
-  > **james_tillotson** (2026-04-22): <!-- Migrated from comment CID #16508216. -->
-  > > _Migrated from comment #11 posted 12 Mar 2026 at 16:26 UTC_
-  > 
-  > 
-  > > **File** [JamesT.jpg](https://www.drupal.org/files/issues/2026-03-12/JamesT_0.jpg)
-  > **james_tillotson** (2026-04-22): <!-- Migrated from comment CID #16508220. -->
-  > > _Migrated from comment #12 posted 12 Mar 2026 at 16:27 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **ZoochaWill** (2026-04-22): <!-- Migrated from comment CID #16508265. -->
-  > > _Migrated from comment #13 posted 12 Mar 2026 at 16:40 UTC_
-  > 
-  > 
-  > > **File** [Zoocha Will.png](https://www.drupal.org/files/issues/2026-03-12/Zoocha%20Will.png) 
-  > 
-  > > **File** [Dunx.png](https://www.drupal.org/files/issues/2026-03-12/Dunx.png) 
-  > 
-  > > **File** [Dan S.png](https://www.drupal.org/files/issues/2026-03-12/Dan%20S.png)
-  > **rgladden** (2026-04-22): <!-- Migrated from comment CID #16520064. -->
-  > > _Migrated from comment #14 posted 21 Mar 2026 at 00:09 UTC_
-  > 
-  > 
-  > <p>@Paul - as discussed yesterday I'm happy to take the case studies lead, will add my headshot shortly.</p>
-  > **rgladden** (2026-04-22): <!-- Migrated from comment CID #16520065. -->
-  > > _Migrated from comment #15 posted 21 Mar 2026 at 00:12 UTC_
-  > 
-  > 
-  > > **File** [RGladden.jpeg](https://www.drupal.org/files/issues/2026-03-21/RGladden.jpeg) 
-  > 
-  > <p><a href="https://www.drupal.org/files/issues/2026-03-21/RGladden.jpeg">RGladden</a></p>
-  > **rgladden** (2026-04-22): <!-- Migrated from comment CID #16520066. -->
-  > > _Migrated from comment #16 posted 21 Mar 2026 at 00:14 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-24): All leads have been appointed now.
-- **[Webinar: Southwark Council - process document](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586051)** · [d.o #3586051](https://www.drupal.org/node/3586051) · closed · pdjohnson · 2 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-- **[Promote Drupal AI Learners Club on LinkedIn](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586155)** · [d.o #3586155](https://www.drupal.org/node/3586155) · opened · slawrence10 · 3 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16559790. -->
-  > > _Migrated from comment #2 posted 22 Apr 2026 at 01:20 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **slawrence10** (2026-04-22): <!-- Migrated from comment CID #16559828. -->
-  > > _Migrated from comment #3 posted 22 Apr 2026 at 03:40 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: slawrence10
-  > 
-  > ```
-  > 
-  > <p>I'm working on this ticket.</p>
-- **[DrupalCon Chicago Social Media](https://git.drupalcode.org/project/ai_initiative/-/work_items/3578732)** · [d.o #3578732](https://www.drupal.org/node/3578732) · closed · amber.henry · 5 comments · category::task, marketing, priority::normal, state::accepted
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16507656. -->
-  > > _Migrated from comment #2 posted 12 Mar 2026 at 12:48 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16515653. -->
-  > > _Migrated from comment #3 posted 18 Mar 2026 at 10:59 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16518624. -->
-  > > _Migrated from comment #4 posted 19 Mar 2026 at 22:03 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: amberhenry
-  > 
-  > ```
-- **[LinkedIn posts promoting Industry Guides](https://git.drupalcode.org/project/ai_initiative/-/work_items/3578729)** · [d.o #3578729](https://www.drupal.org/node/3578729) · closed · amber.henry · 8 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16507272. -->
-  > > _Migrated from comment #2 posted 12 Mar 2026 at 09:15 UTC_
-  > 
-  > 
-  > ```
-  > - Title: Schedule LinkedIn posts for Industry Guides
-  > + Title: LinkedIn posts promoting Industry Guides
-  > 
-  > ```
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16517058. -->
-  > > _Migrated from comment #3 posted 19 Mar 2026 at 05:09 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: amberhenry
-  > 
-  > ```
-  > **mattcommons** (2026-04-22): <!-- Migrated from comment CID #16545210. -->
-  > > _Migrated from comment #4 posted 10 Apr 2026 at 05:13 UTC_
-  > 
-  > 
-  > <p>I will be working on this one with Amber</p>
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16548977. -->
-  > > _Migrated from comment #5 posted 14 Apr 2026 at 00:39 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + AI Initiative Sprint
-  > ```
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16558047. -->
-  > > _Migrated from comment #6 posted 21 Apr 2026 at 04:47 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16558163. -->
-  > > _Migrated from comment #7 posted 21 Apr 2026 at 06:29 UTC_
-  > 
-  > 
-  > > Updated issue summary
-- **[Social Media Sprint April 13- 24 META](https://git.drupalcode.org/project/ai_initiative/-/work_items/3583834)** · [d.o #3583834](https://www.drupal.org/node/3583834) · opened · amber.henry · 2 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16548970. -->
-  > > _Migrated from comment #2 posted 14 Apr 2026 at 00:15 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + AI Marketing + AI Initiative Sprint + social media
-  > ```
-- **[General Social Media April 13 - 24](https://git.drupalcode.org/project/ai_initiative/-/work_items/3583896)** · [d.o #3583896](https://www.drupal.org/node/3583896) · opened · amber.henry · 8 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16545183. -->
-  > > _Migrated from comment #2 posted 10 Apr 2026 at 03:40 UTC_
-  > 
-  > 
-  > ```
-  > - Component: ... to be triaged
-  > + Component: Marketing
-  > - Assigned:  Unassigned
-  > + Assigned:  amberhenry
-  > 
-  > ```
-  > **mattcommons** (2026-04-22): <!-- Migrated from comment CID #16545211. -->
-  > > _Migrated from comment #3 posted 10 Apr 2026 at 05:13 UTC_
-  > 
-  > 
-  > <p>I will be working on this one with Amber</p>
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16547305. -->
-  > > _Migrated from comment #4 posted 12 Apr 2026 at 23:26 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + AI Marketing + social media + AI Initiative Sprint
-  > ```
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16548978. -->
-  > > _Migrated from comment #5 posted 14 Apr 2026 at 00:39 UTC_
-  > 
-  > 
-  > ```
-  >  Parent issue:
-  >  + #3583465: Marketing Sprint April 13 - 24 META
-  > 
-  > ```
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16553890. -->
-  > > _Migrated from comment #6 posted 16 Apr 2026 at 23:01 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16558198. -->
-  > > _Migrated from comment #7 posted 21 Apr 2026 at 06:58 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16558199. -->
-  > > _Migrated from comment #8 posted 21 Apr 2026 at 06:59 UTC_
-  > 
-  > 
-  > > Updated issue summary
-- **[NYC AI Summit Featured sessions LinkedIn Posts](https://git.drupalcode.org/project/ai_initiative/-/work_items/3582787)** · [d.o #3582787](https://www.drupal.org/node/3582787) · closed · amber.henry · 9 comments · AI Marketing, category::task, marketing, priority::normal
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16535994. -->
-  > > _Migrated from comment #2 posted 02 Apr 2026 at 09:55 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16536388. -->
-  > > _Migrated from comment #3 posted 02 Apr 2026 at 13:22 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16536398. -->
-  > > _Migrated from comment #4 posted 02 Apr 2026 at 13:28 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16536401. -->
-  > > _Migrated from comment #5 posted 02 Apr 2026 at 13:29 UTC_
-  > 
-  > 
-  > ```
-  >  Related issues:
-  >  + #3582843: LinkedIn Images for promoting NYC speakers
-  > ```
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16543539. -->
-  > > _Migrated from comment #6 posted 09 Apr 2026 at 06:45 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: amberhenry
-  > 
-  > ```
-  > **mattcommons** (2026-04-22): <!-- Migrated from comment CID #16545209. -->
-  > > _Migrated from comment #7 posted 10 Apr 2026 at 05:13 UTC_
-  > 
-  > 
-  > <p>I will be working on this one with Amber</p>
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16558033. -->
-  > > _Migrated from comment #8 posted 21 Apr 2026 at 04:06 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16558044. -->
-  > > _Migrated from comment #9 posted 21 Apr 2026 at 04:35 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > ```
-  > - Status:        Active
-  > + Status:        Fixed
-  > 
-  > ```
-  > 
-  > <p>All posts scheduled for this sprint. </p>
-- **[LinkedIn Images for promoting NYC speakers](https://git.drupalcode.org/project/ai_initiative/-/work_items/3582843)** · [d.o #3582843](https://www.drupal.org/node/3582843) · opened · slawrence10 · 11 comments · AI Marketing, category::task, marketing, priority::normal
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16536395. -->
-  > > _Migrated from comment #2 posted 02 Apr 2026 at 13:26 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16536400. -->
-  > > _Migrated from comment #3 posted 02 Apr 2026 at 13:29 UTC_
-  > 
-  > 
-  > ```
-  >  Related issues:
-  >  + #3582787: Featured sessions LinkedIn Posts
-  > ```
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16536414. -->
-  > > _Migrated from comment #4 posted 02 Apr 2026 at 13:35 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **slawrence10** (2026-04-22): <!-- Migrated from comment CID #16542414. -->
-  > > _Migrated from comment #5 posted 08 Apr 2026 at 10:01 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: slawrence10
-  > 
-  > ```
-  > 
-  > <p>I'll be working on this ticket</p>
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16544647. -->
-  > > _Migrated from comment #6 posted 09 Apr 2026 at 16:46 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + AI Marketing
-  > ```
-  > **rgladden** (2026-04-22): <!-- Migrated from comment CID #16545115. -->
-  > > _Migrated from comment #7 posted 10 Apr 2026 at 00:06 UTC_
-  > 
-  > 
-  > <p>@slawrence10 I may have some time this weekend whilst in transit where I can help put these together pretty quickly - let me know</p>
-  > **slawrence10** (2026-04-22): <!-- Migrated from comment CID #16546101. -->
-  > > _Migrated from comment #8 posted 10 Apr 2026 at 15:09 UTC_
-  > 
-  > 
-  > > **File** [demo2.png](https://www.drupal.org/files/issues/2026-04-10/demo2.png) 
-  > 
-  > > **File** [demo1.png](https://www.drupal.org/files/issues/2026-04-10/demo1.png) 
-  > 
-  > <p>Thanks @rgladden</p>
-  > <p>I've moved&nbsp; designs into Canva (Pages 1 and 2). If you're able to duplicate for each speaker that would be ace - will do some more work this evening so let's see where I end up.</p>
-  > <p>Notes:</p>
+  > <p>I contributed on contribution day on issues and discussions around:</p>
   > <ul>
-  > <li>Lots of discussion around Drupal AI branding but also advised not&nbsp; to use an AI logo right now. Lots of the current designs do combine the logo with AI wording - i've moved away from this. Just straight-up Drupal logo.</li>
-  > <li>I have uploaded ZT Gatha, which is supposed to be the font used for Headlines. Canva implies "only my team" can see those fonts - but I'm hoping the fact you can edit the content means those fonts remain present. Please compare attached screenshot with what you see in Canva to confirm. Regular text still uses Noto Sans.</li>
-  > <li>Used a "frame" to round the bottom left corner of the profile image - so it feels like it's within the GUI graphic. You should be able to double click the image to move it in the frame - or upload a new one. Slightly fiddly, so in case you have issues I will also create graphics that combine each persons pic with the GUI frame.</li>
+  > <li>Context Control Center</li>
+  > <li>AI Best Practices</li>
+  > <li>UX and Accessibility</li>
+  > <li>Marketing</li>
   > </ul>
-  > <p>Layout options:<br>
-  > <img src="https://www.drupal.org/files/issues/2026-04-10/demo1.png" width="1000" alt="LinkedIn template for Drupal AI Summit NYC highlighting a featured session"><br>
-  > <img src="https://www.drupal.org/files/issues/2026-04-10/demo2.png" width="1000" alt="LinkedIn template for Drupal AI Summit NYC for featured sessions"></p>
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16554120. -->
-  > > _Migrated from comment #9 posted 17 Apr 2026 at 07:52 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Active
-  > + Status: Fixed
-  > 
-  > ```
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558778. -->
-  > > _Migrated from comment #11 posted 21 Apr 2026 at 13:19 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Fixed
-  > + Status: Closed (fixed)
-  > 
-  > ```
-  > **amber.henry** (2026-04-24): Hi @slawrence10, 
-  > There have been some updates to the speakers for the NYC summit:
-  > https://new.drupal.org/ai/events/Drupal-AI-Summit-New-York-City 
-  > 
-  > Can you please create tiles in Canva for:
-  > - Jonathan Bourland
-  > - Kristof Van Tomm
-  > - John Doyle
-  > - Scott Delea
-  > 
-  > I saw you did one for Christoph Breidert - thank you :smile:
-- **[AI Marketing Sprint #2: AI Summit NYC featured sessions](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585908)** · [d.o #3585908](https://www.drupal.org/node/3585908) · opened · amber.henry · 1 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
-- **[Marketing Sprint #1: LinkedIn posts promoting Industry Guides](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585924)** · [d.o #3585924](https://www.drupal.org/node/3585924) · closed · amber.henry · 4 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16558179. -->
-  > > _Migrated from comment #2 posted 21 Apr 2026 at 06:41 UTC_
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550079. -->
+  > > _Migrated from comment #3 posted 14 Apr 2026 at 18:07 UTC_
   > 
   > 
   > > Updated issue summary
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16558181. -->
-  > > _Migrated from comment #3 posted 21 Apr 2026 at 06:42 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + social media
-  > ```
-- **[Marketing Sprint #1: AI Summit NYC featured sessions](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585907)** · [d.o #3585907](https://www.drupal.org/node/3585907) · closed · amber.henry · 4 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16558038. -->
-  > > _Migrated from comment #2 posted 21 Apr 2026 at 04:18 UTC_
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550081. -->
+  > > _Migrated from comment #4 posted 14 Apr 2026 at 18:11 UTC_
   > 
   > 
   > > Updated issue summary
-  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16559787. -->
-  > > _Migrated from comment #3 posted 22 Apr 2026 at 01:15 UTC_
+  > **hestenet** (2026-04-22): <!-- Migrated from comment CID #16550114. -->
+  > > _Migrated from comment #5 posted 14 Apr 2026 at 18:47 UTC_
   > 
   > 
-  > > Updated issue summary
-- **[NYC summit promotion by speakers](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584074)** · [d.o #3584074](https://www.drupal.org/node/3584074) · opened · pdjohnson · 10 comments · AI Marketing, category::task, marketing, priority::normal
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16545685. -->
-  > > _Migrated from comment #2 posted 10 Apr 2026 at 10:34 UTC_
+  > <p>I definitely did :) </p>
+  > **webchick** (2026-04-22): <!-- Migrated from comment CID #16550192. -->
+  > > _Migrated from comment #6 posted 14 Apr 2026 at 19:55 UTC_
   > 
   > 
-  > <p>Katalin (Provinix) shared the message through the company account:<br>
-  > <a href="https://www.linkedin.com/feed/update/urn:li:activity:7448295279977508864">https://www.linkedin.com/feed/update/urn:li:activity:7448295279977508864</a></p>
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16546902. -->
-  > > _Migrated from comment #3 posted 11 Apr 2026 at 16:19 UTC_
+  > <p>I had numerous discussions with key contributors and bootstrapped the <a href="https://www.drupal.org/project/ai_best_practices">https://www.drupal.org/project/ai_best_practices</a> project!</p>
+  > **emma-horrell** (2026-04-22): <!-- Migrated from comment CID #16550246. -->
+  > > _Migrated from comment #7 posted 14 Apr 2026 at 20:36 UTC_
   > 
   > 
-  > ```
-  > - Component: ... to be triaged
-  > + Component: Marketing
-  >  Issue tags:
-  >  + AI Marketing
-  > ```
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16546909. -->
-  > > _Migrated from comment #4 posted 11 Apr 2026 at 16:23 UTC_
-  > 
-  > 
-  > <p>amazee has - so far:</p>
-  > <p> <a href="https://www.linkedin.com/feed/update/urn:li:activity:7448559148490756096/?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAAAAO4UBJyQbDs5yNWIOi4zN_jhVntuYrHg">https://www.linkedin.com/feed/update/urn:li:activity:7448559148490756096/?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAAAAO4UBJyQbDs5yNWIOi4zN_jhVntuYrHg</a> and has planned additional posts. </p>
-  > <p>I have scheduled a personal set of posts on LinkedIn, Threads, Mastodon, Bluesky, and Facebook</p>
-  > **mandclu** (2026-04-22): <!-- Migrated from comment CID #16547179. -->
-  > > _Migrated from comment #5 posted 12 Apr 2026 at 15:13 UTC_
-  > 
-  > 
-  > <p>I posted on LinkedIn:<br>
-  > <a href="https://www.linkedin.com/posts/mandclu_the-honeymoon-phase-with-ai-is-over-the-share-7449112049827196928-V6h4?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAAAdhwMBsPVLmwdkOmolfqyKjpq5qeYKOOs">https://www.linkedin.com/posts/mandclu_the-honeymoon-phase-with-ai-is-over-the-share-7449112049827196928-V6h4?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAAAdhwMBsPVLmwdkOmolfqyKjpq5qeYKOOs</a></p>
-  > <p>I will get something scheduled on the Acquia social accounts as well.</p>
-  > **majorrobot** (2026-04-22): <!-- Migrated from comment CID #16548173. -->
-  > > _Migrated from comment #6 posted 13 Apr 2026 at 14:13 UTC_
-  > 
-  > 
-  > <p>I posted to my personal LinkedIn account yesterday: <a href="https://www.linkedin.com/posts/jonathan-bourland-6896334_drupal-ai-summit-new-york-city-2026-activity-7449161923482320897-bhZ_/">https://www.linkedin.com/posts/jonathan-bourland-6896334_drupal-ai-summit-new-york-city-2026-activity-7449161923482320897-bhZ_/</a></p>
-  > <p>I'm speaking with CivicActions marketing today to talk promotion of the event.</p>
-  > **jmsaunders** (2026-04-22): <!-- Migrated from comment CID #16548962. -->
-  > > _Migrated from comment #7 posted 14 Apr 2026 at 00:07 UTC_
-  > 
-  > 
-  > <p>I have written 45 social media posts across linkedin, threads, facebook, mastodon, and bluesky that are scheduled in buffer to be delivered over the next month.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16552038. -->
-  > > _Migrated from comment #8 posted 15 Apr 2026 at 18:20 UTC_
-  > 
-  > 
-  > ```
-  > - Title: NYC promotion by speakers
-  > + Title: NYC summit promotion by speakers
-  > 
-  > ```
-  > 
-  > <p>I had Salsa post something and I reposted it:</p>
-  > <p><a href="https://www.linkedin.com/posts/kristenpol_drupal-ai-summit-new-york-city-2026-activity-7450064715730530305-Th4i?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAAAAJW4MBjE4CONBtN8h0MuqmEzjQq19YVAU">https://www.linkedin.com/posts/kristenpol_drupal-ai-summit-new-york-city-2026-activity-7450064715730530305-Th4i?utm_source=social_share_send&amp;utm_medium=member_desktop_web&amp;rcm=ACoAAAAJW4MBjE4CONBtN8h0MuqmEzjQq19YVAU</a></p>
-  > <p>I can do more next week when I'm feeling better.</p>
-  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16553804. -->
-  > > _Migrated from comment #9 posted 16 Apr 2026 at 21:16 UTC_
-  > 
-  > 
-  > <p>Ive spoken to Josh, he's pushed out on social media and is looking to promote tickets to his customer base via email.</p>
-  > **doylejd** (2026-04-24): John: https://www.linkedin.com/posts/doyle-jd_drupal-generativeai-digitaltransformation-activity-7448437173361471488-9n-L?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFBtHYBIr_W4CyHoUWAEBeZwSSL6dH-yfE
-  > 
-  > Digital Polygon: https://www.linkedin.com/posts/digital-polygon_drupal-generativeai-enterpriseit-activity-7448429623228641281-6WCM?utm_source=share&utm_medium=member_desktop&rcm=ACoAABFBtHYBIr_W4CyHoUWAEBeZwSSL6dH-yfE
-- **[Blog article promoting Drupal AI Learners Club](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584083)** · [d.o #3584083](https://www.drupal.org/node/3584083) · opened · mfernanda.silva · 5 comments · AI Initiative, AI Marketing, category::task, marketing
-  > **mfernanda.silva** (2026-04-22): <!-- Migrated from comment CID #16546460. -->
-  > > _Migrated from comment #2 posted 10 Apr 2026 at 21:26 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: mfernanda.silva
-  > 
-  > ```
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550614. -->
-  > > _Migrated from comment #3 posted 15 Apr 2026 at 00:55 UTC_
-  > 
-  > 
-  > ```
-  >  Related issues:
-  >  + #3583894: Promote Drupal AI Learners Club
-  > ```
-  > 
-  > <p>Related:</p>
-  > <p><span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-1"><a href="https://www.drupal.org/project/ai_initiative/issues/3583894" title="Status: Active">#3583894: Promote Drupal AI Learners Club</a></span></p>
-  > **mfernanda.silva** (2026-04-23): Hi. I finished the article, but I'm not sure if I can change the status to reviewing tho. 
-  > 
-  > https://docs.google.com/document/d/1MLtjwYjTPl8926vWG6M1lU5zB9Jq85PvmgXiEY_UQKw/edit?usp=sharing
-  > **kepol** (2026-04-23): This is great! Thanks 🙏 Perhaps link to the YouTube channel if it’s not already. On phone so maybe missed it.
-  > 
-  > Only other feedback is perhaps explaining who Angie is. Old timers like me will know but not newer people as she’s been “away” for a few years.
-- **[[Meta] Create AI Review Functionality / Create Technical Concept](https://git.drupalcode.org/project/ai_initiative/-/work_items/3575158)** · [d.o #3575158](https://www.drupal.org/node/3575158) · opened · breidert · 11 comments · AI Initiative, AI Initiative Sprint, AI Product Development, category::task
-  > **breidert** (2026-04-22): <!-- Migrated from comment CID #16511106. -->
-  > > _Migrated from comment #2 posted 15 Mar 2026 at 12:36 UTC_
-  > 
-  > 
-  > <h2>Implementation Sketch &mdash; MVP Implementation</h2>
-  > <p><strong>Issue type:</strong> Feature<br><br>
-  > <strong>Component:</strong> <code>ai_content_review</code> (new contrib module)</p>
-  > <h3>Summary</h3>
-  > <p>This issue tracks the MVP implementation of the AI Content Review System &mdash; a new contrib module that provides a structured, extensible foundation for AI-assisted content quality reviews in Drupal.</p>
-  > <p>The MVP scope is deliberately narrow: data model, plugin architecture, Drupal AI integration, and a manual trigger. No dashboards, no bulk review, no workflow gates, no automated suggestion application. The goal is a solid, extensible base that future features can build on.</p>
-  > <h3>MVP Scope</h3>
+  > <p>Contributed to discussions about: </p>
   > <ul>
-  > <li><strong>Entity types:</strong> Node only</li>
-  > <li><strong>AI integration:</strong> Drupal AI module (provider-agnostic, via Agents)</li>
-  > <li><strong>Suggestions:</strong> Text replacements only, displayed for manual copy-paste by the editor</li>
-  > <li><strong>Trigger:</strong> Manual (user selects one or more criteria and triggers a run)</li>
+  > <li>UX of AI</li>
+  > <li>Context Control Center</li>
+  > <li>Ideas for helping people learn AI</li>
   > </ul>
-  > <h3>Data Model</h3>
-  > <p><strong>Review Rule</strong> (Config Entity)<br><br>
-  > A named configuration container that defines which criteria apply to one or more entity type/bundle combinations. Multiple Review Rules can apply to the same bundle &mdash; the Review tab shows the union of all criteria from all matching rules. Review Rules also serve as the hook for future automated triggers (cron, workflow gates, bulk review).</p>
-  > <p>Key fields:</p>
-  > <pre>&lt;pre&gt;<br>id (machine name)<br>label<br>entity_type (e.g. node)<br>bundles[] (e.g. article, landing_page)<br>criteria[] (list of Agent IDs)<br>&lt;/pre&gt;</pre><p><strong>Review Criterion</strong> (Plugin, default: Agent-based)<br><br>
-  > Contains the review logic for a single quality dimension. Receives an entity reference (type:bundle:id), invokes a Drupal AI Agent with structured instructions to load the entity and conduct the review, and returns a structured JSON result (score, severity, explanation, suggestions). All entity and bundle awareness lives in the Agent configuration and instructions.</p>
-  > <p><strong>Review Record</strong> (Content Entity, one per criterion execution)<br><br>
-  > Created each time a criterion is executed. Fully self-contained &mdash; each record carries all context needed to understand when and why the review was triggered.</p>
-  > <p>Key fields:</p>
-  > <pre>&lt;pre&gt;<br>id (UUID)<br>criterion_id<br>criterion_label<br>entity_type / entity_id / entity_revision_id<br>triggered_by (manual | workflow_event | scheduled | bulk)<br>triggered_by_uid<br>ai_provider / ai_model<br>created (timestamp)<br>status (pending | running | complete | skipped | failed)<br>score (0&ndash;100 | null)<br>severity (info | warning | critical | null)<br>explanation (plain language)<br>error_message (populated on failed status)<br>suggestions[] &rarr; Suggestion<br>reviewed_at (timestamp)<br>&lt;/pre&gt;</pre><p><strong>Suggestion</strong> (Plugin, default: text replacement)<br><br>
-  > Nested inside a Review Record. Displayed to the editor for manual application &mdash; no automated application or state tracking in MVP.</p>
-  > <p>Key fields:</p>
-  > <pre>&lt;pre&gt;<br>id (UUID)<br>type (text_replace | ...)<br>target (field name)<br>original_value<br>suggested_value<br>rationale (1&ndash;2 sentences)<br>&lt;/pre&gt;</pre><p>Pluggable by design &mdash; the default covers text replacement; further types (add link, add element, add attribute) can be added via plugins later. Suggestion state tracking (pending | accepted | rejected | applied) is intentionally deferred to a future phase.</p>
-  > <h3>Criterion Availability</h3>
-  > <p>Which criteria appear on the Review tab of a given entity is determined entirely by configuration. The system loads all Review Rules whose <code>entity_type</code> and <code>bundles[]</code> match the current entity, then displays the union of their <code>criteria[]</code> on the Review tab.</p>
-  > <p>Example: two rules both apply to <code>node:article</code> &mdash; one with Brand Voice and Legal Compliance criteria, another with SEO and Reading Level. The Review tab on an article node shows all four criteria.</p>
-  > <h3>Creating a Review Rule</h3>
-  > <p><strong>Prerequisites:</strong> The site builder has created one or more Agents in the Drupal AI Agent UI, each configured with the appropriate instructions for a specific review criterion (e.g. "Review this node for brand voice compliance and return a structured JSON result with score, severity, explanation, and suggestions").</p>
-  > <p><strong>Flow:</strong></p>
-  > <ol>
-  > <li>Site builder navigates to <strong>Administration &rarr; AI &rarr; Content Review &rarr; Rules</strong></li>
-  > <li>Clicks "Add Review Rule"</li>
-  > <li>Fills in:
-  > <ul>
-  > <li><strong>Label</strong> (e.g. "Editorial Quality &mdash; Article")</li>
-  > <li><strong>Entity type</strong> (e.g. Node)</li>
-  > <li><strong>Bundles</strong> (e.g. Article, Landing Page)</li>
-  > </ul>
-  > </li>
-  > <li>Adds one or more criteria via "Add Criterion":
-  > <ul>
-  > <li>Selects an Agent from a list showing each agent's label and description</li>
-  > <li>Repeats for each criterion</li>
-  > </ul>
-  > </li>
-  > <li>Saves the rule</li>
-  > </ol>
-  > <p>The Review tab on all matching entity/bundle combinations immediately reflects the new criteria.</p>
-  > <h3>Permissions</h3>
-  > <p>Three independent permissions should be defined, assignable to any role:</p>
-  > <ul>
-  > <li><strong>Configure reviews</strong> &mdash; create and edit Review Rules</li>
-  > <li><strong>Run reviews</strong> &mdash; trigger criterion execution from the Review tab</li>
-  > <li><strong>View review records</strong> &mdash; access Review Records and their results</li>
-  > </ul>
-  > <h3>Agent Response Contract</h3>
-  > <p>Every Agent configured as a Review Criterion must return a JSON response conforming to the following structure:</p>
-  > <pre>&lt;pre&gt;<br>{<br>&nbsp; "status": "complete | skipped | failed",<br>&nbsp; "score": 0&ndash;100 | null,<br>&nbsp; "severity": "info | warning | critical | null",<br>&nbsp; "explanation": "Plain language result or reason for skipping/failing",<br>&nbsp; "suggestions": []<br>}<br>&lt;/pre&gt;</pre><p><strong>Status meanings:</strong></p>
-  > <ul>
-  > <li><strong>complete</strong> &mdash; the Agent completed the review normally. Score, severity, explanation, and suggestions are populated.</li>
-  > <li><strong>skipped</strong> &mdash; the Agent ran successfully but could not conduct the review due to missing or insufficient content (e.g. no body text available for a Brand Voice review). Score is null, suggestions are empty, explanation describes why the review was skipped. This is a valid outcome, not an error.</li>
-  > <li><strong>failed</strong> &mdash; the Agent ran but returned a response the module could not parse or that did not conform to this contract. The Review Record is created with <code>status = failed</code> and the raw response stored in <code>error_message</code> for debugging. The editor is shown a clear failure message on the Review tab.</li>
-  > </ul>
-  > <p>The module must handle all three cases explicitly. A failed record must never silently crash or be discarded &mdash; it should always be stored and surfaced to the editor.</p>
-  > <h3>Review Tab UI</h3>
-  > <p>The Review tab on a node edit page shows all criteria from all Review Rules that match the current entity type and bundle. Criteria are pre-checked by default; the editor can deselect any before running.</p>
-  > <p>Before any review has been run:</p>
-  > <pre>&lt;pre&gt;<br>[x] Brand Voice &amp; Tone<br>[x] Legal Compliance<br>[x] SEO Optimization<br>[x] Reading Level &amp; Clarity<br><br>[ Run Selected ]<br>&lt;/pre&gt;</pre><p>After a run, results appear inline beneath each criterion &mdash; score, severity badge, plain-language explanation, and suggestions to copy-paste. Skipped criteria show their explanation in place of a score. Failed criteria show a clear error message with guidance to check the agent configuration. Each criterion shows a "Re-run" button so the editor can re-run it individually after making changes. The tab always shows the latest Review Record per criterion for the current revision.</p>
-  > <h3>Execution Flow</h3>
-  > <p><strong>Manual run (MVP)</strong></p>
-  > <ol>
-  > <li>User opens the Review tab on a node &mdash; criteria are loaded from all Review Rules matching the current entity type and bundle</li>
-  > <li>User selects one or more criteria and clicks "Run Review"</li>
-  > <li>Each selected criterion executes &rarr; the Agent loads the entity and conducts the review &rarr; one ReviewRecord per criterion is created</li>
-  > <li>The module validates the Agent response against the expected JSON contract:
-  > <ul>
-  > <li>Valid <code>complete</code> response &rarr; Review Record stored with full results and suggestions</li>
-  > <li>Valid <code>skipped</code> response &rarr; Review Record stored with <code>status = skipped</code> and explanation</li>
-  > <li>Invalid or unparseable response &rarr; Review Record stored with <code>status = failed</code> and raw response in <code>error_message</code></li>
-  > </ul>
-  > </li>
-  > <li>Results are displayed inline on the Review tab</li>
-  > <li>Editor manually copies suggested values and applies them to the node</li>
-  > <li>Editor can re-run any individual criterion &rarr; a new ReviewRecord is created for the new revision</li>
-  > <li>The tab always shows the latest ReviewRecord per criterion for the current revision</li>
-  > </ol>
-  > <p><strong>Automated run (future)</strong></p>
-  > <ol>
-  > <li>An automated trigger (cron, workflow event) loads all Review Rules matching the target entity type and bundle</li>
-  > <li>Each criterion in the matched rules executes &rarr; one ReviewRecord per criterion is created with <code>triggered_by = workflow_event | scheduled | bulk</code></li>
-  > <li>Execution continues identically from step 4 above</li>
-  > </ol>
-  > <h3>Extensibility Requirements</h3>
-  > <p>The following extension points must be in place from day one, even if only one implementation ships in the MVP:</p>
-  > <ul>
-  > <li><strong>Review Criterion plugin type</strong> &mdash; so new criteria can be added without touching core module code</li>
-  > <li><strong>Suggestion plugin type</strong> &mdash; so new suggestion types can be added independently</li>
-  > </ul>
-  > <h3>Out of Scope for MVP</h3>
-  > <ul>
-  > <li>Suggestion state tracking and application workflow (accept / reject / apply)</li>
-  > <li>Pre-publish workflow gate (Content Moderation integration)</li>
-  > <li>Async / queue-based background review</li>
-  > <li>Scheduled bulk review</li>
-  > <li>Site-wide quality dashboard</li>
-  > <li>Content list indicators</li>
-  > <li>Notification system</li>
-  > <li>Non-node entity types</li>
-  > </ul>
-  > **breidert** (2026-04-22): <!-- Migrated from comment CID #16511108. -->
-  > > _Migrated from comment #3 posted 15 Mar 2026 at 12:38 UTC_
+  > **DrupalMattS** (2026-04-22): <!-- Migrated from comment CID #16550596. -->
+  > > _Migrated from comment #8 posted 15 Apr 2026 at 00:41 UTC_
   > 
   > 
-  > > Updated issue summary
-  > **breidert** (2026-04-22): <!-- Migrated from comment CID #16511121. -->
-  > > _Migrated from comment #4 posted 15 Mar 2026 at 12:56 UTC_
+  > <p>I was there on contribution day. DrupalMattS company Trone</p>
+  > **jurgenhaas** (2026-04-22): <!-- Migrated from comment CID #16551836. -->
+  > > _Migrated from comment #9 posted 15 Apr 2026 at 15:23 UTC_
   > 
   > 
-  > ```
-  >  Related issues:
-  >  + #3573899: [PLAN] Define "Execution Principal" contract for sessionless, queued, and outside-in AI runs
-  > ```
-  > 
-  > <p>The implementation sketch above already captures who triggered a review via `triggered_by` and `triggered_by_uid` on the Review Record, covering provenance and audit requirements on the content review side. The review logic itself lives entirely in Agents. As Agents become aware of their execution principal (per #3573899), that awareness flows into content reviews automatically with no changes needed in the review module.</p>
-  > <p>The same applies to the context control center. Since review criteria are implemented as Agents, any context made available through that system is inherited by reviews for free.</p>
-  > <p>The review module intentionally delegates both identity and context concerns to the Agent infrastructure rather than solving them independently.</p>
-  > **scottfalconer** (2026-04-22): <!-- Migrated from comment CID #16511323. -->
-  > > _Migrated from comment #5 posted 15 Mar 2026 at 17:37 UTC_
+  > <p>I had several discussions there about it.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16553501. -->
+  > > _Migrated from comment #10 posted 16 Apr 2026 at 16:39 UTC_
   > 
   > 
-  > <p>This looks like the right direction.</p>
-  > <p>I do think two architectural points should be made explicit before we treat the concept as settled:</p>
-  > <p>- Provenance should be explicitly compatible with <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-1"><a href="https://www.drupal.org/project/ai/issues/3573899" title="Status: Active">#3573899: [PLAN] Define "Execution Principal" contract for sessionless, queued, and outside-in AI runs</a></span>.<br>
-  > triggered_by and triggered_by_uid are useful, but they are not the full execution model that issue is defining. For future background / workflow / outside-in execution, the review model should be able to carry run metadata such as run_id, executor_uid, initiator_uid or initiator_subject, modality, source, and ideally caller_run_id. I&rsquo;d treat #3573899 as an architectural dependency on the review data model now, rather than assuming identity and context will flow in from Agents &ldquo;for free.&rdquo;</p>
-  > <p>- Review Criterion should be the real typed contract boundary, with Agent-based execution as the default implementation.<br>
-  > The summary already says a Review Criterion plugin type must exist from day one, which is good. But the architecture still centers criteria[] as Agent IDs. I think the cleaner split is: Review Rules reference Review Criterion plugins, and one default criterion implementation delegates to an Agent.</p>
-  > <p>That also seems better for Agent Experience as a typed criterion surface is more discoverable to both humans and orchestration agents than opaque Agent selection.</p>
-  > <p>I also think the earlier matrix from <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-1"><a href="https://www.drupal.org/project/ai_initiative/issues/3574179" title="Status: Active">#3574179: [Meta] Create AI Review Functionality</a></span> is still the right organizing device for keeping this extensible: review target, entry point, execution mode/modality, enforcement point, and persisted artifact. That gives us a clean way to keep manual review, future background runs, and eventual workflow integration aligned under one artifact model.</p>
-  > <p>Keeping moderation gates out of the MVP is the right call. When that comes later, Drupal should enforce transitions based on persisted review records, not on a fresh model call during the workflow transition.</p>
-  > <p>A few additional Drupal-shaped details seem worth capturing early, even if not all are MVP:</p>
-  > <p>- treat completed Review Records as append-only evidence, not mutable working state<br>
-  > - make sure the record can distinguish what was reviewed, for example revision / rendered / field-level target, and langcode where relevant<br>
-  > - allow findings that are not tied to a single field, because some review results are page-level or cross-field<br>
-  > - keep access to review records aligned with both review permissions and access to the underlying entity/revision<br>
-  > - consider storing a rule/input hash so review reuse and invalidation are auditable</p>
-  > <p>That would keep the MVP narrow without letting the long-term architecture get fuzzy.</p>
-  > **breidert** (2026-04-22): <!-- Migrated from comment CID #16511475. -->
-  > > _Migrated from comment #6 posted 15 Mar 2026 at 21:22 UTC_
+  > <p>We are missing a lot of people &#128517; I know some of them so will just credit them manually if they don&rsquo;t comment here</p>
+  > **aidanfoster** (2026-04-23): I worked on AI Review, CCC, Canvas AI
+  > **kepol** (2026-04-26): I've added some others who I remember helping. I closed the issue, but feel free to comment if I missed you.
+- **[Add missing AI Initiative issue maintainers as GitLab members](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586380)** · closed · kepol · 5 comments · category::task, management, priority::major, state::fixed
+  > **kepol** (2026-04-23): I added the obvious ones but some aren't showing up in GitLab. I need to find:
   > 
+  > afoster, anand.toshniwal93, davidlynch62, matthews, pritam-osl
   > 
-  > <p>Thank you for the thorough review and for thinking along on the architecture.</p>
-  > <p>Based on your feedback I have updated the implementation sketch with the following changes:</p>
-  > <p><strong>Criterion plugin fix:</strong> <code>criteria[]</code> in the Review Rule now stores criterion plugin instances (plugin ID + configuration) rather than Agent IDs directly. The default plugin implementation delegates to an Agent, but other implementations &mdash; wrapping a workflow, custom logic, etc. &mdash; are first-class from day one. The Agent is an implementation detail of the default criterion plugin, not the contract itself.</p>
-  > <p><strong>Execution Principal forward compatibility:</strong> <code>triggered_by</code> and <code>triggered_by_uid</code> are explicitly noted as MVP-level placeholders. The Review Record data model is intended to be extended with the full Execution Principal envelope (<code>run_id</code>, <code>executor_uid</code>, <code>initiator_uid</code> / <code>initiator_subject</code>, <code>caller_run_id</code>) once <a href="https://www.drupal.org/project/ai/issues/3573899">#3573899</a> is implemented. That issue is treated as a future architectural dependency, not an MVP blocker. A <code>modality</code> field (<code>interactive | background | outside_in</code>) has been added now so the record is already aligned with that model from day one.</p>
-  > <p><strong>Data model notes added:</strong> The following architectural constraints are now explicitly captured, even where implementation is deferred:</p>
-  > <ul>
-  > <li>Review Records are append-only</li>
-  > <li><code>langcode</code> field added for multilingual support</li>
-  > <li>Page-level and cross-field findings supported (<code>target = null</code>)</li>
-  > <li>Access to Review Records requires both review permissions and access to the underlying entity/revision</li>
-  > <li>A rule/input hash should be stored for audit and future cache reuse</li>
-  > </ul>
-  > **breidert** (2026-04-22): <!-- Migrated from comment CID #16511481. -->
-  > > _Migrated from comment #7 posted 15 Mar 2026 at 21:29 UTC_
+  > https://docs.google.com/spreadsheets/d/1fqnpQYl9SsxkIe2iTFKExYY-ojAyxXAwuLdWdACHQ-g/edit?usp=sharing
+  > **kepol** (2026-04-23): From fjgarlin:
   > 
+  > "yeah, they might just be different. if you click on the DrupalCode profile for each of those users you will see what their gitlab username is"
+  > **kepol** (2026-04-23): I've added Paul and Jeremy as "developer" for now until the new "planner" role is available.
   > 
-  > <h2><strong>Updated</strong> Implementation Sketch</h2>
-  > <p><strong>Issue type:</strong> Feature<br><br>
-  > <strong>Component:</strong> <code>ai_content_review</code> (new contrib module)</p>
-  > <h3>Summary</h3>
-  > <p>This issue tracks the MVP implementation of the AI Content Review System &mdash; a new contrib module that provides a structured, extensible foundation for AI-assisted content quality reviews in Drupal.</p>
-  > <p>The MVP scope is deliberately narrow: data model, plugin architecture, Drupal AI integration, and a manual trigger. No dashboards, no bulk review, no workflow gates, no automated suggestion application. The goal is a solid, extensible base that future features can build on.</p>
-  > <h3>MVP Scope</h3>
-  > <ul>
-  > <li><strong>Entity types:</strong> Node only</li>
-  > <li><strong>AI integration:</strong> Drupal AI module (provider-agnostic, via Agents)</li>
-  > <li><strong>Suggestions:</strong> Text replacements only, displayed for manual copy-paste by the editor</li>
-  > <li><strong>Trigger:</strong> Manual (user selects one or more criteria and triggers a run)</li>
-  > </ul>
-  > <h3>Data Model</h3>
-  > <p><strong>Review Rule</strong> (Config Entity)<br><br>
-  > A named configuration container that defines which criteria apply to one or more entity type/bundle combinations. Multiple Review Rules can apply to the same bundle &mdash; the Review tab shows the union of all criteria from all matching rules. Review Rules also serve as the hook for future automated triggers (cron, workflow gates, bulk review).</p>
-  > <p>Key fields:</p>
-  > <pre><pre>id (machine name)<br>label<br>entity_type (e.g. node)<br>bundles[] (e.g. article, landing_page)<br>criteria[] (list of criterion plugin instances, each with plugin_id + plugin_configuration)</pre></pre><p><strong>Review Criterion</strong> (Plugin, default: Agent-based)<br><br>
-  > A plugin type that defines the contract for executing a single quality dimension review. Review Rules reference criterion plugin instances &mdash; each instance carries a plugin ID and its configuration. The default plugin implementation delegates to a Drupal AI Agent, passing it structured instructions to load the entity and conduct the review, and parsing the returned JSON result. Other implementations &mdash; wrapping an AI workflow, calling custom logic, etc. &mdash; are first-class from day one. The Agent is an implementation detail of the default criterion plugin, not the contract itself.</p>
-  > <p><strong>Review Record</strong> (Content Entity, one per criterion execution)<br><br>
-  > Created each time a criterion is executed. Fully self-contained &mdash; each record carries all context needed to understand when and why the review was triggered. Review Records are <strong>append-only</strong> &mdash; no edit operation is defined or permitted. This is enforced both by the absence of an edit permission and programmatically via entity access.</p>
-  > <p>Key fields:</p>
-  > <pre><pre>id (UUID)<br>criterion_id<br>criterion_label<br>entity_type / entity_id / entity_revision_id<br>langcode<br>triggered_by (manual | workflow_event | scheduled | bulk)<br>triggered_by_uid (MVP placeholder &mdash; see Execution Principal note below)<br>modality (interactive | background | outside_in)<br>input_hash (hash of criterion configuration + entity revision at time of review)<br>ai_provider / ai_model<br>created (timestamp)<br>status (pending | running | complete | skipped | failed)<br>score (0&ndash;100 | null)<br>severity (info | warning | critical | null)<br>explanation (plain language)<br>error_message (populated on failed status)<br>suggestions[] &rarr; Suggestion<br>reviewed_at (timestamp)</pre></pre><p><strong>Suggestion</strong> (Plugin, default: text replacement)<br><br>
-  > Nested inside a Review Record. Displayed to the editor for manual application &mdash; no automated application or state tracking in MVP.</p>
-  > <p>Key fields:</p>
-  > <pre><pre>id (UUID)<br>type (text_replace | ...)<br>target (field name | null for page-level or cross-field findings)<br>original_value<br>suggested_value<br>rationale (1&ndash;2 sentences)</pre></pre><p>Pluggable by design &mdash; the default covers text replacement; further types (add link, add element, add attribute) can be added via plugins later. Suggestion state tracking (<code>pending | accepted | rejected | applied</code>) is intentionally deferred to a future phase.</p>
-  > <h3>Data Model Notes</h3>
-  > <p>The following architectural constraints apply from day one, even where full implementation is deferred:</p>
-  > <ul>
-  > <li><strong>Append-only records:</strong> Review Records are evidence, not mutable working state. No edit permission is defined. Update operations are denied programmatically via entity access (<code>hook_entity_access()</code>). New reviews always produce new records.</li>
-  > <li><strong>Langcode:</strong> The <code>langcode</code> field ensures multilingual sites can track which translation of an entity was reviewed.</li>
-  > <li><strong>Page-level and cross-field findings:</strong> Suggestions where <code>target = null</code> represent findings that are not tied to a specific field &mdash; for example, a structural or cross-field observation. These are valid and must not be blocked by the data model.</li>
-  > <li><strong>Two-level access:</strong> Access to a Review Record requires both the <em>view review records</em> permission and access to the underlying entity/revision. If a user loses access to the entity, they lose access to its Review Records.</li>
-  > <li><strong>Rule/input hash:</strong> The <code>input_hash</code> field stores a hash of the criterion configuration and entity revision at time of review, enabling future cache reuse and providing an auditable record of what inputs produced a given result.</li>
-  > <li><strong>Execution Principal forward compatibility:</strong> <code>triggered_by</code> and <code>triggered_by_uid</code> are MVP-level placeholders. The Review Record data model is intended to be extended with the full Execution Principal envelope (<code>run_id</code>, <code>executor_uid</code>, <code>initiator_uid</code> / <code>initiator_subject</code>, <code>caller_run_id</code>) once <a href="https://www.drupal.org/project/ai/issues/3573899">#3573899</a> is implemented. The <code>modality</code> field is included now to align the record with that model from day one.</li>
-  > </ul>
-  > <h3>Criterion Availability</h3>
-  > <p>Which criteria appear on the Review tab of a given entity is determined entirely by configuration. The system loads all Review Rules whose <code>entity_type</code> and <code>bundles[]</code> match the current entity, then displays the union of their <code>criteria[]</code> on the Review tab.</p>
-  > <p>Example: two rules both apply to <code>node:article</code> &mdash; one with Brand Voice and Legal Compliance criteria, another with SEO and Reading Level. The Review tab on an article node shows all four criteria.</p>
-  > <h3>Creating a Review Rule</h3>
-  > <p><strong>Prerequisites:</strong> The site builder has created one or more Agents in the Drupal AI Agent UI, each configured with the appropriate instructions for a specific review criterion (e.g. "Review this node for brand voice compliance and return a structured JSON result with score, severity, explanation, and suggestions").</p>
-  > <p><strong>Flow:</strong></p>
-  > <ol>
-  > <li>Site builder navigates to <strong>Administration &rarr; AI &rarr; Content Review &rarr; Rules</strong></li>
-  > <li>Clicks "Add Review Rule"</li>
-  > <li>Fills in:
-  > <ul>
-  > <li><strong>Label</strong> (e.g. "Editorial Quality &mdash; Article")</li>
-  > <li><strong>Entity type</strong> (e.g. Node)</li>
-  > <li><strong>Bundles</strong> (e.g. Article, Landing Page)</li>
-  > </ul>
-  > </li>
-  > <li>Adds one or more criteria via "Add Criterion":
-  > <ul>
-  > <li>Selects a criterion plugin type (default: Agent-based)</li>
-  > <li>For the default plugin: selects an Agent from a list showing each agent's label and description</li>
-  > <li>Repeats for each criterion</li>
-  > </ul>
-  > </li>
-  > <li>Saves the rule</li>
-  > </ol>
-  > <p>The Review tab on all matching entity/bundle combinations immediately reflects the new criteria.</p>
-  > <h3>Permissions</h3>
-  > <p>Three independent permissions should be defined, assignable to any role:</p>
-  > <ul>
-  > <li><strong>Configure reviews</strong> &mdash; create and edit Review Rules</li>
-  > <li><strong>Run reviews</strong> &mdash; trigger criterion execution from the Review tab</li>
-  > <li><strong>View review records</strong> &mdash; access Review Records and their results (subject to access on the underlying entity/revision)</li>
-  > </ul>
-  > <h3>Agent Response Contract</h3>
-  > <p>Every Agent configured as a Review Criterion must return a JSON response conforming to the following structure:</p>
-  > <pre><pre>{<br>&nbsp; "status": "complete | skipped | failed",<br>&nbsp; "score": 0&ndash;100 | null,<br>&nbsp; "severity": "info | warning | critical | null",<br>&nbsp; "explanation": "Plain language result or reason for skipping/failing",<br>&nbsp; "suggestions": []<br>}</pre></pre><p><strong>Status meanings:</strong></p>
-  > <ul>
-  > <li><strong>complete</strong> &mdash; the Agent completed the review normally. Score, severity, explanation, and suggestions are populated.</li>
-  > <li><strong>skipped</strong> &mdash; the Agent ran successfully but could not conduct the review due to missing or insufficient content (e.g. no body text available for a Brand Voice review). Score is null, suggestions are empty, explanation describes why the review was skipped. This is a valid outcome, not an error.</li>
-  > <li><strong>failed</strong> &mdash; the Agent ran but returned a response the module could not parse or that did not conform to this contract. The Review Record is created with <code>status = failed</code> and the raw response stored in <code>error_message</code> for debugging. The editor is shown a clear failure message on the Review tab.</li>
-  > </ul>
-  > <p>The module must handle all three cases explicitly. A failed record must never silently crash or be discarded &mdash; it should always be stored and surfaced to the editor.</p>
-  > <h3>Review Tab UI</h3>
-  > <p>The Review tab on a node edit page shows all criteria from all Review Rules that match the current entity type and bundle. Criteria are pre-checked by default; the editor can deselect any before running.</p>
-  > <p>Before any review has been run:</p>
-  > <pre><pre>[x] Brand Voice &amp;amp; Tone<br>[x] Legal Compliance<br>[x] SEO Optimization<br>[x] Reading Level &amp;amp; Clarity<br><br>[ Run Selected ]</pre></pre><p>After a run, results appear inline beneath each criterion &mdash; score, severity badge, plain-language explanation, and suggestions to copy-paste. Skipped criteria show their explanation in place of a score. Failed criteria show a clear error message with guidance to check the agent configuration. Each criterion shows a "Re-run" button so the editor can re-run it individually after making changes. The tab always shows the latest Review Record per criterion for the current revision.</p>
-  > <h3>Execution Flow</h3>
-  > <p><strong>Manual run (MVP)</strong></p>
-  > <ol>
-  > <li>User opens the Review tab on a node &mdash; criteria are loaded from all Review Rules matching the current entity type and bundle</li>
-  > <li>User selects one or more criteria and clicks "Run Review"</li>
-  > <li>Each selected criterion executes &rarr; the criterion plugin invokes its configured logic (default: a Drupal AI Agent loads the entity and conducts the review) &rarr; one ReviewRecord per criterion is created</li>
-  > <li>The module validates the Agent response against the expected JSON contract:
-  > <ul>
-  > <li>Valid <code>complete</code> response &rarr; Review Record stored with full results and suggestions</li>
-  > <li>Valid <code>skipped</code> response &rarr; Review Record stored with <code>status = skipped</code> and explanation</li>
-  > <li>Invalid or unparseable response &rarr; Review Record stored with <code>status = failed</code> and raw response in <code>error_message</code></li>
-  > </ul>
-  > </li>
-  > <li>Results are displayed inline on the Review tab</li>
-  > <li>Editor manually copies suggested values and applies them to the node</li>
-  > <li>Editor can re-run any individual criterion &rarr; a new ReviewRecord is created for the new revision</li>
-  > <li>The tab always shows the latest ReviewRecord per criterion for the current revision</li>
-  > </ol>
-  > <p><strong>Automated run (future)</strong></p>
-  > <ol>
-  > <li>An automated trigger (cron, workflow event) loads all Review Rules matching the target entity type and bundle</li>
-  > <li>Each criterion in the matched rules executes &rarr; one ReviewRecord per criterion is created with <code>triggered_by = workflow_event | scheduled | bulk</code> and appropriate <code>modality</code></li>
-  > <li>Execution continues identically from step 4 above</li>
-  > </ol>
-  > <h3>Extensibility Requirements</h3>
-  > <p>The following extension points must be in place from day one, even if only one implementation ships in the MVP:</p>
-  > <ul>
-  > <li><strong>Review Criterion plugin type</strong> &mdash; so new criteria can be added without touching core module code; each plugin carries its own configuration and execution logic</li>
-  > <li><strong>Suggestion plugin type</strong> &mdash; so new suggestion types can be added independently</li>
-  > </ul>
-  > <h3>Out of Scope for MVP</h3>
-  > <ul>
-  > <li>Suggestion state tracking and application workflow (accept / reject / apply)</li>
-  > <li>Pre-publish workflow gate (Content Moderation integration)</li>
-  > <li>Async / queue-based background review</li>
-  > <li>Scheduled bulk review</li>
-  > <li>Site-wide quality dashboard</li>
-  > <li>Content list indicators</li>
-  > <li>Notification system</li>
-  > <li>Non-node entity types</li>
-  > </ul>
-  > **Marcus_Johansson** (2026-04-22): <!-- Migrated from comment CID #16512338. -->
-  > > _Migrated from comment #8 posted 16 Mar 2026 at 15:10 UTC_
+  > I've added the rest as "reporter" roles for now except for:
   > 
+  > https://www.drupal.org/u/davidlynch62
   > 
-  > <p>Me and Artem had an initial call and discussed this - the main question we discuss is where we store the review entity, and if there is a broader use for it (AI recommendation, AI assesment, AI perspective). </p>
-  > <p>For the first we discussed having it in AI or AI Agents module, but reading this it makes sense that its stored in its own module. </p>
-  > <p>For the latter it might just be semantics. But at the same time, if we make the review entity fieldable and bundleable we would make it extendable.</p>
-  > <p>Some other comments on the latest integration suggestion:</p>
-  > <ul>
-  > <li>Should "Agent Response Contract" be "Review Criterion Contract"? I would not use structured output for this, but rather have it use tools to save each part and then the Criterion Plugin can return the response as the executor wants.</li>
-  > <li>We should call the permission "View all review records" from the get go. There is a possibility we want a finer granularity here in the future and that name would open up for it and wouldn't need update hooks to update.</li>
-  > <li>I think the data requirements for a review seem to follow a matrix rather then a simple selection: scope (Field(s) vs. Full Entity) and state (Markdown vs. Text vs. Rendered). For instance, a SEO analysis of one field usually requires the rendered output of a specific field, while an general content audit might require the full entity context delivered as MD or plain text. (scope and state was suggested by AI, I'm not sure if that's the correct labels). We should store this in the record as two different data points.</li>
-  > </ul>
-  > <p>Question:</p>
-  > <ul>
-  > <li>Is criterion a naming convention for the plugin only/developers or will it be used in UI. I would opt only for the earlier, because someone will use criteria in singular somewhere by mistake and cause confusion in the UI otherwise.</li>
-  > <li>What will be the unique last review that we will show as per the Figma examples - the combination of criterion_id + entity_type + entity_id + entity_revision_id +langcode?</li>
-  > </ul>
-  > <p>I think in general the issue is setup for Artem to start working on, on Friday.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550414. -->
-  > > _Migrated from comment #9 posted 14 Apr 2026 at 22:16 UTC_
+  > because he doesn't show up in GitLab because he has accepted the T&Cs. I'll leave David off.
   > 
+  > I'll leave this open for now for review.
+- **[Create historical funding issues for Dominique](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586428)** · closed · unassigned · 3 comments · category::task, funding, priority::normal, state::fixed
+  > **kepol** (2026-04-26): Sending to Dominique:
   > 
-  > ```
-  > - Component: ... to be triaged
-  > + Component: Code
+  > We have an existing project for this that we've been using since the beginning:
   > 
-  > ```
-  > **aidanfoster** (2026-04-23): ## Input scope vs output targeting
+  > https://www.drupal.org/project/ai_initiative
   > 
-  > Building on Marcus's scope and state matrix, some criteria need full page context as input but field-level output targeting.
+  > The issue queue was just moved to GitLab:
   > 
-  > - SEO is the clearest case. Evaluating it requires the rendered page plus meta tags, because the review depends on how everything works together
-  > - But the actionable feedback (change meta description, shorten H1, etc.) has to land on specific fields for the editor to do anything with it
-  > - Marcus framed scope as field OR full entity. I think some criteria need field AND full entity: full entity as input context, field as output target
+  > https://git.drupalcode.org/project/ai_initiative/-/work_items?categories=All
   > 
-  > Two questions:
+  > Your dev team can help you learn how to create issues, mark them as fixed, and add credit to yourself.
   > 
-  > - How does the criterion (and the Review Record) capture that combination in the data model?
-  > - How does the agent reliably map findings back to the specific fields that produced them?
-  > **aidanfoster** (2026-04-23): ## Recommendation: advisory-only MVP, defer actioning to a later phase
+  > For retroactive work, we don't do that so much, but I've set up a bunch of issues for you.
   > 
-  > <img src="https://git.drupalcode.org/-/project/183864/uploads/9e030ee4fd00ad20873b32a518bf8bbc/Screenshot_2026-04-23_at_5.45.43_PM.png" alt="Screenshot_2026-04-23_at_5.45.43_PM" width="818" height="600">
+  > **Retroactive issues**
   > 
-  > <img src="https://git.drupalcode.org/-/project/183864/uploads/dfdcb1974146e0e40bdf67278e87206f/Screenshot_2026-04-23_at_5.50.52_PM.png" alt="Screenshot_2026-04-23_at_5.50.52_PM" width="842" height="600">
+  > I already credited you for these so just fill in the details and mark the issue "done".
   > 
-  > Christoph proposes a copy-and-paste workflow in which editors manually apply suggestions. 
+  > May 2025: https://git.drupalcode.org/project/ai_initiative/-/work_items/3586429
+  > June 2025: https://git.drupalcode.org/project/ai_initiative/-/work_items/3586431
+  > July 2025: https://git.drupalcode.org/project/ai_initiative/-/work_items/3586432
+  > August 2025: https://git.drupalcode.org/project/ai_initiative/-/work_items/3586433
+  > September 2025: https://git.drupalcode.org/project/ai_initiative/-/work_items/3586434
+  > October 2025: https://git.drupalcode.org/project/ai_initiative/-/work_items/3586435
+  > November 2025: https://git.drupalcode.org/project/ai_initiative/-/work_items/3586436 
+  > December 2025: https://git.drupalcode.org/project/ai_initiative/-/work_items/3586437
+  > January 2026: https://git.drupalcode.org/project/ai_initiative/-/work_items/3586438
+  > February 2026: https://git.drupalcode.org/project/ai_initiative/-/work_items/3586439
+  > March 2026: https://git.drupalcode.org/project/ai_initiative/-/work_items/3586440
+  > April 2026: https://git.drupalcode.org/project/ai_initiative/-/work_items/3586441
   > 
-  > The current Figma goes further with per-recommendation Apply buttons. My recommendation is to pull both out of the MVP and ship feedback display only. 
+  > Future issues
   > 
-  > _The actioning layer needs more design iterations before it's ready._
+  > I've created a some future issues as well:
   > 
-  > ### Overview
+  > May 2026: https://git.drupalcode.org/project/ai_initiative/-/work_items/3586442
+  > June 2026: https://git.drupalcode.org/project/ai_initiative/-/work_items/3586443
+  > July 2026: https://git.drupalcode.org/project/ai_initiative/-/work_items/3586444
   > 
-  > Imagine you're in school and you write an essay to be graded. Then nine different people grade your paper, but you can only read each reviewer's feedback one at a time, and none of the feedback is written directly on the paper. It would require a lot of cognitive load to figure out what feedback you actually want to use. 
+  > You can search for issues using this:
   > 
-  > That's close to what the current Review tab asks editors to do. It's more intuitive to think "this hero section has Brand & Legal feedback and reconcile multiple types of feedback on 1 single source content "chunk". 
+  > https://git.drupalcode.org/project/ai_initiative/-/work_items?sort=created_date&state=all&label_name%5B%5D=funding&search=activities&first_page_size=100
   > 
-  > Think [Editoria11y module](https://www.drupal.org/project/editoria11y). Lots of different Accessibility violations are possible; the feedback is "fix 3 things on this section." (Which could come from different evaluations)
+  > Work with your team to learn how to create these going forward and give yourself credit. I added an issue template you can use (see screenshot below).
   > 
-  > <img src="https://git.drupalcode.org/-/project/183864/uploads/0264232578d26f98a61e403cda585462/Screenshot_2026-04-23_at_6.14.10_PM.png" alt="Screenshot_2026-04-23_at_6.14.10_PM" width="839" height="459">
+  > Have fun!
+  > Kristen
   > 
-  > ### Why actioning needs more design work before it ships
-  > 
-  > - **Conflicts between criteria are likely.** SEO and brand voice recommendations will often contradict each other. If I apply both, does last-click win? That's a confusing model for editors.
-  > - **Single changes can cascade across the page.** In the Legal Compliance example, changing "T&Cs" to "Terms and Conditions" could touch many places. I'd want to see every affected location before accepting. If the goal is a copy and paste to fix what if that is in 20 places on the page?
-  > 
-  > ### MVP proposal
-  > 
-  > - Show feedback inline as the current design does: score, severity, plain-language explanation, recommendations with reasoning
-  > - Treat applying suggestions as a separate design problem with its own UX round before shipping
-  > - Let's first tackle making sure the feedback is high-quality. We'll discover how granular it is. Finally, we can think about a UI to help people apply what they want (and very likely they won't want to apply everything). We need to maintain human-in-the-loop control.
-  > 
-  > This keeps the module useful on day one (editors can see issues flagged in plain language) while giving us room to design the actioning experience properly rather than shipping a pattern we'd have to walk back on.
-- **[EPISODE 1 - Record Episode 1](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586404)** · opened · domidc, jmsaunders · 0 comments · AI Initiative, AI Marketing
-- **[EPISODE 1 - Publish episode 1 on DA YouTube and audio platforms](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586403)** · opened · unassigned · 0 comments · AI Initiative, AI Marketing
-- **[EPISODE 1 - Prepare episode 1 guest for recording](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586402)** · opened · unassigned · 0 comments · AI Initiative, AI Marketing
-- **[EPISODE 1 - Edit episode 1 and produce clips](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586401)** · opened · unassigned · 0 comments · AI Initiative, AI Marketing
-- **[EPISODE 1 - Distribute episode 1 clips on social media](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586400)** · opened · unassigned · 0 comments · AI Initiative, AI Marketing
-- **[CONTENT FRAMEWORK - Define recurring segment formats](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586399)** · opened · domidc, jmsaunders · 0 comments · AI Initiative, AI Marketing
-- **[CONTENT FRAMEWORK - Create show notes and blog post template](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586398)** · opened · jmsaunders · 0 comments · AI Initiative, AI Marketing
-- **[CONTENT FRAMEWORK - Create guest questionnaire and pre-show briefing template](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586397)** · opened · jmsaunders · 0 comments · AI Initiative, AI Marketing
-- **[CONTENT FRAMEWORK - Create clip identification framework](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586396)** · opened · domidc, jmsaunders · 0 comments · AI Initiative, AI Marketing
-- **[INFRASTRUCTURE - Submit podcast to Apple Podcasts, Spotify and other directories](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586395)** · opened · jmsaunders · 0 comments · AI Initiative, AI Marketing
-- **[INFRASTRUCTURE - Source and onboard a video editor for podcast production](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586394)** · opened · domidc · 0 comments · AI Initiative, AI Marketing
+  > <img src="https://git.drupalcode.org/-/project/183864/uploads/7bd5bf9b8ed427080bff4718b294039d/Screenshot_2026-04-26_at_11.09.09_AM.png" alt="Screenshot_2026-04-26_at_11.09.09_AM" width="412" height="600">
+- **[Drupal AI Initiative funding activities December 2025](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586437)** · opened · domidc · 1 comments · category::task, funding, priority::major, state::fixed
+- **[Drupal AI Initiative funding activities October 2025](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586435)** · opened · domidc · 1 comments · category::task, funding, priority::major, state::fixed
+- **[Drupal AI Initiative funding activities June 2025](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586430)** · opened · domidc · 1 comments · category::task, funding, priority::major, state::fixed
+- **[Drupal AI Initiative funding activities May 2025](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586429)** · opened · domidc · 1 comments · category::task, funding, priority::major, state::fixed
+- **[Drupal AI Initiative funding activities May 2026](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586442)** · opened · domidc · 1 comments · category::task, funding, priority::major, state::fixed
+- **[Drupal AI Initiative funding activities June 2026](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586443)** · opened · domidc · 1 comments · category::task, funding, priority::major, state::fixed
+- **[Drupal AI Initiative funding activities July 2026](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586444)** · opened · domidc · 1 comments · category::task, funding, priority::major, state::fixed
+- **[Drupal AI Initiative funding activities April 2026](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586441)** · opened · domidc · 1 comments · category::task, funding, priority::major, state::fixed
+- **[Drupal AI Initiative funding activities March 2026](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586440)** · opened · domidc · 1 comments · category::task, funding, priority::major, state::fixed
+- **[Drupal AI Initiative funding activities February 2026](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586439)** · opened · domidc · 1 comments · category::task, funding, priority::major, state::fixed
+- **[Drupal AI Initiative funding activities January 2026](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586438)** · opened · domidc · 1 comments · category::task, funding, priority::major, state::fixed
+- **[Drupal AI Initiative funding activities November 2025](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586436)** · opened · domidc · 1 comments · category::task, funding, priority::major, state::fixed
+- **[Drupal AI Initiative funding activities September 2025](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586434)** · opened · domidc · 1 comments · category::task, funding, priority::major, state::fixed
+- **[Drupal AI Initiative funding activities August 2025](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586433)** · opened · domidc · 1 comments · category::task, funding, priority::major, state::fixed
+- **[Drupal AI Initiative funding activities July 2025](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586432)** · opened · domidc · 1 comments · category::task, funding, priority::major, state::fixed
+- **[Drupal AI Initiative funding activities June 2025](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586431)** · opened · domidc · 1 comments · category::task, funding, priority::major, state::fixed
+- **[Create a template for monthly AI Initiative funding activities](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586427)** · closed · kepol · 10 comments · category::task, funding, state::fixed
+  > **kepol** (2026-04-26): I need to update this with labels so I'll create another MR
+  > **kepol** (2026-04-26): That didn't work so I need to try a different format.
+  > **kepol** (2026-04-26): Still doesn't work for labels and assignee so I pinged the infra team
 
 ### Merge Requests
 
-- **[Add 4 sub-topic issue templates and document contribution workflow in README](https://git.drupalcode.org/project/ai_initiative/-/merge_requests/3)** · jjchinquist · merged 2026-04-24 · `3581782-readme-workflow-section` · 369 diff lines
-- **[Document branch/template conventions in README and clean up Generic template](https://git.drupalcode.org/project/ai_initiative/-/merge_requests/2)** · jjchinquist · merged 2026-04-24 · `readme-branch-and-templates` · 68 diff lines
-- **[Add Marketing - Generic issue template](https://git.drupalcode.org/project/ai_initiative/-/merge_requests/1)** · jjchinquist · merged 2026-04-24 · `3581782-marketing-generic-template` · 74 diff lines
+- **[Updating label metadata.](https://git.drupalcode.org/project/ai_initiative/-/merge_requests/9)** · kepol · merged 2026-04-26 · `3586427-funding-template-v2` · 26 diff lines
+- **[Update labels and add assign to funding template.](https://git.drupalcode.org/project/ai_initiative/-/merge_requests/8)** · kepol · merged 2026-04-26 · `3586427-funding-labels-v2` · 11 diff lines
+- **[Resolve "Create a template for monthly AI Initiative funding activities"](https://git.drupalcode.org/project/ai_initiative/-/merge_requests/7)** · kepol · merged 2026-04-26 · `3586427-funding-labels` · 16 diff lines
+- **[Draft: Resolve "Create a template for monthly AI Initiative funding activities"](https://git.drupalcode.org/project/ai_initiative/-/merge_requests/6)** · kepol · closed · `3586427-add-funding-labels`
+- **[Add monthly funding issue template.](https://git.drupalcode.org/project/ai_initiative/-/merge_requests/5)** · kepol · merged 2026-04-26 · `3586427-funding-template` · 36 diff lines
 
 ### Commits
 
-- [`89c291be`](https://git.drupalcode.org/project/ai_initiative/-/commit/89c291bebc15dbc0505cb350da19152c4e11ba81) Add 4 sub-topic issue templates and document contribution workflow in README — Jeremy Chinquist (2026-04-24)
-- [`b51ab860`](https://git.drupalcode.org/project/ai_initiative/-/commit/b51ab860a11c59a6a93ac008d81fa155508c2af6) Document branch/template conventions in README and clean up Generic template — Jeremy Chinquist (2026-04-24)
-- [`38ca7233`](https://git.drupalcode.org/project/ai_initiative/-/commit/38ca7233e7da25f17f5cfbdeab7b3b34d4b50d10) Add Marketing - Generic issue template — Jeremy Chinquist (2026-04-24)
-- [`a90e2498`](https://git.drupalcode.org/project/ai_initiative/-/commit/a90e249885d3833e5630ab94f8b68252b80ccbf1) Add initial README — Jeremy Chinquist (2026-04-24)
+- [`7ca7b467`](https://git.drupalcode.org/project/ai_initiative/-/commit/7ca7b4679976e326a399a5a5c5c0de6cddd1060f) Updating label metadata. — Kristen Pol (2026-04-26)
+- [`94407fe0`](https://git.drupalcode.org/project/ai_initiative/-/commit/94407fe0c30898a57ccfa878a9e157476bc3eb1d) Update labels and add assign to funding template. — Kristen Pol (2026-04-26)
+- [`cda412b5`](https://git.drupalcode.org/project/ai_initiative/-/commit/cda412b531abbdcb899f5f9c7b2727b37b37f10b) Resolve "Create a template for monthly AI Initiative funding activities" — Kristen Pol (2026-04-26)
+- [`f92567f9`](https://git.drupalcode.org/project/ai_initiative/-/commit/f92567f9449f3820338682e6a9495f0e6ad1087d) Add monthly funding issue template. — Kristen Pol (2026-04-26)
 
 ---
 
@@ -2647,508 +1665,524 @@ _Generated: 2026-04-24T21:56 GMT_
 
 ### Issues
 
-- **[Rethrow exceptions from queue processor](https://git.drupalcode.org/project/ai/-/work_items/3571498)** · [d.o #3571498](https://www.drupal.org/node/3571498) · opened · unassigned · 4 comments · AI Initiative Sprint, AI Innovation, category::task, priority::normal
-  > **rakhimandhania** (2026-04-23): <!-- Migrated from comment CID #16556532. -->
-  > > _Migrated from comment #2 posted 20 Apr 2026 at 01:33 UTC_
+- **[Integrate Symfony AI's Platform component as a replacement for AI Providers](https://git.drupalcode.org/project/ai/-/work_items/3574187)** · [d.o #3574187](https://www.drupal.org/node/3574187) · opened · unassigned · 29 comments · AI Initiative Sprint, AI Innovation, aiCoreModule, category::feature
+  > **mxr576** (2026-04-23): <!-- Migrated from comment CID #16474959. -->
+  > > _Migrated from comment #3 posted 18 Feb 2026 at 09:16 UTC_
   > 
   > 
   > ```
-  >  Issue tags:
-  >  + AI Innovation + AI Initiative Sprint
-  > ```
-  > **scottfalconer** (2026-04-24): I don't think I can edit the issue with the move to gitlab, but here's what I'd recommend
+  >  Parent issue:
+  >  + #3565674: Create first version of the abstraction layer using Symfony AI v0.1.0
   > 
-  > **Problem**: queue worker catches exceptions and marks the entity failed, butdoes not rethrow, so queue runners/custom processors cannot observe orchandle the failure.
-  > **Expected behavior**: preserve the failed automator status and rethrow the original exception.
-  > **Proposed resolution**: keep existing failure persistence, restore the save toggle in finally, then rethrow the caught exception.
-- **[Add Extractive Question Answering operation type](https://git.drupalcode.org/project/ai/-/work_items/3584371)** · [d.o #3584371](https://www.drupal.org/node/3584371) · opened · joshua1234511 · 8 comments · AI Initiative Sprint, AI Product Development, aiCoreModule, category::feature
-  > **Ahmad-Khader** (2026-04-23): <!-- Migrated from comment CID #16547345. -->
-  > > _Migrated from comment #3 posted 13 Apr 2026 at 02:58 UTC_
+  > ```
+  > **mxr576** (2026-04-23): <!-- Migrated from comment CID #16474962. -->
+  > > _Migrated from comment #4 posted 18 Feb 2026 at 09:17 UTC_
   > 
   > 
   > ```
-  > - Assigned: ahmad khader
-  > + Assigned: Unassigned
+  >  Parent issue:
+  >  - #3565674: Create first version of the abstraction layer using Symfony AI v0.1.0 + #3538499: [Meta] Use Symfony AI
   > 
   > ```
-  > 
-  > <p>Code was generated with one-shot prompt skill from <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-2"><a href="https://www.drupal.org/project/ai/issues/3582766" title="Status: Fixed">#3582766: Create a skill that scaffolds new operation types for the AI module</a></span>:</p>
-  > <pre>/create-operation-type I want to create a new operation type for extractive question answering &mdash; like what Hugging Face models deepset/roberta-base-squad2 and https://huggingface.co/distilbert/distilbert-base-cased-distilled-squad do (both have active inference endpoints).<br><br>You give the model a question and a passage of text (context), and it extracts the answer from that context, along with where it found it and how confident it is</pre><p>And from api exploperer <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-2"><a href="https://www.drupal.org/project/ai/issues/3582819" title="Status: Fixed">#3582819: Add agent skill for creating new AI API Explorer plugins</a></span>:<br>
-  > <code>/create-new-explorer Could you create an explorer for the extractive_question_answering operation type</code></p>
-  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16547583. -->
-  > > _Migrated from comment #4 posted 13 Apr 2026 at 08:25 UTC_
-  > 
-  > 
-  > <p>For reference: <a href="https://huggingface.co/models?pipeline_tag=question-answering">https://huggingface.co/models?pipeline_tag=question-answering</a></p>
-  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16547585. -->
-  > > _Migrated from comment #5 posted 13 Apr 2026 at 08:25 UTC_
-  > 
-  > 
-  > <p>I'm assuming there is nothing stoping us from backporting this to 1.4.x as well?</p>
-  > **Ahmad-Khader** (2026-04-23): <!-- Migrated from comment CID #16547615. -->
-  > > _Migrated from comment #6 posted 13 Apr 2026 at 08:47 UTC_
-  > 
-  > 
-  > <p>Yeah, I don't see an issue with backporting it </p>
-  > **arianraeesi** (2026-04-23): <!-- Migrated from comment CID #16549202. -->
-  > > _Migrated from comment #7 posted 14 Apr 2026 at 07:21 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + AI Initiative Sprint + AI Product Development
-  > ```
-  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16551726. -->
-  > > _Migrated from comment #8 posted 15 Apr 2026 at 14:36 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Needs review
-  > + Status: Needs work
-  > 
-  > ```
-  > 
-  > <p>Some of the pipelines are red, even after rebase.</p>
-  > **Ahmad-Khader** (2026-04-23): <!-- Migrated from comment CID #16552171. -->
-  > > _Migrated from comment #9 posted 15 Apr 2026 at 20:26 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Needs work
-  > + Status: Needs review
-  > 
-  > ```
-  > 
-  > <p>Done, please check.<br>
-  > The remaining aren't related</p>
-- **[Create AI assistant API session only after the first message](https://git.drupalcode.org/project/ai/-/work_items/3554797)** · [d.o #3554797](https://www.drupal.org/node/3554797) · opened · unassigned · 8 comments · AI Initiative Sprint, AI Innovation, aiAssistantsApi, category::bug
-  > **omarlopesino** (2026-04-23): <!-- Migrated from comment CID #16323535. -->
-  > > _Migrated from comment #3 posted 28 Oct 2025 at 14:21 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Active
-  > + Status: Needs review
-  > 
-  > ```
-  > 
-  > <p>The MR fixes the problem. Please review, thanks!</p>
-  > **thamas** (2026-04-23): <!-- Migrated from comment CID #16410557. -->
-  > > _Migrated from comment #4 posted 13 Jan 2026 at 15:02 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Needs review
-  > + Status: Needs work
-  > 
-  > ```
-  > 
-  > <p>Validators and tests found problems in the MR.</p>
-  > <blockquote><p>
-  > Code Quality scans found 2 new findings.<br>
-  > Test summary: 22 failed, 5 errors, 2028 total tests
-  > </p></blockquote>
-  > **omarlopesino** (2026-04-23): <!-- Migrated from comment CID #16413136. -->
-  > > _Migrated from comment #5 posted 15 Jan 2026 at 09:19 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Needs work
-  > + Status: Needs review
-  > 
-  > ```
-  > 
-  > <p>It needed a re-roll. Now the reported errors are not related with the current MR changes, they are already present in the 2.0.x branch.</p>
-  > <p>Moving back to needs review.</p>
-  > **rakhimandhania** (2026-04-23): <!-- Migrated from comment CID #16521145. -->
-  > > _Migrated from comment #6 posted 22 Mar 2026 at 20:42 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + AI Initiative Sprint + AI Innovation
-  > ```
-  > **AJV009** (2026-04-23): <!-- Migrated from comment CID #16521468. -->
-  > > _Migrated from comment #7 posted 23 Mar 2026 at 08:33 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Needs review
-  > + Status: Reviewed & tested by the community
-  > 
-  > ```
-  > 
-  > <p>Hey @omarlopesino, I set up a fresh Drupal 11.3.5 + AI 2.0.x-dev environment and tested this.</p>
-  > <p>I can confirm the bug. With an assistant configured to use "Session (Same thread on reload)" history, visiting the front page as anonymous immediately sets a <code>SSESS*</code> session cookie, even without any interaction with the chatbot:</p>
-  > <pre>
-  > $ curl -v https://d3554797.ddev.site/ 2&gt;&amp;1 | grep -i set-cookie
-  > &lt; set-cookie: SSESS67199...=b8nbfgnq...; path=/; domain=.d3554797.ddev.site; secure; HttpOnly
-  > </pre><p>The root cause is that <code>generateUniqueKey()</code> calls <code>setCurrentThreadsKey()</code> during block rendering, which writes to <code>PrivateTempStore</code> and starts a PHP session for anonymous users.</p>
-  > <p>After applying MR !978, the same curl test returns no <code>Set-Cookie</code> header at all. The chatbot block still renders correctly with a thread ID available for the current request; it just doesn't persist it to the session until the session is actually started (by the first message). The JS change makes sense too: removing the <code>session_exists</code> check from drupalSettings avoids relying on a value that could be stale from page cache.</p>
-  > <p>Looks good to me. Setting to RTBC. But I'm still running a small final test to make sure the behaviour is consistent pre and post fixes. If anything comes up, I'll immediately raise here; if none, then consider it reviewed at least from my end once. </p>
-  > <p><em><strong>Transparency note:</strong> This reproduction and comment were drafted with highly supervised usage of Claude Code. Not here to waste anyone's efforts or demean the work being done. I verified everything personally. If I'm not doing something right process-wise, please flag it.</em></p>
-  > **scottfalconer** (2026-04-24): The MR fixes the reported anonymous page-render session-cookie bug, but it appears to regress session_one_thread persistence after the first interaction starts the session.
-  > 
-  > - /api/deepchat/session with MR: starts session and returns cookie as expected.
-  > - After the first-message path stores history in the initial thread, reload generates a different thread ID under the MR. Baseline kept the same thread and exposed the history.
-  > 
-  > (ai was used to test and validate the above)
-  > **scottfalconer** (2026-04-24): I don't seem to have the permission to change this from state:rtbc to state::needsReview, but !978 has been updated to address the session_one_thread persistence regression
-- **[Fix ai.provider_config config schema to actually follow the structure that form element returns](https://git.drupalcode.org/project/ai/-/work_items/3586384)** · opened · unassigned · 3 comments · AI Initiative Sprint, AI Product Development, state::rtbc, v1.3.x-dev
-  > **Marcus_Johansson** (2026-04-24): Just added one comment, but you could merge it as it is as well
-- **[Add Guardrails support to AI Automators](https://git.drupalcode.org/project/ai/-/work_items/3585690)** · [d.o #3585690](https://www.drupal.org/node/3585690) · opened · unassigned · 6 comments · AI Initiative Sprint, AI Product Development, category::task, priority::normal
-  > **arianraeesi** (2026-04-23): <!-- Migrated from comment CID #16556629. -->
-  > > _Migrated from comment #2 posted 20 Apr 2026 at 07:03 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + AI Initiative Sprint + AI Product Development
-  > ```
-  > **joshua1234511** (2026-04-23): <!-- Migrated from comment CID #16556697. -->
-  > > _Migrated from comment #3 posted 20 Apr 2026 at 08:01 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: joshua1234511
-  > 
-  > ```
-  > **joshua1234511** (2026-04-23): <!-- Migrated from comment CID #16559823. -->
-  > > _Migrated from comment #5 posted 22 Apr 2026 at 03:30 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: joshua1234511
-  > + Assigned: Unassigned
-  > - Status:   Active
-  > + Status:   Needs review
-  > 
-  > ```
-  > 
-  > <p>Implemented as single-select  <code>InputInterface::setGuardrailSet()</code> in core AI takes exactly one set and <code>applyGuardrailSetToChatInput()</code> overwrites any previous value.<br>
-  > Note: Multi-select would need a core-API change on InputInterface.</p>
-  > **AkhilBabu** (2026-04-24): Assigning to myself for review
-  > **AkhilBabu** (2026-04-24): I reviewed the code and added 2 suggestions to the MR. Please review
-- **[AgentRunner.php needs to set configuration](https://git.drupalcode.org/project/ai/-/work_items/3586385)** · opened · valthebald · 1 comments
-- **[Special characters or trailing spaces are HTML-encoded in AI CKEditor selected text preview](https://git.drupalcode.org/project/ai/-/work_items/3540608)** · [d.o #3540608](https://www.drupal.org/node/3540608) · closed · unassigned · 15 comments · aiCkeditor, category::feature, priority::normal, v1.4.x-dev
-  > **sijumpk** (2026-04-23): <!-- Migrated from comment CID #16222702. -->
-  > > _Migrated from comment #2 posted 10 Aug 2025 at 05:59 UTC_
+  > **mxr576** (2026-04-23): <!-- Migrated from comment CID #16475522. -->
+  > > _Migrated from comment #5 posted 18 Feb 2026 at 14:16 UTC_
   > 
   > 
   > > Updated issue summary
-  > > **File** [showing-encoded-text.mkv](https://www.drupal.org/files/issues/2025-08-10/showing-encoded-text.mkv) 
+  > > **File** [edit_gemini_platform_provider.png](https://www.drupal.org/files/issues/2026-02-18/edit_gemini_platform_provider.png) 
   > 
-  > > **File** [ai-ckeditor-encoded-text.png](https://www.drupal.org/files/issues/2025-08-10/ai-ckeditor-encoded-text.png)
-  > **hrishikesh-dalal** (2026-04-23): <!-- Migrated from comment CID #16490164. -->
-  > > _Migrated from comment #4 posted 28 Feb 2026 at 04:31 UTC_
+  > > **File** [ai_platform_list.png](https://www.drupal.org/files/issues/2026-02-18/ai_platform_list.png) 
   > 
+  > > **File** [add_generic_platform_provider.png](https://www.drupal.org/files/issues/2026-02-18/add_generic_platform_provider.png) 
   > 
-  > <p><a href="https://www.drupal.org/u/hrishikesh-dalal" title="View user profile." data-uid="3857030" class="username">hrishikesh-dalal</a> made their first commit to this issue&rsquo;s fork.</p>
-  > **hrishikesh-dalal** (2026-04-23): <!-- Migrated from comment CID #16490305. -->
-  > > _Migrated from comment #5 posted 28 Feb 2026 at 11:33 UTC_
-  > 
-  > 
-  > <p>I set up a local environment to work on a fix for this, but I cannot reproduce the bug on the latest 1.2.x-dev branch. When using the Summarize option on text with special characters (like "pineapple &gt; apple "), the preview renders normally without the HTML entities showing up.</p>
-  > <p>It looks like this was quietly resolved by another recent commit or related issue. Since this is my first time contributing to this specific project, I am leaving the status as-is. Can a maintainer or someone with more experience in this queue verify this? If it's no longer reproducible, this should probably be closed.</p>
-  > **svendecabooter** (2026-04-23): <!-- Migrated from comment CID #16492258. -->
-  > > _Migrated from comment #6 posted 02 Mar 2026 at 16:13 UTC_
+  > <p>Current progress. </p>
+  > **mxr576** (2026-04-23): <!-- Migrated from comment CID #16475881. -->
+  > > _Migrated from comment #6 posted 18 Feb 2026 at 16:40 UTC_
   > 
   > 
-  > > **File** [Screenshot from 2026-03-02 17-05-32.png](https://www.drupal.org/files/issues/2026-03-02/Screenshot%20from%202026-03-02%2017-05-32.png) 
+  > > **File** [bc_with_ai_platform_to_ai_provider_via_plugin_derivers.png](https://www.drupal.org/files/issues/2026-02-18/bc_with_ai_platform_to_ai_provider_via_plugin_derivers.png) 
   > 
-  > ```
-  > - Version:  1.2.x-dev
-  > + Version:  2.0.x-dev
-  > - Assigned: sijumpk
-  > + Assigned: Unassigned
-  > - Category: Bug report
-  > + Category: Feature request
-  > 
-  > ```
-  > 
-  > <p>I checked this on the 2.0.x branch and I still see the HTML entities in the "Selected text to summarize":</p>
-  > <p><img src="https://www.drupal.org/files/issues/2026-03-02/Screenshot%20from%202026-03-02%2017-05-32.png" alt="HTML entities in AI CKeditor summarize panel"></p>
-  > <p>Presumably this is because CKEditor renders HTML output, and the "Selected text to summarize" renders it in a textarea without a WYSIWYG editor applied. This input is sent to the configured AI to perform the requested action upon. The input would also be sent as HTML code, so it doesn't look to be technically incorrect. Maybe from a UX point of view it would be better to visually hide the raw HTML code, but I don't think we can consider this a bug?</p>
-  > <p>The MR diff seems to be broken. Can a proposed fix be added as a new merge request against the 2.0.x branch? This can then be backported to older versions if needed.</p>
-  > **hrishikesh-dalal** (2026-04-23): <!-- Migrated from comment CID #16492939. -->
-  > > _Migrated from comment #7 posted 03 Mar 2026 at 04:32 UTC_
-  > 
-  > 
-  > <p>Thanks for verifying on 2.0.x. You're right, it makes more sense as a UX improvement, sending the HTML to the AI is fine, but exposing the raw tags/entities in the textarea is messy for the user.</p>
-  > <p>I'll switch my local environment to 2.0.x, work on a fix to strip the entities for the UI display, and open a fresh MR against 2.0.x shortly.</p>
-  > **neerajkumar007** (2026-04-23): <!-- Migrated from comment CID #16493152. -->
-  > > _Migrated from comment #8 posted 03 Mar 2026 at 09:40 UTC_
-  > 
-  > 
-  > <p><a href="https://www.drupal.org/u/neerajkumar007" title="View user profile." data-uid="3785577" class="username">neerajkumar007</a> made their first commit to this issue&rsquo;s fork.</p>
-  > **hrishikesh-dalal** (2026-04-23): <!-- Migrated from comment CID #16498417. -->
-  > > _Migrated from comment #11 posted 06 Mar 2026 at 06:31 UTC_
-  > 
-  > 
-  > <p><a href="https://www.drupal.org/u/hrishikesh-dalal" title="View user profile." data-uid="3857030" class="username">hrishikesh-dalal</a> changed the visibility of the branch <em class="placeholder">3540608-special-characters-or</em> to <em class="placeholder">hidden</em>.</p>
-  > **hrishikesh-dalal** (2026-04-23): <!-- Migrated from comment CID #16498431. -->
-  > > _Migrated from comment #12 posted 06 Mar 2026 at 06:41 UTC_
-  > 
-  > 
-  > > **File** [updated-img.png](https://www.drupal.org/files/issues/2026-03-06/updated-img.png) 
-  > 
-  > ```
-  > - Status: Active
-  > + Status: Needs review
-  > 
-  > ```
-  > 
-  > <p>Have added the fix.<strong> MR1290.</strong> Now it renders the special characters or trailing spaces properly without any issue. Let me know if any other change is required. <img src="https://www.drupal.org/files/issues/2026-03-06/updated-img.png" alt="Correct Image"></p>
-  > **svendecabooter** (2026-04-23): <!-- Migrated from comment CID #16521597. -->
-  > > _Migrated from comment #13 posted 23 Mar 2026 at 09:50 UTC_
+  > <p>Looking promising...  The current idea is for every applicable operations a plugin deriver is going to expose an AI provider from an AI platform.</p>
+  > **mxr576** (2026-04-23): <!-- Migrated from comment CID #16477526. -->
+  > > _Migrated from comment #7 posted 19 Feb 2026 at 14:46 UTC_
   > 
   > 
   > ```
-  > - Status: Needs review
-  > + Status: Needs work
-  > 
+  >  Issue tags:
+  >  + AI Innovation
   > ```
-  > 
-  > <p>MR1290 seems to have a lot of unrelated code style changes.<br>
-  > Can the MR be updated to only focus on fixing the issue at hand?</p>
-  > **hrishikesh-dalal** (2026-04-23): <!-- Migrated from comment CID #16521630. -->
-  > > _Migrated from comment #14 posted 23 Mar 2026 at 10:25 UTC_
+  > **fago** (2026-04-23): <!-- Migrated from comment CID #16480112. -->
+  > > _Migrated from comment #8 posted 21 Feb 2026 at 12:36 UTC_
   > 
   > 
-  > <p>You are right, quite a bit unrelated code styles changes, will fix that!</p>
-  > **hrishikesh-dalal** (2026-04-23): <!-- Migrated from comment CID #16529191. -->
-  > > _Migrated from comment #17 posted 27 Mar 2026 at 17:35 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Needs work
-  > + Status: Needs review
-  > 
-  > ```
-  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16531491. -->
-  > > _Migrated from comment #18 posted 30 Mar 2026 at 14:10 UTC_
-  > 
-  > 
-  > ```
-  > - Version: 2.0.x-dev
-  > + Version: 1.4.x-dev
-  > - Status:  Needs review
-  > + Status:  Reviewed & tested by the community
-  > 
-  > ```
-  > 
-  > <p>LGTM - also down to 1.4.x since its not a breaking change.</p>
-  > **hrishikesh-dalal** (2026-04-23): <!-- Migrated from comment CID #16532983. -->
-  > > _Migrated from comment #19 posted 31 Mar 2026 at 13:59 UTC_
-  > 
-  > 
-  > <p>Thanks</p>
-- **[Add global guardrails setting applied to every AI request](https://git.drupalcode.org/project/ai/-/work_items/3584851)** · [d.o #3584851](https://www.drupal.org/node/3584851) · closed · unassigned · 16 comments · AI Initiative Sprint, AI Product Development, aiCoreModule, category::feature
-  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16551779. -->
-  > > _Migrated from comment #2 posted 15 Apr 2026 at 14:59 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: marcus_johansson
-  > 
-  > ```
-  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16552693. -->
-  > > _Migrated from comment #4 posted 16 Apr 2026 at 08:15 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > > **File** [Screenshot from 2026-04-16 10-07-46.png](https://www.drupal.org/files/issues/2026-04-16/Screenshot%20from%202026-04-16%2010-07-46.png) 
-  > 
-  > > **File** [Screenshot from 2026-04-16 09-58-31.png](https://www.drupal.org/files/issues/2026-04-16/Screenshot%20from%202026-04-16%2009-58-31.png) 
-  > 
-  > > **File** [Screenshot from 2026-04-16 09-57-18.png](https://www.drupal.org/files/issues/2026-04-16/Screenshot%20from%202026-04-16%2009-57-18.png) 
-  > 
-  > ```
-  > - Assigned:      marcus_johansson
-  > + Assigned:      Unassigned
-  > - Status:        Active
-  > + Status:        Needs review
-  > 
-  > ```
-  > 
-  > <p>This is being added late for an update hook based issue for a RC, but if we can get it in it would be one step closer to getting rid of the default link and image security issue. Also a way to attach guardrails when you do not know how.</p>
-  > <p>Note: A lot was AI Generated code, but under supervision and I have reviewed it myself. Merging <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-2"><a href="https://www.drupal.org/project/ai/issues/3584849" title="Status: Fixed">#3584849: Allow InputInterface to hold and run multiple guardrail sets</a></span> first will make this a lot easier to read, since I have merged this code in here.</p>
-  > <p>See screenshots</p>
-  > <p>1. Before attaching</p>
-  > <p><img src="https://www.drupal.org/files/issues/2026-04-16/Screenshot%20from%202026-04-16%2009-57-18.png"></p>
-  > <p>2. After attaching</p>
-  > <p><img src="https://www.drupal.org/files/issues/2026-04-16/Screenshot%20from%202026-04-16%2010-07-46.png"></p>
-  > <p>3. Example of it kicking in without attaching it in API Explorer</p>
-  > <p><img src="https://www.drupal.org/files/issues/2026-04-16/Screenshot%20from%202026-04-16%2009-58-31.png"></p>
-  > **Ahmad-Khader** (2026-04-23): <!-- Migrated from comment CID #16552785. -->
-  > > _Migrated from comment #5 posted 16 Apr 2026 at 09:27 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: ahmad khader
-  > 
-  > ```
-  > **Ahmad-Khader** (2026-04-23): <!-- Migrated from comment CID #16553981. -->
-  > > _Migrated from comment #6 posted 17 Apr 2026 at 03:36 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Needs review
-  > + Status: Needs work
-  > 
-  > ```
-  > 
-  > <p>Thanks for the work,<br>
-  > Overall, the feature is well-architected, with small issues/improvements found:</p>
-  > <h4>1. No test and auto-cleanup for deleting a globally-configured set</h4>
-  > <p>No test covers the scenario where a guardrail set configured in <code>ai.settings:global_guardrails</code> is deleted. The code handles it gracefully (<code>getGuardrailSetById()</code> returns <code>NULL</code>, subscriber skips it), but:</p>
+  > <h2>BC-impact analysis </h2>
+  > <p>I'm starting with a BC-impact analysis (with the help of AI). That's how I'm approaching it:</p>
   > <ul>
-  > <li><strong>A test should confirm this resilience</strong> &mdash; configure a global set, delete the entity, verify the next AI request works without errors.</li>
-  > <li><strong>Stale IDs persist in config</strong> &mdash; after deletion, the config still contains the dead ID. The form silently drops it on next save (via <code>array_intersect</code>), but admins who never revisit the form will carry stale entries.</li>
+  > <li>Obvious BC-breaking changes are requiring Drupal 11 and API-changes for implementing providers. That's clear and not the focus, leaving that aside.</li>
+  > <li>Question is what APIs are our "API-consumers" using and which changes would have the highest impact. This is the STEP 1 of the analysis</li>
+  > <li>Further, possible impact is for BC-breaking changes is in configuration for modules and recipes. This would would be mostly be possible change in provider-IDs and provider settings. I'm going to make a separate analysis for that, focusing on the same ai-modules and the recipes cover in the ai-dashboard. So this is STEP2.</li>
   > </ul>
-  > <p><strong>Suggestion:</strong> consider <code>hook_ENTITY_TYPE_delete()</code> for <code>ai_guardrail_set</code> to auto-clean. While currently ignored, retaining these configurations can lead to unexpected behavior if a user recreates a guardrail with different settings, expecting it to no longer be globally applied.</p>
-  > <h4>2. No ordering control in <code>GlobalGuardrailsSettingsForm</code></h4>
-  > <p>The form uses <code>#type =&gt; 'checkboxes'</code>, which provides no mechanism for an admin to control execution order. Checkboxes render in whatever order <code>getAllGuardrailSets()</code> returns.</p>
-  > <p>This matters because a global set that stops short-circuits everything &mdash; if an admin wants "PII check" to run before "toxicity check", ordering is significant.</p>
-  > <p>Classic way Drupal handles that by <strong>Table with weights</strong> &mdash; use <code>#type =&gt; 'table'</code> with <code>#tabledrag</code> for drag-and-drop ordering (similar to block regions or Views displays). Store selected IDs in the desired order.</p>
-  > <p> #1 is worth addressing in this MR since the hook is small and the test is straightforward;  #2 could be a follow-up ticket.</p>
-  > **Ahmad-Khader** (2026-04-23): <!-- Migrated from comment CID #16553982. -->
-  > > _Migrated from comment #7 posted 17 Apr 2026 at 03:37 UTC_
+  > <h3>STEP 1- BC-analysis for code</h3>
+  > <p>As potentially breaking APIs I've identified and grouped our APIs in the following main items:</p>
+  > <ul>
+  > <li>Provider: getDefaultProviderForOperationType()`</li>
+  > <li>Provider:  Operation Type Interfaces -&gt; e.g. `$provider-&gt;textToImage($input, $model)`</li>
+  > <li>Provider form helpers &mdash; getSimpleProviderModelOptions('chat') + loadProviderFromSimpleOption('openai__gpt-4o')</li>
+  > <li>Chat Input/Output - ChatMessage, ChatOutput, ChatInput</li>
+  > <li>Multimodal input types &mdash; e.g. ImageFile passed via ChatMessage.</li>
+  > <li>Streamed-Chat-API: `StreamedChatMessageIteratorInterface`</li>
+  > <li>EmbeddingsInput and EmbeddingsOutput &mdash; used by $provider-&gt;embeddings($input, $model)</li>
+  > <li>Chat-Tool-Calling: `ChatInput::setChatTools($toolsInput)`, ToolsInputInterface, Toolsoutput</li>
+  > <li>FunctionCall plugin system for defining tools </li>
+  > <li>AI request events (Pre/PostGenerateResponse)</li>
+  > <li>VDB provider interface (AiVdbProviderInterface)</li>
+  > </ul>
+  > <p>As most relevant API-consumers I've identified the following, things being an ai-core submodule is marked with *:</p>
+  > <ol>
+  > <li>ai_automators *</li>
+  > <li>ai_assistant_api *</li>
+  > <li>ai_chatbot *</li>
+  > <li>ai_ckeditor *</li>
+  > <li>ai_content_suggestions *</li>
+  > <li>ai_search *</li>
+  > <li>ai_logging / ai_external_moderation *</li>
+  > <li>ai_agents</li>
+  > <li>canvas_ai</li>
+  > <li>ai_context</li>
+  > <li>field_widget_actions</li>
+  > </ol>
+  > <p>  * = AI core submodule</p>
+  > <h3>Evaluation criteria</h3>
+  > <p>I'm going to use the following impact rating scale:</p>
+  > <table>
+  > <tr>
+  > <th>Rating</th>
+  > <th>Meaning</th>
+  > </tr>
+  > <tr>
+  > <td><strong>-</strong></td>
+  > <td>Not used by this consumer</td>
+  > </tr>
+  > <tr>
+  > <td><strong>None</strong></td>
+  > <td>Used, but no impact &mdash; fully backward-compatible, no<br>
+  >   changes needed</td>
+  > </tr>
+  > <tr>
+  > <td><strong>Low</strong></td>
+  > <td>Few call sites, easy to adapt</td>
+  > </tr>
+  > <tr>
+  > <td><strong>Medium</strong></td>
+  > <td>Moderate usage, manageable changes</td>
+  > </tr>
+  > <tr>
+  > <td><strong>High</strong></td>
+  > <td>Heavy usage, significant rework needed</td>
+  > </tr>
+  > </table>
+  > <h3> Evaluation results</h3>
+  > <p>(big table displays broken here, attaching html file instead)</p>
+  > **fago** (2026-04-23): <!-- Migrated from comment CID #16480132. -->
+  > > _Migrated from comment #9 posted 21 Feb 2026 at 13:35 UTC_
   > 
   > 
-  > ```
-  > - Assigned: ahmad khader
-  > + Assigned: Unassigned
+  > > **File** [30-api-consumer-matrix.md](https://www.drupal.org/files/issues/2026-02-21/30-api-consumer-matrix.md) 
   > 
-  > ```
-  > **Ahmad-Khader** (2026-04-23): <!-- Migrated from comment CID #16553997. -->
-  > > _Migrated from comment #8 posted 17 Apr 2026 at 04:12 UTC_
+  > <h3>Evaluation Summary</h3>
+  > <p>Attaching evaluation result matrix as markdown file (html tables are not rendered correctly).</p>
+  > <p>API-Usage Overview:</p>
+  > <ul>
+  > <li><strong>Provider: getDefaultProviderForOperationType()</strong> &mdash; Used by 6 consumers but fully BC-compatible; no consumer code needs to change if method signature is preserved.</li>
+  > <li><strong>Provider: Operation type interfaces ($provider-&gt;chat(), $provider-&gt;embeddings(), etc.)</strong> &mdash; Used by 7 consumers, ai_automators being the heaviest with 5 different operation types; preservable with wrapper interfaces.</li>
+  > <li><strong>Provider form helpers (getSimpleProviderModelOptions, loadProviderFromSimpleOption)</strong> &mdash; Used by 5 consumers for building provider/model dropdowns in settings forms; low impact if helper methods are preserved.</li>
+  > <li><strong>Chat I/O: ChatInput, ChatMessage, ChatOutput</strong> &mdash; The most widely used API (9 of 11 consumers), with ai_agents being the heaviest at 30+ call sites; high volume but no impact if types are preserved as wrappers.</li>
+  > <li><strong>Multimodal: ImageFile via ChatMessage</strong> &mdash; Only used by 3 consumers (ai_agents, ai_automators, canvas_ai) for passing images to vision models.</li>
+  > <li><strong>Streaming: StreamedChatMessageIteratorInterface</strong> &mdash; Used by 4 consumers; ai_assistant_api extends and produces the stream, while chatbot, ckeditor, and agents consume or type-check it.</li>
+  > <li><strong>Embeddings: EmbeddingsInput, EmbeddingsOutput</strong> &mdash; Only used by ai_automators and ai_search for vector embedding generation; isolated from the chat API.</li>
+  > <li><strong>Chat tool-calling: setChatTools(), ToolsInput, ToolsOutput</strong> &mdash; Narrow usage in only 2 consumers (ai_assistant_api and ai_agents); the bridge between Drupal's FunctionCall plugins and the LLM's tool-calling protocol.</li>
+  > <li><strong>FunctionCall plugin system (#[FunctionCall], FunctionCallBase)</strong> &mdash; Used by 6 consumers, but ai_agents (33 plugins) and canvas_ai (14 plugins) account for the bulk; no impact if the Drupal plugin system is preserved alongside Symfony AI's #[AsTool].</li>
+  > <li><strong>AI events (Pre/PostGenerateResponseEvent)</strong> &mdash; Only subscribed to by ai_logging and ai_agents_explorer, both AI-core-adjacent; very low external impact.</li>
+  > <li><strong>VDB interface (AiVdbProviderInterface)</strong> &mdash; Exclusively used by ai_search (4 files); completely isolated from the chat/provider migration.</li>
+  > </ul>
+  > <h3>Highest impact</h3>
+  > <ol>
+  > <li><strong>Chat I/O</strong> (ChatInput/ChatMessage/ChatOutput) &mdash; used by 9 of 11 consumers. ai_agents is the heaviest user (30+ sites). Under BC approach: <strong>None to Low</strong> impact if types are preserved.</li>
+  > <li><strong>getDefaultProviderForOperationType()</strong> &mdash; used by 6 consumers. Under BC approach: <strong>None</strong> if method signature preserved.</li>
+  > <li><strong>Operation type interfaces</strong> ($provider-&gt;chat(), etc.) &mdash; used by 7 consumers. ai_automators uses the widest variety (chat, embeddings, textToImage, textToSpeech, speechToText). Under BC approach: <strong>None to Low</strong> if interfaces preserved.</li>
+  > <li><strong>FunctionCall plugin system</strong> &mdash; used by 6 consumers, but ai_agents (33 plugins) and canvas_ai (14 plugins) account for the bulk. Under BC approach: <strong>None</strong> if #[FunctionCall]/FunctionCallBase preserved.</li>
+  > </ol>
+  > **fago** (2026-04-23): <!-- Migrated from comment CID #16480145. -->
+  > > _Migrated from comment #10 posted 21 Feb 2026 at 13:49 UTC_
   > 
   > 
-  > <p>Another way to deal with ordering is to introduce priority field input on guardrails sets this way we could use it on globe and else where</p>
-  > **arianraeesi** (2026-04-23): <!-- Migrated from comment CID #16556625. -->
-  > > _Migrated from comment #9 posted 20 Apr 2026 at 07:03 UTC_
+  > <h3>Step2 : Config BC evaluation</h3>
+  > <p>Impact rating:</p>
+  > <table>
+  > <tr>
+  > <th>Rating</th>
+  > <th>Meaning</th>
+  > </tr>
+  > <tr>
+  > <td><strong>-</strong></td>
+  > <td>No config stores provider/model references</td>
+  > </tr>
+  > <tr>
+  > <td><strong>None</strong></td>
+  > <td>Config exists but uses abstract references (__default__,<br>
+  >   default_vision, empty) &mdash; no migration needed</td>
+  > </tr>
+  > <tr>
+  > <td><strong>Low</strong></td>
+  > <td>Few config entries, simple string replacement in update<br>
+  >   hook</td>
+  > </tr>
+  > <tr>
+  > <td><strong>Medium</strong></td>
+  > <td>Multiple entries or complex format, needs careful<br>
+  >   migration</td>
+  > </tr>
+  > <tr>
+  > <td><strong>High</strong></td>
+  > <td>Many config entities per site (scales with<br>
+  >   content/usage), complex migration</td>
+  > </tr>
+  > </table>
+  > <h3>Evaluation results Matrix</h3>
+  > <table>
+  > <tr>
+  > <th>Consumer</th>
+  > <th>Stored provider ID refs</th>
+  > <th>Combined provider__model refs</th>
+  > <th>Provider-specific config blobs</th>
+  > <th>Scale (entities per site)</th>
+  > </tr>
+  > <tr>
+  > <td>ai.settings (core defaults) *</td>
+  > <td>Low (separate provider_id + model_id per op-type, ~10 entries)</td>
+  > <td>-</td>
+  > <td>-</td>
+  > <td>Low (singleton)</td>
+  > </tr>
+  > <tr>
+  > <td>ai_automators *</td>
+  > <td>None-Low (sentinel tokens default, default_json, default_vision; specific provider only if user overrides)</td>
+  > <td>-</td>
+  > <td>Medium (automator_configuration_* params in opaque blob)</td>
+  > <td>High (one per rule, scales with content types x fields)</td>
+  > </tr>
+  > <tr>
+  > <td>ai_assistant_api *</td>
+  > <td>Low (llm_provider + llm_model; often __default__)</td>
+  > <td>-</td>
+  > <td>Medium (llm_configuration opaque blob)</td>
+  > <td>Medium (one per assistant, typically 1-5)</td>
+  > </tr>
+  > <tr>
+  > <td>ai_ckeditor *</td>
+  > <td>-</td>
+  > <td>Low (provider field, combined format; usually empty = default)</td>
+  > <td>-</td>
+  > <td>Low (one per text format x 7 plugins, usually empty)</td>
+  > </tr>
+  > <tr>
+  > <td>ai_content_suggestions + FWA *</td>
+  > <td>-</td>
+  > <td>Low (singleton plugins.id + per-field settings.model; often empty)</td>
+  > <td>-</td>
+  > <td>Medium (singleton + per-field widget action)</td>
+  > </tr>
+  > <tr>
+  > <td>ai_search *</td>
+  > <td>-</td>
+  > <td>Medium (embeddings_engine + chat_model, critical for search)</td>
+  > <td>Low (embeddings_engine_configuration dimensions)</td>
+  > <td>Low (typically 1 search server)</td>
+  > </tr>
+  > <tr>
+  > <td>ai_agents</td>
+  > <td>-</td>
+  > <td>-</td>
+  > <td>-</td>
+  > <td>- (no provider/model stored; resolves from global default at runtime)</td>
+  > </tr>
+  > <tr>
+  > <td>canvas_ai</td>
+  > <td>-</td>
+  > <td>-</td>
+  > <td>-</td>
+  > <td>- (no provider/model stored; resolves from global default at runtime)</td>
+  > </tr>
+  > <tr>
+  > <td>ai_context</td>
+  > <td>Low (separate provider_id + model_id in singleton; often empty)</td>
+  > <td>-</td>
+  > <td>-</td>
+  > <td>Low (singleton)</td>
+  > </tr>
+  > <tr>
+  > <td colspan="5"><strong>Recipes</strong></td>
+  > </tr>
+  > <tr>
+  > <td>drupal_cms_ai</td>
+  > <td>None (__default__ token for llm_provider, empty model)</td>
+  > <td>-</td>
+  > <td>-</td>
+  > <td>None</td>
+  > </tr>
+  > <tr>
+  > <td>drupal_cms_ai_ckeditor</td>
+  > <td>-</td>
+  > <td>None (empty provider strings = use default)</td>
+  > <td>-</td>
+  > <td>None</td>
+  > </tr>
+  > <tr>
+  > <td>ai_recipe_image_classification</td>
+  > <td>None (default_vision, default_json tokens)</td>
+  > <td>-</td>
+  > <td>-</td>
+  > <td>None</td>
+  > </tr>
+  > <tr>
+  > <td>ai_recipe_content_classification</td>
+  > <td>None (expected same pattern as image_classification)</td>
+  > <td>-</td>
+  > <td>-</td>
+  > <td>None</td>
+  > </tr>
+  > <tr>
+  > <td>ai_recipe_seo_optimizer</td>
+  > <td>None (default_json token)</td>
+  > <td>-</td>
+  > <td>-</td>
+  > <td>None</td>
+  > </tr>
+  > <tr>
+  > <td>ai_recipe_llm_optimized_content</td>
+  > <td>-</td>
+  > <td>-</td>
+  > <td>-</td>
+  > <td>- (no AI config at all)</td>
+  > </tr>
+  > </table>
+  > <h3>Evaluation Summary</h3>
+  > <ul>
+  > <li><strong>All recipes are safe</strong> &mdash; Every analyzed recipe uses abstract references (__default__, default_vision, default_json, or empty strings). No recipe hardcodes a specific  provider ID. Recipe-installed configs survive migration without changes.</li>
+  > <li><strong>ai_agents and canvas_ai store nothing</strong> &mdash; They always resolve provider/model from global defaults at runtime, so zero config migration needed.</li>
+  > <li><strong>Three distinct storage formats exist</strong> &mdash; (1) Separate provider_id + model_id fields (ai.settings, ai_assistant_api, ai_context), (2) combined provider__model string (ai_ckeditor, ai_content_suggestions, ai_search), (3) opaque plugin_config blobs  (ai_automators).</li>
+  > <li><strong>Provider-specific config might need attention</strong> &mdash; ai_assistant_api  (llm_configuration) and ai_automators (automator_configuration_*) store opaque  provider-specific params (temperature, max_tokens, etc.). These don't change with provider IDs, but may need migration if the underlying provider configuration schema changes in the new  implementation.</li>
+  > <li><strong>Scale is manageable</strong> &mdash; Most config is singletons or a handful of entities.<br>
+  >   ai_automators can scale to dozens of rules per site, but most use sentinel tokens (default,  default_json) rather than specific provider IDs.</li>
+  > </ul>
+  > **fago** (2026-04-23): <!-- Migrated from comment CID #16480150. -->
+  > > _Migrated from comment #11 posted 21 Feb 2026 at 14:03 UTC_
+  > 
+  > 
+  > <p>Summing up my BC-analysis here also:<br>
+  > Altogether, there is nothing surprising, but the positive result is imo that our configurations and recipe seem to be mostly unaffected from changes to the provider/platform API - as long as we stick to the operation-types system. Changing the operation types would affect the whole ecosystem though.</p>
+  > **rakhimandhania** (2026-04-23): <!-- Migrated from comment CID #16481622. -->
+  > > _Migrated from comment #12 posted 23 Feb 2026 at 01:04 UTC_
   > 
   > 
   > ```
   >  Issue tags:
-  >  + AI Initiative Sprint + AI Product Development
+  >  + AI Initiative Sprint
   > ```
-  > **brtamas** (2026-04-23): <!-- Migrated from comment CID #16558432. -->
-  > > _Migrated from comment #10 posted 21 Apr 2026 at 09:39 UTC_
+  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16482108. -->
+  > > _Migrated from comment #13 posted 23 Feb 2026 at 11:54 UTC_
   > 
   > 
+  > <p>Great information!</p>
+  > <p>So the idea is most likely to get rid of ai_assistants_api, that can be replaced by something like the <a href="https://www.drupal.org/project/ai/issues/3492940">Chat Consumer</a> and the AI Automators has a pretty big refactor with:</p>
+  > <p>* <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-7"><a href="https://www.drupal.org/project/ai/issues/3565806" title="Status: Closed (fixed)">#3565806: [Discuss] Move Automators to Structured Output</a></span><br>
+  > * implement <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-7"><a href="https://www.drupal.org/project/ai/issues/3552774" title="Status: Closed (fixed)">#3552774: Create linkable schema for providers</a></span><br>
+  > * implement <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-7"><a href="https://www.drupal.org/project/ai/issues/3556181" title="Status: Closed (fixed)">#3556181: Create a form element for selecting providers</a></span></p>
+  > **fago** (2026-04-23): <!-- Migrated from comment CID #16489165. -->
+  > > _Migrated from comment #15 posted 27 Feb 2026 at 11:11 UTC_
+  > 
+  > 
+  > <p>I posted my <a href="https://git.drupalcode.org/project/ai/-/merge_requests/1250">MR</a> - please take a look at the MR description for a summary.</p>
+  > <p>I tried to achieve backwards compatibility while establishing symfony-platform as the new API, deprecating the old provider API:</p>
+  > <ul>
+  > <li>It seems to work out fine for translating existing provider usage calls (e.g. chating with a model), via a converter service which translates our Input/Output classes into messages expected by symfony platform. </li>
+  > <li>Providers can be used with existing API in a backwards-compatible manner (deprecated), or via a new symfony-platform API focussed API.</li>
+  > <li>What remains problematic is keeping support for defining providers with the old API. <del>Those would not work with the new symfony-platform first API.</del> That would require another translation layer, translating symfony messages back to to our Input/Output classes. <del>Not sure this is feasible. </del> This seems to be feasible also, as proven by my <a href="https://git.drupalcode.org/project/ai/-/merge_requests/1259">second MR</a>. </li>
+  > </ul>
+  > <p>I'd see the main following possible scenarios based upon my PoC:<br>
+  > - Go with backwards-compatibility for using providers, but not for defining providers. This is a BC-break, so release this as 2.x. In 3.x we could drop the BC-layer for using providers also. Upgrade for ecosystem should be managable, make sure you upgrade provider modules, then update.<br>
+  > - Go with backwards-compatibility for using providers, two-way. This is still a BC-break since it would require Drupal 11/Symfony 7, so it needs to be released 2.x (not 1.4.x) also. In 3.x we could drop the BC-layers. The upgrade for the ecosystem should be easy thanks to the BC layers.<br>
+  > - Break both APIs for using and defining providers at the same time. Upgrade for ecosytem becomes harder.</p>
+  > <p>I need to look into the other approach and digest next - I did not do it so far to not influence mine.</p>
+  > **fago** (2026-04-23): <!-- Migrated from comment CID #16489597. -->
+  > > _Migrated from comment #17 posted 27 Feb 2026 at 15:36 UTC_
+  > 
+  > 
+  > <p>I added <a href="https://git.drupalcode.org/project/ai/-/merge_requests/1259">a second MR</a> which implements the BC-layer in both ways, for using a provider *and* for providing a provider. It still establishes the symfony-platform-api as the new primary API.  I've updated my <a href="https://www.drupal.org/project/ai/issues/3574187#comment-16489165">comment above</a> respectively.</p>
+  > <p>Some details, like token-cost information in streaming responses are not covered in the BC-layer, that might be some fun to support in the BC-layer, but that's also details which are likely not supported well in all the providers atm.</p>
+  > **fago** (2026-04-23): <!-- Migrated from comment CID #16497180. -->
+  > > _Migrated from comment #18 posted 05 Mar 2026 at 13:19 UTC_
+  > 
+  > 
+  > <p>I took a look at @mxr576's approach and I really like:</p>
+  > <ul>
+  > <li>introducing config entities for solving the multi-instance issue</li>
+  > <li>introducing a new plugin, next to providers - so we have a clean old/vs new api</li>
+  > </ul>
+  > <p>Given the full-BC experimentation I think it would be viable to create a full-BC layer for that, i.e. ship the new platform API next to the existing provider API + deprecate the existing provider API while keeping it fully intact.</p>
+  > <p>For that we'd need the following bc-layer:<br>
+  > * For working with providers (e.g. load provider by model / operation-type + do things): Translate this to platform API<br>
+  > * For existing provider plugins: Proxy platform API calls to existing provider API methods</p>
+  > <p>But we'd have to define and agree on the new API first. E.g. as proposed in my MR, we need some API providing the discovery by operation type, but also by provider+model:</p>
+  > <ul>
+  > <li> <code>loadPlatformProvider($id, $model_id)</code></li>
+  > <li> <code>loadPlatformProviderByDefinition($definition)</code></li>
+  > <li> <code>loadDefaultPlatformProvider($op_type)</code></li>
+  > </ul>
+  > <p>When we support multi-instance, we'd have to clarify which instance loadPlatformProvider($id) would default to also. </p>
+  > **yautja_cetanu** (2026-04-23): <!-- Migrated from comment CID #16497198. -->
+  > > _Migrated from comment #19 posted 05 Mar 2026 at 13:27 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **mxr576** (2026-04-23): <!-- Migrated from comment CID #16504976. -->
+  > > _Migrated from comment #20 posted 10 Mar 2026 at 20:58 UTC_
+  > 
+  > 
+  > <p>This could come handy while we are working on the refactoring: <a href="https://gist.github.com/mxr576/f8da37b48fd031a09c920ef0750612dc"> Drupal AI Providers Collection </a></p>
+  > **mxr576** (2026-04-23): <!-- Migrated from comment CID #16505800. -->
+  > > _Migrated from comment #21 posted 11 Mar 2026 at 12:57 UTC_
+  > 
+  > 
+  > <p>If Platform API will become the public API that consumers and extenders also have to work with (why not?) in AI 2.x or later, then I hope this issue gets a positive outcome before Symfony AI 1.0. <a href="https://github.com/symfony/ai/issues/1637">Improve documentation of thrown exceptions #1637</a></p>
+  > **mxr576** (2026-04-23): <!-- Migrated from comment CID #16508071. -->
+  > > _Migrated from comment #22 posted 12 Mar 2026 at 15:12 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **fago** (2026-04-23): <!-- Migrated from comment CID #16519283. -->
+  > > _Migrated from comment #23 posted 20 Mar 2026 at 12:15 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **fago** (2026-04-23): <!-- Migrated from comment CID #16519285. -->
+  > > _Migrated from comment #24 posted 20 Mar 2026 at 12:16 UTC_
+  > 
+  > 
+  > <p>Updated issue summary with update plan based upon our discussion, added it as phase 2. We decided to go forwarded with mxr576's MR for that.</p>
+  > **fago** (2026-04-23): <!-- Migrated from comment CID #16519288. -->
+  > > _Migrated from comment #25 posted 20 Mar 2026 at 12:19 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **fago** (2026-04-23): <!-- Migrated from comment CID #16519530. -->
+  > > _Migrated from comment #27 posted 20 Mar 2026 at 15:25 UTC_
+  > 
+  > 
+  > <p>ok, I added a first <a href="https://git.drupalcode.org/issue/ai-3574187/-/merge_requests/1#86a684ed3de60766f45d9dae1888229538cbe4ec">new MR</a> that builds upon mxr576's work in branch 3574187-greenfield_with_bc and adds some fixes and merges in some improvements from my work in branch 3574187-full-bc::</p>
+  > <ul>
+  > <li>merges in InputOutputConverter service as converter between Drupal AI types (ChatInput/ChatOutput) and Symfony AI Platform types (MessageBag/DeferredResult)</li>
+  > <li><code>PlatformProxy</code> class: New proxy wrapping AiPlatformInterface plugins directly. As BC-layer but also works as middleware when using invoke().</li>
+  > <li>Add some first tests and EchoAiPlatform test provider</li>
+  > <li>Dropped Drupal 10 support (^11.2), bumped symfony/ai deps to ^0.6</li>
+  > </ul>
+  > <p>Next there is <a href="https://git.drupalcode.org/issue/ai-3574187/-/merge_requests/1#86a684ed3de60766f45d9dae1888229538cbe4ec">small second MR</a> which targets the first MR and improve the BC-layer to work with the proxy-approach instead of providing AIProvider plugins. Since we don't want to support AiProvider plugins in 2.x any more, we should get rid of them and only keep the interface implemented as part of the API exposed to the callers / provider-users.</p>
+  > <p>Based on the second MR, we can now continue completing the BC-layer for all operation types and proof it by switching existing tests over from the old EchoAI provider to the new AIplatform:echoai provider. I'll start a bit on that.</p>
+  > **fago** (2026-04-23): <!-- Migrated from comment CID #16519891. -->
+  > > _Migrated from comment #28 posted 20 Mar 2026 at 19:08 UTC_
+  > 
+  > 
+  > <p><a href="https://www.drupal.org/u/fago" title="View user profile." data-uid="16747" class="username">fago</a> changed the visibility of the branch <em class="placeholder">ai-symfony-prototype-step3</em> to <em class="placeholder">hidden</em>.</p>
+  > **fago** (2026-04-23): <!-- Migrated from comment CID #16519898. -->
+  > > _Migrated from comment #29 posted 20 Mar 2026 at 19:14 UTC_
+  > 
+  > 
+  > <p>ok, improved the <a href="https://git.drupalcode.org/issue/ai-3574187/-/merge_requests/1#86a684ed3de60766f45d9dae1888229538cbe4ec">second MR</a> a bit more to fully implement the chat operation provider in the echo platform - so it works with the tests for it. </p>
+  > **mxr576** (2026-04-23): <!-- Migrated from comment CID #16546975. -->
+  > > _Migrated from comment #32 posted 11 Apr 2026 at 19:58 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > <p>I am behind schedule with MR reviews here, and I am terribly sorry about that. However, I am keeping an eye on developments in the Symfony ecosystem.</p>
+  > <p>The most notable one is <a href="https://github.com/symfony/ai/pull/1923">[Platform] Introduce Provider abstraction and model routing layer</a> which introduces the Provider concept at the Symfony AI level as well. Even if some level of BC is maintained at the API level, this will likely impact our bridge design between Symfony and Drupal.</p>
+  > **mxr576** (2026-04-23): <!-- Migrated from comment CID #16556447. -->
+  > > _Migrated from comment #34 posted 19 Apr 2026 at 19:46 UTC_
+  > 
+  > 
+  > <p>Checked<a href="https://git.drupalcode.org/issue/ai-3574187/-/merge_requests/new/diffs?merge_request%5Bsource_project_id%5D=204639&amp;merge_request%5Bsource_branch%5D=ai-symfony-prototype&amp;merge_request%5Btarget_project_id%5D=204639&amp;merge_request%5Btarget_branch%5D=3574187-greenfield_with_bc"> the complete diff </a>between green_field and ai-symfony-prototype. Great improvements!</p>
+  > **mxr576** (2026-04-23): <!-- Migrated from comment CID #16559972. -->
+  > > _Migrated from comment #35 posted 22 Apr 2026 at 07:48 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > <p>Symfony AI <a href="https://github.com/symfony/ai/releases/tag/v0.8.0">0.8.0</a> is out that introduces its own provider abstractions.</p>
+  > <p>We have to regroup and decide how Symfony AI's Platform and Provider components are going to be represented in Drupal.</p>
+  > <p>I also had several comments on the original PR, the following changes has not been accepted, however (IMO) they could have been valuable modifications on the approach:<br>
+  > * <a href="https://github.com/symfony/ai/pull/1923#discussion_r3105141524">Drop createPlatform() factory method</a> - probably we just don't use it<br>
+  > * <a href="https://github.com/symfony/ai/pull/1923#issuecomment-4273704526"><code>make Provider implement PlatformInterface directly</code></a></p>
+  > <p>The official docs site is outdated <a href="https://github.com/symfony/ai/issues/1983">due to a bug</a> at this moment, but the main change from the consumer point of view is this: <a href="https://github.com/symfony/ai/blob/v0.8.0/docs/components/platform.rst?plain=1#L162-L197">https://github.com/symfony/ai/blob/v0.8.0/docs/components/platform.rst?plain=1#L162-L197</a></p>
+  > **mxr576** (2026-04-26): ## Proposed architecture plan: Symfony AI 0.8.0+ integration
+  > 
+  > #### `AiPlatformProvider`: config entity + plugin type
+  > 
+  > ```php
+  > interface AiPlatformProviderInterface extends ProviderInterface, PluginInspectionInterface {}
   > ```
-  > - Assigned: Unassigned
-  > + Assigned: brtamas
   > 
-  > ```
-  > **brtamas** (2026-04-23): <!-- Migrated from comment CID #16559547. -->
-  > > _Migrated from comment #11 posted 21 Apr 2026 at 20:25 UTC_
+  > The config entity gives a vendor connection a machine name, makes it storable and exportable via CMI, and allows it to be referenced by multiple `AiPlatform` entities without duplicating credentials. The plugin type owns the instantiation logic for each concrete `ProviderInterface` implementation (one plugin per bridge: OpenAI, Anthropic, etc.). The instantiated plugin IS the working `ProviderInterface`, no wrapper method needed.
   > 
+  > Credentials are referenced via the Key module inside the plugin's config blob. The `getName()` implementation returns the config entity's machine name, giving unambiguous identity in logs and error messages even when two entities use the same underlying plugin type. (`ProviderInterface::getName()` — resolved by design: A concern raised during the review of [symfony/ai#1923](https://github.com/symfony/ai/pull/1923#discussion_r3068491595) was that `ProviderFactory::create()` always returns 'openai' as the name regardless of which API key or region is used.)
   > 
-  > ```
-  > - Assigned: brtamas
-  > + Assigned: Unassigned
-  > - Status:   Needs work
-  > + Status:   Needs review
+  > #### `AiPlatform`: config entity + plugin type
   > 
+  > ```php
+  > interface AiPlatformInterface extends PlatformInterface, PluginInspectionInterface {}
   > ```
   > 
-  > <p>Hello,</p>
-  > <p>I made 2 commits in which I created a way to sort global guardrails. This is the last one:<br>
-  > <a href="https://git.drupalcode.org/issue/ai-3584851/-/commit/cb375f5c50f40346cd171c19e521d1452ba6bb3d">https://git.drupalcode.org/issue/ai-3584851/-/commit/cb375f5c50f40346cd171c19e521d1452ba6bb3d</a></p>
-  > <p>Sorry, I only saw later that there might be a separate issue for this. I hope the changes are useful.</p>
-  > **Ahmad-Khader** (2026-04-23): <!-- Migrated from comment CID #16560417. -->
-  > > _Migrated from comment #12 posted 22 Apr 2026 at 11:40 UTC_
+  > The config entity gives a `PlatformInterface` configuration a machine name, makes it referenceable from other config (agents, chat configs, search indexes, etc.), and stores which `AiPlatform` plugin is used plus that plugin's configuration blob. The plugin type owns the instantiation logic and defines what configuration is needed for each concrete `PlatformInterface` implementation.
   > 
+  > Each concrete plugin maps to one `PlatformInterface` implementation:
   > 
-  > ```
-  > - Status: Needs review
-  > + Status: Needs work
+  > - A plugin wrapping `\Symfony\AI\Platform\Platform` exposes config fields for which `AiPlatformProvider` config entities to reference and which `AiPlatformModelRouter` plugin to use.
+  > - A plugin wrapping `FailoverPlatform` references a primary `AiPlatform` config entity and failover config.
+  > - A plugin wrapping `TraceablePlatform` wraps another `AiPlatform` config entity reference plus tracing config.
   > 
-  > ```
+  > Each plugin is fully self-contained and owns its own config schema.
   > 
-  > <p>Hi @brtamax,<br>
-  > Thanks for your work, I don't see that point 1 is fixed or an explanation why it's skipped.</p>
-  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16561112. -->
-  > > _Migrated from comment #13 posted 22 Apr 2026 at 18:22 UTC_
+  > #### `AiPlatformModelRouter`: plugin type only
   > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: marcus_johansson
-  > 
-  > ```
-  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16561113. -->
-  > > _Migrated from comment #14 posted 22 Apr 2026 at 18:22 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: marcus_johansson
-  > + Assigned: Unassigned
-  > - Status:   Needs work
-  > + Status:   Needs review
-  > 
+  > ```php
+  > interface AiPlatformModelRouterInterface extends ModelRouterInterface, PluginInspectionInterface {}
   > ```
   > 
-  > <p>Back in review - added the update hook and test from #1.</p>
-  > **Ahmad-Khader** (2026-04-23): Looks great, Reordering and delete hook works great
-  > **Marcus_Johansson** (2026-04-24): Thank you, getting merged.
-- **[RestrictToTopic guardrail: add semantic topic matching mode](https://git.drupalcode.org/project/ai/-/work_items/3584977)** · [d.o #3584977](https://www.drupal.org/node/3584977) · opened · unassigned · 4 comments · AI Initiative Sprint, AI Product Development, Needs manual testing, aiCoreModule
-  > **arianraeesi** (2026-04-23): <!-- Migrated from comment CID #16556628. -->
-  > > _Migrated from comment #2 posted 20 Apr 2026 at 07:03 UTC_
+  > Routing strategy is always specific to a given `AiPlatform` setup, so no standalone config entity is needed. Config lives inside the `AiPlatform` plugin's config blob. Ships with a default `CatalogBasedAiPlatformModelRouter` wrapping Symfony's `CatalogBasedModelRouter`.
+  > 
+  > ***
+  > 
+  > ### Continuity with MR#1214
+  > 
+  > The config entity + plugin pattern proposed here is the same architecture already established in MR#1214. What has changed is not the pattern but the layer structure: pre-0.8.0, the `AiPlatform` plugin wrapped `PlatformInterface` directly because `ProviderInterface` did not exist yet. Post-0.8.0, the same pattern now covers two layers: `AiPlatformProvider` sits below `AiPlatform`, mapping to the new `ProviderInterface` / `PlatformInterface` split. MR#1214's architecture was not invalidated by #1923, it just gained a layer below it.
+  > 
+  > ***
+  > 
+  > ### Consumer contract
+  > 
+  > Consumers (agents, chat, search, embeddings) reference an `AiPlatform` config entity by machine name and receive a `PlatformInterface` instance. They never depend on `AiPlatformProvider` or `AiPlatformModelRouter` directly. Factories and factory methods such as `ProviderFactory::create()` and `createPlatform()` are intentionally not surfaced in Drupal. Plugin instances and config entities serve that purpose.
+  > 
+  > ***
+  > 
+  > ### Open questions
   > 
   > 
-  > ```
-  >  Issue tags:
-  >  + AI Initiative Sprint + AI Product Development
-  > ```
-  > **joshua1234511** (2026-04-23): <!-- Migrated from comment CID #16556695. -->
-  > > _Migrated from comment #3 posted 20 Apr 2026 at 08:00 UTC_
+  > #### Should we ship a **Default "skeleton" `AiPlatform` config entity?
   > 
+  > The module could ship a default `AiPlatform` config entity backed by a special plugin whose behaviour is to dynamically aggregate all currently configured `AiPlatformProvider` config entities at runtime, with no explicit provider wiring required. This solution is targeting simple sites (Drupal CMS builds) where the added value of the platform abstraction would not be clearly visible, but the complexity would.
   > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: joshua1234511
-  > 
-  > ```
-  > **joshua1234511** (2026-04-24): Updated to Achieve 
-  > - Add matching_mode setting: exact + semantic.
-  > - Exact mode = current behavior 
-  > - Semantic mode = constrained prompt
-  > - Semantic mode with similarity threshold
-  > - Surface unmatched topics in metadata
-  > 
-  > Manually tested 
-  > Added a new Restrict to Topic guardrail at /admin/config/ai/guardrails/guardrail/add with:
-  > Valid topic: Engineering
-  > Matching mode: Semantic
-  > Similarity threshold: 0.75
-- **[MDXEditor Error: Unrecognized extension value in extension set ([object Object])](https://git.drupalcode.org/project/ai/-/work_items/3584676)** · [d.o #3584676](https://www.drupal.org/node/3584676) · opened · unassigned · 2 comments · category::bug, priority::normal, state::accepted, toBeTriaged
+  > Thoughts and feedback welcome.
 
 ### Merge Requests
 
-- **[feat(ai_automators): hide field_connections until a workflow is selected](https://git.drupalcode.org/project/ai/-/merge_requests/1531)** · cadence96 · opened · `3586382-improve-ux-automators-tool-add` · 178 diff lines
-- **[Adjust config schema of ai.provider_config form element](https://git.drupalcode.org/project/ai/-/merge_requests/1532)** · a.dmitriiev · opened · `3586384-fix-aiprovider-confi` · 363 diff lines
-- **[Issue #3571498: Rethrow queue worker exceptions](https://git.drupalcode.org/project/ai/-/merge_requests/1535)** · scottfalconer · opened · `3571498-rethrow-queue-exceptions` · 182 diff lines
-- **[Draft: Resolve #3577050 "Generalize behaviour of"](https://git.drupalcode.org/project/ai/-/merge_requests/1283)** · a.dmitriiev · opened · `3577050-generalize-behaviour-of` · 3189 diff lines
-- **[Issue #3586385: Configuration set](https://git.drupalcode.org/project/ai/-/merge_requests/1534)** · Marcus_Johansson · merged 2026-04-24 · `3586385-agentrunner-php-needs-to-set-configuration` · 12 diff lines
-- **[Issue #3554797: Start session after first interaction](https://git.drupalcode.org/project/ai/-/merge_requests/978)** · omarlopesino · opened · `3554797-create-ai-assistant` · 153 diff lines
-- **[[#3585690] Added Guardrails support to AI Automators.](https://git.drupalcode.org/project/ai/-/merge_requests/1528)** · joshua1234511 · opened · `3585690-add-guardrails-support` · 623 diff lines
-- **[Issue #3586385: "AgentRunner.php needs to set configuration"](https://git.drupalcode.org/project/ai/-/merge_requests/1533)** · Marcus_Johansson · closed · `3586385-agentrunner-php-needs-to-set-configuration-2`
-- **[Resolve #3540608 "Decode ways update"](https://git.drupalcode.org/project/ai/-/merge_requests/1353)** · hrishikesh-dalal · merged 2026-04-24 · `3540608-decode-ways-update` · 32 diff lines
-- **[correct HTML encoding in selected text preview](https://git.drupalcode.org/project/ai/-/merge_requests/1264)** · neerajkumar007 · closed · `ai-3540608-decode-fixes` · 45 diff lines
-- **[decoding html while showing the selected text preview](https://git.drupalcode.org/project/ai/-/merge_requests/821)** · sijumpk · closed · `3540608-special-characters-or` · 62210 diff lines
-- **[Resolve #3584851 "Add global guardrails"](https://git.drupalcode.org/project/ai/-/merge_requests/1495)** · Marcus_Johansson · merged 2026-04-24 · `3584851-add-global-guardrails` · 1005 diff lines
-
-### Commits
-
-- [`6f727f06`](https://git.drupalcode.org/project/ai/-/commit/6f727f06826de7c1b4e2517a128d80218229c679) Resolve #3540608 "Decode ways update" — Hrishikesh Dalal (2026-04-24)
-- [`4671014f`](https://git.drupalcode.org/project/ai/-/commit/4671014f5c4e7faf73ac43e781479bb09b4e02f6) Resolve #3584851 "Add global guardrails" — Marcus Johansson (2026-04-24)
+- **[Resolve #3563396 "Fix phpstan issues api 2.0.x"](https://git.drupalcode.org/project/ai/-/merge_requests/1074)** · danrod · opened · `3563396-fix-phpstan-issues-api-2.0.x` · 1232 diff lines
 
 ---
 
@@ -3156,116 +2190,18 @@ _Generated: 2026-04-24T21:56 GMT_
 
 ### Merge Requests
 
-- **[Draft: Resolve #3586589 "No popover staging (ci)"](https://git.drupalcode.org/project/canvas/-/merge_requests/981)** · bnjmnm · opened · `3586589-no-popover-staging-ci` · 2367 diff lines
-- **[feat: #3552818 Contrib compatibility: ComponentPluginManager decorator should...](https://git.drupalcode.org/project/canvas/-/merge_requests/961)** · florenttorregrosa · opened · `3552818-contrib-compatibility-componentpluginmanager` · 330 diff lines
-- **[Fix error when making required formatted text field empty](https://git.drupalcode.org/project/canvas/-/merge_requests/982)** · lauriii · opened · `3551867-error-when-making` · 275 diff lines
-- **[Draft: #3586589 changes propagate immediately](https://git.drupalcode.org/project/canvas/-/merge_requests/973)** · bnjmnm · opened · `3586589-no-popover-staging` · 2315 diff lines
-- **[Draft: Resolve #3586613 "Add content entity reference well known"](https://git.drupalcode.org/project/canvas/-/merge_requests/980)** · longwave · opened · `3586613-add-content-entity-reference-well-known` · 378 diff lines
-- **[Keep contextual panel width static when left sidebar is toggled](https://git.drupalcode.org/project/canvas/-/merge_requests/638)** · lauriii · merged 2026-04-24 · `3574994-static-width` · 575 diff lines
-- **[Lift testTranslationLifeCycleInDepth() and testContentTemplateTranslation()...](https://git.drupalcode.org/project/canvas/-/merge_requests/898)** · wimleers · opened · `3582478-config-schema-component-specific-inputs-without-mr831` · 1927 diff lines
-- **[Fix flaky multivalue-form-design* tests: intercept race, magic sleeps](https://git.drupalcode.org/project/canvas/-/merge_requests/950)** · penyaskito · merged 2026-04-24 · `3586022-fix-multivalue-form-design-flaky-cypress` · 862 diff lines
-- **[Resolve #3586655 CI: avoid unnecessary E2E jobs (or any job, really)](https://git.drupalcode.org/project/canvas/-/merge_requests/977)** · wimleers · opened · `3586655-ci-avoid-wasteful-playwright` · 189 diff lines
-- **[chore(Data model): #3585298 Add dataDependencies.entityFields to JavaScriptComponent](https://git.drupalcode.org/project/canvas/-/merge_requests/929)** · penyaskito · merged 2026-04-24 · `3585298-js_component-dataDependencies.entityFields` · 796 diff lines
-- **[Draft: PoC Playwright snapshot-based](https://git.drupalcode.org/project/canvas/-/merge_requests/974)** · isholgueras · opened · `3586631-poc-playwright-snapshots` · 3569 diff lines
-- **[Issue #3586660: Add additional caching to GitLab CI pipelines](https://git.drupalcode.org/project/canvas/-/merge_requests/976)** · justafish · opened · `3586660-add-additional-caching` · 310 diff lines
-- **[Fix iframe height not updating on dynamic content changes](https://git.drupalcode.org/project/canvas/-/merge_requests/971)** · lauriii · opened · `3586577-fix-iframe-height` · 486 diff lines
-- **[chore(CLI Tool): #3586726 Allow omitted props in Workbench page specs and component mocks](https://git.drupalcode.org/project/canvas/-/merge_requests/979)** · balintbrews · merged 2026-04-24 · `3586726-allow-omitted-props` · 525 diff lines
-- **[Draft: #3516754 document current behavior for empty required array props](https://git.drupalcode.org/project/canvas/-/merge_requests/923)** · tedbow · opened · `3516754-test-coverage` · 854 diff lines
-- **[Draft: Resolve #3583684 "Symmetric content inputs"](https://git.drupalcode.org/project/canvas/-/merge_requests/882)** · tedbow · opened · `3583684-symmetric-content-inputs` · 953 diff lines
-- **[#3581110: Add Multi-Value List Text/Integer Prop Support (UI)](https://git.drupalcode.org/project/canvas/-/merge_requests/795)** · Utkarsh_33 · opened · `3581110-add-multi-value-list` · 2940 diff lines
-- **[Issue #3586693: Consolidate module installs in Playwright tests](https://git.drupalcode.org/project/canvas/-/merge_requests/978)** · justafish · merged 2026-04-24 · `3586693-consolidate-module-installs` · 487 diff lines
-- **[Draft: Fix time value when adding/reordering element.](https://git.drupalcode.org/project/canvas/-/merge_requests/958)** · chandu7929 · opened · `3582883-multi-value-prop-date-fix` · 364 diff lines
-- **[Fix phpcs](https://git.drupalcode.org/project/canvas/-/merge_requests/969)** · penyaskito · merged 2026-04-24 · `3586535-update-phpcs-config` · 447 diff lines
-- **[Draft: Resolve #3586673 "Phpcs actually selectively exclude"](https://git.drupalcode.org/project/canvas/-/merge_requests/975)** · wimleers · opened · `3586673-phpcs-actually-selectively-exclude` · 44 diff lines
-- **[#3586183: Removing value for a required prop of type link(uri-reference) returns 500](https://git.drupalcode.org/project/canvas/-/merge_requests/956)** · Utkarsh_33 · opened · `3586183-removing-value-for` · 132 diff lines
-- **[Remove grey border appearing around Canvas AI chat panel](https://git.drupalcode.org/project/canvas/-/merge_requests/963)** · lauriii · opened · `3586351-grey-border-appearing` · 27 diff lines
-- **[Resolves #3584392: Unexpected Auto Row Creation and Weight Display in Multi-Cardinality Fields (UI)](https://git.drupalcode.org/project/canvas/-/merge_requests/902)** · shubham.prakash · opened · `3584392-unexpected-auto-row` · 1003 diff lines
-- **[Fix #3586137 pattern test stability](https://git.drupalcode.org/project/canvas/-/merge_requests/967)** · bnjmnm · merged 2026-04-23 · `3586137-fix-pattern.cy.js-flakiness` · 31 diff lines
+- **[Store and sync code component folder in component.yml](https://git.drupalcode.org/project/canvas/-/merge_requests/990)** · lauriii · opened · `3586988-store-and-sync` · 1073 diff lines
+- **[fix(CLI Tool): #3586971 Apply the React JSX transform consistently in Workbench preview-build exports](https://git.drupalcode.org/project/canvas/-/merge_requests/989)** · balintbrews · merged 2026-04-26 · `3586971-workbench-jsx-transform` · 93 diff lines
+- **[State managed wasm file loading](https://git.drupalcode.org/project/canvas/-/merge_requests/523)** · jptaranto · opened · `3518306-ensure-wasm-files` · 718 diff lines
+- **[feat(CLI Tool): #3586959 Validate image prop example URLs in Code Component metadata files](https://git.drupalcode.org/project/canvas/-/merge_requests/988)** · balintbrews · merged 2026-04-26 · `3586959-validate-image-prop-example` · 409 diff lines
+- **[Draft: baseline control](https://git.drupalcode.org/project/canvas/-/merge_requests/987)** · bnjmnm · opened · `baseline-readings` · 26 diff lines
+- **[Draft: Resolve #3586589 "No popover staging (ci)"](https://git.drupalcode.org/project/canvas/-/merge_requests/981)** · bnjmnm · opened · `3586589-no-popover-staging-ci` · 2397 diff lines
+- **[Draft: #3586589 "entityref entityform version"](https://git.drupalcode.org/project/canvas/-/merge_requests/985)** · bnjmnm · opened · `3586589-sb` · 2489 diff lines
 
 ### Commits
 
-- [`d0a85f2d`](https://git.drupalcode.org/project/canvas/-/commit/d0a85f2d6db812e4381720c6f0293c11f906c105) feat: #3574994 Keep contextual panel width static when left sidebar is toggled — Lauri Timmanee (2026-04-24)
-- [`70237b00`](https://git.drupalcode.org/project/canvas/-/commit/70237b008f98ca4954e1792a6858b69c25c02998) fix: #3586022 Fix multivalue-form-design*.cy.js flakiness — Christian López Espínola (2026-04-24)
-- [`5aa3ed14`](https://git.drupalcode.org/project/canvas/-/commit/5aa3ed14f2d5c6249b45aa7ed1e5e929d2916c09) chore(Data model): #3585298 Add `dataDependencies.entityFields` to `JavaScriptComponent` config schema — Christian López Espínola (2026-04-24)
-- [`0e3411f6`](https://git.drupalcode.org/project/canvas/-/commit/0e3411f63e6cfa44da554daef6c581f32793fb4a) chore(CLI Tool): #3586726 Allow omitted props in Workbench page specs and component mocks — Bálint Kléri (2026-04-24)
-- [`36e0150d`](https://git.drupalcode.org/project/canvas/-/commit/36e0150d6510552a5645000b9b3dc26a08015485) feat: #3586693 Consolidate module installs in Playwright tests — Sally Young (2026-04-24)
-- [`6ec9c65a`](https://git.drupalcode.org/project/canvas/-/commit/6ec9c65a3bad9e8c2bf9ce6e91e10307528580fc) chore(Project management): #3586535 Update PHPCS config to match Drupal 11 — selectively comply with `Drupal.Arrays.Array.LongLineDeclaration` — Christian López Espínola (2026-04-24)
-- [`b15d389f`](https://git.drupalcode.org/project/canvas/-/commit/b15d389f981d51b5663875adaf329af738da25ef) fix: #3586137 Fix pattern.cy.js flakiness — Ben Mullins (2026-04-23)
-
----
-
-## AWS Bedrock Provider
-
-### Merge Requests
-
-- **[Adding support for inference profiles](https://git.drupalcode.org/project/ai_provider_aws_bedrock/-/merge_requests/17)** · RatNeurons · opened · `3586773-inference-profiles-arent` · 105 diff lines
-
----
-
-## Tool API
-
-### Issues
-
-- **[Allow controlling Tool return format](https://git.drupalcode.org/project/tool/-/work_items/3582933)** · [d.o #3582933](https://www.drupal.org/node/3582933) · opened · unassigned · 4 comments · AI Initiative Sprint, AI Innovation, category::feature, code
-  > **b_sharpe** (2026-04-22): <!-- Migrated from comment CID #16537203. -->
-  > > _Migrated from comment #2 posted 02 Apr 2026 at 23:12 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **rakhimandhania** (2026-04-22): <!-- Migrated from comment CID #16539910. -->
-  > > _Migrated from comment #3 posted 06 Apr 2026 at 15:37 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + AI Innovation + AI Initiative Sprint
-  > ```
-- **[Fix LogMessage tool](https://git.drupalcode.org/project/tool/-/work_items/3554285)** · [d.o #3554285](https://www.drupal.org/node/3554285) · opened · unassigned · 2 comments · category::bug, code, priority::normal, state::accepted
-- **[[PoC] Allow Tool API tools to be called directly from Symfony's tool caller.](https://git.drupalcode.org/project/tool/-/work_items/3582934)** · opened · michaellander · 0 comments
-- **[[AI Connector] - Context Data missing after execute](https://git.drupalcode.org/project/tool/-/work_items/3576586)** · [d.o #3576586](https://www.drupal.org/node/3576586) · opened · unassigned · 4 comments · category::bug, code, priority::normal, state::needsReview
-  > **b_sharpe** (2026-04-22): <!-- Migrated from comment CID #16492289. -->
-  > > _Migrated from comment #3 posted 02 Mar 2026 at 16:29 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Active
-  > + Status: Needs review
-  > 
-  > ```
-  > **b_sharpe** (2026-04-22): <!-- Migrated from comment CID #16492294. -->
-  > > _Migrated from comment #4 posted 02 Mar 2026 at 16:30 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: b_sharpe
-  > + Assigned: Unassigned
-  > 
-  > ```
-  > **michaellander** (2026-04-23): So I had thought we rolled this in, but apparently not?  The GitLab move has me a little out of whack.   I'm ok with setting this context value for function calls, but the one area I want to test is that we might get some failures even with the solution in place.
-  > 
-  > We have a token solution that lets us operate multiple times on an entity in temporary storage before finally writing to permanent storage.  This allows us to build a node/term/etc over multiple calls keeping the size of tool calls down(and reducing failure rates).  What was happening is that FunctionCalls would persist the original state of the entity across all tool calls, and then the one saved would only contain the original entity + the results of the final tool call that modified said entity. 
-  > 
-  > So in the example of these 4 tool/function calls:
-  > 1. Load entity
-  > 2. Set entity title
-  > 3. Set entity body
-  > 4. Save entity
-  > 
-  > The 2nd step would not be applied and the entity would have no title.  This is an issue unique to the AI module function calling implementation and doesn't affect MCP(which uses a similar token approach).
-  > 
-  > I'd prefer to fix this upstream, but in the interim, I just delayed setting any context values on the function call until we were ready to execute said function call, however it sounds like that isn't necessarily working either.  If we do fix this upstream, we can simplify our approach even further.   Since I haven't dug into this in awhile, let me confirm the original problem still exists and I'll create an issue upstream if one doesn't yet exist.
-
-### Merge Requests
-
-- **[Issue #3554285: Fix LogMessage tool](https://git.drupalcode.org/project/tool/-/merge_requests/84)** · scottfalconer · opened · `3554285-fix-logmessage-tool` · 350 diff lines
-
----
-
-## Postgres VDB Provider
-
-### Merge Requests
-
-- **[Resolve #3576852 "Reduce schema bloat"](https://git.drupalcode.org/project/ai_vdb_provider_postgres/-/merge_requests/21)** · ezeedub · opened · `3576852-reduce-schema-bloat` · 1591 diff lines
+- [`d7e56bd7`](https://git.drupalcode.org/project/canvas/-/commit/d7e56bd7e07420252d3d83118f4c32599a822134) fix(CLI Tool): #3586971 Apply the React JSX transform consistently in Workbench preview-build exports — Bálint Kléri (2026-04-26)
+- [`d20871a7`](https://git.drupalcode.org/project/canvas/-/commit/d20871a73d3fccd14d73a148c778bb24f22872d4) feat(CLI Tool): #3586959 Validate image prop example URLs in Code Component metadata files — Bálint Kléri (2026-04-26)
 
 ---
 
