@@ -1,25 +1,24 @@
 # Drupal AI Activity Newsletter
 
 _Period: 2026-04-26 to 2026-04-27_
-_Generated: 2026-04-27 08:45 GMT_
+_Generated: 2026-04-27 10:13 GMT_
 
 ## TL;DR
 
 ### Shipped
 
-1. **CCC Subcontext Feature Toggle (MR !120)** Merged commit `24713d22` guarding subcontext-dependent codepaths, fixing `AiContextAgentForm` to use `$this->configFactory->get()`, removing a duplicate `Vocabulary::create()` call that broke kernel tests, and adding `ai_context_update_10002()`.
-2. **Drupal Canvas React JSX Transform Fix (MR !989)** Fixed inconsistent application of the React JSX transform during Workbench preview-build exports in the CLI tool, resolving broken code component previews.
-3. **Drupal Canvas Image Prop URL Validation (MR !988)** Added validation of image prop example URLs in Code Component metadata files at the CLI layer, preventing malformed entries from surfacing as runtime errors.
-4. **Drupal Forge Silver Partner Onboarding Unblocked** Contract was signed after a postponement, closing the partner agreement review and offboarding checklist tasks and updating the `d.o/ai` AI Partners block copy.
-5. **AI Initiative Funding Issue Template (MRs !5, !7, !8, !9)** Kepol landed four MRs on `3586427-funding-template` to introduce a monthly funding issue template with correct label metadata, though automatic label and assignee pre-population remains unresolved.
+1. **CCC Subcontext Feature Made Optional** MR !120 landed for Context Control Center, toggling taxonomy vocabulary creation at install time and fixing static `\Drupal::config()` calls with injected `configFactory->get()` in `AiContextAgentForm`.
+2. **Drupal Canvas MR Template and CLI Fixes** justafish merged MR !986 adding a standardised MR template, and balintbrews shipped MR !989 fixing inconsistent React JSX transform in Workbench preview-build exports and MR !988 adding validation of image prop example URLs in code component metadata.
+3. **AI Initiative Monthly Funding Template** kepol landed MRs !5, !7, and !8 to introduce a reusable monthly funding issue template in the `ai_initiative` GitLab project, after which domidc opened tracking issues covering May 2025 through July 2026.
+4. **Drupal Forge Silver AI Partner Contract Confirmed** The Drupal Forge Silver AI partner contract was signed, unblocking onboarding, and `d.o/ai` partner block copy was updated replacing "AI Maker" with "AI Partner".
 
 ### Ongoing
 
-1. **CCC Denormalized Scope Index Table (MR !117)** Adds a scope index table to replace SQL `LIKE` queries on serialized scope data, with `prefilterItemIdsByScope()` wired into `AiContextSelector`; remains an open stable blocker for rc1.
-2. **CCC `ai_context_usage` Normalization and Cron Pruning (MR !119)** Addresses usage table normalization and batched pruning, but `ai_context_update_10002()` risks a hook number collision with the same hook added in MR !120 and needs a reroll.
-3. **Symfony AI Platform Integration for `ai` Module (#3574187)** mxr576 proposed an `AiPlatformProviderInterface` extending both `ProviderInterface` and `PluginInspectionInterface`, but a naming convention dispute and the Symfony AI 0.8.0 release have stalled earlier prototype MRs !1250 and !1259.
-4. **AI Module Streaming Guardrails (#3582179)** Feature using start/stop regex patterns to buffer and evaluate streamed content is cycling between review states, with the core blocker being correct separation of the evaluation buffer and the consumer-facing output buffer.
-5. **Drupal Canvas `ComponentPluginManager` Decorator (MR !961)** Proposes a decorator to improve contrib module compatibility, with broad architectural implications that are holding back contrib adoption pending review.
+1. **CCC Scope Index and Usage Normalization MRs Blocked** MR !117 adds `ai_context_scope_index` to replace SQL `LIKE` queries on serialized scope data, and MR !119 normalizes `ai_context_usage` with batched cron pruning; whichever merges second must renumber its `ai_context_update_10002()` hook.
+2. **Symfony AI 0.8.0 Provider Architecture Redesign** Issue #3574187 proposes a new `AiPlatformProviderInterface` extending both `ProviderInterface` and `PluginInspectionInterface` after the 0.8.0 release broke the existing provider plugin design, but the issue is unassigned with no active MR.
+3. **Streaming Guardrails Design Blocked on Dual-Buffer Separation** Issue #3582179 for streaming-aware guardrails with start/stop regex buffering remains unmerged because the internal evaluation buffer and output buffer are not kept separate in the current implementation.
+4. **Canvas Multi-Value Prop Handling Accumulating Open MRs** MRs !958, !991, and !795 (2805 diff lines) all target multi-value prop handling bugs and UI support, with none yet merged.
+5. **GitLab CLI Skill Document in Progress** MR !4 on branch `3586406-marketing-cli-skill` is completing acceptance criteria, with a critical callout that `glab api -f field=@file` silently drops data on drupalcode.org and must not be used for write operations.
 
 ---
 
@@ -37,113 +36,73 @@ _Generated: 2026-04-27 08:45 GMT_
 
 _[View issues data](1d-data?id=ai-agents)_
 
-Activity on the AI Agents module in the last 24 hours has been limited to issue triage with no merge requests or commits landing in the period.
+#### Activity Summary
 
-#### Issues
+The 24-hour window for the `ai_agents` module was quiet in terms of shipped code, with no commits landed and no merge requests opened or merged during the period.
 
-Two new issues were opened. A housekeeping "Test Issue" was filed and remains unassigned, with Marcus_Johansson indicating intent to pick it up via a `%assign-me` command in the comments. **How can I help? (Developer):** Confirm whether this is a legitimate test case or administrative noise, and close or reassign it accordingly to keep the issue queue clean.
+The only notable activity occurred on two newly opened issues. The "Test Issue" (work item 3585985) saw a significant volume of housekeeping noise, with Marcus_Johansson and arianraeesi repeatedly cycling through assignment, priority, and status commands across 29 comments. The issue currently sits at `state::needsReview` with minor priority after considerable back-and-forth. No substantive technical discussion or patch work is visible from the activity log. A separate issue, "Create a ChatProcessor" (work item 3585984), was opened with a single comment and remains unassigned and undescribed in terms of scope.
 
-A more substantive issue, "Create a ChatProcessor," was also filed but carries no description detail or assignee yet. A ChatProcessor would presumably introduce a new agent processing pipeline for conversational interactions, though no API shape or integration point has been proposed in the single comment so far. **How can I help? (Developer):** Review the existing agent processor interfaces in the module and post a concrete API proposal or skeleton implementation to unblock design discussion.
-
-No code shipped this cycle.
+There are no blocking items reported, but the lack of MR activity and the absence of a defined specification for the ChatProcessor issue suggest both items need triage attention before development can begin.
 
 #### How can I help on this project?
 
-Review the existing processor plugin architecture and comment on what interface a ChatProcessor should implement. Pick up the unassigned ChatProcessor issue and draft a proof-of-concept class. If the test infrastructure is thin, write a PHPUnit or Kernel test covering an existing agent processor to establish a pattern for new work.
+- Review and add a technical specification comment to the "Create a ChatProcessor" issue (3585984) to unblock implementation work.
+- Pick up assignment on work item 3585985 and post a concrete patch or failing test to move it past the current `needsReview` stall.
+- Investigate whether a `ChatProcessor` interface or base class already exists elsewhere in the codebase that could inform the new issue.
 
 ### Context Control Center (CCC)
 
 _[View issues data](1d-data?id=context-control-center-ccc)_
 
-The past 24 hours saw one merge land and two significant MRs move toward completion ahead of rc1.
+#### Merged and Shipped
 
-#### Merged
+MR !120 (issue #3586120) landed on 2026-04-26, making the subcontext feature optional. The work involved toggling taxonomy vocabulary creation at install time, fixing inconsistent config access in `AiContextAgentForm` (replacing static `\Drupal::config()` calls with injected `configFactory->get()`), and ensuring all subcontext-gated code paths are properly guarded. scottfalconer caught and resolved a test collision where `AiContextSubcontextDisabledTest` was manually creating `ai_context_tags` after config already installed it.
 
-MR !120 (commit `24713d22`) shipped the optional subcontext feature toggle (#3586120). The work involved guarding all subcontext-dependent codepaths, fixing `AiContextAgentForm` to use `$this->configFactory->get()` instead of static `\Drupal::config()`, removing a duplicate `Vocabulary::create()` call that was causing kernel test failures in `AiContextSubcontextDisabledTest`, and adding `ai_context_update_10002()`. scottfalconer flagged a hook numbering collision with #3574907 that kepol will resolve when whichever lands second requires a reroll.
+#### Open and In Progress
 
-#### In Review
+Two stable blockers remain unmerged. MR !117 (#3574905) adds a dedicated `ai_context_scope_index` table to replace SQL `LIKE` queries on serialized scope data, with scottfalconer wiring `AiContextSelector` to use the new `prefilterItemIdsByScope()` method. MR !119 (#3574907) normalizes `ai_context_usage` and introduces batched cron pruning; scottfalconer pushed a follow-up adding `ai_context_update_10002()` indexes, though kepol notes these may be superseded by an upcoming `ai_observability` integration. A note flagged by scottfalconer: whichever of #3574905 or #3574907 merges second will need its `ai_context_update_10002()` hook renumbered.
 
-MR !117 (#3574905) adds a denormalized scope index table to replace SQL `LIKE` queries on serialized scope data. scottfalconer pushed an update wiring `AiContextSelector` to call `prefilterItemIdsByScope()` when scope subscriptions are present, preserving broad-match fallback behaviour. This remains an open stable blocker.
-
-MR !119 (#3574907) addresses `ai_context_usage` normalization and batched cron pruning. scottfalconer added `ai_context_update_10002()` for missing usage indexes plus an install-time helper, though kepol noted the indexes were deliberately deferred pending planned `ai_observability` integration.
-
-#### Also Active
-
-The rc1 UX review (#3573715) has fresh input from aidanfoster and emma-horrell, with open discussion around terminology: specifically whether "context source" and "context item" are sufficiently distinct, and how use-case scoping should be framed. This remains a stable blocker with no child issues filed yet.
-
-**How can I help? (Developer):** Review MR !117 for correctness of the `prefilterItemIdsByScope()` integration in `AiContextSelector`, paying particular attention to fallback behaviour when no scope subscriptions are present.
-
-**How can I help? (Developer):** Review MR !119 and confirm that `ai_context_update_10002()` does not collide with the same hook added in #3574907, and verify the install-time index helper covers fresh installs correctly.
-
-**How can I help? (Developer):** On #3573715, pick up aidanfoster's request to open child issues for the smaller naming and labelling changes so they can be tracked and resolved independently before beta2.
-
----
+The rc1 UX review (#3573715) is active, with aidanfoster posting a detailed pass covering naming conventions (context item, context source), scope terminology, and use-case labelling. emma-horrell has rejoined the thread to refine the item/source distinction.
 
 #### How can I help on this project?
 
-- Review MR !117 and validate the `prefilterItemIdsByScope()` wiring in `AiContextSelector` against edge cases such as items with no scope assigned.
-- Audit both MR !117 and MR !119 for the `ai_context_update_10002()` hook number conflict and post a reroll on whichever lands second.
-- File child issues from the #3573715 UX review for the smaller confirmed naming changes so they can be closed before rc1.
+Review MR !117 (#3574905) focusing on `prefilterItemIdsByScope()` correctness and index coverage. Independently, MR !119 (#3574907) needs a second reviewer to confirm the update hook and batched pruning logic before merge. If you have UX instincts, chime in on the item/source/scope naming thread in #3573715 -- Emma and Aidan are actively debating it.
 
 ### Drupal AI Initiative
 
 _[View issues data](1d-data?id=drupal-ai-initiative)_
 
-#### Summary
+#### Activity Summary
 
-The dominant activity in this 24-hour window was operational and governance work, with no module code shipped. Kristen Pol (kepol) drove the most technical output, landing four MRs (!5, !7, !8, !9) on branch `3586427-funding-template` and its follow-up iterations to introduce a monthly funding issue template with correct label metadata and assignee fields. A draft MR (!6) was closed after a different approach proved necessary. The template work required multiple iterations because GitLab's issue template format does not support pre-populating labels and assignees directly; kepol has escalated to the infra team for a resolution.
+The main technical output this period came from kepol (Kristen Pol), who landed four MRs (!5, !7, !8, !9) to introduce a reusable monthly funding issue template in the `ai_initiative` GitLab project. The work iterated rapidly: an initial template was merged via !5 (branch `3586427-funding-template`), followed by two label-metadata fixup MRs (!7, !8) after label and assignee pre-population failed to apply correctly through the template format. A draft MR (!6) was abandoned mid-iteration. The label automation issue remains partially unresolved -- kepol has flagged it with the infrastructure team. Once the template stabilized, domidc opened a batch of monthly funding tracking issues covering May 2025 through July 2026.
 
-On the partner side, the Drupal Forge Silver AI partner onboarding (previously postponed) unblocked after contract signature. The partner agreement review and offboarding checklist tasks both closed as fixed. The `d.o/ai` AI Partners block copy was updated, replacing "AI Maker" with "AI Partner" and tightening the description. A batch of historical funding activity issues was opened by domidc covering May 2025 through July 2026.
+On the partner and governance side, the Drupal Forge Silver AI partner contract was confirmed signed, unblocking onboarding. The AI Partner agreement review closed as fixed after kepol's feedback was incorporated into contract templates. The `d.o/ai` partners block copy was updated, replacing the old "AI Maker" terminology with "AI Partner" and tightening the description text.
 
-The most technically relevant open item for developers is MR !4 on branch `3586406-marketing-cli-skill` (jjchinquist), which covers a `SKILL.md` document for using `glab` CLI against drupalcode.org, including a documented trap around the `@file` syntax in `glab api` silently discarding data. That MR is awaiting review.
-
-GitLab member provisioning also surfaced a gap: several contributors including `davidlynch62` are absent from GitLab due to unaccepted terms, blocking role assignment.
-
----
-
-#### Issue Notes
-
-**AI skill for CLI/GitLab (work item 3586406):** MR !4 covers all acceptance criteria (AC-2 through AC-6), including `SKILL.md` setup for `glab` install paths, `GITLAB_HOST`/`GITLAB_TOKEN` env-var auth, and PAT creation. The `glab api @file` silent data-loss trap is documented. **How can I help? (Developer):** Review MR !4 on branch `3586406-marketing-cli-skill`, specifically validate the `glab api` workaround documented in commits `6c7c3df` and `471f285` against a live drupalcode.org PAT to confirm AC-1 coverage.
-
-**DA YouTube channel manager access (work item 3584835):** Invites were sent by hestenet to pdjohnson, Will, and kepol, but pdjohnson has not received the invite and is uncertain which email address was targeted. **How can I help? (Developer):** If you have DA YouTube admin access, confirm the invite target address for pdjohnson and re-send or escalate to resolve the delivery gap.
-
-**Create a template for monthly AI Initiative funding activities (work item 3586427):** Kepol iterated through MRs !5, !7, !8, and !9 to get label metadata correct; automatic label and assignee pre-population in GitLab issue templates remains unresolved and is pending infra team input. **How can I help? (Developer):** Investigate GitLab's `.gitlab/issue_templates` YAML schema for `labels` and `assignees` frontmatter support on drupalcode.org's GitLab instance and post findings on the issue to unblock kepol.
-
-**Onboard Silver AI partner: Drupal Forge (work item 3583297):** Contract is now signed and the issue is unblocked after a period of postponement. **How can I help? (Developer):** Review the onboarding checklist and confirm whether any technical access provisioning steps (GitLab membership, project permissions) are needed for Drupal Forge representatives.
-
----
+A GitLab CLI skill document is in progress under MR !4 (branch `3586406-marketing-cli-skill`), with jjchinquist completing acceptance criteria AC-2 through AC-6. A notable callout in that work: the `glab api -f field=@file` syntax silently drops data on drupalcode.org and must not be used for write operations.
 
 #### How can I help on this project?
 
-- Review MR !4 (`3586406-marketing-cli-skill`) and test the `glab api` workaround against drupalcode.org to confirm the silent `@file` data-loss trap is correctly documented.
-- Investigate GitLab issue template YAML frontmatter support on drupalcode.org to unblock automatic label and assignee pre-population for the funding template.
-- Pick up the unassigned "Drop Initiative from issue template names" task (work item 3586447), which is a low-effort, high-visibility housekeeping change.
+Review MR !4 on branch `3586406-marketing-cli-skill` and verify the `glab` auth and PAT setup instructions are accurate against drupalcode.org's current GitLab configuration. Investigate the broken label and assignee pre-population in the funding issue template and report findings to the infrastructure team. Pick up the unassigned offboarding checklist issue (#3570461) and draft the checklist structure.
 
 ### AI (Artificial Intelligence)
 
 _[View issues data](1d-data?id=ai-artificial-intelligence)_
 
-#### Activity Overview
+#### Symfony AI 0.8.0 Integration Rethink
 
-The past 24 hours on the `ai` module saw no merged commits land, but two merge requests are open and awaiting review. MR !1536 from petar_basic refactors field widget action dispatch by generalizing behaviour into a base class (issue #3577050), touching 3,189 diff lines on the `1.4.x` branch. MR !1074 from danrod addresses a batch of PHPStan issues against the `api-2.0.x` branch (issue #3563396), covering 1,232 diff lines.
+The most significant discussion in the past 24 hours centres on #3574187, which proposes replacing the existing AI provider plugin system with Symfony AI's Platform component. The integration plan was disrupted by the Symfony AI 0.8.0 release, which introduced its own provider abstractions, forcing a design reset. mxr576 posted a revised architecture proposal built around a new `AiPlatformProviderInterface` extending both `ProviderInterface` and `PluginInspectionInterface`, backed by a config entity to give vendor connections a stable machine name. An open naming question has emerged: whether `AiPlatformProvider` is too defensive a name given the `search_api`-style namespacing pattern as an alternative. The issue remains unassigned and without an active MR targeting the 0.8.0+ approach.
 
-#### Symfony AI Platform Integration (#3574187)
+#### Streaming Guardrails Still in Review
 
-The largest ongoing discussion concerns replacing the existing `AiProvider` plugin type with Symfony AI's Platform component. mxr576 posted a concrete architecture proposal on 2026-04-26, centred on an `AiPlatformProviderInterface` extending both `ProviderInterface` and `PluginInspectionInterface`, backed by a config entity to give vendor connections a stable machine name. A follow-up comment on 2026-04-27 raises a naming concern: `AiPlatformProvider` is defensively named to avoid collision with the 1.x plugin type, and an alternative namespace convention modelled on `search_api`'s plugin organisation is under discussion. The Symfony AI 0.8.0 release, which ships its own provider abstractions, has forced a rethink of earlier prototype MRs (!1250 and !1259). The issue remains unassigned and open.
+Issue #3582179, adding streaming-aware guardrails with start/stop regex buffering, remains open after multiple review cycles between abhisekmazumdar and a.dmitriiev. The core blocker is a design concern: the internal evaluation buffer and the output buffer must be kept separate, which the current implementation does not fully address. Kernel tests are deferred to a follow-up issue.
 
-**How can I help? (Developer):** Review mxr576's proposed `AiPlatformProviderInterface` architecture comment from 2026-04-26 and post a concrete opinion on the naming convention question -- `AiPlatformProvider` versus a `search_api`-style module-namespaced plugin structure.
+#### Open MRs
 
-#### Streaming Guardrails (#3582179)
-
-The streaming-aware guardrails feature, which uses start/stop regex patterns to buffer and evaluate streamed content, has been cycling between "Needs review" and "Needs work" with abhisekmazumdar driving implementation. The core blocking point raised by marcus_johansson is that the evaluation buffer and the output buffer must be kept separate. A kernel test was deferred to a follow-up issue. The MR was re-submitted as "Needs review" on 2026-04-22, and AkhilBabu self-assigned during the reporting period.
-
-**How can I help? (Developer):** Review the current MR for correct dual-buffer separation -- confirm that the regex evaluation buffer and the consumer-facing output buffer are genuinely decoupled in the latest commits before the implementation goes another round.
+Two MRs are open without merges in this period: MR 1536 from petar_basic refactors field widget action dispatch into a base class on the 1.4.x branch, and MR 1074 from danrod addresses PHPStan issues on the 2.0.x branch.
 
 #### How can I help on this project?
 
-- Review MR !1536 (field widget base class refactor, 3,189 lines) or MR !1074 (PHPStan fixes on `api-2.0.x`) -- both are open with no reviewer assigned.
-- Contribute a kernel test for the streaming guardrails buffer logic, which was explicitly deferred to a follow-up issue.
-- Post a technical position on the `AiPlatformProviderInterface` naming discussion in #3574187 to unblock the architecture decision.
+Review MR 1074 against the 2.0.x PHPStan baseline and leave inline feedback. Alternatively, pick up the dual-buffer design fix in #3582179 by separating the evaluation buffer from the output buffer in the guardrail implementation. You could also review mxr576's 0.8.0+ architecture proposal on #3574187 and comment on the `AiPlatformProviderInterface` naming decision.
 
 ### Drupal Canvas
 
@@ -151,15 +110,13 @@ _[View issues data](1d-data?id=drupal-canvas)_
 
 #### Activity Summary
 
-Two MRs landed in the 24-hour window, both from Bálint Kléri (balintbrews). MR !989 fixes a bug where the React JSX transform was applied inconsistently during Workbench preview-build exports in the CLI tool, resolving breakage in code component previews. MR !988 adds validation of image prop example URLs in Code Component metadata files, catching malformed entries at the CLI tool layer before they surface as runtime errors.
+Three MRs landed on the main branch in this window. justafish merged MR !986, adding a standardised merge request template (3a27ff3c). balintbrews shipped two CLI Tool fixes: MR !989 corrects inconsistent React JSX transform application in Workbench preview-build exports, and MR !988 introduces validation of image prop example URLs in code component metadata files (d20871a7, d7e56bd7).
 
-A notable backlog of open MRs is accumulating. MR !961 (florenttorregrosa) proposes a `ComponentPluginManager` decorator to improve contrib compatibility, which has broad architectural implications. MR !732 (lauriii) introduces `isCanvasPreview()` so code components can detect editor context at runtime. MR !980 (longwave) drafts a content entity reference well-known type. The large MR !795 adds multi-value list text and integer prop support in the UI at nearly 2,800 diff lines and needs review. CI reliability remains a concern: MR !977 (wimleers) aims to skip unnecessary E2E jobs, and the flaky multivalue Playwright tests addressed in MR !960 were only just stabilised.
+A significant volume of open work is accumulating. Several MRs target multi-value prop handling: MR !958 fixes time values when adding or reordering elements, MR !991 addresses a prop limit error, and MR !795 adds UI support for multi-value list text/integer props (2805 diff lines, still open). Required-field error handling is also active, with MR !982 fixing a 500 when clearing a required formatted text field and MR !956 doing the same for URI reference props.
 
-The draft Playwright snapshot-based PoC (MR !974, isholgueras) at nearly 7,000 lines suggests a significant testing infrastructure shift is under consideration.
+CI infrastructure is seeing parallel effort: MR !976 adds pipeline caching, MR !977 avoids redundant E2E jobs, and MR !845 (draft) works toward a PHPUnit testing command. The large translation-related MRs (!494, !511, !898) remain open and unresolved.
 
 #### How can I help on this project?
 
-- Review MR !961 to assess whether the `ComponentPluginManager` decorator API is sound before it blocks contrib adoption.
-- Test MR !795 locally against multi-value list text and integer props and leave functional feedback; it is large and needs eyes.
-- Investigate the open draft MR !523 on state-managed WASM file loading, which has been open since issue #3518306 and appears stalled.
+Review MR !991 (multi-value prop limit error, 96 diff lines) or MR !982 (required formatted text 500 error, 294 lines) -- both are small enough for a focused pass. The draft PHPUnit setup in MR !845 needs test coverage written to prove the command works. You could also pick up MR !977 and verify the CI job-skipping logic against the pipeline configuration in MR !976.
 

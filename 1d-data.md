@@ -1,7 +1,7 @@
 # Drupal AI Activity Data — 24h
 
 _Period: 2026-04-26 to 2026-04-27_
-_Generated: 2026-04-27 08:45 GMT_
+_Generated: 2026-04-27 10:13 GMT_
 
 ## Modules
 
@@ -9,7 +9,7 @@ _Generated: 2026-04-27 08:45 GMT_
 - [Context Control Center (CCC)](#context-control-center-ccc) — 7 issues, 3 MRs, 1 commits
 - [Drupal AI Initiative](#drupal-ai-initiative) — 37 issues, 5 MRs, 4 commits
 - [AI (Artificial Intelligence)](#ai-artificial-intelligence) — 2 issues, 2 MRs, 0 commits
-- [Drupal Canvas](#drupal-canvas) — 0 issues, 19 MRs, 2 commits
+- [Drupal Canvas](#drupal-canvas) — 0 issues, 27 MRs, 3 commits
 
 ---
 
@@ -17,8 +17,35 @@ _Generated: 2026-04-27 08:45 GMT_
 
 ### Issues
 
-- **[Test Issue](https://git.drupalcode.org/project/ai_agents/-/work_items/3585985)** · opened · unassigned · 2 comments
+- **[Test Issue](https://git.drupalcode.org/project/ai_agents/-/work_items/3585985)** · opened · unassigned · 29 comments · priority::minor, state::needsReview
   > **Marcus_Johansson** (2026-04-27): %assign-me
+  > **Marcus_Johansson** (2026-04-27): %unassign-me
+  > **Marcus_Johansson** (2026-04-27): %unassign-me
+  > **Marcus_Johansson** (2026-04-27): %unassign-me
+  > **Marcus_Johansson** (2026-04-27): %unassign-me
+  > **Marcus_Johansson** (2026-04-27): %needs-review
+  > **Marcus_Johansson** (2026-04-27): %rtbc
+  > **Marcus_Johansson** (2026-04-27): %needs-review
+  > **arianraeesi** (2026-04-27): %assign-me'
+  > **arianraeesi** (2026-04-27): %needs-work
+  > **arianraeesi** (2026-04-27): %assign-me
+  > **Marcus_Johansson** (2026-04-27): %priority-major
+  > **Marcus_Johansson** (2026-04-27): %priority-major
+  > **Marcus_Johansson** (2026-04-27): %priority-minor
+  > **Marcus_Johansson** (2026-04-27): %priority-minor
+  > **Marcus_Johansson** (2026-04-27): %assign-me
+  > **Marcus_Johansson** (2026-04-27): %needs-review
+  > **Marcus_Johansson** (2026-04-27): %priority-major
+  > **Marcus_Johansson** (2026-04-27): %priority-major
+  > **Marcus_Johansson** (2026-04-27): %needs-review
+  > **Marcus_Johansson** (2026-04-27): %priority-minor
+  > **Marcus_Johansson** (2026-04-27): %priority-minor
+  > **Marcus_Johansson** (2026-04-27): %needs-review
+  > **Marcus_Johansson** (2026-04-27): %priority-minor
+  > **Marcus_Johansson** (2026-04-27): %priority-major
+  > **Marcus_Johansson** (2026-04-27): %priority-minor
+  > **Marcus_Johansson** (2026-04-27): #unassign
+  > **Marcus_Johansson** (2026-04-27): %unassign
 - **[Create an ChatProcessor](https://git.drupalcode.org/project/ai_agents/-/work_items/3585984)** · opened · unassigned · 1 comments
 
 ---
@@ -1619,6 +1646,253 @@ _Generated: 2026-04-27 08:45 GMT_
 
 ### Issues
 
+- **[Add streaming-aware guardrails that can buffer and evaluate content in real-time using start/stop regex patterns](https://git.drupalcode.org/project/ai/-/work_items/3582179)** · [d.o #3582179](https://www.drupal.org/node/3582179) · opened · AkhilBabu · 22 comments · AI Initiative Sprint, AI Product Development, aiCoreModule, category::feature
+  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16530991. -->
+  > > _Migrated from comment #2 posted 30 Mar 2026 at 08:04 UTC_
+  > 
+  > 
+  > <h3>How other frameworks handle streaming guardrails</h3>
+  > <p>For reference, here is how some other AI frameworks approach this (from Claude Code):</p>
+  > <ul>
+  > <li><strong>Guardrails AI</strong> - The closest to what is proposed here. Each validator controls its own buffering via an overridable <code>_chunking_function()</code>. Returns nothing while accumulating, returns a result when enough context exists. Sentence-based splitting by default, but each validator can define custom chunking.</li>
+  > <li><strong>NVIDIA NeMo Guardrails</strong> - Uses a global <code>chunk_size</code> with a sliding window for overlap. All rails share the same chunk boundaries. Has a "stream first, moderate in parallel" mode, but warns that objectionable content may already have been sent.</li>
+  > <li><strong>Microsoft Semantic Kernel</strong> - Filters can detect streaming and wrap the async stream to intercept/transform chunks. No built-in buffering abstraction - each filter implements its own.</li>
+  > <li><strong>Spring AI</strong> - Similar wrap-the-stream approach via <code>StreamAdvisor</code> using reactive operators for custom accumulation.</li>
+  > <li><strong>Amazon Bedrock</strong> - Binary sync/async toggle. Sync buffers before sending, async streams immediately with background moderation.</li>
+  > <li><strong>LangChain, LlamaIndex, OpenAI Agents SDK</strong> - No mid-stream guardrail support. Guardrails run post-completion only.</li>
+  > </ul>
+  > <p>The per-guardrail buffering approach (as in Guardrails AI) is the most flexible and aligns with the dynamic design proposed in this issue. See <a href="https://guardrailsai.com/guardrails/docs/how-to-guides/custom_validators#streaming">https://guardrailsai.com/guardrails/docs/how-to-guides/custom_validators#streaming</a></p>
+  > <p>- <strong>This comment was created with the help of AI</strong></p>
+  > **harivansh** (2026-04-23): <!-- Migrated from comment CID #16535934. -->
+  > > _Migrated from comment #3 posted 02 Apr 2026 at 09:23 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: harivansh
+  > 
+  > ```
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16545769. -->
+  > > _Migrated from comment #4 posted 10 Apr 2026 at 11:34 UTC_
+  > 
+  > 
+  > <p>@harivansh I was looking to work on this. If you haven't started this yet, can you please let me know if I can take over this issue? Thank you</p>
+  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16547619. -->
+  > > _Migrated from comment #5 posted 13 Apr 2026 at 08:48 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: harivansh
+  > + Assigned: Unassigned
+  > 
+  > ```
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16547628. -->
+  > > _Migrated from comment #6 posted 13 Apr 2026 at 08:52 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: abhisekmazumdar
+  > 
+  > ```
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16549805. -->
+  > > _Migrated from comment #7 posted 14 Apr 2026 at 15:15 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: abhisekmazumdar
+  > + Assigned: Unassigned
+  > - Status:   Active
+  > + Status:   Needs review
+  > 
+  > ```
+  > 
+  > <p>An initial implementation has been pushed to the issue branch.</p>
+  > <h3>What was implemented</h3>
+  > <ul>
+  > <li>New <code>StreamableGuardrailInterface</code> extending <code>AiGuardrailInterface</code> with three methods: <code>getStartRegex()</code>, <code>getStopRegex()</code>, and <code>processStreamedBuffer(string $bufferedContent): GuardrailResultInterface</code>.</li>
+  > <li><code>StreamedChatMessageIterator</code> extended with per-guardrail state tracking. Each flushed chunk is passed through <code>processStreamingGuardrails()</code>, which checks start/stop patterns and suppresses output while buffering is active.</li>
+  > <li>End-of-stream flush: if a guardrail is still buffering when the stream ends, the buffer is evaluated and the result is applied.</li>
+  > <li><code>addStreamingGuardrail()</code> and <code>getStreamingGuardrails()</code> added to <code>StreamedChatMessageIteratorInterface</code>.</li>
+  > <li><code>GuardrailsEventSubscriber::applyPostGenerateGuardrails()</code> updated to detect <code>StreamableGuardrailInterface</code> instances and register them with the iterator directly, bypassing the regular post-generate path.</li>
+  > <li>Unit tests covering: pass-through with no guardrails, <code>PassResult</code> releasing the buffer, <code>StopResult</code> suppressing and replacing, <code>RewriteOutputResult</code> rewriting, end-of-stream flush, empty start regex, and content before the trigger streaming normally.</li>
+  > </ul>
+  > <h3>Cross-check against proposed resolution</h3>
+  > <ol>
+  > <li><strong>New interface with start regex, stop regex, and processing callback</strong>: &#9989;</li>
+  > <li><strong>Iterator checks each chunk against start patterns</strong>: &#9989; Runs after the existing URL-safety buffer flushes, so the two layers are independent.</li>
+  > <li><strong>Start regex triggers buffering, output suppressed</strong>: &#9989;</li>
+  > <li><strong>Stop regex or end-of-stream triggers evaluation, pass/stop/rewrite handled</strong>: &#9989; All three result types are handled.</li>
+  > <li><strong>Non-matching content streams normally with no delay</strong>: &#9989; Early return when no guardrails are registered; no change to hot path.</li>
+  > <li><strong>Migrate hardcoded <code>shouldFlush()</code> logic to guardrail-driven buffering</strong>: Intentionally skipped per the issue note ("can only be done when guardrails can be placed everywhere"). The existing URL-safety buffer is untouched.</li>
+  > <li><strong>How multiple streaming guardrails interact with overlapping patterns</strong>: See open question below.</li>
+  > <li><strong>GuardrailsEventSubscriber registers streaming guardrails with the iterator</strong>: &#9989; via <code>PostGenerateResponseEvent</code> before the regular post-generate loop runs.</li>
+  > </ol>
+  > <h3>Open question: multiple guardrails with overlapping patterns</h3>
+  > <p>The current implementation chains guardrails: each guardrail sees the output of the one before it. If guardrail A suppresses a chunk, guardrail B receives an empty string rather than the original text.</p>
+  > <p>The proposed resolution describes guardrails as operating "independently", buffering "different portions of the stream independently". Achieving true independence would require each guardrail to track the original text, not the already-processed text.</p>
+  > <p><strong>Is the chaining behaviour acceptable for this issue, or should each guardrail operate on the original chunk independently?</strong></p>
+  > <p><em>AI disclosure: Brainstormed the Code, test, and comment with AI assistance and manually reviewed, tested before posting.</em></p>
+  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16551031. -->
+  > > _Migrated from comment #8 posted 15 Apr 2026 at 06:58 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: marcus_johansson
+  > 
+  > ```
+  > 
+  > <p>Starting review, regarding question</p>
+  > <blockquote><p>Is the chaining behaviour acceptable for this issue, or should each guardrail operate on the original chunk independently?</p></blockquote>
+  > <p>I would say yes - if its already surpressed, a second guardrail has no functionality anymore</p>
+  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16551032. -->
+  > > _Migrated from comment #9 posted 15 Apr 2026 at 06:59 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: marcus_johansson
+  > + Assigned: Unassigned
+  > - Status:   Needs review
+  > + Status:   Needs work
+  > 
+  > ```
+  > 
+  > <p>Added some comments and also we need to add documentation about this. A kernel test, testing a real streamable guardrail would be good as well, but can be a follow up.</p>
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16551082. -->
+  > > _Migrated from comment #10 posted 15 Apr 2026 at 07:28 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: abhisekmazumdar
+  > 
+  > ```
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16551617. -->
+  > > _Migrated from comment #11 posted 15 Apr 2026 at 13:46 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: abhisekmazumdar
+  > + Assigned: Unassigned
+  > - Status:   Needs work
+  > + Status:   Needs review
+  > 
+  > ```
+  > 
+  > <p>Addressed the MR review feedback and pushed a new new commits. Please review.</p>
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16551626. -->
+  > > _Migrated from comment #12 posted 15 Apr 2026 at 13:51 UTC_
+  > 
+  > 
+  > <p>Regarding the kernel test suggestion: agreed this would be valuable. To keep this issue focused, I will track that as a follow-up rather than adding it here.</p>
+  > <p>Here the issue: <span class="drupalorg-gitlab-issue-link drupalorg-gitlab-link-wrapper"><a href="https://git.drupalcode.org/project/ai/-/work_items/3584951" class="drupalorg-gitlab-link">https://git.drupalcode.org/project/ai/-/work_items/3584951</a></span></p>
+  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16552640. -->
+  > > _Migrated from comment #13 posted 16 Apr 2026 at 07:55 UTC_
+  > 
+  > 
+  > ```
+  > - Status: Needs review
+  > + Status: Needs work
+  > 
+  > ```
+  > 
+  > <p>This needs more work - the buffer for testing the guardrail and the buffer that gets outputted should be different. </p>
+  > <p>So, it would be ok that it outputs part of something that gets blocked.</p>
+  > <p>Right now the streaming is too chompy, it outputs one sentence at a a time which is a clear feature regression. And that is even without a guardrail attached. As long as the regex and block is checked before the last chunk it would be fine.</p>
+  > <p>Think of this:</p>
+  > <p>This will not render:<br>
+  > <code>&lt;a href="https://www.my-malicious.com/website"</code></p>
+  > <p>This will render but be blocked:<br>
+  > <code>&lt;a href="https://www.my-malicious.com/website"&gt;</code></p>
+  > <p>This means that you can see parts of secret names, but even then I would argue that our solution is better then anything that exists currently.</p>
+  > <p>The other option is that we have late streaming buffers - meaning we keep a sentence in buffer and then start yielding one word at a time form that sentence, while buffering the next.</p>
+  > <p>Setting this back to work, and I think we have to aim for 1.5.x for this, since its not in as much of a hurry.</p>
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16554729. -->
+  > > _Migrated from comment #14 posted 17 Apr 2026 at 14:50 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: abhisekmazumdar
+  > 
+  > ```
+  > **arianraeesi** (2026-04-23): <!-- Migrated from comment CID #16556624. -->
+  > > _Migrated from comment #15 posted 20 Apr 2026 at 07:02 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  + AI Initiative Sprint + AI Product Development
+  > ```
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16558863. -->
+  > > _Migrated from comment #16 posted 21 Apr 2026 at 14:03 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: abhisekmazumdar
+  > + Assigned: Unassigned
+  > - Status:   Needs work
+  > + Status:   Needs review
+  > 
+  > ```
+  > 
+  > <p>I feel I have addressed both issues raised in <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-13"><a href="https://www.drupal.org/project/ai/issues/3582179" title="Status: Needs work">#3582179: Add streaming-aware guardrails that can buffer and evaluate content in real-time using start/stop regex patterns</a></span>.</p>
+  > <p><strong>Issue 1: Detection buffer and output buffer decoupled.</strong></p>
+  > <p>The lookahead window was suppressing <code>$text</code> immediately on every chunk, even before a start pattern was found. The window is now detection-only: text flows to the consumer unchanged until a match is confirmed. Only the triggering chunk is suppressed.</p>
+  > <p><strong>Issue 2: Sentence-at-a-time output fixed via word-level splitting.</strong></p>
+  > <p>The URL-safety buffer in <code>StreamedChatMessageIterator</code> already flushes in sentence-sized chunks (on <code>\n</code> or after 100 characters). To give consumers smooth token-level output without changing the URL-safety or guardrail detection logic, <code>getIterator()</code> now splits each flushed chunk word-by-word before yielding.</p>
+  > <pre><pre>private function splitIntoWordTokens(string $text): array {<br>&nbsp; preg_match_all('/\S+\s*|\s+/', $text, $matches);<br>&nbsp; return $matches[0];<br>}</pre></pre><p>Each flushed sentence becomes a sequence of individual word tokens yielded one at a time. The <code>$this-&gt;messages</code> array and <code>reconstructChatOutput()</code> are unaffected, they still operate on sentence-level data. Guardrail detection, URL-safety checking, and pattern matching all continue to operate on the full sentence buffer as before.</p>
+  > <p>Regarding pre-match leakage: agreed this is the correct tradeoff. An incomplete tag like <code>&lt;a href="https://www.my-malicious.com/website"</code> cannot render, so yielding it before the pattern closes is safe. The renderable form <code>&lt;a href="https://www.my-malicious.com/website"&gt;</code> is what gets caught, and by that point the regex fires.</p>
+  > <p>Manually verified via the Chat Generation Explorer with streaming enabled: output now appears word-by-word with no sentence-level batching, and guardrail blocking continues to work correctly.</p>
+  > <p>MR updated.</p>
+  > <p><em>AI assisted has been used but verified by me.</em></p>
+  > **a.dmitriiev** (2026-04-23): <!-- Migrated from comment CID #16558995. -->
+  > > _Migrated from comment #17 posted 21 Apr 2026 at 14:56 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: a.dmitriiev
+  > 
+  > ```
+  > **a.dmitriiev** (2026-04-23): <!-- Migrated from comment CID #16559074. -->
+  > > _Migrated from comment #18 posted 21 Apr 2026 at 15:33 UTC_
+  > 
+  > 
+  > ```
+  > - Status: Needs review
+  > + Status: Needs work
+  > 
+  > ```
+  > **a.dmitriiev** (2026-04-23): <!-- Migrated from comment CID #16559075. -->
+  > > _Migrated from comment #19 posted 21 Apr 2026 at 15:34 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: a.dmitriiev
+  > + Assigned: Unassigned
+  > 
+  > ```
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16559922. -->
+  > > _Migrated from comment #20 posted 22 Apr 2026 at 06:57 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: abhisekmazumdar
+  > 
+  > ```
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16560371. -->
+  > > _Migrated from comment #21 posted 22 Apr 2026 at 11:06 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: abhisekmazumdar
+  > + Assigned: Unassigned
+  > 
+  > ```
+  > **AkhilBabu** (2026-04-27): Assigning to myself
 - **[Integrate Symfony AI's Platform component as a replacement for AI Providers](https://git.drupalcode.org/project/ai/-/work_items/3574187)** · [d.o #3574187](https://www.drupal.org/node/3574187) · opened · unassigned · 30 comments · AI Initiative Sprint, AI Innovation, aiCoreModule, category::feature
   > **mxr576** (2026-04-23): <!-- Migrated from comment CID #16474959. -->
   > > _Migrated from comment #3 posted 18 Feb 2026 at 09:16 UTC_
@@ -2163,253 +2437,6 @@ _Generated: 2026-04-27 08:45 GMT_
   > One more thing worth deciding at the 2.x level: if we adopt the `Plugin/ai/` subdirectory convention for the new Platform and Provider integrations, should we apply it uniformly to all existing plugin types in the module as well, including `AiFunctionCall`, `AiGuardrail`, and others? Doing so would give 2.x a consistent plugin structure throughout. The counterargument is that those plugin types have no naming collision problem, so moving them is purely structural churn with no functional benefit. But a major version is the right moment to make that call, and an inconsistent mix of `Plugin/AiFunctionCall/` and `Plugin/ai/Provider/` in the same module would be confusing for contributors long-term. Worth an explicit decision either way rather than leaving it implicit.
   > 
   > Thoughts?
-- **[Add streaming-aware guardrails that can buffer and evaluate content in real-time using start/stop regex patterns](https://git.drupalcode.org/project/ai/-/work_items/3582179)** · [d.o #3582179](https://www.drupal.org/node/3582179) · opened · unassigned · 22 comments · AI Initiative Sprint, AI Product Development, aiCoreModule, category::feature
-  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16530991. -->
-  > > _Migrated from comment #2 posted 30 Mar 2026 at 08:04 UTC_
-  > 
-  > 
-  > <h3>How other frameworks handle streaming guardrails</h3>
-  > <p>For reference, here is how some other AI frameworks approach this (from Claude Code):</p>
-  > <ul>
-  > <li><strong>Guardrails AI</strong> - The closest to what is proposed here. Each validator controls its own buffering via an overridable <code>_chunking_function()</code>. Returns nothing while accumulating, returns a result when enough context exists. Sentence-based splitting by default, but each validator can define custom chunking.</li>
-  > <li><strong>NVIDIA NeMo Guardrails</strong> - Uses a global <code>chunk_size</code> with a sliding window for overlap. All rails share the same chunk boundaries. Has a "stream first, moderate in parallel" mode, but warns that objectionable content may already have been sent.</li>
-  > <li><strong>Microsoft Semantic Kernel</strong> - Filters can detect streaming and wrap the async stream to intercept/transform chunks. No built-in buffering abstraction - each filter implements its own.</li>
-  > <li><strong>Spring AI</strong> - Similar wrap-the-stream approach via <code>StreamAdvisor</code> using reactive operators for custom accumulation.</li>
-  > <li><strong>Amazon Bedrock</strong> - Binary sync/async toggle. Sync buffers before sending, async streams immediately with background moderation.</li>
-  > <li><strong>LangChain, LlamaIndex, OpenAI Agents SDK</strong> - No mid-stream guardrail support. Guardrails run post-completion only.</li>
-  > </ul>
-  > <p>The per-guardrail buffering approach (as in Guardrails AI) is the most flexible and aligns with the dynamic design proposed in this issue. See <a href="https://guardrailsai.com/guardrails/docs/how-to-guides/custom_validators#streaming">https://guardrailsai.com/guardrails/docs/how-to-guides/custom_validators#streaming</a></p>
-  > <p>- <strong>This comment was created with the help of AI</strong></p>
-  > **harivansh** (2026-04-23): <!-- Migrated from comment CID #16535934. -->
-  > > _Migrated from comment #3 posted 02 Apr 2026 at 09:23 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: harivansh
-  > 
-  > ```
-  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16545769. -->
-  > > _Migrated from comment #4 posted 10 Apr 2026 at 11:34 UTC_
-  > 
-  > 
-  > <p>@harivansh I was looking to work on this. If you haven't started this yet, can you please let me know if I can take over this issue? Thank you</p>
-  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16547619. -->
-  > > _Migrated from comment #5 posted 13 Apr 2026 at 08:48 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: harivansh
-  > + Assigned: Unassigned
-  > 
-  > ```
-  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16547628. -->
-  > > _Migrated from comment #6 posted 13 Apr 2026 at 08:52 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: abhisekmazumdar
-  > 
-  > ```
-  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16549805. -->
-  > > _Migrated from comment #7 posted 14 Apr 2026 at 15:15 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: abhisekmazumdar
-  > + Assigned: Unassigned
-  > - Status:   Active
-  > + Status:   Needs review
-  > 
-  > ```
-  > 
-  > <p>An initial implementation has been pushed to the issue branch.</p>
-  > <h3>What was implemented</h3>
-  > <ul>
-  > <li>New <code>StreamableGuardrailInterface</code> extending <code>AiGuardrailInterface</code> with three methods: <code>getStartRegex()</code>, <code>getStopRegex()</code>, and <code>processStreamedBuffer(string $bufferedContent): GuardrailResultInterface</code>.</li>
-  > <li><code>StreamedChatMessageIterator</code> extended with per-guardrail state tracking. Each flushed chunk is passed through <code>processStreamingGuardrails()</code>, which checks start/stop patterns and suppresses output while buffering is active.</li>
-  > <li>End-of-stream flush: if a guardrail is still buffering when the stream ends, the buffer is evaluated and the result is applied.</li>
-  > <li><code>addStreamingGuardrail()</code> and <code>getStreamingGuardrails()</code> added to <code>StreamedChatMessageIteratorInterface</code>.</li>
-  > <li><code>GuardrailsEventSubscriber::applyPostGenerateGuardrails()</code> updated to detect <code>StreamableGuardrailInterface</code> instances and register them with the iterator directly, bypassing the regular post-generate path.</li>
-  > <li>Unit tests covering: pass-through with no guardrails, <code>PassResult</code> releasing the buffer, <code>StopResult</code> suppressing and replacing, <code>RewriteOutputResult</code> rewriting, end-of-stream flush, empty start regex, and content before the trigger streaming normally.</li>
-  > </ul>
-  > <h3>Cross-check against proposed resolution</h3>
-  > <ol>
-  > <li><strong>New interface with start regex, stop regex, and processing callback</strong>: &#9989;</li>
-  > <li><strong>Iterator checks each chunk against start patterns</strong>: &#9989; Runs after the existing URL-safety buffer flushes, so the two layers are independent.</li>
-  > <li><strong>Start regex triggers buffering, output suppressed</strong>: &#9989;</li>
-  > <li><strong>Stop regex or end-of-stream triggers evaluation, pass/stop/rewrite handled</strong>: &#9989; All three result types are handled.</li>
-  > <li><strong>Non-matching content streams normally with no delay</strong>: &#9989; Early return when no guardrails are registered; no change to hot path.</li>
-  > <li><strong>Migrate hardcoded <code>shouldFlush()</code> logic to guardrail-driven buffering</strong>: Intentionally skipped per the issue note ("can only be done when guardrails can be placed everywhere"). The existing URL-safety buffer is untouched.</li>
-  > <li><strong>How multiple streaming guardrails interact with overlapping patterns</strong>: See open question below.</li>
-  > <li><strong>GuardrailsEventSubscriber registers streaming guardrails with the iterator</strong>: &#9989; via <code>PostGenerateResponseEvent</code> before the regular post-generate loop runs.</li>
-  > </ol>
-  > <h3>Open question: multiple guardrails with overlapping patterns</h3>
-  > <p>The current implementation chains guardrails: each guardrail sees the output of the one before it. If guardrail A suppresses a chunk, guardrail B receives an empty string rather than the original text.</p>
-  > <p>The proposed resolution describes guardrails as operating "independently", buffering "different portions of the stream independently". Achieving true independence would require each guardrail to track the original text, not the already-processed text.</p>
-  > <p><strong>Is the chaining behaviour acceptable for this issue, or should each guardrail operate on the original chunk independently?</strong></p>
-  > <p><em>AI disclosure: Brainstormed the Code, test, and comment with AI assistance and manually reviewed, tested before posting.</em></p>
-  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16551031. -->
-  > > _Migrated from comment #8 posted 15 Apr 2026 at 06:58 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: marcus_johansson
-  > 
-  > ```
-  > 
-  > <p>Starting review, regarding question</p>
-  > <blockquote><p>Is the chaining behaviour acceptable for this issue, or should each guardrail operate on the original chunk independently?</p></blockquote>
-  > <p>I would say yes - if its already surpressed, a second guardrail has no functionality anymore</p>
-  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16551032. -->
-  > > _Migrated from comment #9 posted 15 Apr 2026 at 06:59 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: marcus_johansson
-  > + Assigned: Unassigned
-  > - Status:   Needs review
-  > + Status:   Needs work
-  > 
-  > ```
-  > 
-  > <p>Added some comments and also we need to add documentation about this. A kernel test, testing a real streamable guardrail would be good as well, but can be a follow up.</p>
-  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16551082. -->
-  > > _Migrated from comment #10 posted 15 Apr 2026 at 07:28 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: abhisekmazumdar
-  > 
-  > ```
-  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16551617. -->
-  > > _Migrated from comment #11 posted 15 Apr 2026 at 13:46 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: abhisekmazumdar
-  > + Assigned: Unassigned
-  > - Status:   Needs work
-  > + Status:   Needs review
-  > 
-  > ```
-  > 
-  > <p>Addressed the MR review feedback and pushed a new new commits. Please review.</p>
-  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16551626. -->
-  > > _Migrated from comment #12 posted 15 Apr 2026 at 13:51 UTC_
-  > 
-  > 
-  > <p>Regarding the kernel test suggestion: agreed this would be valuable. To keep this issue focused, I will track that as a follow-up rather than adding it here.</p>
-  > <p>Here the issue: <span class="drupalorg-gitlab-issue-link drupalorg-gitlab-link-wrapper"><a href="https://git.drupalcode.org/project/ai/-/work_items/3584951" class="drupalorg-gitlab-link">https://git.drupalcode.org/project/ai/-/work_items/3584951</a></span></p>
-  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16552640. -->
-  > > _Migrated from comment #13 posted 16 Apr 2026 at 07:55 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Needs review
-  > + Status: Needs work
-  > 
-  > ```
-  > 
-  > <p>This needs more work - the buffer for testing the guardrail and the buffer that gets outputted should be different. </p>
-  > <p>So, it would be ok that it outputs part of something that gets blocked.</p>
-  > <p>Right now the streaming is too chompy, it outputs one sentence at a a time which is a clear feature regression. And that is even without a guardrail attached. As long as the regex and block is checked before the last chunk it would be fine.</p>
-  > <p>Think of this:</p>
-  > <p>This will not render:<br>
-  > <code>&lt;a href="https://www.my-malicious.com/website"</code></p>
-  > <p>This will render but be blocked:<br>
-  > <code>&lt;a href="https://www.my-malicious.com/website"&gt;</code></p>
-  > <p>This means that you can see parts of secret names, but even then I would argue that our solution is better then anything that exists currently.</p>
-  > <p>The other option is that we have late streaming buffers - meaning we keep a sentence in buffer and then start yielding one word at a time form that sentence, while buffering the next.</p>
-  > <p>Setting this back to work, and I think we have to aim for 1.5.x for this, since its not in as much of a hurry.</p>
-  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16554729. -->
-  > > _Migrated from comment #14 posted 17 Apr 2026 at 14:50 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: abhisekmazumdar
-  > 
-  > ```
-  > **arianraeesi** (2026-04-23): <!-- Migrated from comment CID #16556624. -->
-  > > _Migrated from comment #15 posted 20 Apr 2026 at 07:02 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + AI Initiative Sprint + AI Product Development
-  > ```
-  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16558863. -->
-  > > _Migrated from comment #16 posted 21 Apr 2026 at 14:03 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: abhisekmazumdar
-  > + Assigned: Unassigned
-  > - Status:   Needs work
-  > + Status:   Needs review
-  > 
-  > ```
-  > 
-  > <p>I feel I have addressed both issues raised in <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-13"><a href="https://www.drupal.org/project/ai/issues/3582179" title="Status: Needs work">#3582179: Add streaming-aware guardrails that can buffer and evaluate content in real-time using start/stop regex patterns</a></span>.</p>
-  > <p><strong>Issue 1: Detection buffer and output buffer decoupled.</strong></p>
-  > <p>The lookahead window was suppressing <code>$text</code> immediately on every chunk, even before a start pattern was found. The window is now detection-only: text flows to the consumer unchanged until a match is confirmed. Only the triggering chunk is suppressed.</p>
-  > <p><strong>Issue 2: Sentence-at-a-time output fixed via word-level splitting.</strong></p>
-  > <p>The URL-safety buffer in <code>StreamedChatMessageIterator</code> already flushes in sentence-sized chunks (on <code>\n</code> or after 100 characters). To give consumers smooth token-level output without changing the URL-safety or guardrail detection logic, <code>getIterator()</code> now splits each flushed chunk word-by-word before yielding.</p>
-  > <pre><pre>private function splitIntoWordTokens(string $text): array {<br>&nbsp; preg_match_all('/\S+\s*|\s+/', $text, $matches);<br>&nbsp; return $matches[0];<br>}</pre></pre><p>Each flushed sentence becomes a sequence of individual word tokens yielded one at a time. The <code>$this-&gt;messages</code> array and <code>reconstructChatOutput()</code> are unaffected, they still operate on sentence-level data. Guardrail detection, URL-safety checking, and pattern matching all continue to operate on the full sentence buffer as before.</p>
-  > <p>Regarding pre-match leakage: agreed this is the correct tradeoff. An incomplete tag like <code>&lt;a href="https://www.my-malicious.com/website"</code> cannot render, so yielding it before the pattern closes is safe. The renderable form <code>&lt;a href="https://www.my-malicious.com/website"&gt;</code> is what gets caught, and by that point the regex fires.</p>
-  > <p>Manually verified via the Chat Generation Explorer with streaming enabled: output now appears word-by-word with no sentence-level batching, and guardrail blocking continues to work correctly.</p>
-  > <p>MR updated.</p>
-  > <p><em>AI assisted has been used but verified by me.</em></p>
-  > **a.dmitriiev** (2026-04-23): <!-- Migrated from comment CID #16558995. -->
-  > > _Migrated from comment #17 posted 21 Apr 2026 at 14:56 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: a.dmitriiev
-  > 
-  > ```
-  > **a.dmitriiev** (2026-04-23): <!-- Migrated from comment CID #16559074. -->
-  > > _Migrated from comment #18 posted 21 Apr 2026 at 15:33 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Needs review
-  > + Status: Needs work
-  > 
-  > ```
-  > **a.dmitriiev** (2026-04-23): <!-- Migrated from comment CID #16559075. -->
-  > > _Migrated from comment #19 posted 21 Apr 2026 at 15:34 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: a.dmitriiev
-  > + Assigned: Unassigned
-  > 
-  > ```
-  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16559922. -->
-  > > _Migrated from comment #20 posted 22 Apr 2026 at 06:57 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: abhisekmazumdar
-  > 
-  > ```
-  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16560371. -->
-  > > _Migrated from comment #21 posted 22 Apr 2026 at 11:06 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: abhisekmazumdar
-  > + Assigned: Unassigned
-  > 
-  > ```
-  > **AkhilBabu** (2026-04-27): Assigning to myself
 
 ### Merge Requests
 
@@ -2422,15 +2449,23 @@ _Generated: 2026-04-27 08:45 GMT_
 
 ### Merge Requests
 
+- **[Fix time value when adding/reordering element.](https://git.drupalcode.org/project/canvas/-/merge_requests/958)** · chandu7929 · opened · `3582883-multi-value-prop-date-fix` · 403 diff lines
+- **[#3581110: Add Multi-Value List Text/Integer Prop Support (UI)](https://git.drupalcode.org/project/canvas/-/merge_requests/795)** · Utkarsh_33 · opened · `3581110-add-multi-value-list` · 2805 diff lines
+- **[Issue #3586843: Add a merge request template](https://git.drupalcode.org/project/canvas/-/merge_requests/986)** · justafish · merged 2026-04-27 · `3586843-add-a-merge` · 17 diff lines
+- **[Simpler fix for 3566203.](https://git.drupalcode.org/project/canvas/-/merge_requests/675)** · longwave · opened · `3566203-simple-fix` · 112 diff lines
+- **[Resolve #3587024 "Reducing multivalue prop limit error"](https://git.drupalcode.org/project/canvas/-/merge_requests/991)** · isholgueras · opened · `3587024-reducing-multivalue-prop-limit-error` · 96 diff lines
+- **[Draft: Issue #3529128: Setup PHPUnit testing command](https://git.drupalcode.org/project/canvas/-/merge_requests/845)** · justafish · opened · `3529128-phpunit` · 688 diff lines
+- **[Issue #3586660: Add additional caching to GitLab CI pipelines](https://git.drupalcode.org/project/canvas/-/merge_requests/976)** · justafish · opened · `3586660-add-additional-caching` · 310 diff lines
+- **[Resolve #3586655 CI: avoid unnecessary E2E jobs (or any job, really)](https://git.drupalcode.org/project/canvas/-/merge_requests/977)** · wimleers · opened · `3586655-ci-avoid-wasteful-playwright` · 194 diff lines
+- **[Draft: Resolve #3586613 "Add content entity reference well known"](https://git.drupalcode.org/project/canvas/-/merge_requests/980)** · longwave · closed · `3586613-add-content-entity-reference-well-known` · 417 diff lines
+- **[Lift testTranslationLifeCycleInDepth() and testContentTemplateTranslation()...](https://git.drupalcode.org/project/canvas/-/merge_requests/898)** · wimleers · opened · `3582478-config-schema-component-specific-inputs-without-mr831` · 1928 diff lines
+- **[Draft: Resolve #3546597 "Create canvas page in other languages"](https://git.drupalcode.org/project/canvas/-/merge_requests/494)** · goba · opened · `3546597-create-canvas-page` · 376 diff lines
+- **[Issue #3569959: Module that manages asymmetric translations](https://git.drupalcode.org/project/canvas/-/merge_requests/511)** · omarlopesino · opened · `3569959-create-canvas-asymmetric` · 337 diff lines
+- **[Fix error when making required formatted text field empty](https://git.drupalcode.org/project/canvas/-/merge_requests/982)** · lauriii · opened · `3551867-error-when-making` · 294 diff lines
 - **[#3586183: Removing value for a required prop of type link(uri-reference) returns 500](https://git.drupalcode.org/project/canvas/-/merge_requests/956)** · Utkarsh_33 · opened · `3586183-removing-value-for` · 309 diff lines
 - **[Draft: PoC Playwright snapshot-based](https://git.drupalcode.org/project/canvas/-/merge_requests/974)** · isholgueras · opened · `3586631-poc-playwright-snapshots` · 6975 diff lines
 - **[feat: #3552818 Contrib compatibility: ComponentPluginManager decorator should...](https://git.drupalcode.org/project/canvas/-/merge_requests/961)** · florenttorregrosa · opened · `3552818-contrib-compatibility-componentpluginmanager` · 340 diff lines
-- **[Draft: Resolve #3586613 "Add content entity reference well known"](https://git.drupalcode.org/project/canvas/-/merge_requests/980)** · longwave · opened · `3586613-add-content-entity-reference-well-known` · 417 diff lines
 - **[fix: Assertion failure in component update when required prop already exists in both versions](https://git.drupalcode.org/project/canvas/-/merge_requests/692)** · mglaman · merged 2026-04-23 · `3577603-assertion-failure-in` · 227 diff lines
-- **[Draft: Fix time value when adding/reordering element.](https://git.drupalcode.org/project/canvas/-/merge_requests/958)** · chandu7929 · opened · `3582883-multi-value-prop-date-fix` · 417 diff lines
-- **[Issue #3586843: Add a merge request template](https://git.drupalcode.org/project/canvas/-/merge_requests/986)** · justafish · opened · `3586843-add-a-merge` · 17 diff lines
-- **[#3581110: Add Multi-Value List Text/Integer Prop Support (UI)](https://git.drupalcode.org/project/canvas/-/merge_requests/795)** · Utkarsh_33 · opened · `3581110-add-multi-value-list` · 2830 diff lines
-- **[Resolve #3586655 CI: avoid unnecessary E2E jobs (or any job, really)](https://git.drupalcode.org/project/canvas/-/merge_requests/977)** · wimleers · opened · `3586655-ci-avoid-wasteful-playwright` · 194 diff lines
 - **[Issue #3586288: Multivalue prop Playwright tests are flaky](https://git.drupalcode.org/project/canvas/-/merge_requests/960)** · justafish · merged 2026-04-25 · `3586288-multivalue-prop-playwright` · 3163 diff lines
 - **[Add isCanvasPreview() so code components can detect editor preview](https://git.drupalcode.org/project/canvas/-/merge_requests/732)** · lauriii · opened · `3579551-add-iscanvaspreview-so` · 248 diff lines
 - **[Issue #3583379](https://git.drupalcode.org/project/canvas/-/merge_requests/876)** · shubham.prakash · opened · `3583379-referenced-entities-not` · 1449 diff lines
@@ -2444,6 +2479,7 @@ _Generated: 2026-04-27 08:45 GMT_
 
 ### Commits
 
+- [`3a27ff3c`](https://git.drupalcode.org/project/canvas/-/commit/3a27ff3c7dbfd6182eaab71f07bf3f08ab93ac31) feat: #3586843 Add a merge request template — Sally Young (2026-04-27)
 - [`d7e56bd7`](https://git.drupalcode.org/project/canvas/-/commit/d7e56bd7e07420252d3d83118f4c32599a822134) fix(CLI Tool): #3586971 Apply the React JSX transform consistently in Workbench preview-build exports — Bálint Kléri (2026-04-26)
 - [`d20871a7`](https://git.drupalcode.org/project/canvas/-/commit/d20871a73d3fccd14d73a148c778bb24f22872d4) feat(CLI Tool): #3586959 Validate image prop example URLs in Code Component metadata files — Bálint Kléri (2026-04-26)
 
