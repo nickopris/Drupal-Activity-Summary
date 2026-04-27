@@ -1,14 +1,25 @@
 # Drupal AI Activity Data — 24h
 
-_Period: 2026-04-25 to 2026-04-26_
-_Generated: 2026-04-26 19:45 GMT_
+_Period: 2026-04-26 to 2026-04-27_
+_Generated: 2026-04-27 08:45 GMT_
 
 ## Modules
 
-- [Context Control Center (CCC)](#context-control-center-ccc-) — 9 issues, 4 MRs, 1 commits
-- [Drupal AI Initiative](#drupal-ai-initiative) — 24 issues, 5 MRs, 4 commits
-- [AI (Artificial Intelligence)](#ai-artificial-intelligence-) — 1 issues, 1 MRs, 0 commits
-- [Drupal Canvas](#drupal-canvas) — 0 issues, 7 MRs, 2 commits
+- [AI Agents](#ai-agents) — 2 issues, 0 MRs, 0 commits
+- [Context Control Center (CCC)](#context-control-center-ccc) — 7 issues, 3 MRs, 1 commits
+- [Drupal AI Initiative](#drupal-ai-initiative) — 37 issues, 5 MRs, 4 commits
+- [AI (Artificial Intelligence)](#ai-artificial-intelligence) — 2 issues, 2 MRs, 0 commits
+- [Drupal Canvas](#drupal-canvas) — 0 issues, 19 MRs, 2 commits
+
+---
+
+## AI Agents
+
+### Issues
+
+- **[Test Issue](https://git.drupalcode.org/project/ai_agents/-/work_items/3585985)** · opened · unassigned · 2 comments
+  > **Marcus_Johansson** (2026-04-27): %assign-me
+- **[Create an ChatProcessor](https://git.drupalcode.org/project/ai_agents/-/work_items/3585984)** · opened · unassigned · 1 comments
 
 ---
 
@@ -16,7 +27,7 @@ _Generated: 2026-04-26 19:45 GMT_
 
 ### Issues
 
-- **[Full lightweight UX review of CCC in prep for rc1](https://git.drupalcode.org/project/ai_context/-/work_items/3573715)** · [d.o #3573715](https://www.drupal.org/node/3573715) · opened · aidanfoster · 23 comments · AI Context Management, AI Initiative Sprint, AI Innovation, blocker::stable
+- **[Full lightweight UX review of CCC in prep for rc1](https://git.drupalcode.org/project/ai_context/-/work_items/3573715)** · [d.o #3573715](https://www.drupal.org/node/3573715) · opened · aidanfoster · 24 comments · AI Context Management, AI Initiative Sprint, AI Innovation, blocker::stable
   > **kepol** (2026-04-22): <!-- Migrated from comment CID #16479866. -->
   > > _Migrated from comment #2 posted 21 Feb 2026 at 00:29 UTC_
   > 
@@ -319,6 +330,7 @@ _Generated: 2026-04-26 19:45 GMT_
   > I like Context Connector – trying this out it works to say things like ‘To adapt my context based on interaction patterns I connect my GA4 context’ 
   > I also think Conditional Context works – you use sub-context item A only in certain conditions – so for example ”Use the seasonal campaign text for the holiday promos”
   > **kepol** (2026-04-26): I was thinking source = PDF, MD file, etc.
+  > **emma-horrell** (2026-04-26): On use case vs activity, is surface based talking about the part of Drupal – e.g. Paragraphs UI or Canvas UI whereas purpose based is talking more about the activity? I wonder if it’s clearer to say ‘Working with text’ is an activity purpose-based and keep use cases for about the ‘surfaces’ – like Canvas and Paragraphs. Although not sure surface is quite the right word.
 - **[Add Site Architecture context source for Drupal site behavior contracts](https://git.drupalcode.org/project/ai_context/-/work_items/3586150)** · opened · unassigned · 1 comments
 - **[Make subcontext feature optional](https://git.drupalcode.org/project/ai_context/-/work_items/3586120)** · [d.o #3586120](https://www.drupal.org/node/3586120) · closed · unassigned · 18 comments · AI Context Management, AI Initiative Sprint, AI Innovation, category::feature
   > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559618. -->
@@ -979,347 +991,12 @@ _Generated: 2026-04-26 19:45 GMT_
   > Because we will be moving to observability in a few months, but no harm adding them now.
 - **[Question about "Subcontext type = Conditional - included based on relevance"](https://git.drupalcode.org/project/ai_context/-/work_items/3586149)** · opened · unassigned · 1 comments
 - **[Usage of "Context scope" and "Target bundles"](https://git.drupalcode.org/project/ai_context/-/work_items/3586148)** · opened · unassigned · 1 comments
-- **[Move scheduler feature to submodule or progressive enhancement](https://git.drupalcode.org/project/ai_context/-/work_items/3577429)** · [d.o #3577429](https://www.drupal.org/node/3577429) · opened · mglaman · 26 comments · AI Context Management, AI Initiative Sprint, AI Innovation, blocker::stable
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16498245. -->
-  > > _Migrated from comment #2 posted 06 Mar 2026 at 02:08 UTC_
-  > 
-  > 
-  > ```
-  >  Parent issue:
-  >  - #3577428: Update context item target entities for progressive enhancement
-  >  Related issues:
-  >  + #3569967: [Discuss] Figure out which CCC features can be optional for MVP
-  > ```
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16499982. -->
-  > > _Migrated from comment #3 posted 06 Mar 2026 at 23:04 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + stable blocker
-  > ```
-  > 
-  > <p>Marking as a stable blocker for now, as it would be better to do this before 1.0</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16500750. -->
-  > > _Migrated from comment #4 posted 08 Mar 2026 at 01:23 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  - sprint candidate + AI Initiative Sprint
-  > ```
-  > 
-  > <p>Tagging for sprint in case someone can take it on early this week. If not, it'll need to wait until after Chicago.</p>
-  > **rakhimandhania** (2026-04-22): <!-- Migrated from comment CID #16501246. -->
-  > > _Migrated from comment #5 posted 08 Mar 2026 at 20:50 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + AI Context Management
-  > ```
-  > **axioteo** (2026-04-22): <!-- Migrated from comment CID #16503908. -->
-  > > _Migrated from comment #6 posted 10 Mar 2026 at 11:02 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: axioteo
-  > 
-  > ```
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16504771. -->
-  > > _Migrated from comment #7 posted 10 Mar 2026 at 18:00 UTC_
-  > 
-  > 
-  > <p>For reference, these similar issues have been done or are in progress:</p>
-  > <p><span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-7"><a href="https://www.drupal.org/project/ai_context/issues/3577426" title="Status: Closed (fixed)">#3577426: Redo context item duplicate feature without ECA</a></span><br>
-  > <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-7"><a href="https://www.drupal.org/project/ai_context/issues/3577427" title="Status: Closed (fixed)">#3577427: Update context item revision diff feature for progressive enhancement</a></span><br>
-  > <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-2"><a href="https://www.drupal.org/project/ai_context/issues/3577428" title="Status: Fixed">#3577428: Update context item target entities for progressive enhancement</a></span></p>
-  > **axioteo** (2026-04-22): <!-- Migrated from comment CID #16505474. -->
-  > > _Migrated from comment #9 posted 11 Mar 2026 at 09:30 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: axioteo
-  > + Assigned: Unassigned
-  > 
-  > ```
-  > 
-  > <p>I have added an MR with a draft implementation of moving the scheduler functionality into a submodule. The MR includes:</p>
-  > <p>- Moving scheduler into a submodule within the base module<br>
-  > - Setting publishing options to false by default when the submodule is enabled<br>
-  > - Removing any existing hard dependencies to the scheduler module from the codebase, including tests</p>
-  > <p>Testing performed:</p>
-  > <p>- If only the base module is installed, scheduler publishing options are not present on the context items page or in the context item edit form.<br>
-  > - When the submodule is enabled, scheduling options appear as expected (disabled by default), and are only shown in the context item edit form if previously enabled from the settings form.</p>
-  > <p>This is a draft implementation to move the work forward. I&rsquo;m leaving the issue unassigned so someone more familiar with this part of the module can review the approach and either continue the implementation or take a different approach if that would fit the module better.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16505879. -->
-  > > _Migrated from comment #10 posted 11 Mar 2026 at 13:34 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Active
-  > + Status: Needs review
-  > 
-  > ```
-  > 
-  > <p>Thanks! &#128591; </p>
-  > <p>Curious if you looked at if it could be done without a sub module like the other issues above ^ ?</p>
-  > **axioteo** (2026-04-22): <!-- Migrated from comment CID #16507414. -->
-  > > _Migrated from comment #11 posted 12 Mar 2026 at 10:34 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Needs review
-  > + Status: Active
-  > 
-  > ```
-  > 
-  > <p>No, I only worked on making it a submodule as it felt like a cleaner approach at the time. The main reason I thought it would be better for someone else to evaluate this is that I wasn&rsquo;t sure how best to handle the scheduler dependency within the submodule itself.</p>
-  > <p>Maybe abstracting the functionality like that isn&rsquo;t the way to go, and implementing some other mechanism to just detect whether scheduler is enabled might be a more viable approach.</p>
-  > <p>That said, I&rsquo;d be more than happy to look into this further if you think that&rsquo;s the direction we should take.</p>
-  > **axioteo** (2026-04-22): <!-- Migrated from comment CID #16507415. -->
-  > > _Migrated from comment #12 posted 12 Mar 2026 at 10:35 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Active
-  > + Status: Needs review
-  > 
-  > ```
-  > **annmarysruthy** (2026-04-22): <!-- Migrated from comment CID #16507514. -->
-  > > _Migrated from comment #13 posted 12 Mar 2026 at 11:35 UTC_
-  > 
-  > 
-  > <p>reviewed the code.The submodule split looks right.</p>
-  > <p> AI Context setting to show/hide scheduler in context item form is not added(as per proposed resolution). It would be great to have a toggle in AI Context settings.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16508125. -->
-  > > _Migrated from comment #14 posted 12 Mar 2026 at 15:42 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Needs review
-  > + Status: Needs work
-  > 
-  > ```
-  > 
-  > <p>Moving back to needs work for the setting. Thanks, all!</p>
-  > **axioteo** (2026-04-22): <!-- Migrated from comment CID #16508151. -->
-  > > _Migrated from comment #15 posted 12 Mar 2026 at 16:00 UTC_
-  > 
-  > 
-  > <p>Hey @annmarysruthy, thank you for the review! Just a quick follow-up on the toggling functionality, the scheduling options (in context items settings page that come up by default when scheduler is enabled), actually do control whether the publishing options are shown in the context item edit form.</p>
-  > <p>For example if you only enable "Publishing" as the only scheduling option, then when editing the context item, only "Publishing" is allowed. Similarly, if no scheduling options are selected, none will appear in the edit form. </p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16508401. -->
-  > > _Migrated from comment #16 posted 12 Mar 2026 at 17:50 UTC_
-  > 
-  > 
-  > <p>I think there is some confusion on the proposed setting.</p>
-  > <p>It could be that the site manager/builder doesn't actually want their editors to do use the scheduler, so it shouldn't show up in the right sidebar when editing context items.</p>
-  > <p>So, there would be an admin setting that is defaulted to enabled, where it could be disabled.</p>
-  > <p>This is just for the scheduler feature.</p>
-  > <p>If this was using progressive enhancement rather than a submodule, I'd default this to disabled by default. This is because Drupal CMS comes with scheduler and scheduling context is not likely going to be a common requirement.</p>
-  > <p>But, if we do this with a submodule, then it should default to enabled, because they are explicitly choosing to use it by enabling the module. This still lets them easily turn if off in the UI though if they can't easily uninstall the submodule.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16511621. -->
-  > > _Migrated from comment #17 posted 16 Mar 2026 at 02:13 UTC_
-  > 
-  > 
-  > <p>This will likely not make it into beta1 but it can make it into the following release</p>
-  > **FLUX423** (2026-04-22): <!-- Migrated from comment CID #16525583. -->
-  > > _Migrated from comment #18 posted 25 Mar 2026 at 19:03 UTC_
-  > 
-  > 
-  > <p>We just shipped <code>duadp_ai_context</code> as a real-world example of this exact pattern &mdash; it may be a useful reference for the submodule approach.</p>
-  > <p>The core <code>drupal/duadp</code> module declares <code>ai_context</code> only as a suggestion in <code>composer.json</code>:</p>
-  > <div class="codeblock">
-  > <pre><span style="color: #000000"><span style="color: #0000BB">&lt;?php<br></span><span style="color: #DD0000">"suggest"</span><span style="color: #007700">: {<br>&nbsp; </span><span style="color: #DD0000">"drupal/ai_context"</span><span style="color: #007700">: </span><span style="color: #DD0000">"Enables DUADP trust-tier scope via the duadp_ai_context bridge module."<br></span><span style="color: #007700">}<br></span><span style="color: #0000BB">?&gt;</span></span></pre></div>
-  > <p>The bridge lives in <code>modules/duadp_ai_context/</code> as a submodule with its own <code>info.yml</code> that carries the hard dependency:</p>
-  > <div class="codeblock">
-  > <pre><span style="color: #000000"><span style="color: #0000BB">&lt;?php<br>name</span><span style="color: #007700">: </span><span style="color: #DD0000">'DUADP AI Context Bridge'<br></span><span style="color: #0000BB">type</span><span style="color: #007700">: </span><span style="color: #0000BB">module<br>dependencies</span><span style="color: #007700">:<br>&nbsp; - </span><span style="color: #0000BB">drupal</span><span style="color: #007700">:</span><span style="color: #0000BB">duadp_discovery<br>&nbsp; </span><span style="color: #007700">- </span><span style="color: #0000BB">drupal</span><span style="color: #007700">:</span><span style="color: #0000BB">ai_context<br>?&gt;</span></span></pre></div>
-  > <p>Default config in <code>config/install/ai_context.scope_settings.duadp_trust_tier.yml</code> sets <code>enabled: true</code> &mdash; since users explicitly opt in by installing the submodule, defaulting to enabled is the right call (aligns with what Kristen described above).</p>
-  > <p>One thing worth noting: the submodule's <code>core_version_requirement</code> in <code>info.yml</code> needs to match or exceed the parent module's minimum, otherwise Drupal's extension discovery complains during install. Worth keeping in mind for the scheduler submodule implementation.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16530499. -->
-  > > _Migrated from comment #19 posted 29 Mar 2026 at 15:46 UTC_
-  > 
-  > 
-  > ```
-  > - Status: Needs work
-  > + Status: Postponed
-  > 
-  > ```
-  > 
-  > <p>There has been some additional discussions at DrupalCon that perhaps it&rsquo;s overkill to have the scheduler feature at all.</p>
-  > <p>I&rsquo;m moving this to postponed for now and will create an issue to discuss further </p>
-  > **rakhimandhania** (2026-04-22): <!-- Migrated from comment CID #16539224. -->
-  > > _Migrated from comment #20 posted 05 Apr 2026 at 20:54 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  - AI Initiative Sprint
-  > ```
-  > **mglaman** (2026-04-22): <!-- Migrated from comment CID #16550292. -->
-  > > _Migrated from comment #21 posted 14 Apr 2026 at 21:08 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: mglaman
-  > - Status:   Postponed
-  > + Status:   Needs work
-  > 
-  > ```
-  > 
-  > <p>I'm going to work on this. I'll make it a progressive enhancement first and then try to accomplish <span class="drupalorg-gitlab-issue-link drupalorg-gitlab-link-wrapper"><a href="https://git.drupalcode.org/project/ai_context/-/work_items/3584775" class="drupalorg-gitlab-link">https://git.drupalcode.org/project/ai_context/-/work_items/3584775</a></span> as well.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550307. -->
-  > > _Migrated from comment #22 posted 14 Apr 2026 at 21:16 UTC_
-  > 
-  > 
-  > <p>Thanks &#128591; </p>
-  > **mglaman** (2026-04-22): <!-- Migrated from comment CID #16557413. -->
-  > > _Migrated from comment #23 posted 20 Apr 2026 at 16:05 UTC_
-  > 
-  > 
-  > ```
-  >  Related issues:
-  >  + #3585333: Provide a config type for third_party_settings so that other modules can opt-in more easily
-  > ```
-  > 
-  > <p>Opened <a href="https://www.drupal.org/project/scheduler/issues/3585333">https://www.drupal.org/project/scheduler/issues/3585333</a> which could have simplified all of this</p>
-  > **mglaman** (2026-04-22): <!-- Migrated from comment CID #16557490. -->
-  > > _Migrated from comment #24 posted 20 Apr 2026 at 17:08 UTC_
-  > 
-  > 
-  > ```
-  >  Related issues:
-  >  + #3355087: Support for non-bundle entity types
-  > ```
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16557682. -->
-  > > _Migrated from comment #25 posted 20 Apr 2026 at 20:22 UTC_
-  > 
-  > 
-  > <p>Let&rsquo;s do this one here at the same time:</p>
-  > <p><span class="drupalorg-gitlab-issue-link drupalorg-gitlab-link-wrapper"><a href="https://git.drupalcode.org/project/ai_context/-/work_items/3584775" class="drupalorg-gitlab-link">https://git.drupalcode.org/project/ai_context/-/work_items/3584775</a></span></p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559452. -->
-  > > _Migrated from comment #26 posted 21 Apr 2026 at 19:34 UTC_
-  > 
-  > 
-  > <p>We can postpone this one on:</p>
-  > <p><span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-8"><a href="https://www.drupal.org/project/scheduler/issues/3355087" title="Status: Needs review">#3355087: Support for non-bundle entity types</a></span></p>
-  > <p>and ask the maintainers to merge that one once it's ready.</p>
-  > <p>I see the patch is in the MR. I'd prefer not to have any patches before 1.0 but we do have this one:</p>
-  > <pre>&nbsp;&nbsp;&nbsp; "patches": {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "drupal/scheduler_content_moderation_integration": {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Issue #3579842: Publish/Unpublish State Safety Check": "https://www.drupal.org/files/issues/2026-03-17/scheduler_content_moderation_integration-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</pre><p>which should we should be able to remove soon (just waiting on a scheduler_content_moderation_integration release).</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559750. -->
-  > > _Migrated from comment #27 posted 21 Apr 2026 at 23:48 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + AI Initiative Sprint
-  > ```
-- **[Add convenience API for non-agent programmatic context retrieval](https://git.drupalcode.org/project/ai_context/-/work_items/3584838)** · [d.o #3584838](https://www.drupal.org/node/3584838) · closed · kepol · 13 comments · AI Context Management, AI Initiative Sprint, AI Innovation, category::feature
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16557982. -->
-  > > _Migrated from comment #2 posted 21 Apr 2026 at 01:44 UTC_
-  > 
-  > 
-  > ```
-  > - Component: Ideas
-  > + Component: Code
-  > - Category:  Plan
-  > + Category:  Feature request
-  > 
-  > ```
-  > 
-  > <p>I like this idea. It's simple and helpful. I'll see if we can get into this sprint.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16557983. -->
-  > > _Migrated from comment #3 posted 21 Apr 2026 at 01:44 UTC_
-  > 
-  > 
-  > ```
-  > - Priority: Minor
-  > + Priority: Normal
-  > 
-  > ```
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559432. -->
-  > > _Migrated from comment #4 posted 21 Apr 2026 at 19:23 UTC_
-  > 
-  > 
-  > ```
-  >  Issue tags:
-  >  + AI Innovation + AI Initiative Sprint + AI Context Management
-  > ```
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559674. -->
-  > > _Migrated from comment #5 posted 21 Apr 2026 at 22:07 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: Unassigned
-  > + Assigned: kristen pol
-  > 
-  > ```
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559716. -->
-  > > _Migrated from comment #7 posted 21 Apr 2026 at 22:58 UTC_
-  > 
-  > 
-  > ```
-  > - Assigned: kristen pol
-  > + Assigned: Unassigned
-  > - Status:   Active
-  > + Status:   Needs review
-  > 
-  > ```
-  > 
-  > <p>Rather than add yet another service (there are 21!), this was added to <code>AiContextRequestFactory</code>.</p>
-  > <p>See if you think it makes sense there.</p>
-  > <p>Note, I also fixed some unrelated minor docs and linting issues here rather than opening more issues.</p>
-  > <p>--<br>
-  > More context:</p>
-  > <p>Cursor/opus original wrote it with a service because that's what was suggested. I challenged that. Here's the response:</p>
-  > <p>That's a fair challenge. The retriever is ~10 lines of actual logic &mdash; it builds a AiContextRequestParamsData, passes it through the factory, and calls the selector. A whole new service class + registration + docs section is a lot of ceremony for that.</p>
-  > <p>The most natural home is AiContextRequestFactory. It already has fromAgent() and fromParameters() as entry points for different callers. A third convenience method that goes one step further &mdash; builds the request and runs it &mdash; fits the factory's role as "the place callers go to get context started." It would need the selector injected, but that's a clean dependency (factory delegates to selector, no circularity).</p>
-  > <p>The tradeoff:</p>
-  > <ul>
-  > <li>Separate service: cleaner single-responsibility boundary, stable facade if internals change. But adds surface area for what's trivially thin.</li>
-  > <li>Method on factory: fewer moving parts, one less service to discover/document/test, and the factory is already where non-agent callers land. Slightly blurs "build request" vs "execute request" responsibility, but pragmatically it's a convenience method, not a new domain.</li>
-  > </ul>
-  > <p>I'd lean toward collapsing it into the factory.</p>
-  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16559717. -->
-  > > _Migrated from comment #8 posted 21 Apr 2026 at 22:58 UTC_
-  > 
-  > 
-  > > Updated issue summary
-  > **scottfalconer** (2026-04-25): Tested and no issues found. Moving to RTBC
-  > 
-  >   - getRenderedContext() exists and returns rendered text.
-  >   - retrieve() exists and returns AiContextResult.
-  >   - empty result returns '' in an isolated context-item set.
-  >   - scoped retrieval includes use_case: writing_words.
-  >   - scoped retrieval excludes use_case: working_in_canvas.
-  >   - cache tags include the selected context item.
-  >   - tokenLimit is forwarded.
-  >   - targetEntity is accepted and reaches selector entity context.
-  > 
-  > Disclosure: ai was used to execute these tests and results were reviewed manually.
-  > **kepol** (2026-04-25): Thanks, Scott.
-  > **kepol** (2026-04-25): Scott, did you review the code or just test it?
-  > **kepol** (2026-04-25): From Scott in Slack:
-  > 
-  > Yup, the only minor thing is retrieve(tokenLimit: X) with no selected items would currently expose the selector’s default token budget rather than the passed tokenLimit. Not blocking for this MR, but worth a small follow-up if we care about exact metadata consistency on empty results. (edited)
-  > **kepol** (2026-04-25): I updated the code with:
-  > 
-  > - fix for Scott's feedback
-  > - cleaned up some inconsistencies with the use of max tokens vs token limits vs token budgets and similar
-  > - changed retrieve() to getResult()
-  > - fixed a failing test
-  > 
-  > Pipeline was green, so I've set to auto-merge.
 
 ### Merge Requests
 
 - **[Make subcontext feature optional.](https://git.drupalcode.org/project/ai_context/-/merge_requests/120)** · kepol · merged 2026-04-26 · `3586120-make-subcontext-feature` · 967 diff lines
 - **[feat: #3574905 Add denormalized scope index table for SQL-based scope pre-filtering](https://git.drupalcode.org/project/ai_context/-/merge_requests/117)** · abhisekmazumdar · opened · `3574905-ccc-refactor-to` · 982 diff lines
 - **[Performance improvements for usage feature.](https://git.drupalcode.org/project/ai_context/-/merge_requests/119)** · kepol · opened · `3574907-ccc-refactor-to` · 589 diff lines
-- **[Resolve #3584838 "Add convenience api"](https://git.drupalcode.org/project/ai_context/-/merge_requests/122)** · kepol · merged 2026-04-25 · `3584838-add-convenience-api` · 1055 diff lines
 
 ### Commits
 
@@ -1331,6 +1008,283 @@ _Generated: 2026-04-26 19:45 GMT_
 
 ### Issues
 
+- **[Drop "Initiative" from issue template names (AI Marketing - X)](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586447)** · opened · unassigned · 1 comments · AI Marketing, category::task, priority::normal
+- **[Add DA YouTube channel managers from AI Initiative marketing team](https://git.drupalcode.org/project/ai_initiative/-/work_items/3584835)** · [d.o #3584835](https://www.drupal.org/node/3584835) · opened · pdjohnson · 9 comments · category::task, marketing, priority::normal, state::needsReview
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550902. -->
+  > > _Migrated from comment #2 posted 15 Apr 2026 at 03:17 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > ```
+  > - Component:     DA Request
+  > + Component:     Marketing
+  > 
+  > ```
+  > 
+  > <p>Moving to marketing for now so maybe this will be seen more easily</p>
+  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16554139. -->
+  > > _Migrated from comment #3 posted 17 Apr 2026 at 08:11 UTC_
+  > 
+  > 
+  > <p>Would make sense for maybe me and Will to have access. Logic being Zoocha have created a majority of videos and I am involved in the webinar management which is the other primary source of videos plus I am involved in most of other video work.</p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16554885. -->
+  > > _Migrated from comment #4 posted 17 Apr 2026 at 15:54 UTC_
+  > 
+  > 
+  > ```
+  > - Component: Marketing
+  > + Component: DA Request
+  > - Assigned:  Unassigned
+  > + Assigned:  hestenet
+  > 
+  > ```
+  > 
+  > <p>Makes sense to me</p>
+  > **hestenet** (2026-04-22): <!-- Migrated from comment CID #16560948. -->
+  > > _Migrated from comment #5 posted 22 Apr 2026 at 16:39 UTC_
+  > 
+  > 
+  > ```
+  > - Status: Active
+  > + Status: Needs review
+  > 
+  > ```
+  > 
+  > <p>Channel manager invites sent to: Paul, Will, Kristen(as backup)</p>
+  > <p>Please make sure to use a dedicated AI playlist (or lists) and/or check with Ryan first if you want to do anything unusual with the channel, hehe. </p>
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16560951. -->
+  > > _Migrated from comment #6 posted 22 Apr 2026 at 16:41 UTC_
+  > 
+  > 
+  > ```
+  > - Component: DA Request
+  > + Component: Marketing
+  > - Assigned:  hestenet
+  > + Assigned:  pdjohnson
+  > 
+  > ```
+  > 
+  > <p>Thanks! I pinged Paul and Will in Slack</p>
+  > **pdjohnson** (2026-04-24): @hestenet are we OK with proceeding on this?
+  > **kepol** (2026-04-24): @pdjohnson he already added you, Will, and me (see message below (22 Apr 2026 at 16:39 UTC)
+  > **pdjohnson** (2026-04-27): hi @hestenet how should I be expecting to see this? An email? To what address p.johnson@1xinternet.com or the email attached to my D.O account? I've not seen anything.
+- **[AI skill for AI Marketing Initiative: guide for setting up AI tooling to interact with GitLab via the CLI](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586406)** · opened · unassigned · 3 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
+  > **jjchinquist** (2026-04-24): ## Gotcha for the `glab api` section: `@file` syntax is **not** supported
+  > 
+  > When the skill eventually documents `glab api` as the primary CLI for drupalcode.org write operations, call out this trap explicitly — it silently destroys data.
+  > 
+  > ### What happens
+  > 
+  > `glab api -f description=@/path/to/file.txt` does **not** read the file. `glab` passes the literal string `@/path/to/file.txt` as the field value. On a PUT to an issue description, that means the entire description gets **replaced** with the single-line path string. No error, no warning — destructive.
+  > 
+  > This is a point of divergence from the `gh` CLI, where `gh api -f body=@/path/to/file.txt` does read the file. Muscle memory from `gh` will burn anyone migrating to `glab`.
+  > 
+  > ### Workarounds that work
+  > 
+  > 1. **Shell variable** (cleanest for scripted/Claude use):
+  >     ```bash
+  >     DESC=$(cat file.txt)
+  >     glab api --hostname git.drupalcode.org -X PUT "projects/<id>/issues/<iid>" \
+  >       -f "description=$DESC"
+  >     ```
+  > 2. **curl** with `--data-urlencode`:
+  >     ```bash
+  >     curl -H "PRIVATE-TOKEN: $DRUPALCODE_GITLAB_TOKEN" \
+  >       -X PUT "https://git.drupalcode.org/api/v4/projects/<id>/issues/<iid>" \
+  >       --data-urlencode "description@file.txt"
+  >     ```
+  > 
+  > ### Real incident
+  > 
+  > Burned during the template-cleanup work on [#3581782](https://git.drupalcode.org/project/ai_initiative/-/work_items/3581782) / [#3582480](https://git.drupalcode.org/project/ai_initiative/-/work_items/3582480) (2026-04-24): two issue descriptions got wiped to the literal string `@/tmp/inf-<iid>-description-new.txt`. Recovered because the intended content was still on disk in `/tmp`. Lesson worth baking into the skill so the next person doesn't rediscover it destructively.
+  > 
+  > ### Suggestion for the skill text
+  > 
+  > In the "CLI tools" / "Command mappings" subsection the ticket already proposes (AC-2.3), add a short **"Differences from `gh`"** callout that flags this specific `@file` divergence, and recommends the `DESC=$(cat file)` pattern as the default for any write operation with multi-line body content.
+  > 
+  > ---
+  > 
+  > *Drafted with the assistance of AI (Claude Code / Opus 4.7).*
+  > **jjchinquist** (2026-04-27): All acceptance criteria are now covered by MR !4 (commits 6c7c3df, 471f285, f442756 on branch `3586406-marketing-cli-skill`). Marked AC-2 through AC-6 as completed in the description.
+  > 
+  > - **AC-2** — `SKILL.md` § Setup: `glab` install paths, env-var auth (`GITLAB_HOST` + `GITLAB_TOKEN`), PAT creation with `api` scope as the safe default.
+  > - **AC-3** — `SKILL.md` § "The `@file` gotcha — read this before any write": flagged loudly with `DESC=$(cat file)` workaround, cites note 807944.
+  > - **AC-4** — Day-to-day patterns split across `issues.md`, `merge-requests.md`, `code-review.md`, `pipelines.md`; unauthenticated `discussions.json` fallback included.
+  > - **AC-5** — Cross-links to the upstream `glab` docs, GitLab REST API, drupal.org Issue Forks docs, etc., rather than restating them.
+  > - **AC-6** — `SKILL.md` closes with an explicit out-of-scope list (patch-vs-MR for the first pass).
+  > 
+  > Bonus content beyond the original ACs:
+  > 
+  > - **Two-hostname / glab-remote-mismatch trap** (`git.drupalcode.org` vs `git.drupal.org`) — documented in `SKILL.md`, links to upstream tracker [drupal.org#3586898](https://www.drupal.org/project/drupalorg/issues/3586898).
+  > 
+  > MR is open for review; ready to flip to **needsWork → fixed** once a reviewer approves and merges.
+  > 
+  > ---
+  > 
+  > *Drafted with the assistance of AI (Claude Code / Opus 4.7).*
+- **[Promote Drupal AI Learners Club](https://git.drupalcode.org/project/ai_initiative/-/work_items/3583894)** · [d.o #3583894](https://www.drupal.org/node/3583894) · opened · mfernanda.silva · 5 comments · AI Marketing, category::task, marketing, priority::normal
+  > **kepol** (2026-04-22): <!-- Migrated from comment CID #16550613. -->
+  > > _Migrated from comment #2 posted 15 Apr 2026 at 00:54 UTC_
+  > 
+  > 
+  > ```
+  >  Related issues:
+  >  + #3584083: Blog article promoting Drupal AI Learners Club
+  > ```
+  > 
+  > <p>Related:</p>
+  > <p><span class="drupalorg-gitlab-issue-link drupalorg-gitlab-link-wrapper"><a href="https://git.drupalcode.org/project/ai_initiative/-/work_items/3584083" class="drupalorg-gitlab-link">https://git.drupalcode.org/project/ai_initiative/-/work_items/3584083</a></span></p>
+  > **pdjohnson** (2026-04-24): @jjchinquist this ticket should be assigned to María Fernanda Silva but I cannot find her as an assignee, any ideas?
+  > **pdjohnson** (2026-04-24): @jjchinquist should be assigned to Maria
+  > **jjchinquist** (2026-04-27): We need to add her as a Reporter here. I need her Drupal.org account. Checking
+- **[Marketing Sprint #2: April 27 - May 11 [Meta]](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585830)** · [d.o #3585830](https://www.drupal.org/node/3585830) · opened · jjchinquist · 3 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
+  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16559820. -->
+  > > _Migrated from comment #2 posted 22 Apr 2026 at 03:10 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16559821. -->
+  > > _Migrated from comment #3 posted 22 Apr 2026 at 03:12 UTC_
+  > 
+  > 
+  > > Updated issue summary
+- **[Marketing Sprint #2: LinkedIn posts promoting Industry Guides](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585925)** · [d.o #3585925](https://www.drupal.org/node/3585925) · opened · amber.henry · 2 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
+  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16558180. -->
+  > > _Migrated from comment #2 posted 21 Apr 2026 at 06:42 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  + social media
+  > ```
+- **[NYC AI Summit: New featured sessions](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586446)** · opened · slawrence10 · 0 comments · AI Initiative Sprint, AI Marketing, category::task, social media
+- **[AI Marketing Sprint #2: NYC AI Summit Featured sessions](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585908)** · [d.o #3585908](https://www.drupal.org/node/3585908) · opened · amber.henry · 1 comments · AI Initiative, AI Initiative Sprint, AI Marketing, category::task
+- **[Marketing Sprint #2: Promote AI Summit London on LinkedIn](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586445)** · opened · amber.henry · 0 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
+- **[AI Marketing Sprint #2: General social media 27 April - 11 May](https://git.drupalcode.org/project/ai_initiative/-/work_items/3586166)** · [d.o #3586166](https://www.drupal.org/node/3586166) · opened · amber.henry · 1 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
+- **[The AI Summit London Event META](https://git.drupalcode.org/project/ai_initiative/-/work_items/3585985)** · [d.o #3585985](https://www.drupal.org/node/3585985) · opened · unassigned · 14 comments · category::task, marketing, priority::normal, state::accepted
+  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558587. -->
+  > > _Migrated from comment #2 posted 21 Apr 2026 at 11:12 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558590. -->
+  > > _Migrated from comment #3 posted 21 Apr 2026 at 11:15 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558681. -->
+  > > _Migrated from comment #4 posted 21 Apr 2026 at 12:24 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558771. -->
+  > > _Migrated from comment #5 posted 21 Apr 2026 at 13:15 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558772. -->
+  > > _Migrated from comment #6 posted 21 Apr 2026 at 13:17 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16558775. -->
+  > > _Migrated from comment #7 posted 21 Apr 2026 at 13:17 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16559048. -->
+  > > _Migrated from comment #8 posted 21 Apr 2026 at 15:27 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16559052. -->
+  > > _Migrated from comment #9 posted 21 Apr 2026 at 15:28 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16559055. -->
+  > > _Migrated from comment #10 posted 21 Apr 2026 at 15:29 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16559058. -->
+  > > _Migrated from comment #11 posted 21 Apr 2026 at 15:30 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16560367. -->
+  > > _Migrated from comment #12 posted 22 Apr 2026 at 11:02 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16560370. -->
+  > > _Migrated from comment #13 posted 22 Apr 2026 at 11:05 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **pdjohnson** (2026-04-22): <!-- Migrated from comment CID #16560372. -->
+  > > _Migrated from comment #14 posted 22 Apr 2026 at 11:06 UTC_
+  > 
+  > 
+  > > Updated issue summary
+- **[Social Media Sprint April 13- 24 META](https://git.drupalcode.org/project/ai_initiative/-/work_items/3583834)** · [d.o #3583834](https://www.drupal.org/node/3583834) · closed · amber.henry · 3 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
+  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16548970. -->
+  > > _Migrated from comment #2 posted 14 Apr 2026 at 00:15 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  + AI Marketing + AI Initiative Sprint + social media
+  > ```
+- **[General Social Media April 13 - 24](https://git.drupalcode.org/project/ai_initiative/-/work_items/3583896)** · [d.o #3583896](https://www.drupal.org/node/3583896) · closed · amber.henry · 9 comments · AI Initiative Sprint, AI Marketing, category::task, marketing
+  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16545183. -->
+  > > _Migrated from comment #2 posted 10 Apr 2026 at 03:40 UTC_
+  > 
+  > 
+  > ```
+  > - Component: ... to be triaged
+  > + Component: Marketing
+  > - Assigned:  Unassigned
+  > + Assigned:  amberhenry
+  > 
+  > ```
+  > **mattcommons** (2026-04-22): <!-- Migrated from comment CID #16545211. -->
+  > > _Migrated from comment #3 posted 10 Apr 2026 at 05:13 UTC_
+  > 
+  > 
+  > <p>I will be working on this one with Amber</p>
+  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16547305. -->
+  > > _Migrated from comment #4 posted 12 Apr 2026 at 23:26 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  + AI Marketing + social media + AI Initiative Sprint
+  > ```
+  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16548978. -->
+  > > _Migrated from comment #5 posted 14 Apr 2026 at 00:39 UTC_
+  > 
+  > 
+  > ```
+  >  Parent issue:
+  >  + #3583465: Marketing Sprint April 13 - 24 META
+  > 
+  > ```
+  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16553890. -->
+  > > _Migrated from comment #6 posted 16 Apr 2026 at 23:01 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16558198. -->
+  > > _Migrated from comment #7 posted 21 Apr 2026 at 06:58 UTC_
+  > 
+  > 
+  > > Updated issue summary
+  > **amber.henry** (2026-04-22): <!-- Migrated from comment CID #16558199. -->
+  > > _Migrated from comment #8 posted 21 Apr 2026 at 06:59 UTC_
+  > 
+  > 
+  > > Updated issue summary
 - **[Onboard Silver AI partner: Drupal Forge](https://git.drupalcode.org/project/ai_initiative/-/work_items/3583297)** · [d.o #3583297](https://www.drupal.org/node/3583297) · opened · kepol · 5 comments · category::task, management, priority, priority::normal
   > **kepol** (2026-04-22): <!-- Migrated from comment CID #16539940. -->
   > > _Migrated from comment #2 posted 06 Apr 2026 at 15:57 UTC_
@@ -1665,7 +1619,7 @@ _Generated: 2026-04-26 19:45 GMT_
 
 ### Issues
 
-- **[Integrate Symfony AI's Platform component as a replacement for AI Providers](https://git.drupalcode.org/project/ai/-/work_items/3574187)** · [d.o #3574187](https://www.drupal.org/node/3574187) · opened · unassigned · 29 comments · AI Initiative Sprint, AI Innovation, aiCoreModule, category::feature
+- **[Integrate Symfony AI's Platform component as a replacement for AI Providers](https://git.drupalcode.org/project/ai/-/work_items/3574187)** · [d.o #3574187](https://www.drupal.org/node/3574187) · opened · unassigned · 30 comments · AI Initiative Sprint, AI Innovation, aiCoreModule, category::feature
   > **mxr576** (2026-04-23): <!-- Migrated from comment CID #16474959. -->
   > > _Migrated from comment #3 posted 18 Feb 2026 at 09:16 UTC_
   > 
@@ -2179,9 +2133,287 @@ _Generated: 2026-04-26 19:45 GMT_
   > The module could ship a default `AiPlatform` config entity backed by a special plugin whose behaviour is to dynamically aggregate all currently configured `AiPlatformProvider` config entities at runtime, with no explicit provider wiring required. This solution is targeting simple sites (Drupal CMS builds) where the added value of the platform abstraction would not be clearly visible, but the complexity would.
   > 
   > Thoughts and feedback welcome.
+  > **mxr576** (2026-04-27): On the naming: `AiPlatformProvider` was chosen primarily to avoid collision with 1.x's `AiProvider` plugin type, but the name is awkward precisely because it is defensive rather than descriptive.
+  > 
+  > An alternative worth considering is the pattern `search_api` uses: placing all plugins under a module-namespaced subdirectory inside `Plugin/`. So instead of `Plugin/AiProvider/`, `Plugin/AiPlatform/`, `Plugin/AiPlatformProvider/`, we would have:
+  > 
+  > ```
+  > Plugin/ai/Provider/    ← 2.x Provider plugins
+  > Plugin/ai/Platform/    ← 2.x Platform plugins
+  > Plugin/ai/ModelRouter/ ← 2.x ModelRouter plugins
+  > ```
+  > 
+  > This lets us use natural names without colliding with the existing `Plugin/AiProvider/` directory from 1.x. Both can coexist in the same codebase during the deprecation window, which matters because we intend to ship a forward compatibility layer in 1.x.
+  > 
+  > The goal of that forward compat layer is to let contrib module developers start migrating their code against 1.x today, so that when 2.0 ships they can simply drop 1.x support and remove deprecated code. This means the old and new plugin infrastructure must be able to coexist in the same 1.x codebase simultaneously.
+  > 
+  > That has a direct consequence for manager class naming. The 1.x `\Drupal\ai\AiProviderPluginManager` discovers `Plugin/AiProvider/` and will be marked `@deprecated`. A 2.x-compatible manager discovering `Plugin/ai/Provider/` cannot share the same class name in the same namespace during the 1.x forward compat window. So the 2.x manager needs a distinct name in 1.x, for example `AiPlatformProviderPluginManager`.
+  > 
+  > This means the defensive naming is not a design flaw but a temporary necessity imposed by the forward compat requirement. In 2.x proper, once all 1.x code is dropped, `AiPlatformProviderPluginManager` could be aliased or renamed back to `AiProviderPluginManager` if desired, giving us the clean name in the end state.
+  > 
+  > To summarise the proposal:
+  > 
+  > | | 1.x (current) | 1.x (forward compat layer) | 2.x |
+  > |---|---|---|---|
+  > | Plugin directory | `Plugin/AiProvider/` | `Plugin/ai/Provider/` | `Plugin/ai/Provider/` |
+  > | Plugin manager | `AiProviderPluginManager` `@deprecated` | `AiPlatformProviderPluginManager` | `AiProviderPluginManager` (renamed/aliased) |
+  > 
+  > The `search_api`-style directories give us clean names where it matters most: the plugin classes that contrib developers write and maintain. The manager class awkwardness during the 1.x window is an acceptable tradeoff.
+  > 
+  > One more thing worth deciding at the 2.x level: if we adopt the `Plugin/ai/` subdirectory convention for the new Platform and Provider integrations, should we apply it uniformly to all existing plugin types in the module as well, including `AiFunctionCall`, `AiGuardrail`, and others? Doing so would give 2.x a consistent plugin structure throughout. The counterargument is that those plugin types have no naming collision problem, so moving them is purely structural churn with no functional benefit. But a major version is the right moment to make that call, and an inconsistent mix of `Plugin/AiFunctionCall/` and `Plugin/ai/Provider/` in the same module would be confusing for contributors long-term. Worth an explicit decision either way rather than leaving it implicit.
+  > 
+  > Thoughts?
+- **[Add streaming-aware guardrails that can buffer and evaluate content in real-time using start/stop regex patterns](https://git.drupalcode.org/project/ai/-/work_items/3582179)** · [d.o #3582179](https://www.drupal.org/node/3582179) · opened · unassigned · 22 comments · AI Initiative Sprint, AI Product Development, aiCoreModule, category::feature
+  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16530991. -->
+  > > _Migrated from comment #2 posted 30 Mar 2026 at 08:04 UTC_
+  > 
+  > 
+  > <h3>How other frameworks handle streaming guardrails</h3>
+  > <p>For reference, here is how some other AI frameworks approach this (from Claude Code):</p>
+  > <ul>
+  > <li><strong>Guardrails AI</strong> - The closest to what is proposed here. Each validator controls its own buffering via an overridable <code>_chunking_function()</code>. Returns nothing while accumulating, returns a result when enough context exists. Sentence-based splitting by default, but each validator can define custom chunking.</li>
+  > <li><strong>NVIDIA NeMo Guardrails</strong> - Uses a global <code>chunk_size</code> with a sliding window for overlap. All rails share the same chunk boundaries. Has a "stream first, moderate in parallel" mode, but warns that objectionable content may already have been sent.</li>
+  > <li><strong>Microsoft Semantic Kernel</strong> - Filters can detect streaming and wrap the async stream to intercept/transform chunks. No built-in buffering abstraction - each filter implements its own.</li>
+  > <li><strong>Spring AI</strong> - Similar wrap-the-stream approach via <code>StreamAdvisor</code> using reactive operators for custom accumulation.</li>
+  > <li><strong>Amazon Bedrock</strong> - Binary sync/async toggle. Sync buffers before sending, async streams immediately with background moderation.</li>
+  > <li><strong>LangChain, LlamaIndex, OpenAI Agents SDK</strong> - No mid-stream guardrail support. Guardrails run post-completion only.</li>
+  > </ul>
+  > <p>The per-guardrail buffering approach (as in Guardrails AI) is the most flexible and aligns with the dynamic design proposed in this issue. See <a href="https://guardrailsai.com/guardrails/docs/how-to-guides/custom_validators#streaming">https://guardrailsai.com/guardrails/docs/how-to-guides/custom_validators#streaming</a></p>
+  > <p>- <strong>This comment was created with the help of AI</strong></p>
+  > **harivansh** (2026-04-23): <!-- Migrated from comment CID #16535934. -->
+  > > _Migrated from comment #3 posted 02 Apr 2026 at 09:23 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: harivansh
+  > 
+  > ```
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16545769. -->
+  > > _Migrated from comment #4 posted 10 Apr 2026 at 11:34 UTC_
+  > 
+  > 
+  > <p>@harivansh I was looking to work on this. If you haven't started this yet, can you please let me know if I can take over this issue? Thank you</p>
+  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16547619. -->
+  > > _Migrated from comment #5 posted 13 Apr 2026 at 08:48 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: harivansh
+  > + Assigned: Unassigned
+  > 
+  > ```
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16547628. -->
+  > > _Migrated from comment #6 posted 13 Apr 2026 at 08:52 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: abhisekmazumdar
+  > 
+  > ```
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16549805. -->
+  > > _Migrated from comment #7 posted 14 Apr 2026 at 15:15 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: abhisekmazumdar
+  > + Assigned: Unassigned
+  > - Status:   Active
+  > + Status:   Needs review
+  > 
+  > ```
+  > 
+  > <p>An initial implementation has been pushed to the issue branch.</p>
+  > <h3>What was implemented</h3>
+  > <ul>
+  > <li>New <code>StreamableGuardrailInterface</code> extending <code>AiGuardrailInterface</code> with three methods: <code>getStartRegex()</code>, <code>getStopRegex()</code>, and <code>processStreamedBuffer(string $bufferedContent): GuardrailResultInterface</code>.</li>
+  > <li><code>StreamedChatMessageIterator</code> extended with per-guardrail state tracking. Each flushed chunk is passed through <code>processStreamingGuardrails()</code>, which checks start/stop patterns and suppresses output while buffering is active.</li>
+  > <li>End-of-stream flush: if a guardrail is still buffering when the stream ends, the buffer is evaluated and the result is applied.</li>
+  > <li><code>addStreamingGuardrail()</code> and <code>getStreamingGuardrails()</code> added to <code>StreamedChatMessageIteratorInterface</code>.</li>
+  > <li><code>GuardrailsEventSubscriber::applyPostGenerateGuardrails()</code> updated to detect <code>StreamableGuardrailInterface</code> instances and register them with the iterator directly, bypassing the regular post-generate path.</li>
+  > <li>Unit tests covering: pass-through with no guardrails, <code>PassResult</code> releasing the buffer, <code>StopResult</code> suppressing and replacing, <code>RewriteOutputResult</code> rewriting, end-of-stream flush, empty start regex, and content before the trigger streaming normally.</li>
+  > </ul>
+  > <h3>Cross-check against proposed resolution</h3>
+  > <ol>
+  > <li><strong>New interface with start regex, stop regex, and processing callback</strong>: &#9989;</li>
+  > <li><strong>Iterator checks each chunk against start patterns</strong>: &#9989; Runs after the existing URL-safety buffer flushes, so the two layers are independent.</li>
+  > <li><strong>Start regex triggers buffering, output suppressed</strong>: &#9989;</li>
+  > <li><strong>Stop regex or end-of-stream triggers evaluation, pass/stop/rewrite handled</strong>: &#9989; All three result types are handled.</li>
+  > <li><strong>Non-matching content streams normally with no delay</strong>: &#9989; Early return when no guardrails are registered; no change to hot path.</li>
+  > <li><strong>Migrate hardcoded <code>shouldFlush()</code> logic to guardrail-driven buffering</strong>: Intentionally skipped per the issue note ("can only be done when guardrails can be placed everywhere"). The existing URL-safety buffer is untouched.</li>
+  > <li><strong>How multiple streaming guardrails interact with overlapping patterns</strong>: See open question below.</li>
+  > <li><strong>GuardrailsEventSubscriber registers streaming guardrails with the iterator</strong>: &#9989; via <code>PostGenerateResponseEvent</code> before the regular post-generate loop runs.</li>
+  > </ol>
+  > <h3>Open question: multiple guardrails with overlapping patterns</h3>
+  > <p>The current implementation chains guardrails: each guardrail sees the output of the one before it. If guardrail A suppresses a chunk, guardrail B receives an empty string rather than the original text.</p>
+  > <p>The proposed resolution describes guardrails as operating "independently", buffering "different portions of the stream independently". Achieving true independence would require each guardrail to track the original text, not the already-processed text.</p>
+  > <p><strong>Is the chaining behaviour acceptable for this issue, or should each guardrail operate on the original chunk independently?</strong></p>
+  > <p><em>AI disclosure: Brainstormed the Code, test, and comment with AI assistance and manually reviewed, tested before posting.</em></p>
+  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16551031. -->
+  > > _Migrated from comment #8 posted 15 Apr 2026 at 06:58 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: marcus_johansson
+  > 
+  > ```
+  > 
+  > <p>Starting review, regarding question</p>
+  > <blockquote><p>Is the chaining behaviour acceptable for this issue, or should each guardrail operate on the original chunk independently?</p></blockquote>
+  > <p>I would say yes - if its already surpressed, a second guardrail has no functionality anymore</p>
+  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16551032. -->
+  > > _Migrated from comment #9 posted 15 Apr 2026 at 06:59 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: marcus_johansson
+  > + Assigned: Unassigned
+  > - Status:   Needs review
+  > + Status:   Needs work
+  > 
+  > ```
+  > 
+  > <p>Added some comments and also we need to add documentation about this. A kernel test, testing a real streamable guardrail would be good as well, but can be a follow up.</p>
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16551082. -->
+  > > _Migrated from comment #10 posted 15 Apr 2026 at 07:28 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: abhisekmazumdar
+  > 
+  > ```
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16551617. -->
+  > > _Migrated from comment #11 posted 15 Apr 2026 at 13:46 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: abhisekmazumdar
+  > + Assigned: Unassigned
+  > - Status:   Needs work
+  > + Status:   Needs review
+  > 
+  > ```
+  > 
+  > <p>Addressed the MR review feedback and pushed a new new commits. Please review.</p>
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16551626. -->
+  > > _Migrated from comment #12 posted 15 Apr 2026 at 13:51 UTC_
+  > 
+  > 
+  > <p>Regarding the kernel test suggestion: agreed this would be valuable. To keep this issue focused, I will track that as a follow-up rather than adding it here.</p>
+  > <p>Here the issue: <span class="drupalorg-gitlab-issue-link drupalorg-gitlab-link-wrapper"><a href="https://git.drupalcode.org/project/ai/-/work_items/3584951" class="drupalorg-gitlab-link">https://git.drupalcode.org/project/ai/-/work_items/3584951</a></span></p>
+  > **Marcus_Johansson** (2026-04-23): <!-- Migrated from comment CID #16552640. -->
+  > > _Migrated from comment #13 posted 16 Apr 2026 at 07:55 UTC_
+  > 
+  > 
+  > ```
+  > - Status: Needs review
+  > + Status: Needs work
+  > 
+  > ```
+  > 
+  > <p>This needs more work - the buffer for testing the guardrail and the buffer that gets outputted should be different. </p>
+  > <p>So, it would be ok that it outputs part of something that gets blocked.</p>
+  > <p>Right now the streaming is too chompy, it outputs one sentence at a a time which is a clear feature regression. And that is even without a guardrail attached. As long as the regex and block is checked before the last chunk it would be fine.</p>
+  > <p>Think of this:</p>
+  > <p>This will not render:<br>
+  > <code>&lt;a href="https://www.my-malicious.com/website"</code></p>
+  > <p>This will render but be blocked:<br>
+  > <code>&lt;a href="https://www.my-malicious.com/website"&gt;</code></p>
+  > <p>This means that you can see parts of secret names, but even then I would argue that our solution is better then anything that exists currently.</p>
+  > <p>The other option is that we have late streaming buffers - meaning we keep a sentence in buffer and then start yielding one word at a time form that sentence, while buffering the next.</p>
+  > <p>Setting this back to work, and I think we have to aim for 1.5.x for this, since its not in as much of a hurry.</p>
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16554729. -->
+  > > _Migrated from comment #14 posted 17 Apr 2026 at 14:50 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: abhisekmazumdar
+  > 
+  > ```
+  > **arianraeesi** (2026-04-23): <!-- Migrated from comment CID #16556624. -->
+  > > _Migrated from comment #15 posted 20 Apr 2026 at 07:02 UTC_
+  > 
+  > 
+  > ```
+  >  Issue tags:
+  >  + AI Initiative Sprint + AI Product Development
+  > ```
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16558863. -->
+  > > _Migrated from comment #16 posted 21 Apr 2026 at 14:03 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: abhisekmazumdar
+  > + Assigned: Unassigned
+  > - Status:   Needs work
+  > + Status:   Needs review
+  > 
+  > ```
+  > 
+  > <p>I feel I have addressed both issues raised in <span class="drupalorg-gitlab-issue-link project-issue-status-info project-issue-status-13"><a href="https://www.drupal.org/project/ai/issues/3582179" title="Status: Needs work">#3582179: Add streaming-aware guardrails that can buffer and evaluate content in real-time using start/stop regex patterns</a></span>.</p>
+  > <p><strong>Issue 1: Detection buffer and output buffer decoupled.</strong></p>
+  > <p>The lookahead window was suppressing <code>$text</code> immediately on every chunk, even before a start pattern was found. The window is now detection-only: text flows to the consumer unchanged until a match is confirmed. Only the triggering chunk is suppressed.</p>
+  > <p><strong>Issue 2: Sentence-at-a-time output fixed via word-level splitting.</strong></p>
+  > <p>The URL-safety buffer in <code>StreamedChatMessageIterator</code> already flushes in sentence-sized chunks (on <code>\n</code> or after 100 characters). To give consumers smooth token-level output without changing the URL-safety or guardrail detection logic, <code>getIterator()</code> now splits each flushed chunk word-by-word before yielding.</p>
+  > <pre><pre>private function splitIntoWordTokens(string $text): array {<br>&nbsp; preg_match_all('/\S+\s*|\s+/', $text, $matches);<br>&nbsp; return $matches[0];<br>}</pre></pre><p>Each flushed sentence becomes a sequence of individual word tokens yielded one at a time. The <code>$this-&gt;messages</code> array and <code>reconstructChatOutput()</code> are unaffected, they still operate on sentence-level data. Guardrail detection, URL-safety checking, and pattern matching all continue to operate on the full sentence buffer as before.</p>
+  > <p>Regarding pre-match leakage: agreed this is the correct tradeoff. An incomplete tag like <code>&lt;a href="https://www.my-malicious.com/website"</code> cannot render, so yielding it before the pattern closes is safe. The renderable form <code>&lt;a href="https://www.my-malicious.com/website"&gt;</code> is what gets caught, and by that point the regex fires.</p>
+  > <p>Manually verified via the Chat Generation Explorer with streaming enabled: output now appears word-by-word with no sentence-level batching, and guardrail blocking continues to work correctly.</p>
+  > <p>MR updated.</p>
+  > <p><em>AI assisted has been used but verified by me.</em></p>
+  > **a.dmitriiev** (2026-04-23): <!-- Migrated from comment CID #16558995. -->
+  > > _Migrated from comment #17 posted 21 Apr 2026 at 14:56 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: a.dmitriiev
+  > 
+  > ```
+  > **a.dmitriiev** (2026-04-23): <!-- Migrated from comment CID #16559074. -->
+  > > _Migrated from comment #18 posted 21 Apr 2026 at 15:33 UTC_
+  > 
+  > 
+  > ```
+  > - Status: Needs review
+  > + Status: Needs work
+  > 
+  > ```
+  > **a.dmitriiev** (2026-04-23): <!-- Migrated from comment CID #16559075. -->
+  > > _Migrated from comment #19 posted 21 Apr 2026 at 15:34 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: a.dmitriiev
+  > + Assigned: Unassigned
+  > 
+  > ```
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16559922. -->
+  > > _Migrated from comment #20 posted 22 Apr 2026 at 06:57 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: Unassigned
+  > + Assigned: abhisekmazumdar
+  > 
+  > ```
+  > **abhisekmazumdar** (2026-04-23): <!-- Migrated from comment CID #16560371. -->
+  > > _Migrated from comment #21 posted 22 Apr 2026 at 11:06 UTC_
+  > 
+  > 
+  > ```
+  > - Assigned: abhisekmazumdar
+  > + Assigned: Unassigned
+  > 
+  > ```
+  > **AkhilBabu** (2026-04-27): Assigning to myself
 
 ### Merge Requests
 
+- **[refactor: #3577050: Generalize field widget action dispatch in the base class.](https://git.drupalcode.org/project/ai/-/merge_requests/1536)** · petar_basic · opened · `3577050-generalize-behaviour-of-1.4.x` · 3189 diff lines
 - **[Resolve #3563396 "Fix phpstan issues api 2.0.x"](https://git.drupalcode.org/project/ai/-/merge_requests/1074)** · danrod · opened · `3563396-fix-phpstan-issues-api-2.0.x` · 1232 diff lines
 
 ---
@@ -2190,6 +2422,18 @@ _Generated: 2026-04-26 19:45 GMT_
 
 ### Merge Requests
 
+- **[#3586183: Removing value for a required prop of type link(uri-reference) returns 500](https://git.drupalcode.org/project/canvas/-/merge_requests/956)** · Utkarsh_33 · opened · `3586183-removing-value-for` · 309 diff lines
+- **[Draft: PoC Playwright snapshot-based](https://git.drupalcode.org/project/canvas/-/merge_requests/974)** · isholgueras · opened · `3586631-poc-playwright-snapshots` · 6975 diff lines
+- **[feat: #3552818 Contrib compatibility: ComponentPluginManager decorator should...](https://git.drupalcode.org/project/canvas/-/merge_requests/961)** · florenttorregrosa · opened · `3552818-contrib-compatibility-componentpluginmanager` · 340 diff lines
+- **[Draft: Resolve #3586613 "Add content entity reference well known"](https://git.drupalcode.org/project/canvas/-/merge_requests/980)** · longwave · opened · `3586613-add-content-entity-reference-well-known` · 417 diff lines
+- **[fix: Assertion failure in component update when required prop already exists in both versions](https://git.drupalcode.org/project/canvas/-/merge_requests/692)** · mglaman · merged 2026-04-23 · `3577603-assertion-failure-in` · 227 diff lines
+- **[Draft: Fix time value when adding/reordering element.](https://git.drupalcode.org/project/canvas/-/merge_requests/958)** · chandu7929 · opened · `3582883-multi-value-prop-date-fix` · 417 diff lines
+- **[Issue #3586843: Add a merge request template](https://git.drupalcode.org/project/canvas/-/merge_requests/986)** · justafish · opened · `3586843-add-a-merge` · 17 diff lines
+- **[#3581110: Add Multi-Value List Text/Integer Prop Support (UI)](https://git.drupalcode.org/project/canvas/-/merge_requests/795)** · Utkarsh_33 · opened · `3581110-add-multi-value-list` · 2830 diff lines
+- **[Resolve #3586655 CI: avoid unnecessary E2E jobs (or any job, really)](https://git.drupalcode.org/project/canvas/-/merge_requests/977)** · wimleers · opened · `3586655-ci-avoid-wasteful-playwright` · 194 diff lines
+- **[Issue #3586288: Multivalue prop Playwright tests are flaky](https://git.drupalcode.org/project/canvas/-/merge_requests/960)** · justafish · merged 2026-04-25 · `3586288-multivalue-prop-playwright` · 3163 diff lines
+- **[Add isCanvasPreview() so code components can detect editor preview](https://git.drupalcode.org/project/canvas/-/merge_requests/732)** · lauriii · opened · `3579551-add-iscanvaspreview-so` · 248 diff lines
+- **[Issue #3583379](https://git.drupalcode.org/project/canvas/-/merge_requests/876)** · shubham.prakash · opened · `3583379-referenced-entities-not` · 1449 diff lines
 - **[Store and sync code component folder in component.yml](https://git.drupalcode.org/project/canvas/-/merge_requests/990)** · lauriii · opened · `3586988-store-and-sync` · 1073 diff lines
 - **[fix(CLI Tool): #3586971 Apply the React JSX transform consistently in Workbench preview-build exports](https://git.drupalcode.org/project/canvas/-/merge_requests/989)** · balintbrews · merged 2026-04-26 · `3586971-workbench-jsx-transform` · 93 diff lines
 - **[State managed wasm file loading](https://git.drupalcode.org/project/canvas/-/merge_requests/523)** · jptaranto · opened · `3518306-ensure-wasm-files` · 718 diff lines
