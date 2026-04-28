@@ -96,14 +96,16 @@
   // Populate filter dropdowns from data
   // ---------------------------------------------------------------------------
 
+  const BOT_USERS = new Set(['drupalbot']);
+
   function populateFilters(items, json) {
     const modules = [...new Set(items.map(i => i.module))].sort();
     const states  = [...new Set(items.map(i => i.state).filter(Boolean))].sort();
     const labels  = [...new Set(items.flatMap(i => i.labels))].sort();
     const users   = [...new Set(items.flatMap(i => {
       const u = [];
-      if (i.author) u.push(i.author);
-      u.push(...i.assignees);
+      if (i.author && !BOT_USERS.has(i.author)) u.push(i.author);
+      u.push(...i.assignees.filter(a => !BOT_USERS.has(a)));
       return u;
     }).filter(Boolean))].sort();
 
@@ -233,8 +235,10 @@
     people.className = 'flex flex-wrap gap-1 mt-auto pt-1';
 
     const allUsers = [];
-    if (item.author) allUsers.push({ name: item.author, role: 'author' });
-    for (const a of item.assignees) allUsers.push({ name: a, role: 'assignee' });
+    if (item.author && !BOT_USERS.has(item.author)) allUsers.push({ name: item.author, role: 'author' });
+    for (const a of item.assignees) {
+      if (!BOT_USERS.has(a)) allUsers.push({ name: a, role: 'assignee' });
+    }
 
     for (const u of allUsers) {
       const chip = document.createElement('span');
