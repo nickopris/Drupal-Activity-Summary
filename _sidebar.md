@@ -4,3 +4,4 @@
 * [Data](1d-data.md)
 * [AI prompts](prompts.md)
 * [How to install](install.md)
+* <a href="analysis.html">Activity Analysis</a>
