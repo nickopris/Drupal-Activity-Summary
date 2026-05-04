@@ -1,0 +1,50 @@
+name: Issue Analysis Digest
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: python -m pip install -e './issue_analysis_tool[dev]'
+
+      - name: Ruff check
+        run: ruff check issue_analysis_tool
+
+      - name: Ruff format check
+        run: ruff format --check issue_analysis_tool
+
+      - name: Run tests
+        run: pytest issue_analysis_tool/tests
+
+      - name: Generate digest
+        env:
+          ISSUE_ANALYSIS_LLM_BASE_URL: ${{ secrets.ISSUE_ANALYSIS_LLM_BASE_URL }}
+          ISSUE_ANALYSIS_LLM_API_KEY: ${{ secrets.ISSUE_ANALYSIS_LLM_API_KEY }}
+          ISSUE_ANALYSIS_LLM_MODEL: ${{ secrets.ISSUE_ANALYSIS_LLM_MODEL }}
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+        run: python -m issue_analysis_tool.cli daily-digest
+
+      - name: Commit generated files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: update issue analysis digest
+          file_pattern: 1d-data.md 1d-summary-dev.md 1d-summary-executive.md _sidebar.md issue_analysis_tool/out
